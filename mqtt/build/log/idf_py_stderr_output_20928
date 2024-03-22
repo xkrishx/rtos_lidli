@@ -1,0 +1,5 @@
+Server running, waiting for requests on stdin...
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\KPC\.espressif\python_env\idf5.2_py3.11_env\Lib\site-packages\kconfserver\__main__.py", line 4, in <module>

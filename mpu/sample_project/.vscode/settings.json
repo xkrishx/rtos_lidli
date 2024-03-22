@@ -1,0 +1,14 @@
+{
+  "C_Cpp.intelliSenseEngine": "default",
+  "idf.portWin": "COM8",
+  "idf.adapterTargetName": "esp32",
+  "idf.openOcdConfigs": [
+    "board/esp32-bridge.cfg"
+  ],
+  "idf.flashType": "UART",
+  "files.associations": {
+    "mpu6050.h": "c",
+    "gpio.h": "c",
+    "esp_log.h": "c"
+  }
+}

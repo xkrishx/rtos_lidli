@@ -1,0 +1,26 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\KPC\PC_embedded\rtos\mqtt_sense\build\bootloader\esp-idf\esptool_py && C:\Users\KPC\.espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Users/KPC/esp/v5.2.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/KPC/PC_embedded/rtos/mqtt_sense/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+D:/KPC/PC_embedded/rtos/mqtt_sense/main/main.c: In function 'obtain_time':
+D:/KPC/PC_embedded/rtos/mqtt_sense/main/main.c:176:15: warning: unused variable 'timeinfo' [-Wunused-variable]
+  176 |     struct tm timeinfo = {0};
+      |               ^~~~~~~~
+D:/KPC/PC_embedded/rtos/mqtt_sense/main/main.c:175:12: warning: unused variable 'now' [-Wunused-variable]
+  175 |     time_t now = 0;
+      |            ^~~
+D:/KPC/PC_embedded/rtos/mqtt_sense/main/main.c: In function 'mqtt_event_handler':
+D:/KPC/PC_embedded/rtos/mqtt_sense/main/main.c:295:9: warning: unused variable 'msg_id' [-Wunused-variable]
+  295 |     int msg_id;
+      |         ^~~~~~
+[3/7] Linking C static library esp-idf\main\libmain.a
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable mqtt_sense.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/KPC/PC_embedded/rtos/mqtt_sense/build/mqtt_sense.bin
+[7/7] cmd.exe /C "cd /D D:\KPC\PC_embedded\rtos\mqtt_sense\build\esp-idf\esptool_py && C:\Users\KPC\.espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Users/KPC/esp/v5.2.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/KPC/PC_embedded/rtos/mqtt_sense/build/partition_table/partition-table.bin D:/KPC/PC_embedded/rtos/mqtt_sense/build/mqtt_sense.bin"
+mqtt_sense.bin binary size 0x11b9e0 bytes. Smallest app partition is 0x177000 bytes. 0x5b620 bytes (24%) free.

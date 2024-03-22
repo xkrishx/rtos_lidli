@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/KPC/PC_embedded/rtos/mqtt_sense/build/CMakeFiles/bootloader"
+		},
+		{
+			"file" : "D:/KPC/PC_embedded/rtos/mqtt_sense/build/CMakeFiles/bootloader.rule"
+		},
+		{
+			"file" : "D:/KPC/PC_embedded/rtos/mqtt_sense/build/CMakeFiles/bootloader-complete.rule"
+		},
+		{
+			"file" : "D:/KPC/PC_embedded/rtos/mqtt_sense/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+		},
+		{
+			"file" : "D:/KPC/PC_embedded/rtos/mqtt_sense/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+		},
+		{
+			"file" : "D:/KPC/PC_embedded/rtos/mqtt_sense/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+		},
+		{
+			"file" : "D:/KPC/PC_embedded/rtos/mqtt_sense/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+		},
+		{
+			"file" : "D:/KPC/PC_embedded/rtos/mqtt_sense/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+		},
+		{
+			"file" : "D:/KPC/PC_embedded/rtos/mqtt_sense/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+		},
+		{
+			"file" : "D:/KPC/PC_embedded/rtos/mqtt_sense/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"bootloader"
+		],
+		"name" : "bootloader"
+	}
+}

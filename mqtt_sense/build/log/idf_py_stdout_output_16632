@@ -1,0 +1,2040 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 22 2024 12:07:41[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=311f8h (201208) map[0m
+[0;32mI (173) esp_image: segment 1: paddr=00041220 vaddr=3ffbdb60 size=058f0h ( 22768) load[0m
+[0;32mI (182) esp_image: segment 2: paddr=00046b18 vaddr=40080000 size=09500h ( 38144) load[0m
+[0;32mI (197) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=c5db0h (810416) map[0m
+[0;32mI (475) esp_image: segment 4: paddr=00115dd8 vaddr=40089500 size=15c50h ( 89168) load[0m
+[0;32mI (526) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (526) boot: Disabling RNG early entropy source...[0m
+[0;32mI (537) cpu_start: Multicore app[0m
+[0;32mI (546) cpu_start: Pro cpu start user code[0m
+[0;32mI (546) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (546) cpu_start: Application information:[0m
+[0;32mI (549) cpu_start: Project name:     mqtt_sense[0m
+[0;32mI (554) cpu_start: App version:      1[0m
+[0;32mI (559) cpu_start: Compile time:     Mar 22 2024 12:07:56[0m
+[0;32mI (565) cpu_start: ELF file SHA256:  800e22ac8...[0m
+[0;32mI (570) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (575) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (580) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (585) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (590) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (597) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (603) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (609) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (615) heap_init: At 3FFCA2B0 len 00015D50 (87 KiB): DRAM[0m
+[0;32mI (621) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (627) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (634) heap_init: At 4009F150 len 00000EB0 (3 KiB): IRAM[0m
+[0;32mI (641) spi_flash: detected chip: generic[0m
+[0;32mI (645) spi_flash: flash io: dio[0m
+[0;33mW (649) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (660) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (665) main_task: Started on CPU0[0m
+[0;32mI (675) main_task: Calling app_main()[0m
+I (705) wifi:wifi driver task: 3ffce2b4, prio:23, stack:6656, core=0
+I (715) wifi:wifi firmware version: a9f5b59
+I (715) wifi:wifi certification version: v7.0
+I (715) wifi:config NVS flash: enabled
+I (715) wifi:config nano formating: disabled
+I (715) wifi:Init data frame dynamic rx buffer num: 32
+I (725) wifi:Init static rx mgmt buffer num: 5
+I (725) wifi:Init management short buffer num: 32
+I (735) wifi:Init dynamic tx buffer num: 32
+I (735) wifi:Init static rx buffer size: 1600
+I (745) wifi:Init static rx buffer num: 10
+I (745) wifi:Init dynamic rx buffer num: 32
+[0;32mI (745) wifi_init: rx ba win: 6[0m
+[0;32mI (755) wifi_init: tcpip mbox: 32[0m
+[0;32mI (755) wifi_init: udp mbox: 6[0m
+[0;32mI (755) wifi_init: tcp mbox: 6[0m
+[0;32mI (765) wifi_init: tcp tx win: 5760[0m
+[0;32mI (765) wifi_init: tcp rx win: 5760[0m
+[0;32mI (775) wifi_init: tcp mss: 1440[0m
+[0;32mI (775) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (785) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (785) wifi_prov_scheme_ble: BT memory released[0m
+[0;32mI (795) init_wifi: Already provisioned, starting Wi-Fi STA[0m
+[0;32mI (795) wifi_prov_scheme_ble: BTDM memory released[0m
+[0;32mI (805) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (885) wifi:mode : sta (b0:a7:32:2a:c3:a0)
+I (885) wifi:enable tsf
+I (3305) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (3305) wifi:state: init -> auth (b0)
+I (4305) wifi:state: auth -> init (200)
+I (4305) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (4305) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (4315) wifi:state: init -> auth (b0)
+I (4325) wifi:state: auth -> assoc (0)
+I (4335) wifi:state: assoc -> run (10)
+I (4355) wifi:connected with IKP-1stFloor, aid = 3, channel 6, BW20, bssid = 9c:c9:eb:a5:17:c1
+I (4355) wifi:security: WPA2-PSK, phy: bgn, rssi: -44
+I (4365) wifi:pm start, type: 1
+
+I (4365) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (4375) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (4385) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+I (4875) wifi:<ba-add>idx:0 (ifx:0, 9c:c9:eb:a5:17:c1), tid:6, ssn:2, winSize:64
+[0;32mI (5865) event_handler: Connected with IP Address:192.168.5.150[0m
+[0;32mI (5865) esp_netif_handlers: sta ip: 192.168.5.150, mask: 255.255.192.0, gw: 192.168.2.1[0m
+[0;32mI (5865) MQTT: Waiting for system time to be set... (1/10)[0m
+I (7545) wifi:<ba-add>idx:1 (ifx:0, 9c:c9:eb:a5:17:c1), tid:0, ssn:0, winSize:64
+[0;32mI (7875) MQTT: The current date/time is: Fri Mar 22 07:44:13 2024[0m
+[0;32mI (7875) MQTT: Initialising MQTT from Main.[0m
+[0;32mI (7905) MQTT: time: 1711093453[0m
+[0;32mI (7915) MQTT: distance: 0.0510[0m
+[0;32mI (7915) MQTT: Initialization completed.[0m
+[0;32mI (7915) MQTT: pitch: 8.516026  roll: 6.015578[0m
+[0;32mI (8995) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (8995) MQTT: sent subscribe successful[0m
+[0;32mI (9405) MQTT: MQTT_EVENT_SUBSCRIBED[0m
+[0;32mI (10005) MQTT: time: 1711093455[0m
+[0;32mI (10005) MQTT: distance: 0.0510[0m
+[0;32mI (10005) MQTT: pitch: 9.178873  roll: 5.223501[0m
+[0;32mI (11015) MQTT: time: 1711093456[0m
+[0;32mI (11015) MQTT: distance: 0.0510[0m
+[0;32mI (11015) MQTT: pitch: 9.162063  roll: 5.227371[0m
+[0;32mI (12015) MQTT: time: 1711093457[0m
+[0;32mI (12015) MQTT: distance: 0.0510[0m
+[0;32mI (12015) MQTT: pitch: 9.217906  roll: 5.269167[0m
+[0;32mI (13015) MQTT: time: 1711093458[0m
+[0;32mI (13015) MQTT: distance: 0.0510[0m
+[0;32mI (13015) MQTT: pitch: 9.202446  roll: 5.240550[0m
+[0;32mI (14025) MQTT: time: 1711093459[0m
+[0;32mI (14025) MQTT: distance: 0.0510[0m
+[0;32mI (14025) MQTT: pitch: 9.167707  roll: 5.224091[0m
+[0;32mI (15035) MQTT: time: 1711093460[0m
+[0;32mI (15035) MQTT: distance: 0.0510[0m
+[0;32mI (15035) MQTT: pitch: 9.188645  roll: 5.272222[0m
+[0;32mI (16045) MQTT: time: 1711093461[0m
+[0;32mI (16045) MQTT: distance: 0.0510[0m
+[0;32mI (16045) MQTT: pitch: 9.176680  roll: 5.285899[0m
+[0;32mI (17055) MQTT: time: 1711093462[0m
+[0;32mI (17055) MQTT: distance: 0.0510[0m
+[0;32mI (17055) MQTT: pitch: 9.177482  roll: 5.214867[0m
+[0;32mI (18065) MQTT: time: 1711093463[0m
+[0;32mI (18065) MQTT: distance: 0.0510[0m
+[0;32mI (18065) MQTT: pitch: 9.210186  roll: 5.256473[0m
+[0;32mI (19075) MQTT: time: 1711093464[0m
+[0;32mI (19075) MQTT: distance: 0.0510[0m
+[0;32mI (19075) MQTT: pitch: 9.213962  roll: 5.266415[0m
+[0;32mI (20085) MQTT: time: 1711093465[0m
+[0;32mI (20085) MQTT: distance: 0.0509[0m
+[0;32mI (20085) MQTT: pitch: 9.160800  roll: 5.187834[0m
+[0;32mI (21095) MQTT: time: 1711093466[0m
+[0;32mI (21095) MQTT: distance: 0.0509[0m
+[0;32mI (21095) MQTT: pitch: 9.220439  roll: 5.253884[0m
+[0;32mI (22105) MQTT: time: 1711093467[0m
+[0;32mI (22105) MQTT: distance: 0.0509[0m
+[0;32mI (22105) MQTT: pitch: 9.209091  roll: 5.240993[0m
+[0;32mI (23115) MQTT: time: 1711093468[0m
+[0;32mI (23115) MQTT: distance: 0.0509[0m
+[0;32mI (23115) MQTT: pitch: 9.183244  roll: 5.190771[0m
+[0;32mI (24125) MQTT: time: 1711093469[0m
+[0;32mI (24125) MQTT: distance: 0.0509[0m
+[0;32mI (24125) MQTT: pitch: 9.182924  roll: 5.259120[0m
+[0;32mI (25135) MQTT: time: 1711093470[0m
+[0;32mI (25135) MQTT: distance: 0.0509[0m
+[0;32mI (25135) MQTT: pitch: 9.215726  roll: 5.263045[0m
+[0;32mI (26145) MQTT: time: 1711093471[0m
+[0;32mI (26145) MQTT: distance: 0.0509[0m
+[0;32mI (26145) MQTT: pitch: 9.169125  roll: 5.214963[0m
+[0;32mI (27155) MQTT: time: 1711093472[0m
+[0;32mI (27155) MQTT: distance: 0.0509[0m
+[0;32mI (27155) MQTT: pitch: 9.194538  roll: 5.242915[0m
+[0;32mI (28165) MQTT: time: 1711093473[0m
+[0;32mI (28165) MQTT: distance: 0.0509[0m
+[0;32mI (28165) MQTT: pitch: 9.195074  roll: 5.266790[0m
+[0;32mI (29175) MQTT: time: 1711093474[0m
+[0;32mI (29175) MQTT: distance: 0.0384[0m
+[0;32mI (29175) MQTT: pitch: 9.175939  roll: 5.220788[0m
+[0;32mI (30175) MQTT: time: 1711093475[0m
+[0;32mI (30175) MQTT: distance: 0.0384[0m
+[0;32mI (30175) MQTT: pitch: 9.208999  roll: 5.236003[0m
+[0;32mI (31175) MQTT: time: 1711093476[0m
+[0;32mI (31175) MQTT: distance: 0.0384[0m
+[0;32mI (31175) MQTT: pitch: 9.201751  roll: 5.261448[0m
+[0;32mI (32185) MQTT: time: 1711093477[0m
+[0;32mI (32185) MQTT: distance: 0.0546[0m
+[0;32mI (32185) MQTT: pitch: 9.164824  roll: 5.213702[0m
+[0;32mI (33195) MQTT: time: 1711093478[0m
+[0;32mI (33195) MQTT: distance: 0.0546[0m
+[0;32mI (33195) MQTT: pitch: 9.176701  roll: 5.248286[0m
+[0;32mI (34205) MQTT: time: 1711093479[0m
+[0;32mI (34205) MQTT: distance: 0.0546[0m
+[0;32mI (34205) MQTT: pitch: 9.206810  roll: 5.260102[0m
+[0;32mI (35205) MQTT: time: 1711093480[0m
+[0;32mI (35205) MQTT: distance: 0.0573[0m
+[0;32mI (35205) MQTT: pitch: 9.143429  roll: 5.196954[0m
+[0;32mI (36215) MQTT: time: 1711093481[0m
+[0;32mI (36215) MQTT: distance: 0.0573[0m
+[0;32mI (36215) MQTT: pitch: 9.205352  roll: 5.275659[0m
+[0;32mI (37225) MQTT: time: 1711093482[0m
+[0;32mI (37225) MQTT: distance: 0.0573[0m
+[0;32mI (37225) MQTT: pitch: 9.221839  roll: 5.257590[0m
+[0;32mI (38235) MQTT: time: 1711093483[0m
+[0;32mI (38235) MQTT: distance: 0.0528[0m
+[0;32mI (38235) MQTT: pitch: 9.179374  roll: 5.217611[0m
+[0;32mI (39245) MQTT: time: 1711093484[0m
+[0;32mI (39245) MQTT: distance: 0.0528[0m
+[0;32mI (39245) MQTT: pitch: 9.177766  roll: 5.266169[0m
+[0;32mI (40255) MQTT: time: 1711093485[0m
+[0;32mI (40255) MQTT: distance: 0.0528[0m
+[0;32mI (40255) MQTT: pitch: 9.211931  roll: 5.272627[0m
+[0;32mI (41265) MQTT: time: 1711093486[0m
+[0;32mI (41265) MQTT: distance: 0.0519[0m
+[0;32mI (41265) MQTT: pitch: 9.185119  roll: 5.206824[0m
+[0;32mI (42275) MQTT: time: 1711093487[0m
+[0;32mI (42275) MQTT: distance: 0.0519[0m
+[0;32mI (42275) MQTT: pitch: 9.181687  roll: 5.267028[0m
+[0;32mI (43285) MQTT: time: 1711093488[0m
+[0;32mI (43285) MQTT: distance: 0.0519[0m
+[0;32mI (43285) MQTT: pitch: 9.194259  roll: 5.253935[0m
+[0;32mI (44295) MQTT: time: 1711093489[0m
+[0;32mI (44295) MQTT: distance: 0.0509[0m
+[0;32mI (44295) MQTT: pitch: 9.174564  roll: 5.226434[0m
+[0;32mI (45305) MQTT: time: 1711093490[0m
+[0;32mI (45305) MQTT: distance: 0.0509[0m
+[0;32mI (45305) MQTT: pitch: 9.191704  roll: 5.274094[0m
+[0;32mI (46315) MQTT: time: 1711093491[0m
+[0;32mI (46315) MQTT: distance: 0.0509[0m
+[0;32mI (46315) MQTT: pitch: 9.205048  roll: 5.257294[0m
+[0;32mI (47325) MQTT: time: 1711093492[0m
+[0;32mI (47325) MQTT: distance: 0.0510[0m
+[0;32mI (47325) MQTT: pitch: 9.156949  roll: 5.227987[0m
+[0;32mI (48335) MQTT: time: 1711093493[0m
+[0;32mI (48335) MQTT: distance: 0.0510[0m
+[0;32mI (48335) MQTT: pitch: 9.231050  roll: 5.284162[0m
+[0;32mI (49345) MQTT: time: 1711093495[0m
+[0;32mI (49345) MQTT: distance: 0.0510[0m
+[0;32mI (49345) MQTT: pitch: 9.186721  roll: 5.243616[0m
+[0;32mI (50355) MQTT: time: 1711093496[0m
+[0;32mI (50355) MQTT: distance: 0.0519[0m
+[0;32mI (50355) MQTT: pitch: 9.193131  roll: 5.215374[0m
+[0;32mI (51365) MQTT: time: 1711093497[0m
+[0;32mI (51365) MQTT: distance: 0.0519[0m
+[0;32mI (51365) MQTT: pitch: 9.192112  roll: 5.247705[0m
+[0;32mI (52375) MQTT: time: 1711093498[0m
+[0;32mI (52375) MQTT: distance: 0.0519[0m
+[0;32mI (52375) MQTT: pitch: 9.212981  roll: 5.242665[0m
+[0;32mI (53385) MQTT: time: 1711093499[0m
+[0;32mI (53385) MQTT: distance: 0.0510[0m
+[0;32mI (53385) MQTT: pitch: 9.218444  roll: 5.202348[0m
+[0;32mI (54395) MQTT: time: 1711093500[0m
+[0;32mI (54395) MQTT: distance: 0.0510[0m
+[0;32mI (54395) MQTT: pitch: 9.242248  roll: 5.252436[0m
+[0;32mI (55405) MQTT: time: 1711093501[0m
+[0;32mI (55405) MQTT: distance: 0.0510[0m
+[0;32mI (55405) MQTT: pitch: 9.209947  roll: 5.243669[0m
+[0;32mI (56415) MQTT: time: 1711093502[0m
+[0;32mI (56415) MQTT: distance: 0.0519[0m
+[0;32mI (56415) MQTT: pitch: 9.200682  roll: 5.226489[0m
+[0;32mI (57425) MQTT: time: 1711093503[0m
+[0;32mI (57425) MQTT: distance: 0.0519[0m
+[0;32mI (57425) MQTT: pitch: 9.233405  roll: 5.226489[0m
+[0;32mI (58435) MQTT: time: 1711093504[0m
+[0;32mI (58435) MQTT: distance: 0.0519[0m
+[0;32mI (58435) MQTT: pitch: 9.198965  roll: 5.263810[0m
+[0;32mI (59445) MQTT: time: 1711093505[0m
+[0;32mI (59445) MQTT: distance: 0.0510[0m
+[0;32mI (59445) MQTT: pitch: 9.195535  roll: 5.216993[0m
+[0;32mI (60455) MQTT: time: 1711093506[0m
+[0;32mI (60455) MQTT: distance: 0.0510[0m
+[0;32mI (60455) MQTT: pitch: 9.195471  roll: 5.257434[0m
+[0;32mI (61455) MQTT: time: 1711093507[0m
+[0;32mI (61455) MQTT: distance: 0.0510[0m
+[0;32mI (61455) MQTT: pitch: 9.190658  roll: 5.251032[0m
+[0;32mI (62455) MQTT: time: 1711093508[0m
+[0;32mI (62455) MQTT: distance: 0.0510[0m
+[0;32mI (62455) MQTT: pitch: 9.166368  roll: 5.242934[0m
+[0;32mI (63465) MQTT: time: 1711093509[0m
+[0;32mI (63465) MQTT: distance: 0.0510[0m
+[0;32mI (63465) MQTT: pitch: 9.225916  roll: 5.269084[0m
+[0;32mI (64475) MQTT: time: 1711093510[0m
+[0;32mI (64475) MQTT: distance: 0.0510[0m
+[0;32mI (64475) MQTT: pitch: 9.188484  roll: 5.264187[0m
+[0;32mI (65485) MQTT: time: 1711093511[0m
+[0;32mI (65485) MQTT: distance: 0.0536[0m
+[0;32mI (65485) MQTT: pitch: 9.185229  roll: 5.244584[0m
+[0;32mI (66495) MQTT: time: 1711093512[0m
+[0;32mI (66495) MQTT: distance: 0.0536[0m
+[0;32mI (66495) MQTT: pitch: 9.181925  roll: 5.244849[0m
+[0;32mI (67495) MQTT: time: 1711093513[0m
+[0;32mI (67495) MQTT: distance: 0.0536[0m
+[0;32mI (67495) MQTT: pitch: 9.215266  roll: 5.249706[0m
+[0;32mI (68505) MQTT: time: 1711093514[0m
+[0;32mI (68505) MQTT: distance: 0.0528[0m
+[0;32mI (68505) MQTT: pitch: 9.181950  roll: 5.216822[0m
+[0;32mI (69515) MQTT: time: 1711093515[0m
+[0;32mI (69515) MQTT: distance: 0.0528[0m
+[0;32mI (69515) MQTT: pitch: 9.214117  roll: 5.275686[0m
+[0;32mI (70525) MQTT: time: 1711093516[0m
+[0;32mI (70525) MQTT: distance: 0.0528[0m
+[0;32mI (70525) MQTT: pitch: 9.228906  roll: 5.268387[0m
+[0;32mI (71535) MQTT: time: 1711093517[0m
+[0;32mI (71535) MQTT: distance: 0.0519[0m
+[0;32mI (71535) MQTT: pitch: 9.190443  roll: 5.240332[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 22 2024 12:07:41[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=311f8h (201208) map[0m
+[0;32mI (173) esp_image: segment 1: paddr=00041220 vaddr=3ffbdb60 size=058f0h ( 22768) load[0m
+[0;32mI (182) esp_image: segment 2: paddr=00046b18 vaddr=40080000 size=09500h ( 38144) load[0m
+[0;32mI (197) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=c5db0h (810416) map[0m
+[0;32mI (475) esp_image: segment 4: paddr=00115dd8 vaddr=40089500 size=15c50h ( 89168) load[0m
+[0;32mI (526) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (526) boot: Disabling RNG early entropy source...[0m
+[0;32mI (537) cpu_start: Multicore app[0m
+[0;32mI (546) cpu_start: Pro cpu start user code[0m
+[0;32mI (546) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (546) cpu_start: Application information:[0m
+[0;32mI (549) cpu_start: Project name:     mqtt_sense[0m
+[0;32mI (554) cpu_start: App version:      1[0m
+[0;32mI (559) cpu_start: Compile time:     Mar 22 2024 12:07:56[0m
+[0;32mI (565) cpu_start: ELF file SHA256:  800e22ac8...[0m
+[0;32mI (570) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (575) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (580) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (585) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (590) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (597) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (603) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (609) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (615) heap_init: At 3FFCA2B0 len 00015D50 (87 KiB): DRAM[0m
+[0;32mI (621) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (627) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (634) heap_init: At 4009F150 len 00000EB0 (3 KiB): IRAM[0m
+[0;32mI (641) spi_flash: detected chip: generic[0m
+[0;32mI (644) spi_flash: flash io: dio[0m
+[0;33mW (649) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (660) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (665) main_task: Started on CPU0[0m
+[0;32mI (675) main_task: Calling app_main()[0m
+I (705) wifi:wifi driver task: 3ffce230, prio:23, stack:6656, core=0
+I (715) wifi:wifi firmware version: a9f5b59
+I (715) wifi:wifi certification version: v7.0
+I (715) wifi:config NVS flash: enabled
+I (715) wifi:config nano formating: disabled
+I (715) wifi:Init data frame dynamic rx buffer num: 32
+I (725) wifi:Init static rx mgmt buffer num: 5
+I (725) wifi:Init management short buffer num: 32
+I (735) wifi:Init dynamic tx buffer num: 32
+I (735) wifi:Init static rx buffer size: 1600
+I (745) wifi:Init static rx buffer num: 10
+I (745) wifi:Init dynamic rx buffer num: 32
+[0;32mI (745) wifi_init: rx ba win: 6[0m
+[0;32mI (755) wifi_init: tcpip mbox: 32[0m
+[0;32mI (755) wifi_init: udp mbox: 6[0m
+[0;32mI (755) wifi_init: tcp mbox: 6[0m
+[0;32mI (765) wifi_init: tcp tx win: 5760[0m
+[0;32mI (765) wifi_init: tcp rx win: 5760[0m
+[0;32mI (775) wifi_init: tcp mss: 1440[0m
+[0;32mI (775) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (785) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (785) wifi_prov_scheme_ble: BT memory released[0m
+[0;32mI (795) init_wifi: Already provisioned, starting Wi-Fi STA[0m
+[0;32mI (795) wifi_prov_scheme_ble: BTDM memory released[0m
+[0;32mI (805) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (885) wifi:mode : sta (b0:a7:32:2a:c3:a0)
+I (885) wifi:enable tsf
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 22 2024 12:07:41[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=311f8h (201208) map[0m
+[0;32mI (173) esp_image: segment 1: paddr=00041220 vaddr=3ffbdb60 size=058f0h ( 22768) load[0m
+[0;32mI (182) esp_image: segment 2: paddr=00046b18 vaddr=40080000 size=09500h ( 38144) load[0m
+[0;32mI (197) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=c5db0h (810416) map[0m
+[0;32mI (475) esp_image: segment 4: paddr=00115dd8 vaddr=40089500 size=15c50h ( 89168) load[0m
+[0;32mI (526) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (526) boot: Disabling RNG early entropy source...[0m
+[0;32mI (537) cpu_start: Multicore app[0m
+[0;32mI (546) cpu_start: Pro cpu start user code[0m
+[0;32mI (546) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (546) cpu_start: Application information:[0m
+[0;32mI (549) cpu_start: Project name:     mqtt_sense[0m
+[0;32mI (554) cpu_start: App version:      1[0m
+[0;32mI (559) cpu_start: Compile time:     Mar 22 2024 12:07:56[0m
+[0;32mI (565) cpu_start: ELF file SHA256:  800e22ac8...[0m
+[0;32mI (570) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (575) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (580) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (585) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (590) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (597) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (603) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (609) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (615) heap_init: At 3FFCA2B0 len 00015D50 (87 KiB): DRAM[0m
+[0;32mI (621) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (627) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (634) heap_init: At 4009F150 len 00000EB0 (3 KiB): IRAM[0m
+[0;32mI (641) spi_flash: detected chip: generic[0m
+[0;32mI (644) spi_flash: flash io: dio[0m
+[0;33mW (649) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (660) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (665) main_task: Started on CPU0[0m
+[0;32mI (675) main_task: Calling app_main()[0m
+I (705) wifi:wifi driver task: 3ffce230, prio:23, stack:6656, core=0
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 22 2024 12:07:41[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=311f8h (201208) map[0m
+[0;32mI (173) esp_image: segment 1: paddr=00041220 vaddr=3ffbdb60 size=058f0h ( 22768) load[0m
+[0;32mI (182) esp_image: segment 2: paddr=00046b18 vaddr=40080000 size=09500h ( 38144) load[0m
+[0;32mI (197) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=c5db0h (810416) map[0m
+[0;32mI (475) esp_image: segment 4: paddr=00115dd8 vaddr=40089500 size=15c50h ( 89168) load[0m
+[0;32mI (526) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (526) boot: Disabling RNG early entropy source...[0m
+[0;32mI (537) cpu_start: Multicore app[0m
+[0;32mI (546) cpu_start: Pro cpu start user code[0m
+[0;32mI (546) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (546) cpu_start: Application information:[0m
+[0;32mI (549) cpu_start: Project name:     mqtt_sense[0m
+[0;32mI (554) cpu_start: App version:      1[0m
+[0;32mI (559) cpu_start: Compile time:     Mar 22 2024 12:07:56[0m
+[0;32mI (565) cpu_start: ELF file SHA256:  800e22ac8...[0m
+[0;32mI (570) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (575) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (580) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (585) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (590) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (597) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (603) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (609) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (615) heap_init: At 3FFCA2B0 len 00015D50 (87 KiB): DRAM[0m
+[0;32mI (621) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (627) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (634) heap_init: At 4009F150 len 00000EB0 (3 KiB): IRAM[0m
+[0;32mI (641) spi_flash: detected chip: generic[0m
+[0;32mI (644) spi_flash: flash io: dio[0m
+[0;33mW (649) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (660) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (665) main_task: Started on CPU0[0m
+[0;32mI (675) main_task: Calling app_main()[0m
+I (705) wifi:wifi driver task: 3ffce230, prio:23, stack:6656, core=0
+I (715) wifi:wifi firmware version: a9f5b59
+I (715) wifi:wifi certification version: v7.0
+I (715) wifi:config NVS flash: enabled
+I (715) wifi:config nano formating: disabled
+I (715) wifi:Init data frame dynamic rx buffer num: 32
+I (725) wifi:Init static rx mgmt buffer num: 5
+I (725) wifi:Init management short buffer num: 32
+I (735) wifi:Init dynamic tx buffer num: 32
+I (735) wifi:Init static rx buffer size: 1600
+I (745) wifi:Init static rx buffer num: 10
+I (745) wifi:Init dynamic rx buffer num: 32
+[0;32mI (745) wifi_init: rx ba win: 6[0m
+[0;32mI (755) wifi_init: tcpip mbox: 32[0m
+[0;32mI (755) wifi_init: udp mbox: 6[0m
+[0;32mI (755) wifi_init: tcp mbox: 6[0m
+[0;32mI (765) wifi_init: tcp tx win: 5760[0m
+[0;32mI (765) wifi_init: tcp rx win: 5760[0m
+[0;32mI (775) wifi_init: tcp mss: 1440[0m
+[0;32mI (775) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (785) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (785) wifi_prov_scheme_ble: BT memory released[0m
+[0;32mI (795) init_wifi: Already provisioned, starting Wi-Fi STA[0m
+[0;32mI (795) wifi_prov_scheme_ble: BTDM memory released[0m
+[0;32mI (805) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (885) wifi:mode : sta (b0:a7:32:2a:c3:a0)
+I (885) wifi:enable tsf
+I (3305) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (3305) wifi:state: init -> auth (b0)
+I (4305) wifi:state: auth -> init (200)
+I (4305) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (4305) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (4315) wifi:state: init -> auth (b0)
+I (4315) wifi:state: auth -> init (8a0)
+I (4315) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (4325) wifi:new:<11,0>, old:<6,0>, ap:<255,255>, sta:<11,0>, prof:1
+I (4335) wifi:state: init -> auth (b0)
+I (5195) wifi:state: auth -> assoc (0)
+I (5215) wifi:state: assoc -> run (10)
+I (5295) wifi:connected with IKP-1stFloor, aid = 4, channel 11, BW20, bssid = e0:46:ee:a9:95:c1
+I (5295) wifi:security: WPA3-SAE, phy: bgn, rssi: -71
+I (5315) wifi:pm start, type: 1
+
+I (5315) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (5415) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (5415) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+I (5865) wifi:<ba-add>idx:0 (ifx:0, e0:46:ee:a9:95:c1), tid:0, ssn:0, winSize:64
+[0;32mI (7315) event_handler: Connected with IP Address:192.168.5.150[0m
+[0;32mI (7315) esp_netif_handlers: sta ip: 192.168.5.150, mask: 255.255.192.0, gw: 192.168.2.1[0m
+[0;32mI (7315) MQTT: Waiting for system time to be set... (1/10)[0m
+[0;32mI (9325) MQTT: Waiting for system time to be set... (2/10)[0m
+[0;32mI (11325) MQTT: The current date/time is: Fri Mar 22 07:45:33 2024[0m
+[0;32mI (11325) MQTT: Initialising MQTT from Main.[0m
+[0;32mI (11385) MQTT: time: 1711093533[0m
+[0;32mI (11385) MQTT: distance: 0.3195[0m
+[0;32mI (11385) MQTT: pitch: -0.143121  roll: -0.133435[0m
+[0;32mI (11385) MQTT: Initialization completed.[0m
+[0;31mE (21895) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned 0[0m
+[0;31mE (21895) mqtt_client: MQTT connect failed[0m
+[0;32mI (21895) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (22895) MQTT: time: 1711093544[0m
+[0;32mI (22895) MQTT: distance: 0.3164[0m
+[0;32mI (22895) MQTT: pitch: -4.463111  roll: 0.744765[0m
+[0;32mI (23895) MQTT: time: 1711093545[0m
+[0;32mI (23895) MQTT: distance: 0.3189[0m
+[0;32mI (23895) MQTT: pitch: -4.938540  roll: 0.421730[0m
+[0;32mI (24895) MQTT: time: 1711093546[0m
+[0;32mI (24895) MQTT: distance: 0.3189[0m
+[0;32mI (24895) MQTT: pitch: -4.750483  roll: 0.690821[0m
+[0;32mI (25895) MQTT: time: 1711093547[0m
+[0;32mI (25895) MQTT: distance: 0.3189[0m
+[0;32mI (25895) MQTT: pitch: -4.882604  roll: 1.022835[0m
+[0;32mI (26895) MQTT: time: 1711093548[0m
+[0;32mI (26895) MQTT: distance: 0.3147[0m
+[0;32mI (26895) MQTT: pitch: -4.886993  roll: 0.902061[0m
+[0;32mI (27895) MQTT: time: 1711093549[0m
+[0;32mI (27895) MQTT: distance: 0.3147[0m
+[0;32mI (27895) MQTT: pitch: -4.843178  roll: 1.338105[0m
+[0;32mI (28895) MQTT: time: 1711093550[0m
+[0;32mI (28895) MQTT: distance: 0.3147[0m
+[0;32mI (28895) MQTT: pitch: -4.796436  roll: 1.492216[0m
+[0;32mI (29895) MQTT: time: 1711093551[0m
+[0;32mI (29895) MQTT: distance: 0.3124[0m
+[0;32mI (29895) MQTT: pitch: -5.005819  roll: 0.863958[0m
+[0;32mI (30895) MQTT: time: 1711093552[0m
+[0;32mI (30895) MQTT: distance: 0.3124[0m
+[0;32mI (30895) MQTT: pitch: -4.441838  roll: 1.102102[0m
+[0;32mI (31895) MQTT: time: 1711093553[0m
+[0;32mI (31895) MQTT: distance: 0.3124[0m
+[0;32mI (31895) MQTT: pitch: -5.426689  roll: 0.601827[0m
+[0;32mI (32895) MQTT: time: 1711093554[0m
+[0;32mI (32895) MQTT: distance: 0.2763[0m
+[0;32mI (32895) MQTT: pitch: 12.372159  roll: 2.494971[0m
+[0;32mI (33895) MQTT: time: 1711093555[0m
+[0;32mI (33895) MQTT: distance: 0.2763[0m
+[0;32mI (33895) MQTT: pitch: 33.174656  roll: 2.657880[0m
+[0;32mI (34895) MQTT: time: 1711093556[0m
+[0;32mI (34895) MQTT: distance: 0.2763[0m
+[0;32mI (34895) MQTT: pitch: 29.188978  roll: 1.775226[0m
+[0;32mI (35895) MQTT: time: 1711093557[0m
+[0;32mI (35895) MQTT: distance: 0.2379[0m
+[0;32mI (35895) MQTT: pitch: 26.036043  roll: 0.893013[0m
+[0;32mI (36895) MQTT: time: 1711093558[0m
+[0;32mI (36895) MQTT: distance: 0.2379[0m
+[0;32mI (36895) MQTT: pitch: 25.877117  roll: -2.313957[0m
+[0;32mI (37895) MQTT: time: 1711093559[0m
+[0;32mI (37895) MQTT: distance: 0.2379[0m
+[0;32mI (37895) MQTT: pitch: 30.350752  roll: -3.523630[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 22 2024 12:07:41[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=311f8h (201208) map[0m
+[0;32mI (173) esp_image: segment 1: paddr=00041220 vaddr=3ffbdb60 size=058f0h ( 22768) load[0m
+[0;32mI (182) esp_image: segment 2: paddr=00046b18 vaddr=40080000 size=09500h ( 38144) load[0m
+[0;32mI (197) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=c5db0h (810416) map[0m
+[0;32mI (475) esp_image: segment 4: paddr=00115dd8 vaddr=40089500 size=15c50h ( 89168) load[0m
+[0;32mI (526) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (526) boot: Disabling RNG early entropy source...[0m
+[0;32mI (537) cpu_start: Multicore app[0m
+[0;32mI (546) cpu_start: Pro cpu start user code[0m
+[0;32mI (546) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (546) cpu_start: Application information:[0m
+[0;32mI (549) cpu_start: Project name:     mqtt_sense[0m
+[0;32mI (554) cpu_start: App version:      1[0m
+[0;32mI (559) cpu_start: Compile time:     Mar 22 2024 12:07:56[0m
+[0;32mI (565) cpu_start: ELF file SHA256:  800e22ac8...[0m
+[0;32mI (570) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (575) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (580) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (585) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (590) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (597) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (603) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (609) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (615) heap_init: At 3FFCA2B0 len 00015D50 (87 KiB): DRAM[0m
+[0;32mI (621) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (627) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (634) heap_init: At 4009F150 len 00000EB0 (3 KiB): IRAM[0m
+[0;32mI (641) spi_flash: detected chip: generic[0m
+[0;32mI (644) spi_flash: flash io: dio[0m
+[0;33mW (649) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (660) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (665) main_task: Started on CPU0[0m
+[0;32mI (675) main_task: Calling app_main()[0m
+I (705) wifi:wifi driver task: 3ffce230, prio:23, stack:6656, core=0
+I (715) wifi:wifi firmware version: a9f5b59
+I (715) wifi:wifi certification version: v7.0
+I (715) wifi:config NVS flash: enabled
+I (715) wifi:config nano formating: disabled
+I (715) wifi:Init data frame dynamic rx buffer num: 32
+I (725) wifi:Init static rx mgmt buffer num: 5
+I (725) wifi:Init management short buffer num: 32
+I (735) wifi:Init dynamic tx buffer num: 32
+I (735) wifi:Init static rx buffer size: 1600
+I (745) wifi:Init static rx buffer num: 10
+I (745) wifi:Init dynamic rx buffer num: 32
+[0;32mI (745) wifi_init: rx ba win: 6[0m
+[0;32mI (755) wifi_init: tcpip mbox: 32[0m
+[0;32mI (755) wifi_init: udp mbox: 6[0m
+[0;32mI (755) wifi_init: tcp mbox: 6[0m
+[0;32mI (765) wifi_init: tcp tx win: 5760[0m
+[0;32mI (765) wifi_init: tcp rx win: 5760[0m
+[0;32mI (775) wifi_init: tcp mss: 1440[0m
+[0;32mI (775) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (785) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (785) wifi_prov_scheme_ble: BT memory released[0m
+[0;32mI (795) init_wifi: Already provisioned, starting Wi-Fi STA[0m
+[0;32mI (795) wifi_prov_scheme_ble: BTDM memory released[0m
+[0;32mI (805) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (885) wifi:mode : sta (b0:a7:32:2a:c3:a0)
+I (895) wifi:enable tsf
+I (3305) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (3305) wifi:state: init -> auth (b0)
+I (4305) wifi:state: auth -> init (200)
+I (4315) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (4315) wifi:new:<11,0>, old:<6,0>, ap:<255,255>, sta:<11,0>, prof:1
+I (4315) wifi:state: init -> auth (b0)
+I (5175) wifi:state: auth -> assoc (0)
+I (5185) wifi:Association refused temporarily, comeback time 1000 (TUs)
+I (6205) wifi:state: assoc -> assoc (0)
+I (6225) wifi:state: assoc -> init (6c0)
+I (6225) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1
+I (6225) wifi:new:<6,0>, old:<11,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (6235) wifi:state: init -> auth (b0)
+I (6245) wifi:state: auth -> assoc (0)
+I (6255) wifi:state: assoc -> run (10)
+I (6265) wifi:connected with IKP-1stFloor, aid = 3, channel 6, BW20, bssid = 9c:c9:eb:a5:17:c1
+I (6265) wifi:security: WPA2-PSK, phy: bgn, rssi: -50
+I (6285) wifi:pm start, type: 1
+
+I (6285) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (6345) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (6345) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+I (6825) wifi:<ba-add>idx:0 (ifx:0, 9c:c9:eb:a5:17:c1), tid:6, ssn:2, winSize:64
+[0;32mI (8785) event_handler: Connected with IP Address:192.168.5.150[0m
+[0;32mI (8785) esp_netif_handlers: sta ip: 192.168.5.150, mask: 255.255.192.0, gw: 192.168.2.1[0m
+[0;32mI (8785) MQTT: Waiting for system time to be set... (1/10)[0m
+I (9485) wifi:<ba-add>idx:1 (ifx:0, 9c:c9:eb:a5:17:c1), tid:0, ssn:0, winSize:64
+[0;32mI (10795) MQTT: Waiting for system time to be set... (2/10)[0m
+[0;32mI (12795) MQTT: Waiting for system time to be set... (3/10)[0m
+[0;32mI (14795) MQTT: Waiting for system time to be set... (4/10)[0m
+[0;32mI (16795) MQTT: Waiting for system time to be set... (5/10)[0m
+[0;32mI (18795) MQTT: Waiting for system time to be set... (6/10)[0m
+[0;32mI (20795) MQTT: Waiting for system time to be set... (7/10)[0m
+[0;32mI (22795) MQTT: Waiting for system time to be set... (8/10)[0m
+[0;32mI (24795) MQTT: Waiting for system time to be set... (9/10)[0m
+[0;32mI (26795) MQTT: The current date/time is: Thu Jan  1 00:00:26 1970[0m
+[0;32mI (26795) MQTT: Initialising MQTT from Main.[0m
+[0;32mI (26845) MQTT: Initialization completed.[0m
+[0;32mI (26845) MQTT: time: 26[0m
+[0;32mI (26845) MQTT: distance: 0.2836[0m
+[0;32mI (26845) MQTT: pitch: -3.381916  roll: 0.509205[0m
+[0;32mI (27555) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (27555) MQTT: sent subscribe successful[0m
+[0;32mI (28125) MQTT: MQTT_EVENT_SUBSCRIBED[0m
+[0;32mI (28565) MQTT: time: 28[0m
+[0;32mI (28565) MQTT: distance: 0.2836[0m
+[0;32mI (28565) MQTT: pitch: -3.464751  roll: 0.089191[0m
+[0;32mI (29565) MQTT: time: 29[0m
+[0;32mI (29565) MQTT: distance: 0.2836[0m
+[0;32mI (29565) MQTT: pitch: -3.593077  roll: -0.141575[0m
+[0;32mI (30575) MQTT: time: 30[0m
+[0;32mI (30575) MQTT: distance: 0.2855[0m
+[0;32mI (30575) MQTT: pitch: -3.331821  roll: -0.690780[0m
+[0;32mI (31585) MQTT: time: 31[0m
+[0;32mI (31585) MQTT: distance: 0.2855[0m
+[0;32mI (31585) MQTT: pitch: -4.318525  roll: -0.866516[0m
+[0;32mI (32595) MQTT: time: 32[0m
+[0;32mI (32595) MQTT: distance: 0.2855[0m
+[0;32mI (32595) MQTT: pitch: -4.257410  roll: -1.563105[0m
+[0;32mI (33605) MQTT: time: 33[0m
+[0;32mI (33605) MQTT: distance: 3.8882[0m
+[0;32mI (33605) MQTT: pitch: -12.692648  roll: -2.780097[0m
+[0;32mI (34615) MQTT: time: 34[0m
+[0;32mI (34615) MQTT: distance: 3.8882[0m
+[0;32mI (34615) MQTT: pitch: -18.328537  roll: -1.433959[0m
+[0;32mI (35615) MQTT: time: 35[0m
+[0;32mI (35615) MQTT: distance: 3.8882[0m
+[0;32mI (35615) MQTT: pitch: -20.445457  roll: 1.715832[0m
+[0;32mI (36625) MQTT: time: 36[0m
+[0;32mI (36625) MQTT: distance: 0.3706[0m
+[0;32mI (36625) MQTT: pitch: -15.816389  roll: 5.722953[0m
+[0;32mI (37625) MQTT: time: 37[0m
+[0;32mI (37625) MQTT: distance: 0.3706[0m
+[0;32mI (37625) MQTT: pitch: -15.656335  roll: 6.387743[0m
+[0;32mI (38635) MQTT: time: 38[0m
+[0;32mI (38635) MQTT: distance: 0.3706[0m
+[0;32mI (38635) MQTT: pitch: -12.889593  roll: 7.563004[0m
+[0;32mI (39645) MQTT: time: 1711093599[0m
+[0;32mI (39645) MQTT: distance: 0.3473[0m
+[0;32mI (39645) MQTT: pitch: 770723968.000000  roll: -5240923136.000000[0m
+[0;32mI (40655) MQTT: time: 1711093600[0m
+[0;32mI (40655) MQTT: distance: 0.3473[0m
+[0;32mI (40655) MQTT: pitch: 27678932.000000  roll: -188216816.000000[0m
+[0;32mI (41665) MQTT: time: 1711093601[0m
+[0;32mI (41665) MQTT: distance: 0.3473[0m
+[0;32mI (41665) MQTT: pitch: 984079.750000  roll: -6691819.500000[0m
+[0;32mI (42665) MQTT: time: 1711093602[0m
+[0;32mI (42665) MQTT: distance: 5.0258[0m
+[0;32mI (42665) MQTT: pitch: 102542.828125  roll: -697364.625000[0m
+[0;32mI (43675) MQTT: time: 1711093603[0m
+[0;32mI (43675) MQTT: distance: 5.0258[0m
+[0;32mI (43675) MQTT: pitch: 3598.146484  roll: -24539.222656[0m
+[0;32mI (44685) MQTT: time: 1711093604[0m
+[0;32mI (44685) MQTT: distance: 5.0258[0m
+[0;32mI (44685) MQTT: pitch: 116.708466  roll: -872.087341[0m
+[0;32mI (45695) MQTT: time: 1711093605[0m
+[0;32mI (45695) MQTT: distance: 0.2791[0m
+[0;32mI (45695) MQTT: pitch: -1.702683  roll: -38.737743[0m
+[0;32mI (46695) MQTT: time: 1711093606[0m
+[0;32mI (46695) MQTT: distance: 0.2791[0m
+[0;32mI (46695) MQTT: pitch: -7.116244  roll: -4.274845[0m
+[0;32mI (47705) MQTT: time: 1711093607[0m
+[0;32mI (47705) MQTT: distance: 0.2791[0m
+[0;32mI (47705) MQTT: pitch: -8.008769  roll: -2.701500[0m
+[0;32mI (48705) MQTT: time: 1711093608[0m
+[0;32mI (48705) MQTT: distance: 0.2817[0m
+[0;32mI (48705) MQTT: pitch: -8.755408  roll: -2.472398[0m
+[0;32mI (49715) MQTT: time: 1711093609[0m
+[0;32mI (49715) MQTT: distance: 0.2817[0m
+[0;32mI (49715) MQTT: pitch: -8.429801  roll: -2.308199[0m
+[0;32mI (50725) MQTT: time: 1711093610[0m
+[0;32mI (50725) MQTT: distance: 0.2817[0m
+[0;32mI (50725) MQTT: pitch: -8.438678  roll: -1.464277[0m
+[0;32mI (51735) MQTT: time: 1711093611[0m
+[0;32mI (51735) MQTT: distance: 0.2784[0m
+[0;32mI (51735) MQTT: pitch: -8.386202  roll: -1.728594[0m
+[0;32mI (52735) MQTT: time: 1711093612[0m
+[0;32mI (52735) MQTT: distance: 0.2784[0m
+[0;32mI (52735) MQTT: pitch: -8.442669  roll: -1.330686[0m
+[0;32mI (53745) MQTT: time: 1711093613[0m
+[0;32mI (53745) MQTT: distance: 0.2784[0m
+[0;32mI (53745) MQTT: pitch: -8.644300  roll: -1.293839[0m
+[0;32mI (54755) MQTT: time: 1711093614[0m
+[0;32mI (54755) MQTT: distance: 0.2580[0m
+[0;32mI (54755) MQTT: pitch: -6.742208  roll: -5.868594[0m
+[0;32mI (55765) MQTT: time: 1711093615[0m
+[0;32mI (55765) MQTT: distance: 0.2580[0m
+[0;32mI (55765) MQTT: pitch: -4.141118  roll: -5.329651[0m
+[0;32mI (56775) MQTT: time: 1711093616[0m
+[0;32mI (56775) MQTT: distance: 0.2580[0m
+[0;32mI (56775) MQTT: pitch: -4.266751  roll: -4.217055[0m
+[0;32mI (57785) MQTT: time: 1711093617[0m
+[0;32mI (57785) MQTT: distance: 0.2184[0m
+[0;32mI (57785) MQTT: pitch: -5.889843  roll: -4.644456[0m
+[0;32mI (58785) MQTT: time: 1711093618[0m
+[0;32mI (58785) MQTT: distance: 0.2184[0m
+[0;32mI (58785) MQTT: pitch: -6.672908  roll: -4.402767[0m
+[0;32mI (59795) MQTT: time: 1711093619[0m
+[0;32mI (59795) MQTT: distance: 0.2184[0m
+[0;32mI (59795) MQTT: pitch: -8.581130  roll: -7.414452[0m
+[0;32mI (60805) MQTT: time: 1711093620[0m
+[0;32mI (60805) MQTT: distance: 0.2411[0m
+[0;32mI (60805) MQTT: pitch: -19.738255  roll: -7.389497[0m
+[0;32mI (61815) MQTT: time: 1711093621[0m
+[0;32mI (61815) MQTT: distance: 0.2411[0m
+[0;32mI (61815) MQTT: pitch: -19.053446  roll: -2.291158[0m
+[0;32mI (62825) MQTT: time: 1711093622[0m
+[0;32mI (62825) MQTT: distance: 0.2411[0m
+[0;32mI (62825) MQTT: pitch: -33.161079  roll: -0.293220[0m
+[0;32mI (63855) MQTT: time: 1711093623[0m
+[0;32mI (63855) MQTT: distance: 24.1102[0m
+[0;32mI (63855) MQTT: pitch: -23.630148  roll: 1.471030[0m
+[0;32mI (64855) MQTT: time: 1711093624[0m
+[0;32mI (64855) MQTT: distance: 3.9305[0m
+[0;32mI (64855) MQTT: pitch: -19.342415  roll: 5.119511[0m
+[0;32mI (65865) MQTT: time: 1711093625[0m
+[0;32mI (65865) MQTT: distance: 3.9305[0m
+[0;32mI (65865) MQTT: pitch: -21.559383  roll: 5.041506[0m
+[0;32mI (66875) MQTT: time: 1711093626[0m
+[0;32mI (66875) MQTT: distance: 3.9305[0m
+[0;32mI (66875) MQTT: pitch: -18.316521  roll: -6.924744[0m
+[0;32mI (67875) MQTT: time: 1711093627[0m
+[0;32mI (67875) MQTT: distance: 0.2664[0m
+[0;32mI (67875) MQTT: pitch: -25.583763  roll: -2.991017[0m
+[0;32mI (68885) MQTT: time: 1711093628[0m
+[0;32mI (68885) MQTT: distance: 0.2664[0m
+[0;32mI (68885) MQTT: pitch: -11.091322  roll: -2.544952[0m
+[0;32mI (69895) MQTT: time: 1711093629[0m
+[0;32mI (69895) MQTT: distance: 0.2664[0m
+[0;32mI (69895) MQTT: pitch: -3.947786  roll: -3.136624[0m
+[0;32mI (70905) MQTT: time: 1711093630[0m
+[0;32mI (70905) MQTT: distance: 0.5678[0m
+[0;32mI (70905) MQTT: pitch: -3.285776  roll: -3.334571[0m
+[0;32mI (71905) MQTT: time: 1711093631[0m
+[0;32mI (71905) MQTT: distance: 0.5678[0m
+[0;32mI (71905) MQTT: pitch: -3.468475  roll: -3.899235[0m
+[0;32mI (72915) MQTT: time: 1711093632[0m
+[0;32mI (72915) MQTT: distance: 0.5678[0m
+[0;32mI (72915) MQTT: pitch: -5.361745  roll: -4.158690[0m
+[0;32mI (73925) MQTT: time: 1711093633[0m
+[0;32mI (73925) MQTT: distance: 2.6242[0m
+[0;32mI (73925) MQTT: pitch: -5.509489  roll: -1.010119[0m
+[0;32mI (74935) MQTT: time: 1711093634[0m
+[0;32mI (74935) MQTT: distance: 2.6242[0m
+[0;32mI (74935) MQTT: pitch: -5.421414  roll: -0.235851[0m
+[0;32mI (75945) MQTT: time: 1711093635[0m
+[0;32mI (75945) MQTT: distance: 2.6242[0m
+[0;32mI (75945) MQTT: pitch: -5.023553  roll: 0.042157[0m
+[0;32mI (76955) MQTT: time: 1711093636[0m
+[0;32mI (76955) MQTT: distance: 0.2305[0m
+[0;32mI (76955) MQTT: pitch: -5.007022  roll: 0.305953[0m
+[0;32mI (77965) MQTT: time: 1711093637[0m
+[0;32mI (77965) MQTT: distance: 0.2305[0m
+[0;32mI (77965) MQTT: pitch: -5.132638  roll: 0.400155[0m
+[0;32mI (78965) MQTT: time: 1711093638[0m
+[0;32mI (78965) MQTT: distance: 0.2305[0m
+[0;32mI (78965) MQTT: pitch: -5.078352  roll: 0.279342[0m
+[0;32mI (79975) MQTT: time: 1711093639[0m
+[0;32mI (79975) MQTT: distance: 0.2645[0m
+[0;32mI (79975) MQTT: pitch: -5.343354  roll: 0.799671[0m
+[0;32mI (80985) MQTT: time: 1711093640[0m
+[0;32mI (80985) MQTT: distance: 0.2645[0m
+[0;32mI (80985) MQTT: pitch: -5.457831  roll: 0.852102[0m
+[0;32mI (81985) MQTT: time: 1711093641[0m
+[0;32mI (81985) MQTT: distance: 0.2645[0m
+[0;32mI (81985) MQTT: pitch: -5.402398  roll: 0.227886[0m
+[0;32mI (82995) MQTT: time: 1711093642[0m
+[0;32mI (82995) MQTT: distance: 0.2471[0m
+[0;32mI (82995) MQTT: pitch: -5.883018  roll: 0.002179[0m
+[0;32mI (84005) MQTT: time: 1711093643[0m
+[0;32mI (84005) MQTT: distance: 0.2471[0m
+[0;32mI (84005) MQTT: pitch: -6.054418  roll: -0.210788[0m
+[0;32mI (85015) MQTT: time: 1711093644[0m
+[0;32mI (85015) MQTT: distance: 0.2471[0m
+[0;32mI (85015) MQTT: pitch: -6.080644  roll: -0.178042[0m
+[0;32mI (86025) MQTT: time: 1711093645[0m
+[0;32mI (86025) MQTT: distance: 0.2328[0m
+[0;32mI (86025) MQTT: pitch: -6.155847  roll: 0.014391[0m
+[0;32mI (87035) MQTT: time: 1711093647[0m
+[0;32mI (87035) MQTT: distance: 0.2328[0m
+[0;32mI (87035) MQTT: pitch: -6.040022  roll: 0.158711[0m
+[0;32mI (88045) MQTT: time: 1711093648[0m
+[0;32mI (88045) MQTT: distance: 0.2328[0m
+[0;32mI (88045) MQTT: pitch: -6.103589  roll: 0.257667[0m
+[0;32mI (89045) MQTT: time: 1711093649[0m
+[0;32mI (89045) MQTT: distance: 0.2279[0m
+[0;32mI (89045) MQTT: pitch: -6.101507  roll: -0.699381[0m
+[0;32mI (90055) MQTT: time: 1711093650[0m
+[0;32mI (90055) MQTT: distance: 0.2279[0m
+[0;32mI (90055) MQTT: pitch: -6.911791  roll: -1.002344[0m
+[0;32mI (91055) MQTT: time: 1711093651[0m
+[0;32mI (91055) MQTT: distance: 0.2279[0m
+[0;32mI (91055) MQTT: pitch: -6.398190  roll: -0.945421[0m
+[0;32mI (92065) MQTT: time: 1711093652[0m
+[0;32mI (92065) MQTT: distance: 0.2756[0m
+[0;32mI (92065) MQTT: pitch: -5.824645  roll: -1.069517[0m
+[0;32mI (93075) MQTT: time: 1711093653[0m
+[0;32mI (93075) MQTT: distance: 0.2756[0m
+[0;32mI (93075) MQTT: pitch: -5.788509  roll: -0.676125[0m
+[0;32mI (94085) MQTT: time: 1711093654[0m
+[0;32mI (94085) MQTT: distance: 0.2756[0m
+[0;32mI (94085) MQTT: pitch: -5.610517  roll: -0.590907[0m
+[0;32mI (95095) MQTT: time: 1711093655[0m
+[0;32mI (95095) MQTT: distance: 0.2264[0m
+[0;32mI (95095) MQTT: pitch: -5.842226  roll: -0.343991[0m
+[0;32mI (96105) MQTT: time: 1711093656[0m
+[0;32mI (96105) MQTT: distance: 0.2264[0m
+[0;32mI (96105) MQTT: pitch: -6.273253  roll: -1.239951[0m
+[0;32mI (97115) MQTT: time: 1711093657[0m
+[0;32mI (97115) MQTT: distance: 0.2264[0m
+[0;32mI (97115) MQTT: pitch: -6.192871  roll: -1.291427[0m
+[0;32mI (98125) MQTT: time: 1711093658[0m
+[0;32mI (98125) MQTT: distance: 0.2261[0m
+[0;32mI (98125) MQTT: pitch: -6.410298  roll: -1.686406[0m
+[0;32mI (99135) MQTT: time: 1711093659[0m
+[0;32mI (99135) MQTT: distance: 0.2261[0m
+[0;32mI (99135) MQTT: pitch: -6.648461  roll: -2.777280[0m
+[0;32mI (100145) MQTT: time: 1711093660[0m
+[0;32mI (100145) MQTT: distance: 0.2261[0m
+[0;32mI (100145) MQTT: pitch: -6.878217  roll: -2.987070[0m
+[0;32mI (101155) MQTT: time: 1711093661[0m
+[0;32mI (101155) MQTT: distance: 0.2409[0m
+[0;32mI (101155) MQTT: pitch: -6.429934  roll: -2.954934[0m
+[0;32mI (102155) MQTT: time: 1711093662[0m
+[0;32mI (102155) MQTT: distance: 0.2409[0m
+[0;32mI (102155) MQTT: pitch: -8.030649  roll: -4.479410[0m
+[0;32mI (103165) MQTT: time: 1711093663[0m
+[0;32mI (103165) MQTT: distance: 0.2409[0m
+[0;32mI (103165) MQTT: pitch: -12.429430  roll: -4.183057[0m
+[0;32mI (104175) MQTT: time: 1711093664[0m
+[0;32mI (104175) MQTT: distance: 0.2201[0m
+[0;32mI (104175) MQTT: pitch: -14.357371  roll: -4.321465[0m
+[0;32mI (105185) MQTT: time: 1711093665[0m
+[0;32mI (105185) MQTT: distance: 0.2201[0m
+[0;32mI (105185) MQTT: pitch: -22.174288  roll: -5.084318[0m
+[0;32mI (106195) MQTT: time: 1711093666[0m
+[0;32mI (106195) MQTT: distance: 0.2201[0m
+[0;32mI (106195) MQTT: pitch: -24.122978  roll: -4.761131[0m
+[0;32mI (107205) MQTT: time: 1711093667[0m
+[0;32mI (107205) MQTT: distance: 0.2709[0m
+[0;32mI (107205) MQTT: pitch: -25.068846  roll: -5.240415[0m
+[0;32mI (108215) MQTT: time: 1711093668[0m
+[0;32mI (108215) MQTT: distance: 0.2709[0m
+[0;32mI (108215) MQTT: pitch: -28.031261  roll: -3.334627[0m
+[0;32mI (109225) MQTT: time: 1711093669[0m
+[0;32mI (109225) MQTT: distance: 0.2709[0m
+[0;32mI (109225) MQTT: pitch: -22.969965  roll: 1.149395[0m
+[0;32mI (110235) MQTT: time: 1711093670[0m
+[0;32mI (110235) MQTT: distance: 2.7103[0m
+[0;32mI (110235) MQTT: pitch: -21.644300  roll: 3.918561[0m
+[0;32mI (111245) MQTT: time: 1711093671[0m
+[0;32mI (111245) MQTT: distance: 2.7103[0m
+[0;32mI (111245) MQTT: pitch: -22.188511  roll: 4.331499[0m
+[0;32mI (112255) MQTT: time: 1711093672[0m
+[0;32mI (112255) MQTT: distance: 2.7103[0m
+[0;32mI (112255) MQTT: pitch: -26.249727  roll: 0.353664[0m
+[0;32mI (113265) MQTT: time: 1711093673[0m
+[0;32mI (113265) MQTT: distance: 0.3013[0m
+[0;32mI (113265) MQTT: pitch: -28.116001  roll: 0.716661[0m
+[0;32mI (114275) MQTT: time: 1711093674[0m
+[0;32mI (114275) MQTT: distance: 0.3013[0m
+[0;32mI (114275) MQTT: pitch: -27.361837  roll: 0.511230[0m
+[0;32mI (115285) MQTT: time: 1711093675[0m
+[0;32mI (115285) MQTT: distance: 0.3013[0m
+[0;32mI (115285) MQTT: pitch: -28.202396  roll: 0.659559[0m
+[0;32mI (116295) MQTT: time: 1711093676[0m
+[0;32mI (116295) MQTT: distance: 0.3428[0m
+[0;32mI (116295) MQTT: pitch: -27.330774  roll: 0.874121[0m
+[0;32mI (117305) MQTT: time: 1711093677[0m
+[0;32mI (117305) MQTT: distance: 0.3428[0m
+[0;32mI (117305) MQTT: pitch: -25.796047  roll: 1.401548[0m
+[0;32mI (118315) MQTT: time: 1711093678[0m
+[0;32mI (118315) MQTT: distance: 0.3428[0m
+[0;32mI (118315) MQTT: pitch: -24.262440  roll: 1.649235[0m
+[0;32mI (119325) MQTT: time: 1711093679[0m
+[0;32mI (119325) MQTT: distance: 0.2968[0m
+[0;32mI (119325) MQTT: pitch: -26.324959  roll: 0.386075[0m
+[0;32mI (120335) MQTT: time: 1711093680[0m
+[0;32mI (120335) MQTT: distance: 0.2968[0m
+[0;32mI (120335) MQTT: pitch: -26.289877  roll: -1.015097[0m
+[0;32mI (121345) MQTT: time: 1711093681[0m
+[0;32mI (121345) MQTT: distance: 0.2968[0m
+[0;32mI (121345) MQTT: pitch: -25.431190  roll: -1.833616[0m
+[0;32mI (122355) MQTT: time: 1711093682[0m
+[0;32mI (122355) MQTT: distance: 0.2285[0m
+[0;32mI (122355) MQTT: pitch: -5.472580  roll: -7.029072[0m
+[0;32mI (123365) MQTT: time: 1711093683[0m
+[0;32mI (123365) MQTT: distance: 0.2285[0m
+[0;32mI (123365) MQTT: pitch: -0.090026  roll: -11.362463[0m
+[0;32mI (124375) MQTT: time: 1711093684[0m
+[0;32mI (124375) MQTT: distance: 0.2285[0m
+[0;32mI (124375) MQTT: pitch: -1.085877  roll: 12.053157[0m
+[0;32mI (125385) MQTT: time: 1711093685[0m
+[0;32mI (125385) MQTT: distance: 2.5996[0m
+[0;32mI (125385) MQTT: pitch: 33.739033  roll: 13.481515[0m
+[0;32mI (126385) MQTT: time: 1711093686[0m
+[0;32mI (126385) MQTT: distance: 2.5996[0m
+[0;32mI (126385) MQTT: pitch: 49.138325  roll: 7.270720[0m
+[0;32mI (127385) MQTT: time: 1711093687[0m
+[0;32mI (127385) MQTT: distance: 2.5996[0m
+[0;32mI (127385) MQTT: pitch: 58.474026  roll: 22.794031[0m
+[0;32mI (128395) MQTT: time: 1711093688[0m
+[0;32mI (128395) MQTT: distance: 4.9662[0m
+[0;32mI (128395) MQTT: pitch: 59.752911  roll: 33.410984[0m
+[0;32mI (129405) MQTT: time: 1711093689[0m
+[0;32mI (129405) MQTT: distance: 4.9662[0m
+[0;32mI (129405) MQTT: pitch: 47.091885  roll: 28.313015[0m
+[0;32mI (130415) MQTT: time: 1711093690[0m
+[0;32mI (130415) MQTT: distance: 4.9662[0m
+[0;32mI (130415) MQTT: pitch: 37.556427  roll: 25.631407[0m
+[0;32mI (131425) MQTT: time: 1711093691[0m
+[0;32mI (131425) MQTT: distance: 0.2413[0m
+[0;32mI (131425) MQTT: pitch: 31.020557  roll: 22.012161[0m
+[0;32mI (132435) MQTT: time: 1711093692[0m
+[0;32mI (132435) MQTT: distance: 0.2413[0m
+[0;32mI (132435) MQTT: pitch: 27.273096  roll: 10.006742[0m
+[0;32mI (133445) MQTT: time: 1711093693[0m
+[0;32mI (133445) MQTT: distance: 0.2413[0m
+[0;32mI (133445) MQTT: pitch: 7.303505  roll: 1.485356[0m
+[0;32mI (134455) MQTT: time: 1711093694[0m
+[0;32mI (134455) MQTT: distance: 0.1944[0m
+[0;32mI (134455) MQTT: pitch: -6.723537  roll: -0.257594[0m
+[0;32mI (135465) MQTT: time: 1711093695[0m
+[0;32mI (135465) MQTT: distance: 0.1944[0m
+[0;32mI (135465) MQTT: pitch: -10.959975  roll: -0.718443[0m
+[0;32mI (136475) MQTT: time: 1711093696[0m
+[0;32mI (136475) MQTT: distance: 0.1944[0m
+[0;32mI (136475) MQTT: pitch: -13.120731  roll: -0.640904[0m
+[0;32mI (137485) MQTT: time: 1711093697[0m
+[0;32mI (137485) MQTT: distance: 0.2112[0m
+[0;32mI (137485) MQTT: pitch: -11.424437  roll: -0.377054[0m
+[0;32mI (138495) MQTT: time: 1711093698[0m
+[0;32mI (138495) MQTT: distance: 0.2112[0m
+[0;32mI (138495) MQTT: pitch: -10.288308  roll: -4.287370[0m
+[0;32mI (139505) MQTT: time: 1711093699[0m
+[0;32mI (139505) MQTT: distance: 0.2112[0m
+[0;32mI (139505) MQTT: pitch: -8.979317  roll: -5.191604[0m
+[0;32mI (140515) MQTT: time: 1711093700[0m
+[0;32mI (140515) MQTT: distance: 0.1852[0m
+[0;32mI (140515) MQTT: pitch: -4.516560  roll: -6.594918[0m
+[0;32mI (141525) MQTT: time: 1711093701[0m
+[0;32mI (141525) MQTT: distance: 0.1852[0m
+[0;32mI (141525) MQTT: pitch: -2.302855  roll: -6.611952[0m
+[0;32mI (142535) MQTT: time: 1711093702[0m
+[0;32mI (142535) MQTT: distance: 0.1852[0m
+[0;32mI (142535) MQTT: pitch: -3.281289  roll: -7.023816[0m
+[0;32mI (143545) MQTT: time: 1711093703[0m
+[0;32mI (143545) MQTT: distance: 0.2088[0m
+[0;32mI (143545) MQTT: pitch: -2.555460  roll: -6.289593[0m
+[0;32mI (144555) MQTT: time: 1711093704[0m
+[0;32mI (144555) MQTT: distance: 0.2088[0m
+[0;32mI (144555) MQTT: pitch: 2.156880  roll: -5.341733[0m
+[0;32mI (145555) MQTT: time: 1711093705[0m
+[0;32mI (145555) MQTT: distance: 0.2088[0m
+[0;32mI (145555) MQTT: pitch: 5.044061  roll: -4.224453[0m
+[0;32mI (146565) MQTT: time: 1711093706[0m
+[0;32mI (146565) MQTT: distance: 0.2027[0m
+[0;32mI (146565) MQTT: pitch: 4.188495  roll: -3.611380[0m
+[0;32mI (147565) MQTT: time: 1711093707[0m
+[0;32mI (147565) MQTT: distance: 0.2027[0m
+[0;32mI (147565) MQTT: pitch: 2.602580  roll: -2.828554[0m
+[0;32mI (148575) MQTT: time: 1711093708[0m
+[0;32mI (148575) MQTT: distance: 0.2027[0m
+[0;32mI (148575) MQTT: pitch: 1.279253  roll: -2.758584[0m
+[0;32mI (149585) MQTT: time: 1711093709[0m
+[0;32mI (149585) MQTT: distance: 0.2039[0m
+[0;32mI (149585) MQTT: pitch: -0.295996  roll: -2.692324[0m
+[0;32mI (150595) MQTT: time: 1711093710[0m
+[0;32mI (150595) MQTT: distance: 0.2039[0m
+[0;32mI (150595) MQTT: pitch: -1.092737  roll: -3.367586[0m
+[0;32mI (151605) MQTT: time: 1711093711[0m
+[0;32mI (151605) MQTT: distance: 0.2039[0m
+[0;32mI (151605) MQTT: pitch: -1.951343  roll: -3.408454[0m
+[0;32mI (152615) MQTT: time: 1711093712[0m
+[0;32mI (152615) MQTT: distance: 0.2049[0m
+[0;32mI (152615) MQTT: pitch: -1.662398  roll: -3.046027[0m
+[0;32mI (153625) MQTT: time: 1711093713[0m
+[0;32mI (153625) MQTT: distance: 0.2049[0m
+[0;32mI (153625) MQTT: pitch: -4.515068  roll: -5.180456[0m
+[0;32mI (154635) MQTT: time: 1711093714[0m
+[0;32mI (154635) MQTT: distance: 0.2049[0m
+[0;32mI (154635) MQTT: pitch: -10.940311  roll: -4.716515[0m
+[0;32mI (155665) MQTT: time: 1711093715[0m
+[0;32mI (155665) MQTT: distance: 12.0500[0m
+[0;32mI (155665) MQTT: pitch: -11.601006  roll: -5.605984[0m
+[0;32mI (156665) MQTT: time: 1711093716[0m
+[0;32mI (156665) MQTT: distance: 3.8018[0m
+[0;32mI (156665) MQTT: pitch: -13.350707  roll: -6.916294[0m
+[0;32mI (157675) MQTT: time: 1711093717[0m
+[0;32mI (157675) MQTT: distance: 3.8018[0m
+[0;32mI (157675) MQTT: pitch: -13.850341  roll: -3.402029[0m
+[0;32mI (158685) MQTT: time: 1711093718[0m
+[0;32mI (158685) MQTT: distance: 3.8018[0m
+[0;32mI (158685) MQTT: pitch: -10.285365  roll: -1.702997[0m
+[0;32mI (159695) MQTT: time: 1711093719[0m
+[0;32mI (159695) MQTT: distance: 0.0634[0m
+[0;32mI (159695) MQTT: pitch: -10.172603  roll: -0.390494[0m
+[0;32mI (160705) MQTT: time: 1711093720[0m
+[0;32mI (160705) MQTT: distance: 0.0634[0m
+[0;32mI (160705) MQTT: pitch: -10.613335  roll: -0.138955[0m
+[0;32mI (161715) MQTT: time: 1711093721[0m
+[0;32mI (161715) MQTT: distance: 0.0634[0m
+[0;32mI (161715) MQTT: pitch: -10.552697  roll: 0.074001[0m
+[0;32mI (162725) MQTT: time: 1711093722[0m
+[0;32mI (162725) MQTT: distance: 0.0864[0m
+[0;32mI (162725) MQTT: pitch: -10.801116  roll: 0.086585[0m
+[0;32mI (163735) MQTT: time: 1711093723[0m
+[0;32mI (163735) MQTT: distance: 0.0864[0m
+[0;32mI (163735) MQTT: pitch: -10.961756  roll: -0.018863[0m
+[0;32mI (164745) MQTT: time: 1711093724[0m
+[0;32mI (164745) MQTT: distance: 0.0864[0m
+[0;32mI (164745) MQTT: pitch: -11.012253  roll: -0.084872[0m
+[0;32mI (165755) MQTT: time: 1711093725[0m
+[0;32mI (165755) MQTT: distance: 0.0653[0m
+[0;32mI (165755) MQTT: pitch: -11.125678  roll: -0.033350[0m
+[0;32mI (166765) MQTT: time: 1711093726[0m
+[0;32mI (166765) MQTT: distance: 0.0653[0m
+[0;32mI (166765) MQTT: pitch: -9.548196  roll: -2.935778[0m
+[0;32mI (167775) MQTT: time: 1711093727[0m
+[0;32mI (167775) MQTT: distance: 0.0653[0m
+[0;32mI (167775) MQTT: pitch: -9.818137  roll: -2.432792[0m
+[0;32mI (168785) MQTT: time: 1711093728[0m
+[0;32mI (168785) MQTT: distance: 0.0889[0m
+[0;32mI (168785) MQTT: pitch: -9.885512  roll: -1.869295[0m
+[0;32mI (169795) MQTT: time: 1711093729[0m
+[0;32mI (169795) MQTT: distance: 0.0889[0m
+[0;32mI (169795) MQTT: pitch: -9.809994  roll: -1.575116[0m
+[0;32mI (170805) MQTT: time: 1711093730[0m
+[0;32mI (170805) MQTT: distance: 0.0889[0m
+[0;32mI (170805) MQTT: pitch: -9.664830  roll: -1.738714[0m
+[0;32mI (171815) MQTT: time: 1711093731[0m
+[0;32mI (171815) MQTT: distance: 0.1695[0m
+[0;32mI (171815) MQTT: pitch: -10.003653  roll: -1.493947[0m
+[0;32mI (172825) MQTT: time: 1711093732[0m
+[0;32mI (172825) MQTT: distance: 0.1695[0m
+[0;32mI (172825) MQTT: pitch: -8.817078  roll: -1.123229[0m
+[0;32mI (173835) MQTT: time: 1711093733[0m
+[0;32mI (173835) MQTT: distance: 0.1695[0m
+[0;32mI (173835) MQTT: pitch: -8.695510  roll: -1.021673[0m
+[0;32mI (174845) MQTT: time: 1711093734[0m
+[0;32mI (174845) MQTT: distance: 0.0515[0m
+[0;32mI (174845) MQTT: pitch: -8.681502  roll: -1.075902[0m
+[0;32mI (175855) MQTT: time: 1711093735[0m
+[0;32mI (175855) MQTT: distance: 0.0515[0m
+[0;32mI (175855) MQTT: pitch: -8.472595  roll: -1.024037[0m
+[0;32mI (176865) MQTT: time: 1711093736[0m
+[0;32mI (176865) MQTT: distance: 0.0515[0m
+[0;32mI (176865) MQTT: pitch: -8.616267  roll: -1.322174[0m
+[0;32mI (177865) MQTT: time: 1711093737[0m
+[0;32mI (177865) MQTT: distance: 0.0932[0m
+[0;32mI (177865) MQTT: pitch: -8.572608  roll: -1.334861[0m
+[0;32mI (178875) MQTT: time: 1711093738[0m
+[0;32mI (178875) MQTT: distance: 0.0932[0m
+[0;32mI (178875) MQTT: pitch: -8.472055  roll: -1.421181[0m
+[0;32mI (179885) MQTT: time: 1711093739[0m
+[0;32mI (179885) MQTT: distance: 0.0932[0m
+[0;32mI (179885) MQTT: pitch: -8.492413  roll: -1.750208[0m
+[0;32mI (180895) MQTT: time: 1711093740[0m
+[0;32mI (180895) MQTT: distance: 0.2507[0m
+[0;32mI (180895) MQTT: pitch: -8.370248  roll: -1.362662[0m
+[0;32mI (181905) MQTT: time: 1711093741[0m
+[0;32mI (181905) MQTT: distance: 0.2507[0m
+[0;32mI (181905) MQTT: pitch: -8.309787  roll: -1.409868[0m
+[0;32mI (182905) MQTT: time: 1711093742[0m
+[0;32mI (182905) MQTT: distance: 0.2507[0m
+[0;32mI (182905) MQTT: pitch: -8.338035  roll: -1.022402[0m
+[0;32mI (183915) MQTT: time: 1711093743[0m
+[0;32mI (183915) MQTT: distance: 0.2308[0m
+[0;32mI (183915) MQTT: pitch: -8.645534  roll: -1.908445[0m
+[0;32mI (184925) MQTT: time: 1711093744[0m
+[0;32mI (184925) MQTT: distance: 0.2308[0m
+[0;32mI (184925) MQTT: pitch: -8.274286  roll: 4.133992[0m
+[0;32mI (185935) MQTT: time: 1711093745[0m
+[0;32mI (185935) MQTT: distance: 0.2308[0m
+[0;32mI (185935) MQTT: pitch: -8.088364  roll: 4.613091[0m
+[0;32mI (186935) MQTT: time: 1711093746[0m
+[0;32mI (186935) MQTT: distance: 0.3377[0m
+[0;32mI (186935) MQTT: pitch: -15.612913  roll: 0.807321[0m
+[0;32mI (187945) MQTT: time: 1711093747[0m
+[0;32mI (187945) MQTT: distance: 0.3377[0m
+[0;32mI (187945) MQTT: pitch: -21.223501  roll: 0.175768[0m
+[0;32mI (188955) MQTT: time: 1711093748[0m
+[0;32mI (188955) MQTT: distance: 0.3377[0m
+[0;32mI (188955) MQTT: pitch: -21.730852  roll: 0.145470[0m
+[0;32mI (189965) MQTT: time: 1711093749[0m
+[0;32mI (189965) MQTT: distance: 0.3425[0m
+[0;32mI (189965) MQTT: pitch: -21.746778  roll: 0.099678[0m
+[0;32mI (190975) MQTT: time: 1711093750[0m
+[0;32mI (190975) MQTT: distance: 0.3425[0m
+[0;32mI (190975) MQTT: pitch: -21.766672  roll: 0.053719[0m
+[0;32mI (191985) MQTT: time: 1711093751[0m
+[0;32mI (191985) MQTT: distance: 0.3425[0m
+[0;32mI (191985) MQTT: pitch: -21.738962  roll: 0.056989[0m
+[0;32mI (192995) MQTT: time: 1711093752[0m
+[0;32mI (192995) MQTT: distance: 0.3168[0m
+[0;32mI (192995) MQTT: pitch: -21.766064  roll: 0.043877[0m
+[0;32mI (194005) MQTT: time: 1711093753[0m
+[0;32mI (194005) MQTT: distance: 0.3168[0m
+[0;32mI (194005) MQTT: pitch: -21.796627  roll: 0.026061[0m
+[0;32mI (195015) MQTT: time: 1711093754[0m
+[0;32mI (195015) MQTT: distance: 0.3168[0m
+[0;32mI (195015) MQTT: pitch: -21.771446  roll: -0.010013[0m
+[0;32mI (196025) MQTT: time: 1711093755[0m
+[0;32mI (196025) MQTT: distance: 0.3152[0m
+[0;32mI (196025) MQTT: pitch: -21.808805  roll: -0.036510[0m
+[0;32mI (197035) MQTT: time: 1711093756[0m
+[0;32mI (197035) MQTT: distance: 0.3152[0m
+[0;32mI (197035) MQTT: pitch: -21.791752  roll: -0.020105[0m
+[0;32mI (198035) MQTT: time: 1711093758[0m
+[0;32mI (198035) MQTT: distance: 0.3152[0m
+[0;32mI (198035) MQTT: pitch: -21.812325  roll: -0.028119[0m
+[0;32mI (199045) MQTT: time: 1711093759[0m
+[0;32mI (199045) MQTT: distance: 0.3042[0m
+[0;32mI (199045) MQTT: pitch: -21.793684  roll: -0.076473[0m
+[0;32mI (200055) MQTT: time: 1711093760[0m
+[0;32mI (200055) MQTT: distance: 0.3042[0m
+[0;32mI (200055) MQTT: pitch: -21.776630  roll: -0.041593[0m
+[0;32mI (201065) MQTT: time: 1711093761[0m
+[0;32mI (201065) MQTT: distance: 0.3042[0m
+[0;32mI (201065) MQTT: pitch: -21.783176  roll: -0.060545[0m
+[0;32mI (202075) MQTT: time: 1711093762[0m
+[0;32mI (202075) MQTT: distance: 0.3254[0m
+[0;32mI (202075) MQTT: pitch: -21.825039  roll: -0.084840[0m
+[0;32mI (203085) MQTT: time: 1711093763[0m
+[0;32mI (203085) MQTT: distance: 0.3254[0m
+[0;32mI (203085) MQTT: pitch: -21.785814  roll: -0.101485[0m
+[0;32mI (204085) MQTT: time: 1711093764[0m
+[0;32mI (204085) MQTT: distance: 0.3254[0m
+[0;32mI (204085) MQTT: pitch: -21.799578  roll: -0.078435[0m
+[0;32mI (205085) MQTT: time: 1711093765[0m
+[0;32mI (205085) MQTT: distance: 0.2971[0m
+[0;32mI (205085) MQTT: pitch: -21.807920  roll: -0.112120[0m
+[0;32mI (206095) MQTT: time: 1711093766[0m
+[0;32mI (206095) MQTT: distance: 0.2971[0m
+[0;32mI (206095) MQTT: pitch: -21.787937  roll: -0.104627[0m
+[0;32mI (207095) MQTT: time: 1711093767[0m
+[0;32mI (207095) MQTT: distance: 0.2971[0m
+[0;32mI (207095) MQTT: pitch: -21.809938  roll: -0.090312[0m
+[0;32mI (208105) MQTT: time: 1711093768[0m
+[0;32mI (208105) MQTT: distance: 0.3022[0m
+[0;32mI (208105) MQTT: pitch: -21.831213  roll: -0.137515[0m
+[0;32mI (209115) MQTT: time: 1711093769[0m
+[0;32mI (209115) MQTT: distance: 0.3022[0m
+[0;32mI (209115) MQTT: pitch: -21.811773  roll: -0.130037[0m
+[0;32mI (210125) MQTT: time: 1711093770[0m
+[0;32mI (210125) MQTT: distance: 0.3022[0m
+[0;32mI (210125) MQTT: pitch: -21.825369  roll: -0.135797[0m
+[0;32mI (211125) MQTT: time: 1711093771[0m
+[0;32mI (211125) MQTT: distance: 0.3235[0m
+[0;32mI (211125) MQTT: pitch: -21.796404  roll: -0.140073[0m
+[0;32mI (212135) MQTT: time: 1711093772[0m
+[0;32mI (212135) MQTT: distance: 0.3235[0m
+[0;32mI (212135) MQTT: pitch: -21.809696  roll: -0.136867[0m
+[0;32mI (213145) MQTT: time: 1711093773[0m
+[0;32mI (213145) MQTT: distance: 0.3235[0m
+[0;32mI (213145) MQTT: pitch: -21.803244  roll: -0.148447[0m
+[0;32mI (214155) MQTT: time: 1711093774[0m
+[0;32mI (214155) MQTT: distance: 0.3289[0m
+[0;32mI (214155) MQTT: pitch: -21.788141  roll: -0.150035[0m
+[0;32mI (215155) MQTT: time: 1711093775[0m
+[0;32mI (215155) MQTT: distance: 0.3289[0m
+[0;32mI (215155) MQTT: pitch: -21.792509  roll: -0.164442[0m
+[0;32mI (216155) MQTT: time: 1711093776[0m
+[0;32mI (216155) MQTT: distance: 0.3289[0m
+[0;32mI (216155) MQTT: pitch: -21.829390  roll: -0.172339[0m
+[0;32mI (217165) MQTT: time: 1711093777[0m
+[0;32mI (217165) MQTT: distance: 0.3157[0m
+[0;32mI (217165) MQTT: pitch: -21.822878  roll: -0.186207[0m
+[0;32mI (218175) MQTT: time: 1711093778[0m
+[0;32mI (218175) MQTT: distance: 0.3157[0m
+[0;32mI (218175) MQTT: pitch: -21.847357  roll: -0.166265[0m
+[0;32mI (219175) MQTT: time: 1711093779[0m
+[0;32mI (219175) MQTT: distance: 0.3157[0m
+[0;32mI (219175) MQTT: pitch: -21.824512  roll: -0.180295[0m
+[0;32mI (220185) MQTT: time: 1711093780[0m
+[0;32mI (220185) MQTT: distance: 0.3346[0m
+[0;32mI (220185) MQTT: pitch: -21.825197  roll: -0.211692[0m
+[0;32mI (221195) MQTT: time: 1711093781[0m
+[0;32mI (221195) MQTT: distance: 0.3346[0m
+[0;32mI (221195) MQTT: pitch: -21.831327  roll: -0.190885[0m
+[0;32mI (222205) MQTT: time: 1711093782[0m
+[0;32mI (222205) MQTT: distance: 0.3346[0m
+[0;32mI (222205) MQTT: pitch: -21.837141  roll: -0.183198[0m
+[0;32mI (223215) MQTT: time: 1711093783[0m
+[0;32mI (223215) MQTT: distance: 0.3593[0m
+[0;32mI (223215) MQTT: pitch: -21.826933  roll: -0.171802[0m
+[0;32mI (224225) MQTT: time: 1711093784[0m
+[0;32mI (224225) MQTT: distance: 0.3593[0m
+[0;32mI (224225) MQTT: pitch: -21.835279  roll: -0.184445[0m
+[0;32mI (225235) MQTT: time: 1711093785[0m
+[0;32mI (225235) MQTT: distance: 0.3593[0m
+[0;32mI (225235) MQTT: pitch: -21.812704  roll: -0.198238[0m
+[0;32mI (226245) MQTT: time: 1711093786[0m
+[0;32mI (226245) MQTT: distance: 0.4359[0m
+[0;32mI (226245) MQTT: pitch: -21.838022  roll: -0.195834[0m
+[0;32mI (227255) MQTT: time: 1711093787[0m
+[0;32mI (227255) MQTT: distance: 0.4359[0m
+[0;32mI (227255) MQTT: pitch: -21.778769  roll: -0.209770[0m
+[0;32mI (228265) MQTT: time: 1711093788[0m
+[0;32mI (228265) MQTT: distance: 0.4359[0m
+[0;32mI (228265) MQTT: pitch: -21.802668  roll: -0.180973[0m
+[0;32mI (229275) MQTT: time: 1711093789[0m
+[0;32mI (229275) MQTT: distance: 8.5487[0m
+[0;32mI (229275) MQTT: pitch: -22.268557  roll: -1.152551[0m
+[0;32mI (230285) MQTT: time: 1711093790[0m
+[0;32mI (230285) MQTT: distance: 8.5487[0m
+[0;32mI (230285) MQTT: pitch: -21.836720  roll: -0.199558[0m
+[0;32mI (231295) MQTT: time: 1711093791[0m
+[0;32mI (231295) MQTT: distance: 8.5487[0m
+[0;32mI (231295) MQTT: pitch: -21.790857  roll: -0.197470[0m
+[0;32mI (232305) MQTT: time: 1711093792[0m
+[0;32mI (232305) MQTT: distance: 0.3119[0m
+[0;32mI (232305) MQTT: pitch: -21.866499  roll: -0.264394[0m
+[0;32mI (233315) MQTT: time: 1711093793[0m
+[0;32mI (233315) MQTT: distance: 0.3119[0m
+[0;32mI (233315) MQTT: pitch: -21.812744  roll: -0.207687[0m
+[0;32mI (234325) MQTT: time: 1711093794[0m
+[0;32mI (234325) MQTT: distance: 0.3119[0m
+[0;32mI (234325) MQTT: pitch: -21.840952  roll: -0.192629[0m
+[0;32mI (235335) MQTT: time: 1711093795[0m
+[0;32mI (235335) MQTT: distance: 0.3079[0m
+[0;32mI (235335) MQTT: pitch: -21.867599  roll: -0.274772[0m
+[0;32mI (236345) MQTT: time: 1711093796[0m
+[0;32mI (236345) MQTT: distance: 0.3079[0m
+[0;32mI (236345) MQTT: pitch: -21.828791  roll: -0.216731[0m
+[0;32mI (237355) MQTT: time: 1711093797[0m
+[0;32mI (237355) MQTT: distance: 0.3079[0m
+[0;32mI (237355) MQTT: pitch: -21.814087  roll: -0.224763[0m
+[0;32mI (238365) MQTT: time: 1711093798[0m
+[0;32mI (238365) MQTT: distance: 0.3151[0m
+[0;32mI (238365) MQTT: pitch: -21.838793  roll: -0.302739[0m
+[0;32mI (239375) MQTT: time: 1711093799[0m
+[0;32mI (239375) MQTT: distance: 0.3151[0m
+[0;32mI (239375) MQTT: pitch: -21.834888  roll: -0.232895[0m
+[0;32mI (240385) MQTT: time: 1711093800[0m
+[0;32mI (240385) MQTT: distance: 0.3151[0m
+[0;32mI (240385) MQTT: pitch: -21.827263  roll: -0.223872[0m
+[0;32mI (241395) MQTT: time: 1711093801[0m
+[0;32mI (241395) MQTT: distance: 0.3497[0m
+[0;32mI (241395) MQTT: pitch: -21.879030  roll: -0.316594[0m
+[0;32mI (242405) MQTT: time: 1711093802[0m
+[0;32mI (242405) MQTT: distance: 0.3497[0m
+[0;32mI (242405) MQTT: pitch: -21.835421  roll: -0.229900[0m
+[0;32mI (243415) MQTT: time: 1711093803[0m
+[0;32mI (243415) MQTT: distance: 0.3497[0m
+[0;32mI (243415) MQTT: pitch: -21.819893  roll: -0.218581[0m
+[0;32mI (244415) MQTT: time: 1711093804[0m
+[0;32mI (244415) MQTT: distance: 0.3006[0m
+[0;32mI (244415) MQTT: pitch: -21.852291  roll: -0.307210[0m
+[0;32mI (245425) MQTT: time: 1711093805[0m
+[0;32mI (245425) MQTT: distance: 0.3006[0m
+[0;32mI (245425) MQTT: pitch: -21.845745  roll: -0.229247[0m
+[0;32mI (246435) MQTT: time: 1711093806[0m
+[0;32mI (246435) MQTT: distance: 0.3006[0m
+[0;32mI (246435) MQTT: pitch: -21.838881  roll: -0.234567[0m
+[0;32mI (247445) MQTT: time: 1711093807[0m
+[0;32mI (247445) MQTT: distance: 0.3056[0m
+[0;32mI (247445) MQTT: pitch: -21.868027  roll: -0.314060[0m
+[0;32mI (248455) MQTT: time: 1711093808[0m
+[0;32mI (248455) MQTT: distance: 0.3056[0m
+[0;32mI (248455) MQTT: pitch: -21.835066  roll: -0.257005[0m
+[0;32mI (249465) MQTT: time: 1711093809[0m
+[0;32mI (249465) MQTT: distance: 0.3056[0m
+[0;32mI (249465) MQTT: pitch: -21.797886  roll: -0.272422[0m
+[0;32mI (250465) MQTT: time: 1711093810[0m
+[0;32mI (250465) MQTT: distance: 0.3303[0m
+[0;32mI (250465) MQTT: pitch: -21.857868  roll: -0.322056[0m
+[0;32mI (251475) MQTT: time: 1711093811[0m
+[0;32mI (251475) MQTT: distance: 0.3303[0m
+[0;32mI (251475) MQTT: pitch: -21.861393  roll: -0.236167[0m
+[0;32mI (252485) MQTT: time: 1711093812[0m
+[0;32mI (252485) MQTT: distance: 0.3303[0m
+[0;32mI (252485) MQTT: pitch: -21.828314  roll: -0.237335[0m
+[0;32mI (253495) MQTT: time: 1711093813[0m
+[0;32mI (253495) MQTT: distance: 12.0469[0m
+[0;32mI (253495) MQTT: pitch: -21.902180  roll: -0.464483[0m
+[0;32mI (254495) MQTT: time: 1711093814[0m
+[0;32mI (254495) MQTT: distance: 5.0207[0m
+[0;32mI (254495) MQTT: pitch: -21.841967  roll: -0.340888[0m
+[0;32mI (255495) MQTT: time: 1711093815[0m
+[0;32mI (255495) MQTT: distance: 5.0207[0m
+[0;32mI (255495) MQTT: pitch: -21.792746  roll: -0.231301[0m
+[0;32mI (256505) MQTT: time: 1711093816[0m
+[0;32mI (256505) MQTT: distance: 5.0207[0m
+[0;32mI (256505) MQTT: pitch: -21.818007  roll: -0.234775[0m
+[0;32mI (257515) MQTT: time: 1711093817[0m
+[0;32mI (257515) MQTT: distance: 2.6780[0m
+[0;32mI (257515) MQTT: pitch: -21.876902  roll: -0.320948[0m
+[0;32mI (258525) MQTT: time: 1711093818[0m
+[0;32mI (258525) MQTT: distance: 2.6780[0m
+[0;32mI (258525) MQTT: pitch: -21.852976  roll: -0.264595[0m
+[0;32mI (259535) MQTT: time: 1711093819[0m
+[0;32mI (259535) MQTT: distance: 2.6780[0m
+[0;32mI (259535) MQTT: pitch: -21.813763  roll: -0.229086[0m
+[0;32mI (260545) MQTT: time: 1711093820[0m
+[0;32mI (260545) MQTT: distance: 0.2728[0m
+[0;32mI (260545) MQTT: pitch: -21.818558  roll: -0.258957[0m
+[0;32mI (261555) MQTT: time: 1711093821[0m
+[0;32mI (261555) MQTT: distance: 0.2728[0m
+[0;32mI (261555) MQTT: pitch: -21.828653  roll: -0.277026[0m
+[0;32mI (262565) MQTT: time: 1711093822[0m
+[0;32mI (262565) MQTT: distance: 0.2728[0m
+[0;32mI (262565) MQTT: pitch: -21.794672  roll: -0.303210[0m
+[0;32mI (263575) MQTT: time: 1711093823[0m
+[0;32mI (263575) MQTT: distance: 1.5413[0m
+[0;32mI (263575) MQTT: pitch: -21.829840  roll: -0.346711[0m
+[0;32mI (264575) MQTT: time: 1711093824[0m
+[0;32mI (264575) MQTT: distance: 1.5413[0m
+[0;32mI (264575) MQTT: pitch: -21.821150  roll: -0.250923[0m
+[0;32mI (265585) MQTT: time: 1711093825[0m
+[0;32mI (265585) MQTT: distance: 1.5413[0m
+[0;32mI (265585) MQTT: pitch: -21.844246  roll: -0.276459[0m
+[0;32mI (266595) MQTT: time: 1711093826[0m
+[0;32mI (266595) MQTT: distance: 0.4976[0m
+[0;32mI (266595) MQTT: pitch: -21.821455  roll: -0.318258[0m
+[0;32mI (267605) MQTT: time: 1711093827[0m
+[0;32mI (267605) MQTT: distance: 0.4976[0m
+[0;32mI (267605) MQTT: pitch: -21.811211  roll: -0.299915[0m
+[0;32mI (268615) MQTT: time: 1711093828[0m
+[0;32mI (268615) MQTT: distance: 0.4976[0m
+[0;32mI (268615) MQTT: pitch: -21.836746  roll: -0.305841[0m
+[0;32mI (269615) MQTT: time: 1711093829[0m
+[0;32mI (269615) MQTT: distance: 0.5560[0m
+[0;32mI (269615) MQTT: pitch: -21.839783  roll: -0.342084[0m
+[0;32mI (270625) MQTT: time: 1711093830[0m
+[0;32mI (270625) MQTT: distance: 0.5560[0m
+[0;32mI (270625) MQTT: pitch: -21.836254  roll: -0.302341[0m
+[0;32mI (271635) MQTT: time: 1711093831[0m
+[0;32mI (271635) MQTT: distance: 0.5560[0m
+[0;32mI (271635) MQTT: pitch: -21.831171  roll: -0.302832[0m
+[0;32mI (272645) MQTT: time: 1711093832[0m
+[0;32mI (272645) MQTT: distance: 0.4842[0m
+[0;32mI (272645) MQTT: pitch: -21.843697  roll: -0.311652[0m
+[0;32mI (273655) MQTT: time: 1711093833[0m
+[0;32mI (273655) MQTT: distance: 0.4842[0m
+[0;32mI (273655) MQTT: pitch: -21.855703  roll: -0.278333[0m
+[0;32mI (274665) MQTT: time: 1711093834[0m
+[0;32mI (274665) MQTT: distance: 0.4842[0m
+[0;32mI (274665) MQTT: pitch: -21.817465  roll: -0.298446[0m
+[0;32mI (275675) MQTT: time: 1711093835[0m
+[0;32mI (275675) MQTT: distance: 1.7986[0m
+[0;32mI (275675) MQTT: pitch: -21.895115  roll: -0.402971[0m
+[0;32mI (276685) MQTT: time: 1711093836[0m
+[0;32mI (276685) MQTT: distance: 1.7986[0m
+[0;32mI (276685) MQTT: pitch: -21.864431  roll: -0.306321[0m
+[0;32mI (277695) MQTT: time: 1711093837[0m
+[0;32mI (277695) MQTT: distance: 1.7986[0m
+[0;32mI (277695) MQTT: pitch: -21.837542  roll: -0.269429[0m
+[0;32mI (278705) MQTT: time: 1711093838[0m
+[0;32mI (278705) MQTT: distance: 0.4507[0m
+[0;32mI (278705) MQTT: pitch: -21.849167  roll: -0.326048[0m
+[0;32mI (279715) MQTT: time: 1711093839[0m
+[0;32mI (279715) MQTT: distance: 0.4507[0m
+[0;32mI (279715) MQTT: pitch: -21.821447  roll: -0.289442[0m
+[0;32mI (280725) MQTT: time: 1711093840[0m
+[0;32mI (280725) MQTT: distance: 0.4507[0m
+[0;32mI (280725) MQTT: pitch: -21.821711  roll: -0.307691[0m
+[0;32mI (281735) MQTT: time: 1711093841[0m
+[0;32mI (281735) MQTT: distance: 0.4079[0m
+[0;32mI (281735) MQTT: pitch: -21.856688  roll: -0.327533[0m
+[0;32mI (282745) MQTT: time: 1711093842[0m
+[0;32mI (282745) MQTT: distance: 0.4079[0m
+[0;32mI (282745) MQTT: pitch: -21.833345  roll: -0.288264[0m
+[0;32mI (283755) MQTT: time: 1711093843[0m
+[0;32mI (283755) MQTT: distance: 0.4079[0m
+[0;32mI (283755) MQTT: pitch: -21.812412  roll: -0.309787[0m
+[0;32mI (284765) MQTT: time: 1711093844[0m
+[0;32mI (284765) MQTT: distance: 0.4077[0m
+[0;32mI (284765) MQTT: pitch: -21.842003  roll: -0.361082[0m
+[0;32mI (285775) MQTT: time: 1711093845[0m
+[0;32mI (285775) MQTT: distance: 0.4077[0m
+[0;32mI (285775) MQTT: pitch: -21.826101  roll: -0.275121[0m
+[0;32mI (286785) MQTT: time: 1711093846[0m
+[0;32mI (286785) MQTT: distance: 0.4077[0m
+[0;32mI (286785) MQTT: pitch: -21.829729  roll: -0.302577[0m
+[0;32mI (287795) MQTT: time: 1711093847[0m
+[0;32mI (287795) MQTT: distance: 0.4508[0m
+[0;32mI (287795) MQTT: pitch: -21.851753  roll: -0.334430[0m
+[0;32mI (288805) MQTT: time: 1711093848[0m
+[0;32mI (288805) MQTT: distance: 0.4508[0m
+[0;32mI (288805) MQTT: pitch: -21.844255  roll: -0.338291[0m
+[0;32mI (289815) MQTT: time: 1711093849[0m
+[0;32mI (289815) MQTT: distance: 0.4508[0m
+[0;32mI (289815) MQTT: pitch: -21.841513  roll: -0.296510[0m
+[0;32mI (290825) MQTT: time: 1711093850[0m
+[0;32mI (290825) MQTT: distance: 0.4510[0m
+[0;32mI (290825) MQTT: pitch: -21.857325  roll: -0.348722[0m
+[0;32mI (291835) MQTT: time: 1711093851[0m
+[0;32mI (291835) MQTT: distance: 0.4510[0m
+[0;32mI (291835) MQTT: pitch: -21.829395  roll: -0.305681[0m
+[0;32mI (292845) MQTT: time: 1711093852[0m
+[0;32mI (292845) MQTT: distance: 0.4510[0m
+[0;32mI (292845) MQTT: pitch: -21.857018  roll: -0.306096[0m
+[0;32mI (293855) MQTT: time: 1711093853[0m
+[0;32mI (293855) MQTT: distance: 0.4701[0m
+[0;32mI (293855) MQTT: pitch: -21.855728  roll: -0.335552[0m
+[0;32mI (294865) MQTT: time: 1711093854[0m
+[0;32mI (294865) MQTT: distance: 0.4701[0m
+[0;32mI (294865) MQTT: pitch: -21.845688  roll: -0.318149[0m
+[0;32mI (295875) MQTT: time: 1711093855[0m
+[0;32mI (295875) MQTT: distance: 0.4701[0m
+[0;32mI (295875) MQTT: pitch: -21.843166  roll: -0.310593[0m
+[0;32mI (296885) MQTT: time: 1711093856[0m
+[0;32mI (296885) MQTT: distance: 0.4623[0m
+[0;32mI (296885) MQTT: pitch: -21.852539  roll: -0.362995[0m
+[0;32mI (297895) MQTT: time: 1711093857[0m
+[0;32mI (297895) MQTT: distance: 0.4623[0m
+[0;32mI (297895) MQTT: pitch: -21.848978  roll: -0.294345[0m
+[0;32mI (298905) MQTT: time: 1711093858[0m
+[0;32mI (298905) MQTT: distance: 0.4623[0m
+[0;32mI (298905) MQTT: pitch: -21.825562  roll: -0.326491[0m
+[0;32mI (299915) MQTT: time: 1711093859[0m
+[0;32mI (299915) MQTT: distance: 0.3558[0m
+[0;32mI (299915) MQTT: pitch: -21.865944  roll: -0.348735[0m
+[0;32mI (300925) MQTT: time: 1711093860[0m
+[0;32mI (300925) MQTT: distance: 0.3558[0m
+[0;32mI (300925) MQTT: pitch: -21.823956  roll: -0.317948[0m
+[0;32mI (301935) MQTT: time: 1711093861[0m
+[0;32mI (301935) MQTT: distance: 0.3558[0m
+[0;32mI (301935) MQTT: pitch: -21.830774  roll: -0.311837[0m
+[0;32mI (302945) MQTT: time: 1711093862[0m
+[0;32mI (302945) MQTT: distance: 0.3672[0m
+[0;32mI (302945) MQTT: pitch: -21.870600  roll: -0.386281[0m
+[0;32mI (303955) MQTT: time: 1711093863[0m
+[0;32mI (303955) MQTT: distance: 0.3672[0m
+[0;32mI (303955) MQTT: pitch: -21.890612  roll: -0.334623[0m
+[0;32mI (304965) MQTT: time: 1711093864[0m
+[0;32mI (304965) MQTT: distance: 0.3672[0m
+[0;32mI (304965) MQTT: pitch: -21.874027  roll: -0.338295[0m
+[0;32mI (305975) MQTT: time: 1711093865[0m
+[0;32mI (305975) MQTT: distance: 1.7669[0m
+[0;32mI (305975) MQTT: pitch: -21.967413  roll: -0.534508[0m
+[0;32mI (306985) MQTT: time: 1711093866[0m
+[0;32mI (306985) MQTT: distance: 1.7669[0m
+[0;32mI (306985) MQTT: pitch: -21.828157  roll: -0.327635[0m
+[0;32mI (307995) MQTT: time: 1711093867[0m
+[0;32mI (307995) MQTT: distance: 1.7669[0m
+[0;32mI (307995) MQTT: pitch: -21.860632  roll: -0.311793[0m
+[0;32mI (309025) MQTT: time: 1711093868[0m
+[0;32mI (309025) MQTT: distance: 2.7529[0m
+[0;32mI (309025) MQTT: pitch: -22.122211  roll: -0.788336[0m
+[0;32mI (310035) MQTT: time: 1711093870[0m
+[0;32mI (310035) MQTT: distance: 2.7529[0m
+[0;32mI (310035) MQTT: pitch: -21.843620  roll: -0.318250[0m
+[0;32mI (311045) MQTT: time: 1711093871[0m
+[0;32mI (311045) MQTT: distance: 2.7529[0m
+[0;32mI (311045) MQTT: pitch: -21.851227  roll: -0.282370[0m
+[0;32mI (312085) MQTT: time: 1711093872[0m
+[0;32mI (312085) MQTT: distance: 12.5667[0m
+[0;32mI (312085) MQTT: pitch: -21.849226  roll: -0.337913[0m
+[0;32mI (313085) MQTT: time: 1711093873[0m
+[0;32mI (313085) MQTT: distance: 3.9595[0m
+[0;32mI (313085) MQTT: pitch: -21.829613  roll: -0.388447[0m
+[0;32mI (314095) MQTT: time: 1711093874[0m
+[0;32mI (314095) MQTT: distance: 3.9595[0m
+[0;32mI (314095) MQTT: pitch: -21.827492  roll: -0.314650[0m
+[0;32mI (315105) MQTT: time: 1711093875[0m
+[0;32mI (315105) MQTT: distance: 3.9595[0m
+[0;32mI (315105) MQTT: pitch: -21.837635  roll: -0.322295[0m
+[0;32mI (316115) MQTT: time: 1711093876[0m
+[0;32mI (316115) MQTT: distance: 0.4404[0m
+[0;32mI (316115) MQTT: pitch: -21.844004  roll: -0.356203[0m
+[0;32mI (317125) MQTT: time: 1711093877[0m
+[0;32mI (317125) MQTT: distance: 0.4404[0m
+[0;32mI (317125) MQTT: pitch: -21.872122  roll: -0.330985[0m
+[0;32mI (318135) MQTT: time: 1711093878[0m
+[0;32mI (318135) MQTT: distance: 0.4404[0m
+[0;32mI (318135) MQTT: pitch: -21.841398  roll: -0.348001[0m
+[0;32mI (319145) MQTT: time: 1711093879[0m
+[0;32mI (319145) MQTT: distance: 7.4102[0m
+[0;32mI (319145) MQTT: pitch: -22.039948  roll: -0.633870[0m
+[0;32mI (320145) MQTT: time: 1711093880[0m
+[0;32mI (320145) MQTT: distance: 7.4102[0m
+[0;32mI (320145) MQTT: pitch: -21.854891  roll: -0.333068[0m
+[0;32mI (321155) MQTT: time: 1711093881[0m
+[0;32mI (321155) MQTT: distance: 7.4102[0m
+[0;32mI (321155) MQTT: pitch: -21.860811  roll: -0.352404[0m
+[0;32mI (322155) MQTT: time: 1711093882[0m
+[0;32mI (322155) MQTT: distance: 0.5286[0m
+[0;32mI (322155) MQTT: pitch: -21.897114  roll: -0.401792[0m
+[0;32mI (323165) MQTT: time: 1711093883[0m
+[0;32mI (323165) MQTT: distance: 0.5286[0m
+[0;32mI (323165) MQTT: pitch: -21.830172  roll: -0.312759[0m
+[0;32mI (324165) MQTT: time: 1711093884[0m
+[0;32mI (324165) MQTT: distance: 0.5286[0m
+[0;32mI (324165) MQTT: pitch: -21.839724  roll: -0.316437[0m
+[0;32mI (325165) MQTT: time: 1711093885[0m
+[0;32mI (325165) MQTT: distance: 0.5096[0m
+[0;32mI (325165) MQTT: pitch: -21.879101  roll: -0.386914[0m
+[0;32mI (326175) MQTT: time: 1711093886[0m
+[0;32mI (326175) MQTT: distance: 0.5096[0m
+[0;32mI (326175) MQTT: pitch: -21.824184  roll: -0.330109[0m
+[0;32mI (327175) MQTT: time: 1711093887[0m
+[0;32mI (327175) MQTT: distance: 0.5096[0m
+[0;32mI (327175) MQTT: pitch: -21.841833  roll: -0.365099[0m
+[0;32mI (328185) MQTT: time: 1711093888[0m
+[0;32mI (328185) MQTT: distance: 1.6777[0m
+[0;32mI (328185) MQTT: pitch: -21.939777  roll: -0.500185[0m
+[0;32mI (329195) MQTT: time: 1711093889[0m
+[0;32mI (329195) MQTT: distance: 1.6777[0m
+[0;32mI (329195) MQTT: pitch: -16.895708  roll: -3.396428[0m
+[0;32mI (330205) MQTT: time: 1711093890[0m
+[0;32mI (330205) MQTT: distance: 1.6777[0m
+[0;32mI (330205) MQTT: pitch: 9.829938  roll: -3.749562[0m
+[0;32mI (331215) MQTT: time: 1711093891[0m
+[0;32mI (331215) MQTT: distance: 0.1950[0m
+[0;32mI (331215) MQTT: pitch: 21.694641  roll: -6.096334[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 22 2024 12:07:41[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=311f8h (201208) map[0m
+[0;32mI (173) esp_image: segment 1: paddr=00041220 vaddr=3ffbdb60 size=058f0h ( 22768) load[0m
+[0;32mI (182) esp_image: segment 2: paddr=00046b18 vaddr=40080000 size=09500h ( 38144) load[0m
+[0;32mI (197) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=c5db0h (810416) map[0m
+[0;32mI (475) esp_image: segment 4: paddr=00115dd8 vaddr=40089500 size=15c50h ( 89168) load[0m
+[0;32mI (526) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (526) boot: Disabling RNG early entropy source...[0m
+[0;32mI (537) cpu_start: Multicore app[0m
+[0;32mI (546) cpu_start: Pro cpu start user code[0m
+[0;32mI (546) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (546) cpu_start: Application information:[0m
+[0;32mI (549) cpu_start: Project name:     mqtt_sense[0m
+[0;32mI (554) cpu_start: App version:      1[0m
+[0;32mI (559) cpu_start: Compile time:     Mar 22 2024 12:07:56[0m
+[0;32mI (565) cpu_start: ELF file SHA256:  800e22ac8...[0m
+[0;32mI (570) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (575) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (580) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (585) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (590) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (597) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (603) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (609) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (615) heap_init: At 3FFCA2B0 len 00015D50 (87 KiB): DRAM[0m
+[0;32mI (621) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (627) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (634) heap_init: At 4009F150 len 00000EB0 (3 KiB): IRAM[0m
+[0;32mI (641) spi_flash: detected chip: generic[0m
+[0;32mI (644) spi_flash: flash io: dio[0m
+[0;33mW (649) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (660) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (665) main_task: Started on CPU0[0m
+[0;32mI (675) main_task: Calling app_main()[0m
+I (705) wifi:wifi driver task: 3ffce230, prio:23, stack:6656, core=0
+I (715) wifi:wifi firmware version: a9f5b59
+I (715) wifi:wifi certification version: v7.0
+I (715) wifi:config NVS flash: enabled
+I (715) wifi:config nano formating: disabled
+I (715) wifi:Init data frame dynamic rx buffer num: 32
+I (725) wifi:Init static rx mgmt buffer num: 5
+I (725) wifi:Init management short buffer num: 32
+I (735) wifi:Init dynamic tx buffer num: 32
+I (735) wifi:Init static rx buffer size: 1600
+I (745) wifi:Init static rx buffer num: 10
+I (745) wifi:Init dynamic rx buffer num: 32
+[0;32mI (745) wifi_init: rx ba win: 6[0m
+[0;32mI (755) wifi_init: tcpip mbox: 32[0m
+[0;32mI (755) wifi_init: udp mbox: 6[0m
+[0;32mI (755) wifi_init: tcp mbox: 6[0m
+[0;32mI (765) wifi_init: tcp tx win: 5760[0m
+[0;32mI (765) wifi_init: tcp rx win: 5760[0m
+[0;32mI (775) wifi_init: tcp mss: 1440[0m
+[0;32mI (775) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (785) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (785) wifi_prov_scheme_ble: BT memory released[0m
+[0;32mI (795) init_wifi: Already provisioned, starting Wi-Fi STA[0m
+[0;32mI (795) wifi_prov_scheme_ble: BTDM memory released[0m
+[0;32mI (805) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (885) wifi:mode : sta (b0:a7:32:2a:c3:a0)
+I (885) wifi:enable tsf
+I (3305) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (3305) wifi:state: init -> auth (b0)
+I (4305) wifi:state: auth -> init (200)
+I (4305) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (4305) wifi:new:<11,0>, old:<6,0>, ap:<255,255>, sta:<11,0>, prof:1
+I (4315) wifi:state: init -> auth (b0)
+I (5205) wifi:state: auth -> assoc (0)
+I (5225) wifi:state: assoc -> run (10)
+I (5355) wifi:connected with IKP-1stFloor, aid = 5, channel 11, BW20, bssid = e0:46:ee:a9:95:c1
+I (5355) wifi:security: WPA3-SAE, phy: bgn, rssi: -67
+I (5365) wifi:pm start, type: 1
+
+I (5365) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (5405) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (5405) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+I (6885) wifi:<ba-add>idx:0 (ifx:0, e0:46:ee:a9:95:c1), tid:0, ssn:0, winSize:64
+[0;32mI (8365) event_handler: Connected with IP Address:192.168.5.150[0m
+[0;32mI (8365) esp_netif_handlers: sta ip: 192.168.5.150, mask: 255.255.192.0, gw: 192.168.2.1[0m
+[0;32mI (8365) MQTT: Waiting for system time to be set... (1/10)[0m
+[0;32mI (10375) MQTT: Waiting for system time to be set... (2/10)[0m
+[0;32mI (12375) MQTT: Waiting for system time to be set... (3/10)[0m
+[0;32mI (14375) MQTT: Waiting for system time to be set... (4/10)[0m
+[0;32mI (16375) MQTT: Waiting for system time to be set... (5/10)[0m
+[0;32mI (18375) MQTT: Waiting for system time to be set... (6/10)[0m
+[0;32mI (20375) MQTT: Waiting for system time to be set... (7/10)[0m
+[0;32mI (22375) MQTT: Waiting for system time to be set... (8/10)[0m
+[0;32mI (24375) MQTT: Waiting for system time to be set... (9/10)[0m
+[0;32mI (26375) MQTT: The current date/time is: Thu Jan  1 00:00:25 1970[0m
+[0;32mI (26375) MQTT: Initialising MQTT from Main.[0m
+[0;32mI (26495) MQTT: time: 25[0m
+[0;32mI (26495) MQTT: distance: 1.5202[0m
+[0;32mI (26495) MQTT: pitch: 14.384114  roll: 2.293504[0m
+[0;32mI (26495) MQTT: Initialization completed.[0m
+[0;32mI (27435) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (27445) MQTT: sent subscribe successful[0m
+[0;32mI (27745) MQTT: MQTT_EVENT_SUBSCRIBED[0m
+[0;32mI (28445) MQTT: time: 27[0m
+[0;32mI (28445) MQTT: distance: 1.5202[0m
+[0;32mI (28445) MQTT: pitch: 13.736768  roll: 1.504746[0m
+[0;32mI (29445) MQTT: time: 28[0m
+[0;32mI (29445) MQTT: distance: 1.5202[0m
+[0;32mI (29445) MQTT: pitch: 13.729273  roll: 1.479709[0m
+[0;32mI (30455) MQTT: time: 29[0m
+[0;32mI (30455) MQTT: distance: 0.3917[0m
+[0;32mI (30455) MQTT: pitch: 13.723036  roll: 1.491404[0m
+[0;32mI (31455) MQTT: time: 30[0m
+[0;32mI (31455) MQTT: distance: 0.3917[0m
+[0;32mI (31455) MQTT: pitch: 13.718160  roll: 1.485500[0m
+[0;32mI (32465) MQTT: time: 31[0m
+[0;32mI (32465) MQTT: distance: 0.3917[0m
+[0;32mI (32465) MQTT: pitch: 13.726229  roll: 1.480270[0m
+[0;32mI (33475) MQTT: time: 32[0m
+[0;32mI (33475) MQTT: distance: 0.3998[0m
+[0;32mI (33475) MQTT: pitch: 13.736162  roll: 1.466717[0m
+[0;32mI (34485) MQTT: time: 33[0m
+[0;32mI (34485) MQTT: distance: 0.3998[0m
+[0;32mI (34485) MQTT: pitch: 13.725831  roll: 1.485634[0m
+[0;32mI (35485) MQTT: time: 34[0m
+[0;32mI (35485) MQTT: distance: 0.3998[0m
+[0;32mI (35485) MQTT: pitch: 13.724909  roll: 1.485610[0m
+[0;32mI (36485) MQTT: time: 35[0m
+[0;32mI (36485) MQTT: distance: 2.6974[0m
+[0;32mI (36485) MQTT: pitch: 13.696074  roll: 1.420226[0m
+[0;32mI (37485) MQTT: time: 36[0m
+[0;32mI (37485) MQTT: distance: 2.6974[0m
+[0;32mI (37485) MQTT: pitch: 13.738025  roll: 1.463927[0m
+[0;32mI (38485) MQTT: time: 37[0m
+[0;32mI (38485) MQTT: distance: 2.6974[0m
+[0;32mI (38485) MQTT: pitch: 13.743012  roll: 1.478864[0m
+[0;32mI (39485) MQTT: time: 38[0m
+[0;32mI (39485) MQTT: distance: 0.4077[0m
+[0;32mI (39485) MQTT: pitch: 13.722102  roll: 1.454142[0m
+[0;32mI (40495) MQTT: time: 39[0m
+[0;32mI (40495) MQTT: distance: 0.4077[0m
+[0;32mI (40495) MQTT: pitch: 13.723878  roll: 1.493321[0m
+[0;32mI (41505) MQTT: time: 40[0m
+[0;32mI (41505) MQTT: distance: 0.4077[0m
+[0;32mI (41505) MQTT: pitch: 13.742871  roll: 1.474821[0m
+[0;32mI (42515) MQTT: time: 41[0m
+[0;32mI (42515) MQTT: distance: 4.1149[0m
+[0;32mI (42515) MQTT: pitch: 13.652725  roll: 1.324042[0m
+[0;32mI (43515) MQTT: time: 42[0m
+[0;32mI (43515) MQTT: distance: 4.1149[0m
+[0;32mI (43515) MQTT: pitch: 13.724435  roll: 1.466187[0m
+I (44245) wifi:<ba-add>idx:1 (ifx:0, e0:46:ee:a9:95:c1), tid:6, ssn:3, winSize:64
+[0;32mI (44525) MQTT: time: 43[0m
+[0;32mI (44525) MQTT: distance: 4.1149[0m
+[0;32mI (44525) MQTT: pitch: 13.742501  roll: 1.479880[0m
+[0;32mI (45535) MQTT: time: 44[0m
+[0;32mI (45535) MQTT: distance: 0.4895[0m
+[0;32mI (45535) MQTT: pitch: 13.706284  roll: 1.459336[0m
+[0;32mI (46545) MQTT: time: 46[0m
+[0;32mI (46545) MQTT: distance: 0.4895[0m
+[0;32mI (46545) MQTT: pitch: 13.735115  roll: 1.495185[0m
+[0;32mI (47545) MQTT: time: 47[0m
+[0;32mI (47545) MQTT: distance: 0.4895[0m
+[0;32mI (47545) MQTT: pitch: 13.746382  roll: 1.459749[0m
+[0;32mI (48545) MQTT: time: 48[0m
+[0;32mI (48545) MQTT: distance: 0.5122[0m
+[0;32mI (48545) MQTT: pitch: 13.709562  roll: 1.437422[0m
+[0;32mI (49545) MQTT: time: 49[0m
+[0;32mI (49545) MQTT: distance: 0.5122[0m
+[0;32mI (49545) MQTT: pitch: 13.755304  roll: 1.467378[0m
+[0;32mI (50555) MQTT: time: 50[0m
+[0;32mI (50555) MQTT: distance: 0.5122[0m
+[0;32mI (50555) MQTT: pitch: 13.741007  roll: 1.466502[0m
+[0;32mI (51565) MQTT: time: 51[0m
+[0;32mI (51565) MQTT: distance: 2.8181[0m
+[0;32mI (51565) MQTT: pitch: 13.591081  roll: 1.203946[0m
+[0;32mI (52565) MQTT: time: 52[0m
+[0;32mI (52565) MQTT: distance: 2.8181[0m
+[0;32mI (52565) MQTT: pitch: 13.720211  roll: 1.473235[0m
+[0;32mI (53575) MQTT: time: 53[0m
+[0;32mI (53575) MQTT: distance: 2.8181[0m
+[0;32mI (53575) MQTT: pitch: 13.754996  roll: 1.450662[0m
+[0;32mI (54625) MQTT: time: 54[0m
+[0;32mI (54625) MQTT: distance: 48.1945[0m
+[0;32mI (54625) MQTT: pitch: 13.533086  roll: 1.054914[0m
+[0;32mI (55625) MQTT: time: 55[0m
+[0;32mI (55625) MQTT: distance: 12.0489[0m
+[0;32mI (55625) MQTT: pitch: 13.563916  roll: 1.146149[0m
+[0;32mI (56635) MQTT: time: 56[0m
+[0;32mI (56635) MQTT: distance: 12.0489[0m
+[0;32mI (56635) MQTT: pitch: 13.745234  roll: 1.430173[0m
+[0;32mI (57635) MQTT: time: 57[0m
+[0;32mI (57635) MQTT: distance: 12.0489[0m
+[0;32mI (57635) MQTT: pitch: 13.750959  roll: 1.431291[0m
+[0;32mI (58645) MQTT: time: 58[0m
+[0;32mI (58645) MQTT: distance: 5.1025[0m
+[0;32mI (58645) MQTT: pitch: 13.574342  roll: 1.072745[0m
+[0;32mI (59645) MQTT: time: 59[0m
+[0;32mI (59645) MQTT: distance: 5.1025[0m
+[0;32mI (59645) MQTT: pitch: 13.737116  roll: 1.429186[0m
+[0;32mI (60655) MQTT: time: 60[0m
+[0;32mI (60655) MQTT: distance: 5.1025[0m
+[0;32mI (60655) MQTT: pitch: 13.766587  roll: 1.444560[0m
+[0;32mI (61665) MQTT: time: 61[0m
+[0;32mI (61665) MQTT: distance: 0.4488[0m
+[0;32mI (61665) MQTT: pitch: 13.714360  roll: 1.397733[0m
+[0;32mI (62675) MQTT: time: 62[0m
+[0;32mI (62675) MQTT: distance: 0.4488[0m
+[0;32mI (62675) MQTT: pitch: 13.785105  roll: 1.440274[0m
+[0;32mI (63685) MQTT: time: 63[0m
+[0;32mI (63685) MQTT: distance: 0.4488[0m
+[0;32mI (63685) MQTT: pitch: 13.746174  roll: 1.429930[0m
+[0;32mI (64695) MQTT: time: 64[0m
+[0;32mI (64695) MQTT: distance: 0.3821[0m
+[0;32mI (64695) MQTT: pitch: 13.717738  roll: 1.394347[0m
+[0;32mI (65705) MQTT: time: 65[0m
+[0;32mI (65705) MQTT: distance: 0.3821[0m
+[0;32mI (65705) MQTT: pitch: 13.778644  roll: 1.434409[0m
+[0;32mI (66715) MQTT: time: 66[0m
+[0;32mI (66715) MQTT: distance: 0.3821[0m
+[0;32mI (66715) MQTT: pitch: 13.759359  roll: 1.449837[0m
+[0;32mI (67725) MQTT: time: 67[0m
+[0;32mI (67725) MQTT: distance: 1.5401[0m
+[0;32mI (67725) MQTT: pitch: 13.684035  roll: 1.250836[0m
+[0;32mI (68725) MQTT: time: 68[0m
+[0;32mI (68725) MQTT: distance: 1.5401[0m
+[0;32mI (68725) MQTT: pitch: 13.759673  roll: 1.435959[0m
+[0;32mI (69725) MQTT: time: 69[0m
+[0;32mI (69725) MQTT: distance: 1.5401[0m
+[0;32mI (69725) MQTT: pitch: 13.772060  roll: 1.409955[0m
+[0;32mI (70725) MQTT: time: 70[0m
+[0;32mI (70725) MQTT: distance: 0.3827[0m
+[0;32mI (70725) MQTT: pitch: 13.708440  roll: 1.380683[0m
+[0;32mI (71735) MQTT: time: 71[0m
+[0;32mI (71735) MQTT: distance: 0.3827[0m
+[0;32mI (71735) MQTT: pitch: 13.747295  roll: 1.456338[0m
+[0;32mI (72745) MQTT: time: 72[0m
+[0;32mI (72745) MQTT: distance: 0.3827[0m
+[0;32mI (72745) MQTT: pitch: 13.745158  roll: 1.448223[0m
+[0;32mI (73775) MQTT: time: 73[0m
+[0;32mI (73775) MQTT: distance: 25.9383[0m
+[0;32mI (73775) MQTT: pitch: 13.526786  roll: 1.010493[0m
+[0;32mI (74785) MQTT: time: 74[0m
+[0;32mI (74785) MQTT: distance: 2.8066[0m
+[0;32mI (74785) MQTT: pitch: 13.753509  roll: 1.440287[0m
+[0;32mI (75785) MQTT: time: 75[0m
+[0;32mI (75785) MQTT: distance: 2.8066[0m
+[0;32mI (75785) MQTT: pitch: 13.766516  roll: 1.441343[0m
+[0;32mI (76785) MQTT: time: 76[0m
+[0;32mI (76785) MQTT: distance: 2.8066[0m
+[0;32mI (76785) MQTT: pitch: 13.775761  roll: 1.420977[0m
+[0;32mI (77795) MQTT: time: 77[0m
+[0;32mI (77795) MQTT: distance: 2.7313[0m
+[0;32mI (77795) MQTT: pitch: 13.743014  roll: 1.433859[0m
+[0;32mI (78805) MQTT: time: 78[0m
+[0;32mI (78805) MQTT: distance: 2.7313[0m
+[0;32mI (78805) MQTT: pitch: 13.775264  roll: 1.421136[0m
+[0;32mI (79815) MQTT: time: 79[0m
+[0;32mI (79815) MQTT: distance: 2.7313[0m
+[0;32mI (79815) MQTT: pitch: 13.735913  roll: 1.433161[0m
+[0;32mI (80815) MQTT: time: 80[0m
+[0;32mI (80815) MQTT: distance: 0.4529[0m
+[0;32mI (80815) MQTT: pitch: 13.757804  roll: 1.417957[0m
+[0;32mI (81815) MQTT: time: 81[0m
+[0;32mI (81815) MQTT: distance: 0.4529[0m
+[0;32mI (81815) MQTT: pitch: 13.759144  roll: 1.457776[0m
+[0;32mI (82815) MQTT: time: 82[0m
+[0;32mI (82815) MQTT: distance: 0.4529[0m
+[0;32mI (82815) MQTT: pitch: 13.780206  roll: 1.447185[0m
+[0;32mI (83825) MQTT: time: 83[0m
+[0;32mI (83825) MQTT: distance: 0.5225[0m
+[0;32mI (83825) MQTT: pitch: 13.773432  roll: 1.426525[0m
+[0;32mI (84835) MQTT: time: 84[0m
+[0;32mI (84835) MQTT: distance: 0.5225[0m
+[0;32mI (84835) MQTT: pitch: 13.761271  roll: 1.419531[0m
+[0;32mI (85845) MQTT: time: 1711093982[0m
+[0;32mI (85845) MQTT: distance: 0.5225[0m
+[0;32mI (85845) MQTT: pitch: -255740896.000000  roll: -492232160.000000[0m
+[0;32mI (86855) MQTT: time: 1711093983[0m
+[0;32mI (86855) MQTT: distance: 0.4724[0m
+[0;32mI (86855) MQTT: pitch: -10466287.000000  roll: -20144810.000000[0m
+[0;32mI (87865) MQTT: time: 1711093984[0m
+[0;32mI (87865) MQTT: distance: 0.4724[0m
+[0;32mI (87865) MQTT: pitch: -368381.468750  roll: -709060.562500[0m
+[0;32mI (88875) MQTT: time: 1711093985[0m
+[0;32mI (88875) MQTT: distance: 0.4724[0m
+[0;32mI (88875) MQTT: pitch: -12823.403320  roll: -24706.693359[0m
+[0;32mI (89885) MQTT: time: 1711093986[0m
+[0;32mI (89885) MQTT: distance: 0.4189[0m
+[0;32mI (89885) MQTT: pitch: -506.328400  roll: -999.660767[0m
+[0;32mI (90895) MQTT: time: 1711093987[0m
+[0;32mI (90895) MQTT: distance: 0.4189[0m
+[0;32mI (90895) MQTT: pitch: -4.173426  roll: -33.091202[0m
+[0;32mI (91905) MQTT: time: 1711093988[0m
+[0;32mI (91905) MQTT: distance: 0.4189[0m
+[0;32mI (91905) MQTT: pitch: 13.145314  roll: 0.204925[0m
+[0;32mI (92915) MQTT: time: 1711093989[0m
+[0;32mI (92915) MQTT: distance: 0.4989[0m
+[0;32mI (92915) MQTT: pitch: 13.771475  roll: 1.380787[0m
+[0;32mI (93925) MQTT: time: 1711093990[0m
+[0;32mI (93925) MQTT: distance: 0.4989[0m
+[0;32mI (93925) MQTT: pitch: 13.764396  roll: 1.429942[0m
+[0;32mI (94935) MQTT: time: 1711093991[0m
+[0;32mI (94935) MQTT: distance: 0.4989[0m
+[0;32mI (94935) MQTT: pitch: 13.750601  roll: 1.433859[0m
+[0;32mI (95945) MQTT: time: 1711093992[0m
+[0;32mI (95945) MQTT: distance: 0.4999[0m
+[0;32mI (95945) MQTT: pitch: 13.771291  roll: 1.422541[0m
+[0;32mI (96955) MQTT: time: 1711093994[0m
+[0;32mI (96955) MQTT: distance: 0.4999[0m
+[0;32mI (96955) MQTT: pitch: 13.757523  roll: 1.436915[0m
+[0;32mI (97965) MQTT: time: 1711093995[0m
+[0;32mI (97965) MQTT: distance: 0.4999[0m
+[0;32mI (97965) MQTT: pitch: 13.772516  roll: 1.412496[0m
+[0;32mI (98975) MQTT: time: 1711093996[0m
+[0;32mI (98975) MQTT: distance: 0.3967[0m
+[0;32mI (98975) MQTT: pitch: 13.761736  roll: 1.413097[0m
+[0;32mI (99985) MQTT: time: 1711093997[0m
+[0;32mI (99985) MQTT: distance: 0.3967[0m
+[0;32mI (99985) MQTT: pitch: 13.735061  roll: 1.434297[0m
+[0;32mI (100985) MQTT: time: 1711093998[0m
+[0;32mI (100985) MQTT: distance: 0.3967[0m
+[0;32mI (100985) MQTT: pitch: 13.764609  roll: 1.420425[0m
+[0;32mI (101995) MQTT: time: 1711093999[0m
+[0;32mI (101995) MQTT: distance: 0.3676[0m
+[0;32mI (101995) MQTT: pitch: 13.728205  roll: 1.412025[0m
+[0;32mI (102995) MQTT: time: 1711094000[0m
+[0;32mI (102995) MQTT: distance: 0.3676[0m
+[0;32mI (102995) MQTT: pitch: 13.769431  roll: 1.424484[0m
+[0;32mI (104005) MQTT: time: 1711094001[0m
+[0;32mI (104005) MQTT: distance: 0.3676[0m
+[0;32mI (104005) MQTT: pitch: 13.787658  roll: 1.410031[0m
+[0;32mI (105005) MQTT: time: 1711094002[0m
+[0;32mI (105005) MQTT: distance: 0.3969[0m
+[0;32mI (105005) MQTT: pitch: 13.775119  roll: 1.406765[0m
+[0;32mI (106015) MQTT: time: 1711094003[0m
+[0;32mI (106015) MQTT: distance: 0.3969[0m
+[0;32mI (106015) MQTT: pitch: 13.791887  roll: 1.407067[0m
+[0;32mI (107025) MQTT: time: 1711094004[0m
+[0;32mI (107025) MQTT: distance: 0.3969[0m
+[0;32mI (107025) MQTT: pitch: 13.769907  roll: 1.439068[0m
+[0;32mI (108035) MQTT: time: 1711094005[0m
+[0;32mI (108035) MQTT: distance: 0.3876[0m
+[0;32mI (108035) MQTT: pitch: 13.773727  roll: 1.403534[0m
+[0;32mI (109045) MQTT: time: 1711094006[0m
+[0;32mI (109045) MQTT: distance: 0.3876[0m
+[0;32mI (109045) MQTT: pitch: 13.783322  roll: 1.435951[0m
+[0;32mI (110055) MQTT: time: 1711094007[0m
+[0;32mI (110055) MQTT: distance: 0.3876[0m
+[0;32mI (110055) MQTT: pitch: 13.767912  roll: 1.428334[0m
+[0;32mI (111065) MQTT: time: 1711094008[0m
+[0;32mI (111065) MQTT: distance: 4.3693[0m
+[0;32mI (111065) MQTT: pitch: 13.638456  roll: 1.174672[0m
+[0;32mI (112075) MQTT: time: 1711094009[0m
+[0;32mI (112075) MQTT: distance: 4.3693[0m
+[0;32mI (112075) MQTT: pitch: 13.780125  roll: 1.429373[0m
+[0;32mI (113085) MQTT: time: 1711094010[0m
+[0;32mI (113085) MQTT: distance: 4.3693[0m
+[0;32mI (113085) MQTT: pitch: 13.740743  roll: 1.397425[0m
+[0;32mI (114095) MQTT: time: 1711094011[0m
+[0;32mI (114095) MQTT: distance: 0.3821[0m
+[0;32mI (114095) MQTT: pitch: 13.715994  roll: 1.374758[0m
+[0;32mI (115105) MQTT: time: 1711094012[0m
+[0;32mI (115105) MQTT: distance: 0.3821[0m
+[0;32mI (115105) MQTT: pitch: 13.719236  roll: 1.424730[0m
+[0;32mI (116115) MQTT: time: 1711094013[0m
+[0;32mI (116115) MQTT: distance: 0.3821[0m
+[0;32mI (116115) MQTT: pitch: 13.764003  roll: 1.423989[0m
+[0;32mI (117125) MQTT: time: 1711094014[0m
+[0;32mI (117125) MQTT: distance: 2.7187[0m
+[0;32mI (117125) MQTT: pitch: 13.646637  roll: 1.165121[0m
+[0;32mI (118135) MQTT: time: 1711094015[0m
+[0;32mI (118135) MQTT: distance: 2.7187[0m
+[0;32mI (118135) MQTT: pitch: 13.755860  roll: 1.419626[0m

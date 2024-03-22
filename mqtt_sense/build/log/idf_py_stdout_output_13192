@@ -1,0 +1,531 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 22 2024 12:07:41[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=310d8h (200920) map[0m
+[0;32mI (173) esp_image: segment 1: paddr=00041100 vaddr=3ffbdb60 size=058f0h ( 22768) load[0m
+[0;32mI (182) esp_image: segment 2: paddr=000469f8 vaddr=40080000 size=09620h ( 38432) load[0m
+[0;32mI (197) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=c5e10h (810512) map[0m
+[0;32mI (475) esp_image: segment 4: paddr=00115e38 vaddr=40089620 size=15b30h ( 88880) load[0m
+[0;32mI (526) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (526) boot: Disabling RNG early entropy source...[0m
+[0;32mI (537) cpu_start: Multicore app[0m
+[0;32mI (546) cpu_start: Pro cpu start user code[0m
+[0;32mI (546) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (546) cpu_start: Application information:[0m
+[0;32mI (549) cpu_start: Project name:     mqtt_sense[0m
+[0;32mI (554) cpu_start: App version:      1[0m
+[0;32mI (559) cpu_start: Compile time:     Mar 22 2024 12:07:56[0m
+[0;32mI (565) cpu_start: ELF file SHA256:  9d253f7ba...[0m
+[0;32mI (570) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (575) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (580) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (584) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (589) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (597) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (602) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (609) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (615) heap_init: At 3FFCA2B8 len 00015D48 (87 KiB): DRAM[0m
+[0;32mI (621) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (627) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (634) heap_init: At 4009F150 len 00000EB0 (3 KiB): IRAM[0m
+[0;32mI (641) spi_flash: detected chip: generic[0m
+[0;32mI (644) spi_flash: flash io: dio[0m
+[0;33mW (649) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (660) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (665) main_task: Started on CPU0[0m
+[0;32mI (675) main_task: Calling app_main()[0m
+I (705) wifi:wifi driver task: 3ffce238, prio:23, stack:6656, core=0
+I (715) wifi:wifi firmware version: a9f5b59
+I (715) wifi:wifi certification version: v7.0
+I (715) wifi:config NVS flash: enabled
+I (715) wifi:config nano formating: disabled
+I (715) wifi:Init data frame dynamic rx buffer num: 32
+I (725) wifi:Init static rx mgmt buffer num: 5
+I (725) wifi:Init management short buffer num: 32
+I (735) wifi:Init dynamic tx buffer num: 32
+I (735) wifi:Init static rx buffer size: 1600
+I (745) wifi:Init static rx buffer num: 10
+I (745) wifi:Init dynamic rx buffer num: 32
+[0;32mI (745) wifi_init: rx ba win: 6[0m
+[0;32mI (755) wifi_init: tcpip mbox: 32[0m
+[0;32mI (755) wifi_init: udp mbox: 6[0m
+[0;32mI (755) wifi_init: tcp mbox: 6[0m
+[0;32mI (765) wifi_init: tcp tx win: 5760[0m
+[0;32mI (765) wifi_init: tcp rx win: 5760[0m
+[0;32mI (775) wifi_init: tcp mss: 1440[0m
+[0;32mI (775) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (785) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (785) wifi_prov_scheme_ble: BT memory released[0m
+[0;32mI (795) init_wifi: Already provisioned, starting Wi-Fi STA[0m
+[0;32mI (795) wifi_prov_scheme_ble: BTDM memory released[0m
+[0;32mI (805) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (895) wifi:mode : sta (b0:a7:32:2a:c3:a0)
+I (895) wifi:enable tsf
+[0;32mI (895) MQTT: Waiting for system time to be set... (1/10)[0m
+[0;32mI (2905) MQTT: Waiting for system time to be set... (2/10)[0m
+I (3315) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (3315) wifi:state: init -> auth (b0)
+I (4315) wifi:state: auth -> init (200)
+I (4315) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (4315) wifi:new:<6,1>, old:<6,0>, ap:<255,255>, sta:<6,1>, prof:1
+I (4315) wifi:state: init -> auth (b0)
+I (4385) wifi:state: auth -> init (8a0)
+I (4385) wifi:new:<6,0>, old:<6,1>, ap:<255,255>, sta:<6,1>, prof:1
+I (4385) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (4385) wifi:state: init -> auth (b0)
+I (4445) wifi:state: auth -> assoc (0)
+[0;32mI (4905) MQTT: Waiting for system time to be set... (3/10)[0m
+I (5445) wifi:state: assoc -> init (2700)
+I (5445) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (5445) wifi:new:<1,1>, old:<6,0>, ap:<255,255>, sta:<1,1>, prof:1
+I (5455) wifi:state: init -> auth (b0)
+I (5495) wifi:state: auth -> assoc (0)
+I (5505) wifi:state: assoc -> run (10)
+I (5585) wifi:connected with IKP-1stFloor, aid = 5, channel 1, 40U, bssid = 80:cc:9c:d3:b9:41
+I (5585) wifi:security: WPA2-PSK, phy: bgn, rssi: -62
+I (5595) wifi:pm start, type: 1
+
+I (5595) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (5635) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (5635) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+I (6095) wifi:<ba-add>idx:0 (ifx:0, 80:cc:9c:d3:b9:41), tid:0, ssn:0, winSize:64
+[0;32mI (6905) MQTT: Waiting for system time to be set... (4/10)[0m
+[0;32mI (8905) MQTT: Waiting for system time to be set... (5/10)[0m
+[0;32mI (10905) MQTT: Waiting for system time to be set... (6/10)[0m
+[0;32mI (12905) MQTT: Waiting for system time to be set... (7/10)[0m
+[0;32mI (14905) MQTT: Waiting for system time to be set... (8/10)[0m
+[0;32mI (16905) MQTT: Waiting for system time to be set... (9/10)[0m
+[0;32mI (18595) event_handler: Connected with IP Address:192.168.5.150[0m
+[0;32mI (18595) esp_netif_handlers: sta ip: 192.168.5.150, mask: 255.255.192.0, gw: 192.168.2.1[0m
+[0;32mI (18905) MQTT: The current date/time is: Thu Jan  1 00:00:18 1970[0m
+[0;32mI (18905) MQTT: Initialising MQTT from Main.[0m
+[0;32mI (18935) mpu: Pitch: 0.000000 Roll: 0.000000[0m
+[0;32mI (19935) mpu: Pitch: 10.539983 Roll: -1.220823[0m
+[0;32mI (20305) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (20305) MQTT: published successfully.[0m
+[0;32mI (20305) MQTT: sent subscribe successful[0m
+[0;32mI (20935) mpu: Pitch: 11.054901 Roll: -1.277328[0m
+[0;32mI (21935) mpu: Pitch: 11.073416 Roll: -1.266202[0m
+[0;32mI (22935) mpu: Pitch: 11.063541 Roll: -1.305993[0m
+[0;32mI (23935) mpu: Pitch: 11.052587 Roll: -1.313679[0m
+[0;32mI (24935) mpu: Pitch: 11.064072 Roll: -1.317628[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 22 2024 12:07:41[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=310d8h (200920) map[0m
+[0;32mI (173) esp_image: segment 1: paddr=00041100 vaddr=3ffbdb60 size=058f0h ( 22768) load[0m
+[0;32mI (182) esp_image: segment 2: paddr=000469f8 vaddr=40080000 size=09620h ( 38432) load[0m
+[0;32mI (197) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=c5e10h (810512) map[0m
+[0;32mI (475) esp_image: segment 4: paddr=00115e38 vaddr=40089620 size=15b30h ( 88880) load[0m
+[0;32mI (526) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (526) boot: Disabling RNG early entropy source...[0m
+[0;32mI (537) cpu_start: Multicore app[0m
+[0;32mI (546) cpu_start: Pro cpu start user code[0m
+[0;32mI (546) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (546) cpu_start: Application information:[0m
+[0;32mI (549) cpu_start: Project name:     mqtt_sense[0m
+[0;32mI (554) cpu_start: App version:      1[0m
+[0;32mI (559) cpu_start: Compile time:     Mar 22 2024 12:07:56[0m
+[0;32mI (565) cpu_start: ELF file SHA256:  9d253f7ba...[0m
+[0;32mI (570) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (575) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (580) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (584) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (589) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (597) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (602) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (609) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (615) heap_init: At 3FFCA2B8 len 00015D48 (87 KiB): DRAM[0m
+[0;32mI (621) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (627) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (634) heap_init: At 4009F150 len 00000EB0 (3 KiB): IRAM[0m
+[0;32mI (641) spi_flash: detected chip: generic[0m
+[0;32mI (644) spi_flash: flash io: dio[0m
+[0;33mW (649) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (660) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (665) main_task: Started on CPU0[0m
+[0;32mI (675) main_task: Calling app_main()[0m
+I (705) wifi:wifi driver task: 3ffce238, prio:23, stack:6656, core=0
+I (715) wifi:wifi firmware version: a9f5b59
+I (715) wifi:wifi certification version: v7.0
+I (715) wifi:config NVS flash: enabled
+I (715) wifi:config nano formating: disabled
+I (715) wifi:Init data frame dynamic rx buffer num: 32
+I (725) wifi:Init static rx mgmt buffer num: 5
+I (725) wifi:Init management short buffer num: 32
+I (735) wifi:Init dynamic tx buffer num: 32
+I (735) wifi:Init static rx buffer size: 1600
+I (745) wifi:Init static rx buffer num: 10
+I (745) wifi:Init dynamic rx buffer num: 32
+[0;32mI (745) wifi_init: rx ba win: 6[0m
+[0;32mI (755) wifi_init: tcpip mbox: 32[0m
+[0;32mI (755) wifi_init: udp mbox: 6[0m
+[0;32mI (755) wifi_init: tcp mbox: 6[0m
+[0;32mI (765) wifi_init: tcp tx win: 5760[0m
+[0;32mI (765) wifi_init: tcp rx win: 5760[0m
+[0;32mI (775) wifi_init: tcp mss: 1440[0m
+[0;32mI (775) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (785) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (785) wifi_prov_scheme_ble: BT memory released[0m
+[0;32mI (795) init_wifi: Already provisioned, starting Wi-Fi STA[0m
+[0;32mI (795) wifi_prov_scheme_ble: BTDM memory released[0m
+[0;32mI (805) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (885) wifi:mode : sta (b0:a7:32:2a:c3:a0)
+I (885) wifi:enable tsf
+[0;32mI (895) MQTT: Waiting for system time to be set... (1/10)[0m
+[0;32mI (2895) MQTT: Waiting for system time to be set... (2/10)[0m
+I (3305) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (3305) wifi:state: init -> auth (b0)
+I (4305) wifi:state: auth -> init (200)
+I (4305) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (4305) wifi:new:<1,1>, old:<6,0>, ap:<255,255>, sta:<1,1>, prof:1
+I (4315) wifi:state: init -> auth (b0)
+I (4315) wifi:state: auth -> init (8a0)
+I (4315) wifi:new:<1,0>, old:<1,1>, ap:<255,255>, sta:<1,1>, prof:1
+I (4325) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1
+I (4335) wifi:state: init -> auth (b0)
+[0;32mI (4895) MQTT: Waiting for system time to be set... (3/10)[0m
+I (5205) wifi:state: auth -> assoc (0)
+I (5215) wifi:state: assoc -> run (10)
+I (5305) wifi:connected with IKP-1stFloor, aid = 4, channel 11, BW20, bssid = e0:46:ee:a9:95:c1
+I (5305) wifi:security: WPA3-SAE, phy: bgn, rssi: -69
+I (5325) wifi:pm start, type: 1
+
+I (5325) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (5325) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (5335) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+I (5865) wifi:<ba-add>idx:0 (ifx:0, e0:46:ee:a9:95:c1), tid:0, ssn:0, winSize:64
+[0;32mI (6845) event_handler: Connected with IP Address:192.168.5.150[0m
+[0;32mI (6845) esp_netif_handlers: sta ip: 192.168.5.150, mask: 255.255.192.0, gw: 192.168.2.1[0m
+[0;32mI (6895) MQTT: Waiting for system time to be set... (4/10)[0m
+[0;32mI (8895) MQTT: Waiting for system time to be set... (5/10)[0m
+[0;32mI (10895) MQTT: Waiting for system time to be set... (6/10)[0m
+[0;32mI (12895) MQTT: Waiting for system time to be set... (7/10)[0m
+[0;32mI (14895) MQTT: Waiting for system time to be set... (8/10)[0m
+[0;32mI (16895) MQTT: Waiting for system time to be set... (9/10)[0m
+[0;32mI (18895) MQTT: The current date/time is: Thu Jan  1 00:00:18 1970[0m
+[0;32mI (18895) MQTT: Initialising MQTT from Main.[0m
+[0;32mI (18945) mpu: Pitch: 0.000000 Roll: 0.000000[0m
+[0;32mI (19915) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (19915) MQTT: published successfully.[0m
+[0;32mI (19915) MQTT: sent subscribe successful[0m
+[0;32mI (19945) mpu: Pitch: 9.783258 Roll: 7.397381[0m
+[0;32mI (20945) mpu: Pitch: 9.949316 Roll: 7.085689[0m
+[0;32mI (21945) mpu: Pitch: -0.825287 Roll: 1.710091[0m
+[0;32mI (22945) mpu: Pitch: -20.919209 Roll: -0.376640[0m
+[0;32mI (23945) mpu: Pitch: 1.530484 Roll: -9.334900[0m
+[0;32mI (24945) mpu: Pitch: -4.644949 Roll: 4.188874[0m
+[0;32mI (25945) mpu: Pitch: -0.435836 Roll: 1.873720[0m
+[0;32mI (26945) mpu: Pitch: 7.645500 Roll: 7.548725[0m
+[0;32mI (27945) mpu: Pitch: 9.334231 Roll: 7.698745[0m
+[0;32mI (28945) mpu: Pitch: 9.379307 Roll: 7.729342[0m
+[0;32mI (29945) mpu: Pitch: 9.370514 Roll: 7.771776[0m
+[0;32mI (30945) mpu: Pitch: 9.381668 Roll: 7.675948[0m
+[0;32mI (31945) mpu: Pitch: 9.313935 Roll: 7.596064[0m
+[0;32mI (32945) mpu: Pitch: 9.386579 Roll: 7.703493[0m
+[0;32mI (33945) mpu: Pitch: 9.371240 Roll: 7.702703[0m
+[0;32mI (34945) mpu: Pitch: -346297696.000000 Roll: -638801152.000000[0m
+[0;32mI (35945) mpu: Pitch: -20147010.000000 Roll: -37164348.000000[0m
+[0;32mI (36945) mpu: Pitch: -1376593.500000 Roll: -2539353.000000[0m
+[0;32mI (37945) mpu: Pitch: -102955.531250 Roll: -189927.390625[0m
+[0;32mI (38945) mpu: Pitch: -5573.980469 Roll: -10291.687500[0m
+[0;32mI (39945) mpu: Pitch: -395.838837 Roll: -739.795471[0m
+[0;32mI (40945) mpu: Pitch: -21.336245 Roll: -48.963818[0m
+[0;32mI (41945) mpu: Pitch: 7.727458 Roll: 4.665415[0m
+[0;32mI (42945) mpu: Pitch: 9.246114 Roll: 7.439649[0m
+[0;32mI (43945) mpu: Pitch: 9.319144 Roll: 7.533165[0m
+[0;32mI (44945) mpu: Pitch: 9.405630 Roll: 7.733113[0m
+[0;32mI (45945) mpu: Pitch: 9.399209 Roll: 7.717146[0m
+[0;32mI (46945) mpu: Pitch: 9.342740 Roll: 7.591552[0m
+[0;32mI (47945) mpu: Pitch: 9.368238 Roll: 7.723257[0m
+[0;32mI (48945) mpu: Pitch: 9.439608 Roll: 7.654866[0m
+[0;32mI (49945) mpu: Pitch: 9.334264 Roll: 7.791013[0m
+[0;32mI (50945) mpu: Pitch: 9.354199 Roll: 7.767047[0m
+[0;32mI (51945) mpu: Pitch: 9.363734 Roll: 7.765089[0m
+[0;32mI (52945) mpu: Pitch: 9.345979 Roll: 7.729297[0m
+[0;32mI (53945) mpu: Pitch: 9.329331 Roll: 7.763120[0m
+[0;32mI (54945) mpu: Pitch: 9.334170 Roll: 7.730150[0m
+[0;32mI (55945) mpu: Pitch: 8.635880 Roll: 7.770747[0m
+[0;32mI (56945) mpu: Pitch: 1.529491 Roll: 6.798707[0m
+[0;32mI (57945) mpu: Pitch: -7.231281 Roll: 1.216549[0m
+[0;32mI (58945) mpu: Pitch: -8.282195 Roll: 19.776838[0m
+[0;32mI (59945) mpu: Pitch: -1.497100 Roll: 51.150249[0m
+[0;32mI (60945) mpu: Pitch: 3.178602 Roll: 1.911453[0m
+[0;32mI (61945) mpu: Pitch: -16.777121 Roll: -31.572939[0m
+[0;32mI (62945) mpu: Pitch: -10.617791 Roll: 17.275743[0m
+[0;32mI (63945) mpu: Pitch: -6.189015 Roll: 15.377995[0m
+[0;32mI (64945) mpu: Pitch: -8.320099 Roll: 12.763590[0m
+[0;32mI (65945) mpu: Pitch: -8.280530 Roll: 11.621198[0m
+[0;32mI (66945) mpu: Pitch: -7.564137 Roll: 13.265859[0m
+[0;32mI (67945) mpu: Pitch: -7.264224 Roll: 13.776910[0m
+[0;32mI (68945) mpu: Pitch: -7.736058 Roll: 13.765933[0m
+[0;32mI (69945) mpu: Pitch: -7.389670 Roll: 13.966060[0m
+[0;32mI (70945) mpu: Pitch: -7.130142 Roll: 12.868966[0m
+[0;32mI (71945) mpu: Pitch: -7.468407 Roll: 17.406775[0m
+[0;32mI (72945) mpu: Pitch: -11.765037 Roll: 24.664221[0m
+[0;32mI (73945) mpu: Pitch: -8.824649 Roll: 22.538973[0m
+[0;32mI (74945) mpu: Pitch: -8.834123 Roll: 20.991142[0m
+[0;32mI (75945) mpu: Pitch: -8.980350 Roll: 21.202066[0m
+[0;32mI (76945) mpu: Pitch: -9.023530 Roll: 21.388920[0m
+[0;32mI (77945) mpu: Pitch: -8.518456 Roll: 21.509182[0m
+[0;32mI (78945) mpu: Pitch: -7.836482 Roll: 21.797621[0m
+[0;32mI (79945) mpu: Pitch: -9.245102 Roll: 20.608814[0m
+[0;32mI (80945) mpu: Pitch: -6.166425 Roll: 23.154488[0m
+[0;32mI (81945) mpu: Pitch: -5.365306 Roll: 23.147264[0m
+[0;32mI (82945) mpu: Pitch: -6.067176 Roll: 21.376604[0m
+[0;32mI (83945) mpu: Pitch: -7.724602 Roll: 20.255449[0m
+[0;32mI (84945) mpu: Pitch: -7.661716 Roll: 18.913944[0m
+[0;32mI (85945) mpu: Pitch: -7.616725 Roll: 19.186836[0m
+[0;32mI (86945) mpu: Pitch: -7.295141 Roll: 19.291458[0m
+[0;32mI (87945) mpu: Pitch: -7.296529 Roll: 19.367807[0m
+[0;32mI (88945) mpu: Pitch: -6.036964 Roll: 23.800463[0m
+[0;32mI (89945) mpu: Pitch: -12.655904 Roll: 33.270992[0m
+[0;32mI (90945) mpu: Pitch: -11.163303 Roll: 30.049753[0m
+[0;32mI (91945) mpu: Pitch: -8.078399 Roll: 23.009949[0m
+[0;32mI (92945) mpu: Pitch: -8.365010 Roll: 22.870018[0m
+[0;32mI (93945) mpu: Pitch: -7.027543 Roll: 21.482946[0m
+[0;32mI (94945) mpu: Pitch: -13.855228 Roll: 29.540314[0m
+[0;32mI (95945) mpu: Pitch: -18.144588 Roll: 26.666759[0m
+[0;32mI (96945) mpu: Pitch: -11.389030 Roll: 2.923610[0m
+[0;32mI (97945) mpu: Pitch: -9.866288 Roll: -3.328118[0m
+[0;32mI (98945) mpu: Pitch: -9.561400 Roll: -8.079662[0m
+[0;32mI (99945) mpu: Pitch: -5.230980 Roll: -0.606962[0m
+[0;32mI (100945) mpu: Pitch: -10.744282 Roll: 22.939610[0m
+[0;32mI (101945) mpu: Pitch: -12.170503 Roll: 21.320326[0m
+[0;32mI (102945) mpu: Pitch: -9.847349 Roll: 22.451641[0m
+[0;32mI (103945) mpu: Pitch: -28.916397 Roll: 62.900696[0m
+[0;32mI (104945) mpu: Pitch: -29.623980 Roll: 54.585743[0m
+[0;32mI (105945) mpu: Pitch: -15.796928 Roll: 4.333457[0m
+[0;32mI (106945) mpu: Pitch: -8.371512 Roll: 0.540413[0m
+[0;32mI (107945) mpu: Pitch: -7.778674 Roll: 0.236796[0m
+[0;32mI (108945) mpu: Pitch: -7.593134 Roll: 3.844701[0m
+[0;32mI (109945) mpu: Pitch: -8.915863 Roll: 0.795597[0m
+[0;32mI (110945) mpu: Pitch: -8.748718 Roll: 0.755673[0m
+[0;32mI (111945) mpu: Pitch: -8.751021 Roll: 0.923693[0m
+[0;32mI (112945) mpu: Pitch: -8.571586 Roll: 0.767545[0m
+[0;32mI (113945) mpu: Pitch: -8.669041 Roll: 1.410812[0m
+[0;32mI (114945) mpu: Pitch: -8.738636 Roll: 1.812674[0m
+[0;32mI (115945) mpu: Pitch: -8.938946 Roll: 2.078562[0m
+[0;32mI (116945) mpu: Pitch: -8.552881 Roll: 2.500427[0m
+[0;32mI (117945) mpu: Pitch: -8.497149 Roll: 2.264378[0m
+[0;32mI (118945) mpu: Pitch: -8.121855 Roll: 1.577631[0m
+[0;32mI (119945) mpu: Pitch: -8.441877 Roll: 2.301001[0m
+[0;32mI (120945) mpu: Pitch: -8.593478 Roll: 3.042005[0m
+[0;32mI (121945) mpu: Pitch: -10.441273 Roll: 27.121977[0m
+[0;32mI (122955) mpu: Pitch: -31.643343 Roll: 55.357635[0m
+[0;32mI (123955) mpu: Pitch: 2.111541 Roll: 30.900967[0m
+[0;32mI (124955) mpu: Pitch: -25.487885 Roll: 32.638542[0m
+[0;32mI (125955) mpu: Pitch: -36.393280 Roll: 26.210350[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 22 2024 12:07:41[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=310d8h (200920) map[0m
+[0;32mI (173) esp_image: segment 1: paddr=00041100 vaddr=3ffbdb60 size=058f0h ( 22768) load[0m
+[0;32mI (182) esp_image: segment 2: paddr=000469f8 vaddr=40080000 size=09620h ( 38432) load[0m
+[0;32mI (197) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=c5e10h (810512) map[0m
+[0;32mI (475) esp_image: segment 4: paddr=00115e38 vaddr=40089620 size=15b30h ( 88880) load[0m
+[0;32mI (526) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (526) boot: Disabling RNG early entropy source...[0m
+[0;32mI (537) cpu_start: Multicore app[0m
+[0;32mI (546) cpu_start: Pro cpu start user code[0m
+[0;32mI (546) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (546) cpu_start: Application information:[0m
+[0;32mI (549) cpu_start: Project name:     mqtt_sense[0m
+[0;32mI (554) cpu_start: App version:      1[0m
+[0;32mI (559) cpu_start: Compile time:     Mar 22 2024 12:07:56[0m
+[0;32mI (565) cpu_start: ELF file SHA256:  9d253f7ba...[0m
+[0;32mI (570) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (575) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (580) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (584) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (589) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (597) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (602) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (609) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (615) heap_init: At 3FFCA2B8 len 00015D48 (87 KiB): DRAM[0m
+[0;32mI (621) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (627) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (634) heap_init: At 4009F150 len 00000EB0 (3 KiB): IRAM[0m
+[0;32mI (641) spi_flash: detected chip: generic[0m
+[0;32mI (644) spi_flash: flash io: dio[0m
+[0;33mW (649) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (660) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (665) main_task: Started on CPU0[0m
+[0;32mI (675) main_task: Calling app_main()[0m
+I (705) wifi:wifi driver task: 3ffce238, prio:23, stack:6656, core=0
+I (715) wifi:wifi firmware version: a9f5b59
+I (715) wifi:wifi certification version: v7.0
+I (715) wifi:config NVS flash: enabled
+I (715) wifi:config nano formating: disabled
+I (715) wifi:Init data frame dynamic rx buffer num: 32
+I (725) wifi:Init static rx mgmt buffer num: 5
+I (725) wifi:Init management short buffer num: 32
+I (735) wifi:Init dynamic tx buffer num: 32
+I (735) wifi:Init static rx buffer size: 1600
+I (745) wifi:Init static rx buffer num: 10
+I (745) wifi:Init dynamic rx buffer num: 32
+[0;32mI (745) wifi_init: rx ba win: 6[0m
+[0;32mI (755) wifi_init: tcpip mbox: 32[0m
+[0;32mI (755) wifi_init: udp mbox: 6[0m
+[0;32mI (755) wifi_init: tcp mbox: 6[0m
+[0;32mI (765) wifi_init: tcp tx win: 5760[0m
+[0;32mI (765) wifi_init: tcp rx win: 5760[0m
+[0;32mI (775) wifi_init: tcp mss: 1440[0m
+[0;32mI (775) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (785) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (785) wifi_prov_scheme_ble: BT memory released[0m
+[0;32mI (795) init_wifi: Already provisioned, starting Wi-Fi STA[0m
+[0;32mI (795) wifi_prov_scheme_ble: BTDM memory released[0m
+[0;32mI (805) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (885) wifi:mode : sta (b0:a7:32:2a:c3:a0)
+I (885) wifi:enable tsf
+[0;32mI (895) MQTT: Waiting for system time to be set... (1/10)[0m
+[0;32mI (2895) MQTT: Waiting for system time to be set... (2/10)[0m
+I (3305) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (3305) wifi:state: init -> auth (b0)
+I (4305) wifi:state: auth -> init (200)
+I (4305) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (4305) wifi:new:<1,1>, old:<6,0>, ap:<255,255>, sta:<1,1>, prof:1
+I (4315) wifi:state: init -> auth (b0)
+I (4335) wifi:state: auth -> assoc (0)
+I (4345) wifi:state: assoc -> run (10)
+I (4365) wifi:connected with IKP-1stFloor, aid = 5, channel 1, 40U, bssid = 80:cc:9c:d3:b9:41
+I (4365) wifi:security: WPA2-PSK, phy: bgn, rssi: -65
+I (4375) wifi:pm start, type: 1
+
+I (4375) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (4375) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (4385) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (4895) MQTT: Waiting for system time to be set... (3/10)[0m
+I (4905) wifi:<ba-add>idx:0 (ifx:0, 80:cc:9c:d3:b9:41), tid:0, ssn:0, winSize:64
+[0;32mI (6395) event_handler: Connected with IP Address:192.168.5.150[0m
+[0;32mI (6395) esp_netif_handlers: sta ip: 192.168.5.150, mask: 255.255.192.0, gw: 192.168.2.1[0m
+[0;32mI (6895) MQTT: Waiting for system time to be set... (4/10)[0m
+[0;32mI (8895) MQTT: The current date/time is: Fri Mar 22 06:46:51 2024[0m
+[0;32mI (8895) MQTT: Initialising MQTT from Main.[0m
+[0;32mI (8995) mpu: Pitch: 0.000000 Roll: 0.000000[0m
+[0;32mI (9995) mpu: Pitch: -7.299834 Roll: 5.389552[0m
+[0;32mI (10995) mpu: Pitch: -6.597180 Roll: 5.764691[0m
+[0;32mI (11995) mpu: Pitch: -7.421146 Roll: 6.091047[0m
+[0;32mI (12995) mpu: Pitch: -6.945282 Roll: 6.039991[0m
+[0;32mI (13995) mpu: Pitch: -6.962701 Roll: 6.137733[0m
+[0;32mI (14995) mpu: Pitch: -6.944167 Roll: 6.352594[0m
+[0;32mI (16005) mpu: Pitch: -7.006261 Roll: 6.650865[0m
+[0;32mI (17005) mpu: Pitch: -6.269230 Roll: 6.804501[0m
+[0;32mI (18005) mpu: Pitch: -6.205092 Roll: 6.557718[0m
+[0;32mI (19005) mpu: Pitch: -6.348097 Roll: 6.271491[0m
+[0;31mE (19275) esp-tls: [sock=54] select() timeout[0m
+[0;31mE (19275) transport_base: Failed to open a new connection: 32774[0m
+[0;31mE (19275) mqtt_client: Error transport connect[0m
+[0;32mI (19275) MQTT: MQTT_EVENT_ERROR[0m
+[0;32mI (19285) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (20005) mpu: Pitch: -5.808836 Roll: 6.354224[0m
+[0;32mI (21005) mpu: Pitch: -5.833752 Roll: 6.268934[0m
+[0;32mI (22005) mpu: Pitch: -5.407888 Roll: 6.320078[0m
+[0;32mI (23005) mpu: Pitch: -4.169059 Roll: 5.071540[0m
+[0;32mI (24005) mpu: Pitch: -11.028500 Roll: 5.858132[0m
+[0;32mI (25005) mpu: Pitch: -13.332359 Roll: 9.581522[0m
+[0;32mI (26005) mpu: Pitch: -14.719742 Roll: 11.935029[0m
+[0;32mI (27005) mpu: Pitch: -11.682919 Roll: 12.064402[0m
+[0;32mI (28005) mpu: Pitch: -11.787634 Roll: 11.837214[0m
+[0;32mI (29005) mpu: Pitch: -13.079308 Roll: 11.452324[0m
+[0;32mI (30005) mpu: Pitch: -13.104463 Roll: 11.391660[0m
+[0;32mI (31005) mpu: Pitch: -13.018901 Roll: 11.484015[0m
+[0;32mI (32005) mpu: Pitch: -13.254283 Roll: 11.169116[0m
+[0;32mI (33015) mpu: Pitch: -13.268173 Roll: 11.487617[0m
+[0;32mI (34015) mpu: Pitch: -13.145432 Roll: 11.679774[0m
+[0;32mI (35015) mpu: Pitch: -12.815283 Roll: 11.823547[0m
+[0;32mI (36015) mpu: Pitch: -12.481409 Roll: 11.199322[0m
+[0;32mI (37015) mpu: Pitch: -12.780619 Roll: 11.603412[0m
+[0;32mI (38015) mpu: Pitch: -12.794761 Roll: 11.744324[0m
+[0;32mI (39015) mpu: Pitch: -12.454313 Roll: 11.701180[0m
+[0;32mI (40025) mpu: Pitch: -12.201183 Roll: 11.910741[0m
+[0;32mI (41025) mpu: Pitch: -12.290365 Roll: 12.126417[0m
+[0;32mI (42025) mpu: Pitch: -12.132667 Roll: 12.260316[0m
+[0;32mI (43025) mpu: Pitch: -11.824663 Roll: 12.356804[0m
+[0;32mI (44025) mpu: Pitch: -11.588566 Roll: 12.049547[0m
+[0;32mI (45025) mpu: Pitch: -12.566892 Roll: 12.701824[0m
+[0;32mI (46025) mpu: Pitch: -13.227081 Roll: 12.784955[0m
+[0;32mI (47025) mpu: Pitch: -12.619091 Roll: 11.787230[0m
+[0;32mI (48025) mpu: Pitch: -11.982614 Roll: 12.788171[0m
+[0;32mI (49025) mpu: Pitch: -11.534151 Roll: 12.798595[0m
+[0;32mI (50025) mpu: Pitch: -11.256134 Roll: 12.939838[0m
+[0;32mI (51025) mpu: Pitch: -11.452718 Roll: 13.079088[0m
+[0;32mI (52025) mpu: Pitch: -11.684235 Roll: 12.699754[0m
+[0;32mI (53025) mpu: Pitch: -11.554977 Roll: 12.718113[0m
+[0;32mI (54025) mpu: Pitch: -11.169743 Roll: 12.383372[0m
+[0;32mI (55025) mpu: Pitch: -10.790522 Roll: 12.496078[0m
+[0;32mI (56025) mpu: Pitch: -13.379134 Roll: 11.562635[0m
+[0;32mI (57025) mpu: Pitch: -9.926559 Roll: -3.271998[0m
+[0;32mI (58025) mpu: Pitch: -12.504527 Roll: -6.058350[0m
+[0;32mI (59025) mpu: Pitch: -17.818960 Roll: -0.780385[0m
+[0;32mI (60025) mpu: Pitch: -17.955927 Roll: -0.505185[0m

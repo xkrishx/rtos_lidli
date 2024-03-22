@@ -1,0 +1,398 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 22 2024 12:07:41[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=30a70h (199280) map[0m
+[0;32mI (173) esp_image: segment 1: paddr=00040a98 vaddr=3ffbdb60 size=058f0h ( 22768) load[0m
+[0;32mI (181) esp_image: segment 2: paddr=00046390 vaddr=40080000 size=09c88h ( 40072) load[0m
+[0;32mI (197) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=c50fch (807164) map[0m
+[0;32mI (474) esp_image: segment 4: paddr=00115124 vaddr=40089c88 size=147a8h ( 83880) load[0m
+[0;32mI (522) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (522) boot: Disabling RNG early entropy source...[0m
+[0;32mI (534) cpu_start: Multicore app[0m
+[0;32mI (543) cpu_start: Pro cpu start user code[0m
+[0;32mI (543) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (543) cpu_start: Application information:[0m
+[0;32mI (546) cpu_start: Project name:     mqtt_sense[0m
+[0;32mI (551) cpu_start: App version:      1[0m
+[0;32mI (555) cpu_start: Compile time:     Mar 22 2024 12:07:56[0m
+[0;32mI (561) cpu_start: ELF file SHA256:  ba2883b4d...[0m
+[0;32mI (567) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (572) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (576) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (581) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (586) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (593) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (599) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (605) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (611) heap_init: At 3FFCA2B0 len 00015D50 (87 KiB): DRAM[0m
+[0;32mI (618) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (624) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (630) heap_init: At 4009E430 len 00001BD0 (6 KiB): IRAM[0m
+[0;32mI (638) spi_flash: detected chip: generic[0m
+[0;32mI (641) spi_flash: flash io: dio[0m
+[0;33mW (645) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (656) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (662) main_task: Started on CPU0[0m
+[0;32mI (672) main_task: Calling app_main()[0m
+I (702) wifi:wifi driver task: 3ffce230, prio:23, stack:6656, core=0
+I (712) wifi:wifi firmware version: a9f5b59
+I (712) wifi:wifi certification version: v7.0
+I (712) wifi:config NVS flash: enabled
+I (712) wifi:config nano formating: disabled
+I (712) wifi:Init data frame dynamic rx buffer num: 32
+I (722) wifi:Init static rx mgmt buffer num: 5
+I (722) wifi:Init management short buffer num: 32
+I (732) wifi:Init dynamic tx buffer num: 32
+I (732) wifi:Init static rx buffer size: 1600
+I (732) wifi:Init static rx buffer num: 10
+I (742) wifi:Init dynamic rx buffer num: 32
+[0;32mI (742) wifi_init: rx ba win: 6[0m
+[0;32mI (752) wifi_init: tcpip mbox: 32[0m
+[0;32mI (752) wifi_init: udp mbox: 6[0m
+[0;32mI (752) wifi_init: tcp mbox: 6[0m
+[0;32mI (762) wifi_init: tcp tx win: 5760[0m
+[0;32mI (762) wifi_init: tcp rx win: 5760[0m
+[0;32mI (772) wifi_init: tcp mss: 1440[0m
+[0;32mI (772) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (772) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (782) wifi_prov_scheme_ble: BT memory released[0m
+[0;32mI (782) init_wifi: Already provisioned, starting Wi-Fi STA[0m
+[0;32mI (792) wifi_prov_scheme_ble: BTDM memory released[0m
+[0;32mI (802) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (882) wifi:mode : sta (b0:a7:32:2a:c3:a0)
+I (892) wifi:enable tsf
+I (3302) wifi:new:<6,1>, old:<1,0>, ap:<255,255>, sta:<6,1>, prof:1
+I (3302) wifi:state: init -> auth (b0)
+I (3352) wifi:state: auth -> assoc (0)
+I (3362) wifi:state: assoc -> run (10)
+I (3382) wifi:connected with IKP-1stFloor, aid = 3, channel 6, 40U, bssid = 9c:c9:eb:a5:17:c1
+I (3382) wifi:security: WPA2-PSK, phy: bgn, rssi: -40
+I (3392) wifi:pm start, type: 1
+
+I (3392) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (3392) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (3402) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+I (3972) wifi:<ba-add>idx:0 (ifx:0, 9c:c9:eb:a5:17:c1), tid:6, ssn:2, winSize:64
+[0;32mI (8412) event_handler: Connected with IP Address:192.168.5.150[0m
+[0;32mI (8412) esp_netif_handlers: sta ip: 192.168.5.150, mask: 255.255.192.0, gw: 192.168.2.1[0m
+[0;32mI (8412) MQTT: Waiting for system time to be set... (1/10)[0m
+[0;32mI (10422) MQTT: Waiting for system time to be set... (2/10)[0m
+I (12152) wifi:<ba-add>idx:1 (ifx:0, 9c:c9:eb:a5:17:c1), tid:0, ssn:0, winSize:64
+[0;32mI (12422) MQTT: Waiting for system time to be set... (3/10)[0m
+[0;32mI (14422) MQTT: The current date/time is: Fri Mar 22 07:16:29 2024[0m
+[0;32mI (14422) MQTT: Initialising MQTT from Main.[0m
+[0;32mI (14472) ultra: Distance: 37.4879 cm
+[0m
+[0;32mI (14472) MQTT: Initialization completed.[0m
+[0;32mI (15012) ultra: Distance: 411.1466 cm
+[0m
+[0;32mI (15552) ultra: Distance: 4147.2632 cm
+[0m
+[0;32mI (16092) ultra: Distance: 41510.3750 cm
+[0m
+[0;32mI (16292) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (16292) MQTT: published successfully.[0m
+[0;32mI (16292) MQTT: sent subscribe successful[0m
+[0;32mI (16632) ultra: Distance: 415145.8125 cm
+[0m
+[0;32mI (17182) ultra: Distance: 4151493.7500 cm
+[0m
+[0;32mI (17792) ultra: Distance: 41515104.0000 cm
+[0m
+[0;32mI (18332) ultra: Distance: 415151040.0000 cm
+[0m
+[0;32mI (18872) ultra: Distance: 4151510528.0000 cm
+[0m
+[0;32mI (19412) ultra: Distance: 41515102208.0000 cm
+[0m
+[0;32mI (19962) ultra: Distance: 415151030272.0000 cm
+[0m
+[0;32mI (20572) ultra: Distance: 4151510302720.0000 cm
+[0m
+[0;32mI (21182) ultra: Distance: 41515103551488.0000 cm
+[0m
+[0;32mI (21722) ultra: Distance: 415151035514880.0000 cm
+[0m
+[0;32mI (22262) ultra: Distance: 4151510288039936.0000 cm
+[0m
+[0;32mI (22802) ultra: Distance: 41515102343528448.0000 cm
+[0m
+[0;32mI (23352) ultra: Distance: 415151023435284480.0000 cm
+[0m
+[0;32mI (23892) ultra: Distance: 4151510165633368064.0000 cm
+[0m
+[0;32mI (24432) ultra: Distance: 41515100556822052864.0000 cm
+[0m
+[0;32mI (24972) ultra: Distance: 415151031956499595264.0000 cm
+[0m
+[0;32mI (25512) ultra: Distance: 4151510460302484307968.0000 cm
+[0m
+[0;32mI (26052) ultra: Distance: 41515104603024843079680.0000 cm
+[0m
+[0;32mI (26592) ultra: Distance: 415151037023049176055808.0000 cm
+[0m
+[0;32mI (27132) ultra: Distance: 4151510370230491760558080.0000 cm
+[0m
+[0;32mI (27672) ultra: Distance: 41515103125844165302157312.0000 cm
+[0m
+[0;32mI (28212) ultra: Distance: 415151022035069616166797312.0000 cm
+[0m
+[0;32mI (28752) ultra: Distance: 4151510294137672456506179584.0000 cm
+[0m
+[0;32mI (29292) ultra: Distance: 41515102941376724565061795840.0000 cm
+[0m
+[0;32mI (29832) ultra: Distance: 415151019969034279911327531008.0000 cm
+[0m
+[0;32mI (30372) ultra: Distance: 4151510199690342799113275310080.0000 cm
+[0m
+[0;32mI (30912) ultra: Distance: 41515102601366337798447340453888.0000 cm
+[0m
+[0;32mI (31452) ultra: Distance: 415151006670850264150406609240064.0000 cm
+[0m
+[0;32mI (32002) ultra: Distance: 4151510221451007552176600454791168.0000 cm
+[0m
+[0;32mI (32542) ultra: Distance: 41515101595540055879075867098349568.0000 cm
+[0m
+[0;32mI (33292) ultra: Distance: 415151015955400558790758670983495680.0000 cm
+[0m
+[0;32mI (33832) ultra: Distance: 4151510080325843073643249116291006464.0000 cm
+[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (183) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (183) boot: compile time Mar 22 2024 12:07:41[0m
+[0;32mI (183) boot: Multicore bootloader[0m
+[0;32mI (188) boot: chip revision: v3.1[0m
+[0;32mI (192) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (197) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (202) boot.esp32: SPI Flash Size : 4MB[0m
+[0;33mW (206) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (212) boot.esp32: WDT reset info: PRO CPU PC=0x4009e314[0m
+[0;33mW (218) boot.esp32: WDT reset info: APP CPU PC=0x4009e2c3[0m
+[0;32mI (224) boot: Enabling RNG early entropy source...[0m
+[0;32mI (229) boot: Partition Table:[0m
+[0;32mI (233) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (240) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (248) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (256) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (263) boot: End of partition table[0m
+[0;32mI (267) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=30a70h (199280) map[0m
+[0;32mI (344) esp_image: segment 1: paddr=00040a98 vaddr=3ffbdb60 size=058f0h ( 22768) load[0m
+[0;32mI (353) esp_image: segment 2: paddr=00046390 vaddr=40080000 size=09c88h ( 40072) load[0m
+[0;32mI (369) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=c50fch (807164) map[0m
+[0;32mI (646) esp_image: segment 4: paddr=00115124 vaddr=40089c88 size=147a8h ( 83880) load[0m
+[0;32mI (694) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (694) boot: Disabling RNG early entropy source...[0m
+[0;32mI (706) cpu_start: Multicore app[0m
+[0;32mI (714) cpu_start: Pro cpu start user code[0m
+[0;32mI (714) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (714) cpu_start: Application information:[0m
+[0;32mI (717) cpu_start: Project name:     mqtt_sense[0m
+[0;32mI (723) cpu_start: App version:      1[0m
+[0;32mI (727) cpu_start: Compile time:     Mar 22 2024 12:07:56[0m
+[0;32mI (733) cpu_start: ELF file SHA256:  ba2883b4d...[0m
+[0;32mI (739) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (743) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (748) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (753) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (758) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (765) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (771) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (777) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (783) heap_init: At 3FFCA2B0 len 00015D50 (87 KiB): DRAM[0m
+[0;32mI (789) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (796) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (802) heap_init: At 4009E430 len 00001BD0 (6 KiB): IRAM[0m
+[0;32mI (810) spi_flash: detected chip: generic[0m
+[0;32mI (813) spi_flash: flash io: dio[0m
+[0;33mW (817) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (828) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (833) main_task: Started on CPU0[0m
+[0;32mI (843) main_task: Calling app_main()[0m
+I (873) wifi:wifi driver task: 3ffce230, prio:23, stack:6656, core=0
+I (883) wifi:wifi firmware version: a9f5b59
+I (883) wifi:wifi certification version: v7.0
+I (883) wifi:config NVS flash: enabled
+I (883) wifi:config nano formating: disabled
+I (883) wifi:Init data frame dynamic rx buffer num: 32
+I (893) wifi:Init static rx mgmt buffer num: 5
+I (893) wifi:Init management short buffer num: 32
+I (903) wifi:Init dynamic tx buffer num: 32
+I (903) wifi:Init static rx buffer size: 1600
+I (903) wifi:Init static rx buffer num: 10
+I (913) wifi:Init dynamic rx buffer num: 32
+[0;32mI (913) wifi_init: rx ba win: 6[0m
+[0;32mI (923) wifi_init: tcpip mbox: 32[0m
+[0;32mI (923) wifi_init: udp mbox: 6[0m
+[0;32mI (923) wifi_init: tcp mbox: 6[0m
+[0;32mI (933) wifi_init: tcp tx win: 5760[0m
+[0;32mI (933) wifi_init: tcp rx win: 5760[0m
+[0;32mI (943) wifi_init: tcp mss: 1440[0m
+[0;32mI (943) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (943) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (953) wifi_prov_scheme_ble: BT memory released[0m
+[0;32mI (953) init_wifi: Already provisioned, starting Wi-Fi STA[0m
+[0;32mI (963) wifi_prov_scheme_ble: BTDM memory released[0m
+[0;32mI (973) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (1053) wifi:mode : sta (b0:a7:32:2a:c3:a0)
+I (1053) wifi:enable tsf
+I (3473) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (3473) wifi:state: init -> auth (b0)
+I (4473) wifi:state: auth -> init (200)
+I (4473) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (4473) wifi:new:<6,1>, old:<6,0>, ap:<255,255>, sta:<6,1>, prof:1
+I (4483) wifi:state: init -> auth (b0)
+I (4523) wifi:state: auth -> init (8a0)
+I (4523) wifi:new:<6,0>, old:<6,1>, ap:<255,255>, sta:<6,1>, prof:1
+I (4533) wifi:new:<1,1>, old:<6,0>, ap:<255,255>, sta:<1,1>, prof:1
+I (4533) wifi:state: init -> auth (b0)
+I (4533) wifi:state: auth -> init (8a0)
+I (4543) wifi:new:<1,0>, old:<1,1>, ap:<255,255>, sta:<1,1>, prof:1
+I (4543) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1
+I (4553) wifi:state: init -> auth (b0)
+I (5423) wifi:state: auth -> assoc (0)
+I (5433) wifi:state: assoc -> run (10)
+I (5523) wifi:connected with IKP-1stFloor, aid = 4, channel 11, BW20, bssid = e0:46:ee:a9:95:c1
+I (5523) wifi:security: WPA3-SAE, phy: bgn, rssi: -65
+I (5543) wifi:pm start, type: 1
+
+I (5543) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (5593) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (5593) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+I (6063) wifi:<ba-add>idx:0 (ifx:0, e0:46:ee:a9:95:c1), tid:0, ssn:0, winSize:64
+[0;32mI (8543) event_handler: Connected with IP Address:192.168.5.150[0m
+[0;32mI (8543) esp_netif_handlers: sta ip: 192.168.5.150, mask: 255.255.192.0, gw: 192.168.2.1[0m
+[0;32mI (8543) MQTT: Waiting for system time to be set... (1/10)[0m
+I (9083) wifi:<ba-del>idx:0, tid:0
+I (9083) wifi:<ba-add>idx:0 (ifx:0, e0:46:ee:a9:95:c1), tid:0, ssn:1, winSize:64
+[0;32mI (10553) MQTT: The current date/time is: Fri Mar 22 07:17:01 2024[0m
+[0;32mI (10553) MQTT: Initialising MQTT from Main.[0m
+[0;32mI (10603) ultra: Distance: 34.4086 cm
+[0m
+[0;32mI (10603) MQTT: Initialization completed.[0m
+[0;32mI (11143) ultra: Distance: 381.5741 cm
+[0m
+[0;32mI (11683) ultra: Distance: 3853.1184 cm
+[0m
+[0;32mI (11693) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (11693) MQTT: published successfully.[0m
+[0;32mI (11693) MQTT: sent subscribe successful[0m
+[0;32mI (12223) ultra: Distance: 38570.2695 cm
+[0m
+[0;32mI (12763) ultra: Distance: 385738.2812 cm
+[0m
+[0;32mI (13303) ultra: Distance: 3857417.2500 cm
+[0m
+[0;32mI (13843) ultra: Distance: 38574196.0000 cm
+[0m
+[0;32mI (14383) ultra: Distance: 385741952.0000 cm
+[0m
+[0;32mI (14933) ultra: Distance: 3857419520.0000 cm
+[0m
+[0;32mI (15963) ultra: Distance: 38574194688.0000 cm
+[0m
+[0;32mI (16513) ultra: Distance: 385741946880.0000 cm
+[0m
+[0;32mI (17053) ultra: Distance: 3857419599872.0000 cm
+[0m
+[0;32mI (17603) ultra: Distance: 38574195998720.0000 cm
+[0m
+[0;32mI (18143) ultra: Distance: 385741951598592.0000 cm
+[0m
+[0;32mI (18683) ultra: Distance: 3857419650203648.0000 cm
+[0m
+[0;32mI (19223) ultra: Distance: 38574196502036480.0000 cm
+[0m
+[0;32mI (19763) ultra: Distance: 385741973610299392.0000 cm
+[0m
+[0;32mI (20303) ultra: Distance: 3857419667383517184.0000 cm
+[0m
+[0;32mI (20843) ultra: Distance: 38574197223590985728.0000 cm
+[0m
+[0;32mI (21383) ultra: Distance: 385741963439816835072.0000 cm
+[0m
+[0;32mI (21923) ultra: Distance: 3857419775135656706048.0000 cm
+[0m
+[0;32mI (22463) ultra: Distance: 38574195499556753375232.0000 cm
+[0m
+[0;32mI (23003) ultra: Distance: 385741954995567533752320.0000 cm
+[0m
+[0;32mI (23543) ultra: Distance: 3857419405840487261667328.0000 cm
+[0m
+[0;32mI (24083) ultra: Distance: 38574196364247881830367232.0000 cm
+[0m
+[0;32mI (24623) ultra: Distance: 385741968254164836731060224.0000 cm
+[0m
+[0;32mI (25163) ultra: Distance: 3857419608754672072472395776.0000 cm
+[0m
+[0;32mI (25703) ultra: Distance: 38574197268138341442135261184.0000 cm
+[0m
+[0;32mI (26243) ultra: Distance: 385741972681383414421352611840.0000 cm
+[0m
+[0;32mI (26783) ultra: Distance: 3857419651255970418299202699264.0000 cm
+[0m
+[0;32mI (27323) ultra: Distance: 38574197117022613990306614345728.0000 cm
+[0m
+[0;32mI (27863) ultra: Distance: 385741961498819582986032745807872.0000 cm
+[0m
+[0;32mI (28403) ultra: Distance: 3857419614988195829860327458078720.0000 cm
+[0m
+[0;32mI (28943) ultra: Distance: 38574196768851977941293412030349312.0000 cm
+[0m
+[0;32mI (29483) ultra: Distance: 385741957784999465129891921110499328.0000 cm
+[0m
+[0;32mI (30023) ultra: Distance: 3857419577849994651298919211104993280.0000 cm
+[0m
+[0;32mI (30563) ultra: Distance: 38574197046150546741218593607753138176.0000 cm
+[0m
+[0;32mI (31103) ultra: Distance: inf cm
+[0m
+[0;32mI (31643) ultra: Distance: inf cm
+[0m
+[0;32mI (32183) ultra: Distance: inf cm
+[0m
+[0;32mI (32723) ultra: Distance: inf cm
+[0m
+[0;32mI (33273) ultra: Distance: inf cm
+[0m
+[0;32mI (33813) ultra: Distance: inf cm
+[0m
+[0;32mI (34353) ultra: Distance: inf cm
+[0m
+[0;32mI (34893) ultra: Distance: inf cm
+[0m
+[0;32mI (35433) ultra: Distance: inf cm
+[0m

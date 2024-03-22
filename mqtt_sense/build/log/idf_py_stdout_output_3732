@@ -1,0 +1,419 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 22 2024 12:07:41[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=31118h (200984) map[0m
+[0;32mI (173) esp_image: segment 1: paddr=00041140 vaddr=3ffbdb60 size=058f0h ( 22768) load[0m
+[0;32mI (182) esp_image: segment 2: paddr=00046a38 vaddr=40080000 size=095e0h ( 38368) load[0m
+[0;32mI (197) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=c5e20h (810528) map[0m
+[0;32mI (475) esp_image: segment 4: paddr=00115e48 vaddr=400895e0 size=15b70h ( 88944) load[0m
+[0;32mI (526) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (526) boot: Disabling RNG early entropy source...[0m
+[0;32mI (537) cpu_start: Multicore app[0m
+[0;32mI (546) cpu_start: Pro cpu start user code[0m
+[0;32mI (546) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (546) cpu_start: Application information:[0m
+[0;32mI (549) cpu_start: Project name:     mqtt_sense[0m
+[0;32mI (554) cpu_start: App version:      1[0m
+[0;32mI (559) cpu_start: Compile time:     Mar 22 2024 12:07:56[0m
+[0;32mI (565) cpu_start: ELF file SHA256:  5520945d6...[0m
+[0;32mI (570) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (575) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (580) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (585) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (589) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (597) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (602) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (609) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (615) heap_init: At 3FFCA2B8 len 00015D48 (87 KiB): DRAM[0m
+[0;32mI (621) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (627) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (634) heap_init: At 4009F150 len 00000EB0 (3 KiB): IRAM[0m
+[0;32mI (641) spi_flash: detected chip: generic[0m
+[0;32mI (644) spi_flash: flash io: dio[0m
+[0;33mW (649) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (659) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (665) main_task: Started on CPU0[0m
+[0;32mI (675) main_task: Calling app_main()[0m
+I (705) wifi:wifi driver task: 3ffce238, prio:23, stack:6656, core=0
+I (715) wifi:wifi firmware version: a9f5b59
+I (715) wifi:wifi certification version: v7.0
+I (715) wifi:config NVS flash: enabled
+I (715) wifi:config nano formating: disabled
+I (715) wifi:Init data frame dynamic rx buffer num: 32
+I (725) wifi:Init static rx mgmt buffer num: 5
+I (725) wifi:Init management short buffer num: 32
+I (735) wifi:Init dynamic tx buffer num: 32
+I (735) wifi:Init static rx buffer size: 1600
+I (745) wifi:Init static rx buffer num: 10
+I (745) wifi:Init dynamic rx buffer num: 32
+[0;32mI (745) wifi_init: rx ba win: 6[0m
+[0;32mI (755) wifi_init: tcpip mbox: 32[0m
+[0;32mI (755) wifi_init: udp mbox: 6[0m
+[0;32mI (755) wifi_init: tcp mbox: 6[0m
+[0;32mI (765) wifi_init: tcp tx win: 5760[0m
+[0;32mI (765) wifi_init: tcp rx win: 5760[0m
+[0;32mI (775) wifi_init: tcp mss: 1440[0m
+[0;32mI (775) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (785) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (785) wifi_prov_scheme_ble: BT memory released[0m
+[0;32mI (795) init_wifi: Already provisioned, starting Wi-Fi STA[0m
+[0;32mI (795) wifi_prov_scheme_ble: BTDM memory released[0m
+[0;32mI (805) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (885) wifi:mode : sta (b0:a7:32:2a:c3:a0)
+I (885) wifi:enable tsf
+[0;32mI (895) MQTT: Waiting for system time to be set... (1/10)[0m
+[0;32mI (2895) MQTT: Waiting for system time to be set... (2/10)[0m
+I (3305) wifi:new:<6,1>, old:<1,0>, ap:<255,255>, sta:<6,1>, prof:1
+I (3305) wifi:state: init -> auth (b0)
+I (3305) wifi:state: auth -> assoc (0)
+I (3325) wifi:state: assoc -> run (10)
+I (3355) wifi:connected with IKP-1stFloor, aid = 3, channel 6, 40U, bssid = 9c:c9:eb:a5:17:c1
+I (3355) wifi:security: WPA2-PSK, phy: bgn, rssi: -43
+I (3375) wifi:pm start, type: 1
+
+I (3375) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (3425) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (3425) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+I (3905) wifi:<ba-add>idx:0 (ifx:0, 9c:c9:eb:a5:17:c1), tid:6, ssn:2, winSize:64
+[0;32mI (4895) MQTT: Waiting for system time to be set... (3/10)[0m
+[0;32mI (5875) event_handler: Connected with IP Address:192.168.5.150[0m
+[0;32mI (5875) esp_netif_handlers: sta ip: 192.168.5.150, mask: 255.255.192.0, gw: 192.168.2.1[0m
+[0;32mI (6895) MQTT: Waiting for system time to be set... (4/10)[0m
+[0;32mI (8895) MQTT: Waiting for system time to be set... (5/10)[0m
+I (9435) wifi:<ba-add>idx:1 (ifx:0, 9c:c9:eb:a5:17:c1), tid:0, ssn:0, winSize:64
+[0;32mI (10895) MQTT: Waiting for system time to be set... (6/10)[0m
+[0;32mI (12895) MQTT: Waiting for system time to be set... (7/10)[0m
+[0;32mI (14895) MQTT: Waiting for system time to be set... (8/10)[0m
+[0;32mI (16895) MQTT: Waiting for system time to be set... (9/10)[0m
+[0;32mI (18895) MQTT: The current date/time is: Thu Jan  1 00:00:18 1970[0m
+[0;32mI (18895) MQTT: Initialising MQTT from Main.[0m
+[0;32mI (19015) ultra: Distance: 159.3638 cm
+[0m
+[0;32mI (19025) mpu: Pitch: 0.000000 Roll: 0.000000[0m
+[0;32mI (19685) ultra: Distance: 281.3881 cm
+[0m
+[0;32mI (19715) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (19715) MQTT: published successfully.[0m
+[0;32mI (19715) MQTT: sent subscribe successful[0m
+[0;32mI (20025) mpu: Pitch: -18.396051 Roll: -0.787378[0m
+[0;32mI (20295) ultra: Distance: 188.9233 cm
+[0m
+[0;32mI (20915) ultra: Distance: 178.9182 cm
+[0m
+[0;32mI (21025) mpu: Pitch: -18.515320 Roll: -0.958211[0m
+[0;32mI (21535) ultra: Distance: 177.5349 cm
+[0m
+[0;32mI (22025) mpu: Pitch: -18.399658 Roll: -0.746634[0m
+[0;32mI (22145) ultra: Distance: 177.2897 cm
+[0m
+[0;32mI (22755) ultra: Distance: 177.1307 cm
+[0m
+[0;32mI (23025) mpu: Pitch: -18.411024 Roll: -0.848485[0m
+[0;32mI (23375) ultra: Distance: 177.1234 cm
+[0m
+[0;32mI (23975) ultra: Distance: 166.5658 cm
+[0m
+[0;32mI (24025) mpu: Pitch: -18.509924 Roll: -1.008590[0m
+[0;32mI (24575) ultra: Distance: 131.0324 cm
+[0m
+[0;32mI (25025) mpu: Pitch: -18.371084 Roll: -0.741220[0m
+[0;32mI (25095) ultra: Distance: 18.9274 cm
+[0m
+[0;32mI (25615) ultra: Distance: 6.6652 cm
+[0m
+[0;32mI (26025) mpu: Pitch: -18.346294 Roll: -0.708381[0m
+[0;32mI (26135) ultra: Distance: 5.7424 cm
+[0m
+[0;32mI (26655) ultra: Distance: 5.6760 cm
+[0m
+[0;32mI (27025) mpu: Pitch: -18.331142 Roll: -0.721764[0m
+[0;32mI (27175) ultra: Distance: 6.4297 cm
+[0m
+[0;32mI (27705) ultra: Distance: 8.8240 cm
+[0m
+[0;32mI (28025) mpu: Pitch: -18.351633 Roll: -0.734274[0m
+[0;32mI (28235) ultra: Distance: 10.1427 cm
+[0m
+[0;32mI (28765) ultra: Distance: 13.4781 cm
+[0m
+[0;32mI (29025) mpu: Pitch: -18.359341 Roll: -0.754210[0m
+[0;32mI (29375) ultra: Distance: 161.1547 cm
+[0m
+[0;32mI (29955) ultra: Distance: 113.0327 cm
+[0m
+[0;32mI (30025) mpu: Pitch: -18.467005 Roll: -0.896329[0m
+[0;32mI (30565) ultra: Distance: 170.3860 cm
+[0m
+[0;32mI (31025) mpu: Pitch: -18.384129 Roll: -0.741801[0m
+[0;32mI (31175) ultra: Distance: 175.9093 cm
+[0m
+[0;32mI (31785) ultra: Distance: 176.9789 cm
+[0m
+[0;32mI (32025) mpu: Pitch: -18.407307 Roll: -0.847436[0m
+[0;32mI (32395) ultra: Distance: 177.4030 cm
+[0m
+[0;32mI (33005) ultra: Distance: 177.0403 cm
+[0m
+[0;32mI (33025) mpu: Pitch: -18.497440 Roll: -1.013816[0m
+[0;32mI (33625) ultra: Distance: 177.1661 cm
+[0m
+[0;32mI (34025) mpu: Pitch: -338854816.000000 Roll: -666779072.000000[0m
+[0;32mI (34245) ultra: Distance: 176.8614 cm
+[0m
+[0;32mI (34855) ultra: Distance: 176.8154 cm
+[0m
+[0;32mI (35025) mpu: Pitch: -27192476.000000 Roll: -53507768.000000[0m
+[0;32mI (35485) ultra: Distance: 178.0574 cm
+[0m
+[0;32mI (36025) mpu: Pitch: -1697336.000000 Roll: -3339884.250000[0m
+[0;32mI (36095) ultra: Distance: 178.2988 cm
+[0m
+[0;32mI (36705) ultra: Distance: 177.3626 cm
+[0m
+[0;32mI (37025) mpu: Pitch: -119542.125000 Roll: -235193.046875[0m
+[0;32mI (37315) ultra: Distance: 176.9897 cm
+[0m
+[0;32mI (37925) ultra: Distance: 177.5248 cm
+[0m
+[0;32mI (38025) mpu: Pitch: -9610.039062 Roll: -18874.695312[0m
+[0;32mI (38545) ultra: Distance: 176.8973 cm
+[0m
+[0;32mI (39025) mpu: Pitch: -559.826843 Roll: -1066.148193[0m
+[0;32mI (39155) ultra: Distance: 176.7466 cm
+[0m
+[0;32mI (39765) ultra: Distance: 177.1523 cm
+[0m
+[0;32mI (40025) mpu: Pitch: -61.838425 Roll: -86.315392[0m
+[0;32mI (40375) ultra: Distance: 176.9704 cm
+[0m
+[0;32mI (40995) ultra: Distance: 176.9574 cm
+[0m
+[0;32mI (41025) mpu: Pitch: -22.028767 Roll: -7.963026[0m
+[0;32mI (41605) ultra: Distance: 176.8992 cm
+[0m
+[0;32mI (42025) mpu: Pitch: -18.574736 Roll: -1.148701[0m
+[0;32mI (42215) ultra: Distance: 176.6485 cm
+[0m
+[0;32mI (42825) ultra: Distance: 176.6510 cm
+[0m
+[0;32mI (43025) mpu: Pitch: -18.450882 Roll: -0.927826[0m
+[0;32mI (43445) ultra: Distance: 176.6668 cm
+[0m
+[0;32mI (44025) mpu: Pitch: -18.404495 Roll: -0.772570[0m
+[0;32mI (44055) ultra: Distance: 177.2650 cm
+[0m
+[0;32mI (44675) ultra: Distance: 177.2989 cm
+[0m
+[0;32mI (45025) mpu: Pitch: -18.380877 Roll: -0.812887[0m
+[0;32mI (45285) ultra: Distance: 177.2764 cm
+[0m
+[0;32mI (45905) ultra: Distance: 176.8294 cm
+[0m
+[0;32mI (46025) mpu: Pitch: -18.459156 Roll: -0.947422[0m
+[0;32mI (46515) ultra: Distance: 177.8002 cm
+[0m
+[0;32mI (47025) mpu: Pitch: -18.374092 Roll: -0.768095[0m
+[0;32mI (47135) ultra: Distance: 177.8438 cm
+[0m
+[0;32mI (47745) ultra: Distance: 178.0327 cm
+[0m
+[0;32mI (48025) mpu: Pitch: -18.394321 Roll: -0.864147[0m
+[0;32mI (48355) ultra: Distance: 178.1619 cm
+[0m
+[0;32mI (49055) mpu: Pitch: -18.498602 Roll: -0.988217[0m
+[0;32mI (49095) ultra: Distance: 387.4351 cm
+[0m
+[0;32mI (49725) ultra: Distance: 235.1521 cm
+[0m
+[0;32mI (50055) mpu: Pitch: -18.416471 Roll: -0.873555[0m
+[0;32mI (50285) ultra: Distance: 68.0635 cm
+[0m
+[0;32mI (50835) ultra: Distance: 63.2615 cm
+[0m
+[0;32mI (51055) mpu: Pitch: -18.381414 Roll: -0.773809[0m
+[0;32mI (51375) ultra: Distance: 50.8296 cm
+[0m
+[0;32mI (51915) ultra: Distance: 13.9399 cm
+[0m
+[0;32mI (52055) mpu: Pitch: -18.368843 Roll: -0.754504[0m
+[0;32mI (52435) ultra: Distance: 7.6319 cm
+[0m
+[0;32mI (52955) ultra: Distance: 9.9580 cm
+[0m
+[0;32mI (53055) mpu: Pitch: -18.360716 Roll: -0.758457[0m
+[0;32mI (53485) ultra: Distance: 10.8044 cm
+[0m
+[0;32mI (54025) ultra: Distance: 12.9994 cm
+[0m
+[0;32mI (54055) mpu: Pitch: -18.363947 Roll: -0.762718[0m
+[0;32mI (54555) ultra: Distance: 15.0948 cm
+[0m
+[0;32mI (55055) mpu: Pitch: -18.348280 Roll: -0.696717[0m
+[0;32mI (55085) ultra: Distance: 14.6802 cm
+[0m
+[0;32mI (55645) ultra: Distance: 81.8284 cm
+[0m
+[0;32mI (56055) mpu: Pitch: -18.334965 Roll: -0.728790[0m
+[0;32mI (56185) ultra: Distance: 23.7259 cm
+[0m
+[0;32mI (56715) ultra: Distance: 18.6140 cm
+[0m
+[0;32mI (57055) mpu: Pitch: -18.336826 Roll: -0.728551[0m
+[0;32mI (57245) ultra: Distance: 22.9062 cm
+[0m
+[0;32mI (57775) ultra: Distance: 21.5906 cm
+[0m
+[0;32mI (58055) mpu: Pitch: -18.366596 Roll: -0.753546[0m
+[0;32mI (58305) ultra: Distance: 20.9504 cm
+[0m
+[0;32mI (58835) ultra: Distance: 20.9726 cm
+[0m
+[0;32mI (59055) mpu: Pitch: -18.357113 Roll: -0.720013[0m
+[0;32mI (59365) ultra: Distance: 21.7145 cm
+[0m
+[0;32mI (59895) ultra: Distance: 20.8473 cm
+[0m
+[0;32mI (60055) mpu: Pitch: -18.356529 Roll: -0.735570[0m
+[0;32mI (60425) ultra: Distance: 20.8209 cm
+[0m
+[0;32mI (60955) ultra: Distance: 20.9476 cm
+[0m
+[0;32mI (61055) mpu: Pitch: -18.388369 Roll: -0.764551[0m
+[0;32mI (61485) ultra: Distance: 20.9155 cm
+[0m
+[0;32mI (62015) ultra: Distance: 21.2364 cm
+[0m
+[0;32mI (62055) mpu: Pitch: -18.359150 Roll: -0.794888[0m
+[0;32mI (62545) ultra: Distance: 20.9874 cm
+[0m
+[0;32mI (63055) mpu: Pitch: -18.348637 Roll: -0.734863[0m
+[0;32mI (63075) ultra: Distance: 21.3125 cm
+[0m
+[0;32mI (63605) ultra: Distance: 22.0123 cm
+[0m
+[0;32mI (64055) mpu: Pitch: -18.345928 Roll: -0.687003[0m
+[0;32mI (64135) ultra: Distance: 21.8892 cm
+[0m
+[0;32mI (64665) ultra: Distance: 22.6700 cm
+[0m
+[0;32mI (65055) mpu: Pitch: -18.339815 Roll: -0.706480[0m
+[0;32mI (65195) ultra: Distance: 22.7291 cm
+[0m
+[0;32mI (65725) ultra: Distance: 22.1850 cm
+[0m
+[0;32mI (66055) mpu: Pitch: -18.335144 Roll: -0.713966[0m
+[0;32mI (66255) ultra: Distance: 22.7961 cm
+[0m
+[0;32mI (66785) ultra: Distance: 22.8365 cm
+[0m
+[0;32mI (67055) mpu: Pitch: -18.350500 Roll: -0.724880[0m
+[0;32mI (67315) ultra: Distance: 22.1405 cm
+[0m
+[0;32mI (67845) ultra: Distance: 22.5003 cm
+[0m
+[0;32mI (68055) mpu: Pitch: -18.355309 Roll: -0.745407[0m
+[0;32mI (68385) ultra: Distance: 22.8362 cm
+[0m
+[0;32mI (68915) ultra: Distance: 22.4043 cm
+[0m
+[0;32mI (69055) mpu: Pitch: -18.385565 Roll: -0.748030[0m
+[0;32mI (69445) ultra: Distance: 24.1784 cm
+[0m
+[0;32mI (69975) ultra: Distance: 22.1023 cm
+[0m
+[0;32mI (70055) mpu: Pitch: -18.384827 Roll: -0.790592[0m
+[0;32mI (70505) ultra: Distance: 21.3775 cm
+[0m
+[0;32mI (71035) ultra: Distance: 20.4464 cm
+[0m
+[0;32mI (71055) mpu: Pitch: -18.373854 Roll: -0.805553[0m
+[0;32mI (71565) ultra: Distance: 20.9171 cm
+[0m
+[0;32mI (72055) mpu: Pitch: -18.322987 Roll: -0.686136[0m
+[0;32mI (72095) ultra: Distance: 23.4227 cm
+[0m
+[0;32mI (72625) ultra: Distance: 28.1578 cm
+[0m
+[0;32mI (73055) mpu: Pitch: -18.354065 Roll: -0.679838[0m
+[0;32mI (73155) ultra: Distance: 27.1106 cm
+[0m
+[0;32mI (73685) ultra: Distance: 27.2645 cm
+[0m
+[0;32mI (74055) mpu: Pitch: -18.349312 Roll: -0.713834[0m
+[0;32mI (74215) ultra: Distance: 27.0316 cm
+[0m
+[0;32mI (74755) ultra: Distance: 26.6325 cm
+[0m
+[0;32mI (75055) mpu: Pitch: -18.332678 Roll: -0.735034[0m
+[0;32mI (75285) ultra: Distance: 23.0788 cm
+[0m
+[0;32mI (75815) ultra: Distance: 25.7613 cm
+[0m
+[0;32mI (76055) mpu: Pitch: -18.376432 Roll: -0.730965[0m
+[0;32mI (76345) ultra: Distance: 26.4934 cm
+[0m
+[0;32mI (76875) ultra: Distance: 27.0424 cm
+[0m
+[0;32mI (77055) mpu: Pitch: -18.351021 Roll: -0.749058[0m
+[0;32mI (77415) ultra: Distance: 26.1973 cm
+[0m
+[0;32mI (77955) ultra: Distance: 29.6473 cm
+[0m
+[0;32mI (78055) mpu: Pitch: -18.398708 Roll: -0.791633[0m
+[0;32mI (78635) ultra: Distance: 285.3216 cm
+[0m
+[0;32mI (79055) mpu: Pitch: -18.379206 Roll: -0.841945[0m
+[0;32mI (79175) ultra: Distance: 67.8115 cm
+[0m
+[0;32mI (79715) ultra: Distance: 44.9915 cm
+[0m
+[0;32mI (80055) mpu: Pitch: -18.350748 Roll: -0.749054[0m
+[0;32mI (80305) ultra: Distance: 114.5026 cm
+[0m
+[0;32mI (80855) ultra: Distance: 48.6606 cm
+[0m
+[0;32mI (81055) mpu: Pitch: -18.350769 Roll: -0.752342[0m
+[0;32mI (81565) ultra: Distance: 334.8764 cm
+[0m
+[0;32mI (82055) mpu: Pitch: -18.385431 Roll: -0.810487[0m
+[0;32mI (82235) ultra: Distance: 299.5014 cm
+[0m
+[0;32mI (82845) ultra: Distance: 189.9243 cm
+[0m
+[0;32mI (83055) mpu: Pitch: -18.455969 Roll: -0.906019[0m
+[0;32mI (83535) ultra: Distance: 295.6062 cm
+[0m
+[0;32mI (84055) mpu: Pitch: -18.405634 Roll: -0.808185[0m
+[0;32mI (84155) ultra: Distance: 191.8796 cm
+[0m
+[0;32mI (84775) ultra: Distance: 178.7362 cm
+[0m
+[0;32mI (85055) mpu: Pitch: -18.426334 Roll: -0.823297[0m
+[0;32mI (85385) ultra: Distance: 177.4702 cm
+[0m
+[0;32mI (86105) mpu: Pitch: -18.674131 Roll: -1.304414[0m
+[0;32mI (86135) ultra: Distance: 403.5660 cm
+[0m

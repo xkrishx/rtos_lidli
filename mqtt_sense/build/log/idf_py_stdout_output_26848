@@ -1,0 +1,992 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 21 2024 19:47:52[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=33224h (209444) map[0m
+[0;32mI (176) esp_image: segment 1: paddr=0004324c vaddr=3ffbdb60 size=05a38h ( 23096) load[0m
+[0;32mI (185) esp_image: segment 2: paddr=00048c8c vaddr=40080000 size=0738ch ( 29580) load[0m
+[0;32mI (197) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=d76c8h (882376) map[0m
+[0;32mI (499) esp_image: segment 4: paddr=001276f0 vaddr=4008738c size=18858h (100440) load[0m
+[0;32mI (555) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (555) boot: Disabling RNG early entropy source...[0m
+[0;32mI (566) cpu_start: Multicore app[0m
+[0;32mI (575) cpu_start: Pro cpu start user code[0m
+[0;32mI (575) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (575) cpu_start: Application information:[0m
+[0;32mI (578) cpu_start: Project name:     mqtt_sense[0m
+[0;32mI (583) cpu_start: App version:      1[0m
+[0;32mI (588) cpu_start: Compile time:     Mar 21 2024 19:47:24[0m
+[0;32mI (594) cpu_start: ELF file SHA256:  6ffc054e8...[0m
+[0;32mI (599) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (604) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (609) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (614) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (619) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (626) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (632) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (638) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (644) heap_init: At 3FFCA3E8 len 00015C18 (87 KiB): DRAM[0m
+[0;32mI (650) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (656) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (663) heap_init: At 4009FBE4 len 0000041C (1 KiB): IRAM[0m
+[0;32mI (671) spi_flash: detected chip: generic[0m
+[0;32mI (674) spi_flash: flash io: dio[0m
+[0;32mI (678) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (684) main_task: Started on CPU0[0m
+[0;32mI (694) main_task: Calling app_main()[0m
+I (734) wifi:wifi driver task: 3ffce3ec, prio:23, stack:6656, core=0
+I (754) wifi:wifi firmware version: a9f5b59
+I (754) wifi:wifi certification version: v7.0
+I (754) wifi:config NVS flash: enabled
+I (754) wifi:config nano formating: disabled
+I (754) wifi:Init data frame dynamic rx buffer num: 32
+I (764) wifi:Init static rx mgmt buffer num: 5
+I (764) wifi:Init management short buffer num: 32
+I (764) wifi:Init dynamic tx buffer num: 32
+I (774) wifi:Init static rx buffer size: 1600
+I (774) wifi:Init static rx buffer num: 10
+I (784) wifi:Init dynamic rx buffer num: 32
+[0;32mI (784) wifi_init: rx ba win: 6[0m
+[0;32mI (784) wifi_init: tcpip mbox: 32[0m
+[0;32mI (794) wifi_init: udp mbox: 6[0m
+[0;32mI (794) wifi_init: tcp mbox: 6[0m
+[0;32mI (804) wifi_init: tcp tx win: 5760[0m
+[0;32mI (804) wifi_init: tcp rx win: 5760[0m
+[0;32mI (804) wifi_init: tcp mss: 1440[0m
+[0;32mI (814) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (814) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (824) wifi_prov_scheme_ble: BT memory released[0m
+[0;32mI (824) init_wifi: Already provisioned, starting Wi-Fi STA[0m
+[0;32mI (834) wifi_prov_scheme_ble: BTDM memory released[0m
+[0;32mI (844) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (934) wifi:mode : sta (b0:a7:32:2a:c3:a0)
+I (934) wifi:enable tsf
+I (3354) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (3354) wifi:state: init -> auth (b0)
+I (4354) wifi:state: auth -> init (200)
+I (4354) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (4364) wifi:new:<6,1>, old:<6,0>, ap:<255,255>, sta:<6,1>, prof:1
+I (4364) wifi:state: init -> auth (b0)
+I (4414) wifi:state: auth -> init (8a0)
+I (4414) wifi:new:<6,0>, old:<6,1>, ap:<255,255>, sta:<6,1>, prof:1
+I (4424) wifi:new:<1,1>, old:<6,0>, ap:<255,255>, sta:<1,1>, prof:1
+I (4424) wifi:state: init -> auth (b0)
+I (4434) wifi:state: auth -> assoc (0)
+I (4454) wifi:state: assoc -> run (10)
+I (4474) wifi:connected with IKP-1stFloor, aid = 2, channel 1, 40U, bssid = 80:cc:9c:d3:b9:41
+I (4474) wifi:security: WPA2-PSK, phy: bgn, rssi: -65
+I (4484) wifi:pm start, type: 1
+
+I (4484) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (4574) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (4574) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+I (4994) wifi:<ba-add>idx:0 (ifx:0, 80:cc:9c:d3:b9:41), tid:0, ssn:0, winSize:64
+[0;32mI (6494) event_handler: Connected with IP Address:192.168.5.150[0m
+[0;32mI (6494) esp_netif_handlers: sta ip: 192.168.5.150, mask: 255.255.192.0, gw: 192.168.2.1[0m
+[0;32mI (6494) MQTT: Initialising MQTT from Main.[0m
+[0;31mE (17134) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned 0[0m
+[0;31mE (17134) mqtt_client: MQTT connect failed[0m
+[0;32mI (17134) MQTT: MQTT_EVENT_DISCONNECTED[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 21 2024 19:47:52[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=33224h (209444) map[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 21 2024 19:47:52[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=33224h (209444) map[0m
+[0;32mI (176) esp_image: segment 1: paddr=0004324c vaddr=3ffbdb60 size=05a38h ( 23096) load[0m
+[0;32mI (185) esp_image: segment 2: paddr=00048c8c vaddr=40080000 size=0738ch ( 29580) load[0m
+[0;32mI (197) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=d76c8h (882376) map[0m
+[0;32mI (499) esp_image: segment 4: paddr=001276f0 vaddr=4008738c size=18858h (100440) load[0m
+[0;32mI (555) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (555) boot: Disabling RNG early entropy source...[0m
+[0;32mI (566) cpu_start: Multicore app[0m
+[0;32mI (575) cpu_start: Pro cpu start user code[0m
+[0;32mI (575) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (575) cpu_start: Application information:[0m
+[0;32mI (578) cpu_start: Project name:     mqtt_sense[0m
+[0;32mI (583) cpu_start: App version:      1[0m
+[0;32mI (588) cpu_start: Compile time:     Mar 21 2024 19:47:24[0m
+[0;32mI (594) cpu_start: ELF file SHA256:  6ffc054e8...[0m
+[0;32mI (599) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (604) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (609) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (614) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (619) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (626) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (632) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (638) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (644) heap_init: At 3FFCA3E8 len 00015C18 (87 KiB): DRAM[0m
+[0;32mI (650) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (656) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (663) heap_init: At 4009FBE4 len 0000041C (1 KiB): IRAM[0m
+[0;32mI (671) spi_flash: detected chip: generic[0m
+[0;32mI (674) spi_flash: flash io: dio[0m
+[0;32mI (679) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (684) main_task: Started on CPU0[0m
+[0;32mI (694) main_task: Calling app_main()[0m
+I (734) wifi:wifi driver task: 3ffce368, prio:23, stack:6656, core=0
+I (754) wifi:wifi firmware version: a9f5b59
+I (754) wifi:wifi certification version: v7.0
+I (754) wifi:config NVS flash: enabled
+I (754) wifi:config nano formating: disabled
+I (754) wifi:Init data frame dynamic rx buffer num: 32
+I (764) wifi:Init static rx mgmt buffer num: 5
+I (764) wifi:Init management short buffer num: 32
+I (764) wifi:Init dynamic tx buffer num: 32
+I (774) wifi:Init static rx buffer size: 1600
+I (774) wifi:Init static rx buffer num: 10
+I (784) wifi:Init dynamic rx buffer num: 32
+[0;32mI (784) wifi_init: rx ba win: 6[0m
+[0;32mI (784) wifi_init: tcpip mbox: 32[0m
+[0;32mI (794) wifi_init: udp mbox: 6[0m
+[0;32mI (794) wifi_init: tcp mbox: 6[0m
+[0;32mI (804) wifi_init: tcp tx win: 5760[0m
+[0;32mI (804) wifi_init: tcp rx win: 5760[0m
+[0;32mI (804) wifi_init: tcp mss: 1440[0m
+[0;32mI (814) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (814) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (824) wifi_prov_scheme_ble: BT memory released[0m
+[0;32mI (824) init_wifi: Already provisioned, starting Wi-Fi STA[0m
+[0;32mI (834) wifi_prov_scheme_ble: BTDM memory released[0m
+[0;32mI (844) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (934) wifi:mode : sta (b0:a7:32:2a:c3:a0)
+I (934) wifi:enable tsf
+I (3354) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (3354) wifi:state: init -> auth (b0)
+I (4354) wifi:state: auth -> init (200)
+I (4354) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (4354) wifi:new:<6,1>, old:<6,0>, ap:<255,255>, sta:<6,1>, prof:1
+I (4364) wifi:state: init -> auth (b0)
+I (4364) wifi:state: auth -> assoc (0)
+I (4374) wifi:state: assoc -> run (10)
+I (4394) wifi:connected with IKP-1stFloor, aid = 2, channel 6, 40U, bssid = 9c:c9:eb:a5:17:c1
+I (4394) wifi:security: WPA2-PSK, phy: bgn, rssi: -45
+I (4404) wifi:pm start, type: 1
+
+I (4404) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (4444) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (4444) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+I (4914) wifi:<ba-add>idx:0 (ifx:0, 9c:c9:eb:a5:17:c1), tid:6, ssn:2, winSize:64
+[0;32mI (6414) event_handler: Connected with IP Address:192.168.5.150[0m
+[0;32mI (6414) esp_netif_handlers: sta ip: 192.168.5.150, mask: 255.255.192.0, gw: 192.168.2.1[0m
+[0;32mI (6414) MQTT: Initialising MQTT from Main.[0m
+I (6444) wifi:<ba-add>idx:1 (ifx:0, 9c:c9:eb:a5:17:c1), tid:0, ssn:0, winSize:64
+[0;32mI (7174) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (7174) MQTT: Waiting for system time to be set... (1/10)[0m
+[0;32mI (9174) MQTT: Waiting for system time to be set... (2/10)[0m
+[0;32mI (11174) MQTT: The current date/time is: Thu Mar 21 14:38:59 2024[0m
+[0;31mE (44714) transport_base: tcp_write error, errno=No more processes[0m
+[0;31mE (44714) mqtt_client: Writing failed: errno=11[0m
+[0;32mI (44714) MQTT: MQTT_EVENT_ERROR[0m
+[0;32mI (44714) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;31mE (44874) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (44874) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (44874) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (44884) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (44884) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (44894) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (44894) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (44904) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (44904) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (44914) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (44924) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (44924) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (44934) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (44934) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (44944) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (44954) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (44954) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (44964) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (44964) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (44974) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (44974) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (44984) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (44994) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (44994) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45004) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45004) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45014) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45024) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45024) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45034) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45034) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45044) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45044) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45054) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45064) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45064) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45074) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45074) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45084) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45084) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45094) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45104) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45104) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45114) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45114) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45124) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45134) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45134) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45144) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45144) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45154) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45154) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45164) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45174) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45174) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45184) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45184) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45194) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45204) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45204) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45214) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45214) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45224) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45224) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45234) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45244) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45244) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45254) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45254) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45264) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45274) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45274) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45284) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45284) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45294) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45294) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45304) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45314) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45314) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45324) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45324) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45334) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45334) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45344) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45354) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45354) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45364) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45364) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45374) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45384) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45384) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45394) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45394) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45404) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45404) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45414) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45424) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45424) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45434) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45434) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45444) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45454) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45454) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45464) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45464) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45474) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45474) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45484) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45494) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45494) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45504) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45504) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45514) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45524) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45524) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45534) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45534) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45544) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45544) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45554) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45564) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45564) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45574) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45574) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45584) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45584) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45594) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45604) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45604) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45614) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45614) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45624) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45634) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45634) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45644) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45644) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45654) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45654) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45664) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45674) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45674) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45684) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45684) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45694) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45704) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45704) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45714) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45714) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45724) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45724) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45734) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45744) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45744) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45754) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45754) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45764) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45774) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45774) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45784) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45784) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45794) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45794) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45804) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45814) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45814) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45824) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45824) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45834) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45844) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45844) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45854) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45854) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45864) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45864) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45874) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45884) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45884) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45894) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45894) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45904) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45904) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45914) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45924) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45924) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45934) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45934) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45944) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45954) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45954) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45964) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45964) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45974) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45974) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45984) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45994) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (45994) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46004) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46004) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46014) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46024) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46024) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46034) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46034) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46044) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46044) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46054) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46064) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46064) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46074) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46074) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46084) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46094) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46094) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46104) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46104) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46114) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46114) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46124) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46134) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46134) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46144) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46144) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46154) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46154) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46164) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46174) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46174) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46184) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46184) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46194) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46204) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46204) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46214) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46214) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46224) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46224) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46234) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46244) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46244) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46254) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46254) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46264) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46274) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46274) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46284) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46284) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46294) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46294) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46304) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46314) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46314) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46324) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46324) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46334) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46344) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46344) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46354) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46354) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46364) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46364) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46374) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46384) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46384) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46394) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46394) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46404) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46414) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46414) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46424) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46424) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46434) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46434) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46444) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46454) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46454) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46464) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46464) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46474) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46474) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46484) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46494) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46494) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46504) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46504) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46514) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46524) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46524) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46534) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46534) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46544) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46544) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46554) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46564) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46564) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46574) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46574) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46584) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46594) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46594) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46604) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46604) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46614) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46614) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46624) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46634) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46634) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46644) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46644) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46654) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46664) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46664) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46674) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46674) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46684) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46684) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46694) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46704) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46704) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46714) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46714) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46724) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46724) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46734) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46744) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46744) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46754) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46754) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46764) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46774) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46774) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46784) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46784) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46794) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46794) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46804) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46814) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46814) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46824) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46824) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46834) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46844) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46844) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46854) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46854) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46864) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46864) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46874) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46884) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46884) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46894) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46894) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46904) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46914) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46914) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46924) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46924) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46934) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46934) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46944) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46954) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46954) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46964) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46964) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46974) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46974) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46984) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46994) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (46994) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47004) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47004) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47014) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47024) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47024) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47034) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47034) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47044) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47044) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47054) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47064) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47064) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47074) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47074) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47084) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47094) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47094) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47104) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47104) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47114) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47114) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47124) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47134) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47134) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47144) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47144) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47154) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47164) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47164) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47174) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47174) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47184) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47184) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47194) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47204) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47204) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47214) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47214) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47224) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47234) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47234) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47244) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47244) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47254) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47254) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47264) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47274) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47274) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47284) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47284) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47294) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47294) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47304) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47314) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47314) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47324) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47324) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47334) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47344) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47344) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47354) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47354) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47364) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47364) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47374) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47384) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47384) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47394) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47394) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47404) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47414) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47414) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47424) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47424) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47434) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47434) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47444) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47454) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47454) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47464) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47464) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47474) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47484) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47484) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47494) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47494) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47504) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47504) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47514) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47524) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47524) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47534) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47534) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47544) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47544) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47554) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47564) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47564) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47574) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47574) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47584) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47594) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47594) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47604) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47604) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47614) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47614) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47624) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47634) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47634) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47644) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47644) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47654) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47664) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47664) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47674) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47674) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47684) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47684) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47694) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47704) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47704) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47714) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47714) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47724) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47734) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47734) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47744) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47744) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47754) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47754) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47764) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47774) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47774) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47784) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47784) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47794) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47804) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47804) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47814) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47814) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47824) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47824) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47834) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47844) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47844) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47854) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47854) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47864) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47864) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47874) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47884) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47884) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47894) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47894) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47904) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47914) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47914) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47924) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47924) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47934) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47934) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47944) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47954) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47954) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47964) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47964) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47974) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47984) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47984) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47994) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (47994) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48004) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48004) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48014) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48024) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48024) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48034) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48034) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48044) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48054) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48054) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48064) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48064) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48074) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48074) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48084) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48094) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48094) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48104) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48104) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48114) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48114) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48124) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48134) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48134) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48144) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48144) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48154) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48164) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48164) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48174) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48174) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48184) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48184) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48194) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48204) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48204) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48214) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48214) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48224) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48234) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48234) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48244) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48244) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48254) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48254) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48264) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48274) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48274) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48284) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48284) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48294) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48304) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48304) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48314) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48314) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48324) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48324) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48334) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48344) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48344) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48354) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48354) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48364) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48364) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48374) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48384) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48384) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48394) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48394) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48404) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48414) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48414) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48424) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48424) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48434) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48434) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48444) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48454) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48454) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48464) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48464) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48474) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48484) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48484) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48494) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48494) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48504) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48504) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48514) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48524) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48524) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48534) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48534) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48544) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48554) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48554) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48564) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48564) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48574) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48574) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48584) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48594) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48594) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48604) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48604) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48614) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48624) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48624) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48634) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48634) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48644) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48644) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48654) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48664) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48664) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48674) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48674) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48684) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48684) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48694) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48704) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48704) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48714) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48714) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48724) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48734) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48734) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48744) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48744) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48754) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48754) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48764) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48774) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48774) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48784) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48784) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48794) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48804) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48804) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48814) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48814) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48824) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48824) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48834) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48834) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48844) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48844) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48854) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48864) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48874) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48874) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48884) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48884) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48894) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48894) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48904) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48914) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48914) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48924) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48924) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48934) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48934) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48944) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48954) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48954) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48964) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48964) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48974) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48984) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48984) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48994) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (48994) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (49004) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (49004) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (49014) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (49024) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (49024) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (49034) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (49034) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (49044) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (49054) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (49054) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (49064) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (49064) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (49074) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (49074) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (49084) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (49094) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (49094) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (49104) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (49104) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (49114) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (49124) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (49124) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (49134) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (49134) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (49144) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (49144) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (49154) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (49164) outbox: outbox_enqueue(53): Memory exhausted[0m
+[0;31mE (49164) outbox: outbox_enqueue(53): Memory exhausted[0m

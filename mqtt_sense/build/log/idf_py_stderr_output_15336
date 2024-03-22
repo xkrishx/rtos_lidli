@@ -1,0 +1,1 @@
+ninja: error: 'D:/KPC/PC_embedded/rtos/mqtt_sense/secure_boot_signing_key.pem', needed by 'signature_verification_key.bin', missing and no known rule to make it

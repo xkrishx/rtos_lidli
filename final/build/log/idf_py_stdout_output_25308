@@ -1,0 +1,2069 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 20 2024 13:10:48[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=24984h (149892) map[0m
+[0;32mI (156) esp_image: segment 1: paddr=000349ac vaddr=3ffb0000 size=03cach ( 15532) load[0m
+[0;32mI (162) esp_image: segment 2: paddr=00038660 vaddr=40080000 size=079b8h ( 31160) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=8b240h (569920) map[0m
+[0;32mI (370) esp_image: segment 4: paddr=000cb268 vaddr=400879b8 size=100a8h ( 65704) load[0m
+[0;32mI (407) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (407) boot: Disabling RNG early entropy source...[0m
+[0;32mI (419) cpu_start: Multicore app[0m
+[0;32mI (428) cpu_start: Pro cpu start user code[0m
+[0;32mI (428) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (428) cpu_start: Application information:[0m
+[0;32mI (431) cpu_start: Project name:     final[0m
+[0;32mI (436) cpu_start: App version:      1[0m
+[0;32mI (440) cpu_start: Compile time:     Mar 20 2024 13:13:00[0m
+[0;32mI (446) cpu_start: ELF file SHA256:  0b5f6a432...[0m
+[0;32mI (451) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (456) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (461) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (466) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (471) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (478) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (484) heap_init: At 3FFB83A0 len 00027C60 (159 KiB): DRAM[0m
+[0;32mI (490) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (496) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (503) heap_init: At 40097A60 len 000085A0 (33 KiB): IRAM[0m
+[0;32mI (511) spi_flash: detected chip: generic[0m
+[0;32mI (514) spi_flash: flash io: dio[0m
+[0;33mW (518) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (531) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (542) main_task: Started on CPU0[0m
+[0;32mI (552) main_task: Calling app_main()[0m
+[0;32mI (1272) ultra: Distance: 1204.9276 cm
+[0m
+[0;31mE (1282) MPU6050 Init: MPU 6050 Config failed.[0m
+[0;32mI (1302) example_connect: Start example_connect.[0m
+I (1312) wifi:wifi driver task: 3ffc3e30, prio:23, stack:6656, core=0
+I (1322) wifi:wifi firmware version: a9f5b59
+I (1322) wifi:wifi certification version: v7.0
+I (1322) wifi:config NVS flash: enabled
+I (1322) wifi:config nano formating: disabled
+I (1332) wifi:Init data frame dynamic rx buffer num: 32
+I (1332) wifi:Init static rx mgmt buffer num: 5
+I (1342) wifi:Init management short buffer num: 32
+I (1342) wifi:Init dynamic tx buffer num: 32
+I (1352) wifi:Init static rx buffer size: 1600
+I (1352) wifi:Init static rx buffer num: 10
+I (1352) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1362) wifi_init: rx ba win: 6[0m
+[0;32mI (1362) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1372) wifi_init: udp mbox: 6[0m
+[0;32mI (1372) wifi_init: tcp mbox: 6[0m
+[0;32mI (1372) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1382) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1382) wifi_init: tcp mss: 1440[0m
+[0;32mI (1392) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1392) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1402) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (1492) wifi:mode : sta (b0:a7:32:2a:c3:a0)
+I (1502) wifi:enable tsf
+[0;32mI (1502) example_connect: Connecting to IKP-1stFloor...[0m
+[0;32mI (1502) example_connect: Waiting for IP(s)[0m
+I (3922) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (4172) wifi:state: init -> auth (b0)
+[0;32mI (4722) ultra: Distance: 856.1842 cm
+[0m
+I (5172) wifi:state: auth -> init (200)
+I (5172) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (5172) wifi:new:<6,1>, old:<6,0>, ap:<255,255>, sta:<6,1>, prof:1
+I (5182) wifi:state: init -> auth (b0)
+I (5202) wifi:state: auth -> assoc (0)
+I (5222) wifi:state: assoc -> run (10)
+I (5242) wifi:connected with IKP-1stFloor, aid = 3, channel 6, 40U, bssid = 9c:c9:eb:a5:17:c1
+I (5242) wifi:security: WPA2-PSK, phy: bgn, rssi: -42
+I (5242) wifi:pm start, type: 1
+
+I (5252) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (5292) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (5302) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+I (5762) wifi:<ba-add>idx:0 (ifx:0, 9c:c9:eb:a5:17:c1), tid:6, ssn:2, winSize:64
+[0;32mI (6282) mpu: Pitch: 0.000000 Roll: 0.000000[0m
+[0;32mI (6302) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:b2a7:32ff:fe2a:c3a0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (7262) esp_netif_handlers: example_netif_sta ip: 192.168.5.150, mask: 255.255.192.0, gw: 192.168.2.1[0m
+[0;32mI (7262) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.5.150[0m
+[0;32mI (7272) example_common: Connected to example_netif_sta[0m
+[0;32mI (7272) example_common: - IPv4 address: 192.168.5.150,[0m
+[0;32mI (7282) example_common: - IPv6 address: fe80:0000:0000:0000:b2a7:32ff:fe2a:c3a0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (7292) SNTP time: Initializing SNTP[0m
+I (7412) wifi:<ba-add>idx:1 (ifx:0, 9c:c9:eb:a5:17:c1), tid:0, ssn:0, winSize:64
+I (7422) wifi:state: run -> init (0)
+I (7422) wifi:pm stop, total sleep time: 872203 us / 2176788 us
+
+I (7422) wifi:<ba-del>idx:1, tid:0
+I (7422) wifi:<ba-del>idx:0, tid:6
+I (7432) wifi:new:<6,0>, old:<6,1>, ap:<255,255>, sta:<6,1>, prof:1
+E (7432) wifi:NAN WiFi stop
+I (7492) wifi:flush txq
+I (7492) wifi:stop sw txq
+I (7492) wifi:lmac stop hw txq
+I (7492) wifi:Deinit lldesc rx mblock:10
+[0;32mI (7502) SNTP time: time before setting on the ds: 20-02-2024  13:36:03[0m
+
+assert failed: xQueueSemaphoreTake queue.c:1709 (( pxQueue ))
+
+
+Backtrace: 0x400818e2:0x3ffbd7b0 0x4008a321:0x3ffbd7d0 0x40091db5:0x3ffbd7f0 0x4008ac46:0x3ffbd910 0x400d718b:0x3ffbd950 0x400d72a3:0x3ffbd990 0x400d6d9e:0x3ffbd9c0 0x400d64eb:0x3ffbd9f0 0x4008ae6d:0x3ffbda90
+
+
+
+
+ELF file SHA256: 0b5f6a432
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 20 2024 13:10:48[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=24984h (149892) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=000349ac vaddr=3ffb0000 size=03cach ( 15532) load[0m
+[0;32mI (161) esp_image: segment 2: paddr=00038660 vaddr=40080000 size=079b8h ( 31160) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=8b240h (569920) map[0m
+[0;32mI (369) esp_image: segment 4: paddr=000cb268 vaddr=400879b8 size=100a8h ( 65704) load[0m
+[0;32mI (407) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (407) boot: Disabling RNG early entropy source...[0m
+[0;32mI (419) cpu_start: Multicore app[0m
+[0;32mI (428) cpu_start: Pro cpu start user code[0m
+[0;32mI (428) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (428) cpu_start: Application information:[0m
+[0;32mI (431) cpu_start: Project name:     final[0m
+[0;32mI (435) cpu_start: App version:      1[0m
+[0;32mI (440) cpu_start: Compile time:     Mar 20 2024 13:13:00[0m
+[0;32mI (446) cpu_start: ELF file SHA256:  0b5f6a432...[0m
+[0;32mI (451) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (456) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (461) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (466) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (471) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (478) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (484) heap_init: At 3FFB83A0 len 00027C60 (159 KiB): DRAM[0m
+[0;32mI (490) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (496) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (503) heap_init: At 40097A60 len 000085A0 (33 KiB): IRAM[0m
+[0;32mI (511) spi_flash: detected chip: generic[0m
+[0;32mI (514) spi_flash: flash io: dio[0m
+[0;33mW (518) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (531) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (542) main_task: Started on CPU0[0m
+[0;32mI (552) main_task: Calling app_main()[0m
+[0;32mI (1272) ultra: Distance: 1205.0413 cm
+[0m
+[0;32mI (1282) mpu: Pitch: 0.000000 Roll: 0.000000[0m
+[0;32mI (1302) example_connect: Start example_connect.[0m
+I (1322) wifi:wifi driver task: 3ffc3f60, prio:23, stack:6656, core=0
+I (1332) wifi:wifi firmware version: a9f5b59
+I (1332) wifi:wifi certification version: v7.0
+I (1332) wifi:config NVS flash: enabled
+I (1332) wifi:config nano formating: disabled
+I (1342) wifi:Init data frame dynamic rx buffer num: 32
+I (1342) wifi:Init static rx mgmt buffer num: 5
+I (1352) wifi:Init management short buffer num: 32
+I (1352) wifi:Init dynamic tx buffer num: 32
+I (1362) wifi:Init static rx buffer size: 1600
+I (1362) wifi:Init static rx buffer num: 10
+I (1362) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1372) wifi_init: rx ba win: 6[0m
+[0;32mI (1372) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1382) wifi_init: udp mbox: 6[0m
+[0;32mI (1382) wifi_init: tcp mbox: 6[0m
+[0;32mI (1382) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1392) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1392) wifi_init: tcp mss: 1440[0m
+[0;32mI (1402) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1402) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1412) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (1502) wifi:mode : sta (b0:a7:32:2a:c3:a0)
+I (1502) wifi:enable tsf
+[0;32mI (1502) example_connect: Connecting to IKP-1stFloor...[0m
+[0;32mI (1512) example_connect: Waiting for IP(s)[0m
+I (3982) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (4242) wifi:state: init -> auth (b0)
+[0;32mI (4342) mpu: Pitch: -16.009800 Roll: -2.029969[0m
+[0;32mI (4662) ultra: Distance: 758.0369 cm
+[0m
+I (5252) wifi:state: auth -> init (200)
+I (5252) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (5252) wifi:new:<1,0>, old:<6,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (5252) wifi:state: init -> auth (b0)
+I (5262) wifi:state: auth -> init (8a0)
+I (5262) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (5272) wifi:new:<6,1>, old:<1,0>, ap:<255,255>, sta:<6,1>, prof:1
+I (5272) wifi:state: init -> auth (b0)
+I (5282) wifi:state: auth -> assoc (0)
+I (5292) wifi:state: assoc -> run (10)
+I (5312) wifi:connected with IKP-1stFloor, aid = 3, channel 6, 40U, bssid = 9c:c9:eb:a5:17:c1
+I (5312) wifi:security: WPA2-PSK, phy: bgn, rssi: -44
+I (5312) wifi:pm start, type: 1
+
+I (5312) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (5332) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (5332) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+I (5832) wifi:<ba-add>idx:0 (ifx:0, 9c:c9:eb:a5:17:c1), tid:6, ssn:2, winSize:64
+[0;32mI (6822) esp_netif_handlers: example_netif_sta ip: 192.168.5.150, mask: 255.255.192.0, gw: 192.168.2.1[0m
+[0;32mI (6822) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.5.150[0m
+[0;32mI (7302) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:b2a7:32ff:fe2a:c3a0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (7302) example_common: Connected to example_netif_sta[0m
+[0;32mI (7312) example_common: - IPv4 address: 192.168.5.150,[0m
+[0;32mI (7322) example_common: - IPv6 address: fe80:0000:0000:0000:b2a7:32ff:fe2a:c3a0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (7332) SNTP time: Initializing SNTP[0m
+[0;32mI (7342) mpu: Pitch: -15.600008 Roll: -1.229860[0m
+[0;32mI (8322) ultra: Distance: 1167.9846 cm
+[0m
+[0;32mI (10342) mpu: Pitch: -15.583673 Roll: -1.224347[0m
+I (10732) wifi:<ba-add>idx:1 (ifx:0, 9c:c9:eb:a5:17:c1), tid:0, ssn:0, winSize:64
+[0;32mI (11382) ultra: Distance: 187.2554 cm
+[0m
+[0;32mI (13342) mpu: Pitch: -15.594296 Roll: -1.185712[0m
+[0;32mI (14642) ultra: Distance: 430.5755 cm
+[0m
+[0;32mI (16342) mpu: Pitch: -15.609810 Roll: -1.229732[0m
+[0;31mE (17332) init sntp err: Failed to update system time within 10s timeout[0m
+I (17332) wifi:state: run -> init (0)
+I (17332) wifi:pm stop, total sleep time: 5626640 us / 12016626 us
+
+I (17332) wifi:<ba-del>idx:1, tid:0
+I (17332) wifi:<ba-del>idx:0, tid:6
+I (17342) wifi:new:<6,0>, old:<6,1>, ap:<255,255>, sta:<6,1>, prof:1
+E (17352) wifi:NAN WiFi stop
+I (17392) wifi:flush txq
+I (17392) wifi:stop sw txq
+I (17392) wifi:lmac stop hw txq
+I (17392) wifi:Deinit lldesc rx mblock:10
+[0;32mI (17402) SNTP time: time before setting on the ds: 20-02-2024  13:36:21[0m
+
+assert failed: xQueueSemaphoreTake queue.c:1709 (( pxQueue ))
+
+
+Backtrace: 0x400818e2:0x3ffbd7b0 0x4008a321:0x3ffbd7d0 0x40091db5:0x3ffbd7f0 0x4008ac46:0x3ffbd910 0x400d718b:0x3ffbd950 0x400d72a3:0x3ffbd990 0x400d6d9e:0x3ffbd9c0 0x400d64eb:0x3ffbd9f0 0x4008ae6d:0x3ffbda90
+
+
+
+
+ELF file SHA256: 0b5f6a432
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 20 2024 13:10:48[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=24984h (149892) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=000349ac vaddr=3ffb0000 size=03cach ( 15532) load[0m
+[0;32mI (161) esp_image: segment 2: paddr=00038660 vaddr=40080000 size=079b8h ( 31160) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=8b240h (569920) map[0m
+[0;32mI (369) esp_image: segment 4: paddr=000cb268 vaddr=400879b8 size=100a8h ( 65704) load[0m
+[0;32mI (407) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (407) boot: Disabling RNG early entropy source...[0m
+[0;32mI (419) cpu_start: Multicore app[0m
+[0;32mI (428) cpu_start: Pro cpu start user code[0m
+[0;32mI (428) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (428) cpu_start: Application information:[0m
+[0;32mI (431) cpu_start: Project name:     final[0m
+[0;32mI (435) cpu_start: App version:      1[0m
+[0;32mI (440) cpu_start: Compile time:     Mar 20 2024 13:13:00[0m
+[0;32mI (446) cpu_start: ELF file SHA256:  0b5f6a432...[0m
+[0;32mI (451) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (456) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (461) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (466) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (471) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (478) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (484) heap_init: At 3FFB83A0 len 00027C60 (159 KiB): DRAM[0m
+[0;32mI (490) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (496) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (503) heap_init: At 40097A60 len 000085A0 (33 KiB): IRAM[0m
+[0;32mI (511) spi_flash: detected chip: generic[0m
+[0;32mI (514) spi_flash: flash io: dio[0m
+[0;33mW (518) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (531) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (542) main_task: Started on CPU0[0m
+[0;32mI (552) main_task: Calling app_main()[0m
+[0;32mI (592) ultra: Distance: 28.2724 cm
+[0m
+[0;32mI (602) mpu: Pitch: 0.000000 Roll: 0.000000[0m
+[0;32mI (622) example_connect: Start example_connect.[0m
+I (632) wifi:wifi driver task: 3ffc3f54, prio:23, stack:6656, core=0
+I (642) wifi:wifi firmware version: a9f5b59
+I (642) wifi:wifi certification version: v7.0
+I (642) wifi:config NVS flash: enabled
+I (652) wifi:config nano formating: disabled
+I (652) wifi:Init data frame dynamic rx buffer num: 32
+I (652) wifi:Init static rx mgmt buffer num: 5
+I (662) wifi:Init management short buffer num: 32
+I (662) wifi:Init dynamic tx buffer num: 32
+I (672) wifi:Init static rx buffer size: 1600
+I (672) wifi:Init static rx buffer num: 10
+I (672) wifi:Init dynamic rx buffer num: 32
+[0;32mI (682) wifi_init: rx ba win: 6[0m
+[0;32mI (682) wifi_init: tcpip mbox: 32[0m
+[0;32mI (692) wifi_init: udp mbox: 6[0m
+[0;32mI (692) wifi_init: tcp mbox: 6[0m
+[0;32mI (692) wifi_init: tcp tx win: 5760[0m
+[0;32mI (702) wifi_init: tcp rx win: 5760[0m
+[0;32mI (702) wifi_init: tcp mss: 1440[0m
+[0;32mI (712) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (712) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (722) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (812) wifi:mode : sta (b0:a7:32:2a:c3:a0)
+I (812) wifi:enable tsf
+[0;32mI (812) example_connect: Connecting to IKP-1stFloor...[0m
+[0;32mI (822) example_connect: Waiting for IP(s)[0m
+I (3312) wifi:new:<6,1>, old:<1,0>, ap:<255,255>, sta:<6,1>, prof:1
+I (3572) wifi:state: init -> auth (b0)
+I (3572) wifi:state: auth -> assoc (0)
+I (3582) wifi:state: assoc -> run (10)
+[0;32mI (3602) mpu: Pitch: -15.976606 Roll: -1.935685[0m
+I (3612) wifi:connected with IKP-1stFloor, aid = 3, channel 6, 40U, bssid = 9c:c9:eb:a5:17:c1
+I (3612) wifi:security: WPA2-PSK, phy: bgn, rssi: -47
+I (3612) wifi:pm start, type: 1
+
+I (3622) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+[0;32mI (3652) ultra: Distance: 26.3428 cm
+[0m
+I (3662) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (3662) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+I (4152) wifi:<ba-add>idx:0 (ifx:0, 9c:c9:eb:a5:17:c1), tid:6, ssn:2, winSize:64
+[0;32mI (5132) esp_netif_handlers: example_netif_sta ip: 192.168.5.150, mask: 255.255.192.0, gw: 192.168.2.1[0m
+[0;32mI (5132) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.5.150[0m
+[0;32mI (5622) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:b2a7:32ff:fe2a:c3a0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (5622) example_common: Connected to example_netif_sta[0m
+[0;32mI (5632) example_common: - IPv4 address: 192.168.5.150,[0m
+[0;32mI (5632) example_common: - IPv6 address: fe80:0000:0000:0000:b2a7:32ff:fe2a:c3a0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (5652) SNTP time: Initializing SNTP[0m
+[0;32mI (6602) mpu: Pitch: -15.634706 Roll: -1.217678[0m
+[0;32mI (6682) ultra: Distance: 29.7636 cm
+[0m
+I (7872) wifi:<ba-add>idx:1 (ifx:0, 9c:c9:eb:a5:17:c1), tid:0, ssn:0, winSize:64
+I (7912) wifi:state: run -> init (0)
+I (7912) wifi:pm stop, total sleep time: 1731996 us / 4298087 us
+
+I (7922) wifi:<ba-del>idx:1, tid:0
+I (7922) wifi:<ba-del>idx:0, tid:6
+I (7922) wifi:new:<6,0>, old:<6,1>, ap:<255,255>, sta:<6,1>, prof:1
+E (7932) wifi:NAN WiFi stop
+I (8052) wifi:flush txq
+I (8052) wifi:stop sw txq
+I (8052) wifi:lmac stop hw txq
+I (8052) wifi:Deinit lldesc rx mblock:10
+[0;32mI (8062) SNTP time: time before setting on the ds: 20-02-2024  13:36:29[0m
+
+assert failed: xQueueSemaphoreTake queue.c:1709 (( pxQueue ))
+
+
+Backtrace: 0x400818e2:0x3ffbd7b0 0x4008a321:0x3ffbd7d0 0x40091db5:0x3ffbd7f0 0x4008ac46:0x3ffbd910 0x400d718b:0x3ffbd950 0x400d72a3:0x3ffbd990 0x400d6d9e:0x3ffbd9c0 0x400d64eb:0x3ffbd9f0 0x4008ae6d:0x3ffbda90
+
+
+
+
+ELF file SHA256: 0b5f6a432
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 20 2024 13:10:48[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=24984h (149892) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=000349ac vaddr=3ffb0000 size=03cach ( 15532) load[0m
+[0;32mI (161) esp_image: segment 2: paddr=00038660 vaddr=40080000 size=079b8h ( 31160) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=8b240h (569920) map[0m
+[0;32mI (369) esp_image: segment 4: paddr=000cb268 vaddr=400879b8 size=100a8h ( 65704) load[0m
+[0;32mI (407) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (407) boot: Disabling RNG early entropy source...[0m
+[0;32mI (419) cpu_start: Multicore app[0m
+[0;32mI (428) cpu_start: Pro cpu start user code[0m
+[0;32mI (428) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (428) cpu_start: Application information:[0m
+[0;32mI (431) cpu_start: Project name:     final[0m
+[0;32mI (435) cpu_start: App version:      1[0m
+[0;32mI (440) cpu_start: Compile time:     Mar 20 2024 13:13:00[0m
+[0;32mI (446) cpu_start: ELF file SHA256:  0b5f6a432...[0m
+[0;32mI (451) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (456) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (461) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (466) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (471) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (478) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (484) heap_init: At 3FFB83A0 len 00027C60 (159 KiB): DRAM[0m
+[0;32mI (490) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (496) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (503) heap_init: At 40097A60 len 000085A0 (33 KiB): IRAM[0m
+[0;32mI (511) spi_flash: detected chip: generic[0m
+[0;32mI (514) spi_flash: flash io: dio[0m
+[0;33mW (518) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (531) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (542) main_task: Started on CPU0[0m
+[0;32mI (552) main_task: Calling app_main()[0m
+[0;32mI (582) ultra: Distance: 27.0000 cm
+[0m
+[0;32mI (602) mpu: Pitch: 0.000000 Roll: 0.000000[0m
+[0;32mI (622) example_connect: Start example_connect.[0m
+I (632) wifi:wifi driver task: 3ffc3f60, prio:23, stack:6656, core=0
+I (642) wifi:wifi firmware version: a9f5b59
+I (642) wifi:wifi certification version: v7.0
+I (642) wifi:config NVS flash: enabled
+I (642) wifi:config nano formating: disabled
+I (652) wifi:Init data frame dynamic rx buffer num: 32
+I (652) wifi:Init static rx mgmt buffer num: 5
+I (662) wifi:Init management short buffer num: 32
+I (662) wifi:Init dynamic tx buffer num: 32
+I (672) wifi:Init static rx buffer size: 1600
+I (672) wifi:Init static rx buffer num: 10
+I (672) wifi:Init dynamic rx buffer num: 32
+[0;32mI (682) wifi_init: rx ba win: 6[0m
+[0;32mI (682) wifi_init: tcpip mbox: 32[0m
+[0;32mI (692) wifi_init: udp mbox: 6[0m
+[0;32mI (692) wifi_init: tcp mbox: 6[0m
+[0;32mI (692) wifi_init: tcp tx win: 5760[0m
+[0;32mI (702) wifi_init: tcp rx win: 5760[0m
+[0;32mI (702) wifi_init: tcp mss: 1440[0m
+[0;32mI (702) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (712) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (722) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (812) wifi:mode : sta (b0:a7:32:2a:c3:a0)
+I (812) wifi:enable tsf
+[0;32mI (812) example_connect: Connecting to IKP-1stFloor...[0m
+[0;32mI (812) example_connect: Waiting for IP(s)[0m
+I (3292) wifi:new:<6,1>, old:<1,0>, ap:<255,255>, sta:<6,1>, prof:1
+I (3552) wifi:state: init -> auth (b0)
+I (3572) wifi:state: auth -> assoc (0)
+I (3592) wifi:state: assoc -> run (10)
+[0;32mI (3602) mpu: Pitch: -15.888954 Roll: -1.835987[0m
+I (3642) wifi:connected with IKP-1stFloor, aid = 3, channel 6, 40U, bssid = 9c:c9:eb:a5:17:c1
+I (3642) wifi:security: WPA2-PSK, phy: bgn, rssi: -45
+I (3642) wifi:pm start, type: 1
+
+I (3642) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (3652) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (3662) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (3692) ultra: Distance: 71.9293 cm
+[0m
+I (4192) wifi:<ba-add>idx:0 (ifx:0, 9c:c9:eb:a5:17:c1), tid:6, ssn:2, winSize:64
+[0;32mI (5172) esp_netif_handlers: example_netif_sta ip: 192.168.5.150, mask: 255.255.192.0, gw: 192.168.2.1[0m
+[0;32mI (5172) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.5.150[0m
+[0;32mI (5622) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:b2a7:32ff:fe2a:c3a0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (5622) example_common: Connected to example_netif_sta[0m
+[0;32mI (5632) example_common: - IPv4 address: 192.168.5.150,[0m
+[0;32mI (5642) example_common: - IPv6 address: fe80:0000:0000:0000:b2a7:32ff:fe2a:c3a0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (5652) SNTP time: Initializing SNTP[0m
+[0;32mI (6602) mpu: Pitch: -15.604737 Roll: -1.227843[0m
+[0;32mI (6812) ultra: Distance: 180.4326 cm
+[0m
+I (7302) wifi:<ba-add>idx:1 (ifx:0, 9c:c9:eb:a5:17:c1), tid:0, ssn:0, winSize:64
+I (7322) wifi:state: run -> init (0)
+I (7322) wifi:pm stop, total sleep time: 1392961 us / 3676394 us
+
+I (7322) wifi:<ba-del>idx:1, tid:0
+I (7322) wifi:<ba-del>idx:0, tid:6
+I (7322) wifi:new:<6,0>, old:<6,1>, ap:<255,255>, sta:<6,1>, prof:1
+E (7332) wifi:NAN WiFi stop
+I (7482) wifi:flush txq
+I (7482) wifi:stop sw txq
+I (7482) wifi:lmac stop hw txq
+I (7482) wifi:Deinit lldesc rx mblock:10
+[0;32mI (7492) SNTP time: time before setting on the ds: 20-02-2024  13:36:36[0m
+
+assert failed: xQueueSemaphoreTake queue.c:1709 (( pxQueue ))
+
+
+Backtrace: 0x400818e2:0x3ffbd7b0 0x4008a321:0x3ffbd7d0 0x40091db5:0x3ffbd7f0 0x4008ac46:0x3ffbd910 0x400d718b:0x3ffbd950 0x400d72a3:0x3ffbd990 0x400d6d9e:0x3ffbd9c0 0x400d64eb:0x3ffbd9f0 0x4008ae6d:0x3ffbda90
+
+
+
+
+ELF file SHA256: 0b5f6a432
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 20 2024 13:10:48[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=24984h (149892) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=000349ac vaddr=3ffb0000 size=03cach ( 15532) load[0m
+[0;32mI (161) esp_image: segment 2: paddr=00038660 vaddr=40080000 size=079b8h ( 31160) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=8b240h (569920) map[0m
+[0;32mI (369) esp_image: segment 4: paddr=000cb268 vaddr=400879b8 size=100a8h ( 65704) load[0m
+[0;32mI (407) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (407) boot: Disabling RNG early entropy source...[0m
+[0;32mI (419) cpu_start: Multicore app[0m
+[0;32mI (428) cpu_start: Pro cpu start user code[0m
+[0;32mI (428) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (428) cpu_start: Application information:[0m
+[0;32mI (431) cpu_start: Project name:     final[0m
+[0;32mI (435) cpu_start: App version:      1[0m
+[0;32mI (440) cpu_start: Compile time:     Mar 20 2024 13:13:00[0m
+[0;32mI (446) cpu_start: ELF file SHA256:  0b5f6a432...[0m
+[0;32mI (451) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (456) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (461) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (466) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (471) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (478) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (484) heap_init: At 3FFB83A0 len 00027C60 (159 KiB): DRAM[0m
+[0;32mI (490) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (496) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (503) heap_init: At 40097A60 len 000085A0 (33 KiB): IRAM[0m
+[0;32mI (511) spi_flash: detected chip: generic[0m
+[0;32mI (514) spi_flash: flash io: dio[0m
+[0;33mW (518) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (531) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (542) main_task: Started on CPU0[0m
+[0;32mI (552) main_task: Calling app_main()[0m
+[0;32mI (872) ultra: Distance: 523.5087 cm
+[0m
+[0;32mI (892) mpu: Pitch: 0.000000 Roll: 0.000000[0m
+[0;32mI (912) example_connect: Start example_connect.[0m
+I (922) wifi:wifi driver task: 3ffc3f54, prio:23, stack:6656, core=0
+I (932) wifi:wifi firmware version: a9f5b59
+I (932) wifi:wifi certification version: v7.0
+I (932) wifi:config NVS flash: enabled
+I (932) wifi:config nano formating: disabled
+I (942) wifi:Init data frame dynamic rx buffer num: 32
+I (942) wifi:Init static rx mgmt buffer num: 5
+I (952) wifi:Init management short buffer num: 32
+I (952) wifi:Init dynamic tx buffer num: 32
+I (962) wifi:Init static rx buffer size: 1600
+I (962) wifi:Init static rx buffer num: 10
+I (962) wifi:Init dynamic rx buffer num: 32
+[0;32mI (972) wifi_init: rx ba win: 6[0m
+[0;32mI (972) wifi_init: tcpip mbox: 32[0m
+[0;32mI (982) wifi_init: udp mbox: 6[0m
+[0;32mI (982) wifi_init: tcp mbox: 6[0m
+[0;32mI (982) wifi_init: tcp tx win: 5760[0m
+[0;32mI (992) wifi_init: tcp rx win: 5760[0m
+[0;32mI (992) wifi_init: tcp mss: 1440[0m
+[0;32mI (1002) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1002) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1012) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (1102) wifi:mode : sta (b0:a7:32:2a:c3:a0)
+I (1102) wifi:enable tsf
+[0;32mI (1102) example_connect: Connecting to IKP-1stFloor...[0m
+[0;32mI (1112) example_connect: Waiting for IP(s)[0m
+I (3582) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (3842) wifi:state: init -> auth (b0)
+[0;32mI (3942) mpu: Pitch: -15.918777 Roll: -2.060488[0m
+[0;32mI (4132) ultra: Distance: 466.3095 cm
+[0m
+I (4852) wifi:state: auth -> init (200)
+I (4852) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (4852) wifi:new:<6,1>, old:<6,0>, ap:<255,255>, sta:<6,1>, prof:1
+I (4852) wifi:state: init -> auth (b0)
+I (4872) wifi:state: auth -> assoc (0)
+I (4882) wifi:state: assoc -> run (10)
+I (4912) wifi:connected with IKP-1stFloor, aid = 3, channel 6, 40U, bssid = 9c:c9:eb:a5:17:c1
+I (4912) wifi:security: WPA2-PSK, phy: bgn, rssi: -42
+I (4912) wifi:pm start, type: 1
+
+I (4912) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (4932) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (4932) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+I (5502) wifi:<ba-add>idx:0 (ifx:0, 9c:c9:eb:a5:17:c1), tid:6, ssn:2, winSize:64
+[0;32mI (6432) esp_netif_handlers: example_netif_sta ip: 192.168.5.150, mask: 255.255.192.0, gw: 192.168.2.1[0m
+[0;32mI (6432) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.5.150[0m
+[0;32mI (6912) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:b2a7:32ff:fe2a:c3a0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (6912) example_common: Connected to example_netif_sta[0m
+[0;32mI (6922) example_common: - IPv4 address: 192.168.5.150,[0m
+[0;32mI (6922) example_common: - IPv6 address: fe80:0000:0000:0000:b2a7:32ff:fe2a:c3a0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (6932) SNTP time: Initializing SNTP[0m
+[0;32mI (6952) mpu: Pitch: -15.595436 Roll: -1.222131[0m
+[0;32mI (7162) ultra: Distance: 69.7999 cm
+[0m
+[0;32mI (9952) mpu: Pitch: -15.605659 Roll: -1.232790[0m
+I (10102) wifi:<ba-add>idx:1 (ifx:0, 9c:c9:eb:a5:17:c1), tid:0, ssn:0, winSize:64
+I (10172) wifi:state: run -> init (0)
+I (10172) wifi:pm stop, total sleep time: 2276536 us / 5253513 us
+
+I (10172) wifi:<ba-del>idx:1, tid:0
+I (10172) wifi:<ba-del>idx:0, tid:6
+I (10172) wifi:new:<6,0>, old:<6,1>, ap:<255,255>, sta:<6,1>, prof:1
+E (10182) wifi:NAN WiFi stop
+[0;32mI (10362) ultra: Distance: 291.7662 cm
+[0m
+I (10412) wifi:flush txq
+I (10412) wifi:stop sw txq
+I (10412) wifi:lmac stop hw txq
+I (10412) wifi:Deinit lldesc rx mblock:10
+[0;32mI (10422) SNTP time: time before setting on the ds: 20-02-2024  13:36:47[0m
+
+assert failed: xQueueSemaphoreTake queue.c:1709 (( pxQueue ))
+
+
+Backtrace: 0x400818e2:0x3ffbd7b0 0x4008a321:0x3ffbd7d0 0x40091db5:0x3ffbd7f0 0x4008ac46:0x3ffbd910 0x400d718b:0x3ffbd950 0x400d72a3:0x3ffbd990 0x400d6d9e:0x3ffbd9c0 0x400d64eb:0x3ffbd9f0 0x4008ae6d:0x3ffbda90
+
+
+
+
+ELF file SHA256: 0b5f6a432
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 20 2024 13:10:48[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=24984h (149892) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=000349ac vaddr=3ffb0000 size=03cach ( 15532) load[0m
+[0;32mI (161) esp_image: segment 2: paddr=00038660 vaddr=40080000 size=079b8h ( 31160) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=8b240h (569920) map[0m
+[0;32mI (369) esp_image: segment 4: paddr=000cb268 vaddr=400879b8 size=100a8h ( 65704) load[0m
+[0;32mI (407) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (407) boot: Disabling RNG early entropy source...[0m
+[0;32mI (419) cpu_start: Multicore app[0m
+[0;32mI (428) cpu_start: Pro cpu start user code[0m
+[0;32mI (428) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (428) cpu_start: Application information:[0m
+[0;32mI (431) cpu_start: Project name:     final[0m
+[0;32mI (435) cpu_start: App version:      1[0m
+[0;32mI (440) cpu_start: Compile time:     Mar 20 2024 13:13:00[0m
+[0;32mI (446) cpu_start: ELF file SHA256:  0b5f6a432...[0m
+[0;32mI (451) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (456) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (461) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (466) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (471) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (478) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (484) heap_init: At 3FFB83A0 len 00027C60 (159 KiB): DRAM[0m
+[0;32mI (490) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (496) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (503) heap_init: At 40097A60 len 000085A0 (33 KiB): IRAM[0m
+[0;32mI (511) spi_flash: detected chip: generic[0m
+[0;32mI (514) spi_flash: flash io: dio[0m
+[0;33mW (518) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (531) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (542) main_task: Started on CPU0[0m
+[0;32mI (552) main_task: Calling app_main()[0m
+[0;32mI (602) ultra: Distance: 52.6586 cm
+[0m
+[0;32mI (612) mpu: Pitch: 0.000000 Roll: 0.000000[0m
+[0;32mI (652) example_connect: Start example_connect.[0m
+I (662) wifi:wifi driver task: 3ffc3f4c, prio:23, stack:6656, core=0
+I (672) wifi:wifi firmware version: a9f5b59
+I (672) wifi:wifi certification version: v7.0
+I (672) wifi:config NVS flash: enabled
+I (672) wifi:config nano formating: disabled
+I (682) wifi:Init data frame dynamic rx buffer num: 32
+I (682) wifi:Init static rx mgmt buffer num: 5
+I (692) wifi:Init management short buffer num: 32
+I (692) wifi:Init dynamic tx buffer num: 32
+I (702) wifi:Init static rx buffer size: 1600
+I (702) wifi:Init static rx buffer num: 10
+I (702) wifi:Init dynamic rx buffer num: 32
+[0;32mI (712) wifi_init: rx ba win: 6[0m
+[0;32mI (712) wifi_init: tcpip mbox: 32[0m
+[0;32mI (722) wifi_init: udp mbox: 6[0m
+[0;32mI (722) wifi_init: tcp mbox: 6[0m
+[0;32mI (722) wifi_init: tcp tx win: 5760[0m
+[0;32mI (732) wifi_init: tcp rx win: 5760[0m
+[0;32mI (732) wifi_init: tcp mss: 1440[0m
+[0;32mI (732) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (742) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (752) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (842) wifi:mode : sta (b0:a7:32:2a:c3:a0)
+I (842) wifi:enable tsf
+[0;32mI (842) example_connect: Connecting to IKP-1stFloor...[0m
+[0;32mI (852) example_connect: Waiting for IP(s)[0m
+I (3342) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (3602) wifi:state: init -> auth (b0)
+[0;32mI (3672) mpu: Pitch: -15.577255 Roll: -1.215308[0m
+[0;32mI (4052) ultra: Distance: 739.1055 cm
+[0m
+I (4602) wifi:state: auth -> init (200)
+I (4602) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (4602) wifi:new:<1,0>, old:<6,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (4612) wifi:state: init -> auth (b0)
+I (4642) wifi:state: auth -> assoc (0)
+I (4682) wifi:state: assoc -> run (10)
+[0;32mI (6672) mpu: Pitch: -15.596631 Roll: -1.212743[0m
+[0;32mI (7092) ultra: Distance: 95.4261 cm
+[0m
+[0;32mI (9672) mpu: Pitch: -15.615062 Roll: -1.224536[0m
+[0;32mI (10152) ultra: Distance: 78.3340 cm
+[0m
+[0;32mI (12672) mpu: Pitch: -15.593303 Roll: -1.171451[0m
+[0;32mI (13212) ultra: Distance: 82.8437 cm
+[0m
+I (14692) wifi:state: run -> init (cc00)
+I (14692) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (14692) wifi:new:<6,1>, old:<1,0>, ap:<255,255>, sta:<6,1>, prof:1
+I (14702) wifi:state: init -> auth (b0)
+I (14752) wifi:state: auth -> assoc (0)
+I (14762) wifi:state: assoc -> run (10)
+I (14782) wifi:connected with IKP-1stFloor, aid = 3, channel 6, 40U, bssid = 9c:c9:eb:a5:17:c1
+I (14782) wifi:security: WPA2-PSK, phy: bgn, rssi: -49
+I (14782) wifi:pm start, type: 1
+
+I (14782) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+W (14792) wifi:Next TBTT incorrect! last beacon:66520, offset:501, next beacon:10511320, beacon interval:102400, dtim period:0, dtim count:0, listen interval:3, now:13957046
+I (14832) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (14832) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+I (15322) wifi:<ba-add>idx:0 (ifx:0, 9c:c9:eb:a5:17:c1), tid:6, ssn:2, winSize:64
+[0;32mI (15672) mpu: Pitch: -15.612854 Roll: -1.227141[0m
+[0;32mI (16322) esp_netif_handlers: example_netif_sta ip: 192.168.5.150, mask: 255.255.192.0, gw: 192.168.2.1[0m
+[0;32mI (16322) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.5.150[0m
+[0;32mI (16622) ultra: Distance: 648.9775 cm
+[0m
+[0;32mI (16652) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:b2a7:32ff:fe2a:c3a0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (16652) example_common: Connected to example_netif_sta[0m
+[0;32mI (16662) example_common: - IPv4 address: 192.168.5.150,[0m
+[0;32mI (16672) example_common: - IPv6 address: fe80:0000:0000:0000:b2a7:32ff:fe2a:c3a0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (16682) SNTP time: Initializing SNTP[0m
+[0;32mI (18672) mpu: Pitch: -15.598769 Roll: -1.227824[0m
+I (18812) wifi:<ba-add>idx:1 (ifx:0, 9c:c9:eb:a5:17:c1), tid:0, ssn:0, winSize:64
+[0;32mI (20282) ultra: Distance: 1157.6427 cm
+[0m
+[0;32mI (21672) mpu: Pitch: -15.618913 Roll: -1.220375[0m
+[0;32mI (23532) ultra: Distance: 498.0212 cm
+[0m
+[0;32mI (24672) mpu: Pitch: -15.624303 Roll: -1.227514[0m
+[0;31mE (26712) init sntp err: Failed to update system time within 10s timeout[0m
+I (26712) wifi:state: run -> init (0)
+I (26712) wifi:pm stop, total sleep time: 5307377 us / 11930430 us
+
+I (26722) wifi:<ba-del>idx:1, tid:0
+I (26722) wifi:<ba-del>idx:0, tid:6
+I (26722) wifi:new:<6,0>, old:<6,1>, ap:<255,255>, sta:<6,1>, prof:1
+E (26732) wifi:NAN WiFi stop
+[0;32mI (26742) ultra: Distance: 326.9711 cm
+[0m
+I (26872) wifi:flush txq
+I (26872) wifi:stop sw txq
+I (26872) wifi:lmac stop hw txq
+I (26872) wifi:Deinit lldesc rx mblock:10
+[0;32mI (26882) SNTP time: time before setting on the ds: 20-02-2024  13:37:14[0m
+
+assert failed: xQueueSemaphoreTake queue.c:1709 (( pxQueue ))
+
+
+Backtrace: 0x400818e2:0x3ffbd7b0 0x4008a321:0x3ffbd7d0 0x40091db5:0x3ffbd7f0 0x4008ac46:0x3ffbd910 0x400d718b:0x3ffbd950 0x400d72a3:0x3ffbd990 0x400d6d9e:0x3ffbd9c0 0x400d64eb:0x3ffbd9f0 0x4008ae6d:0x3ffbda90
+
+
+
+
+ELF file SHA256: 0b5f6a432
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 20 2024 13:10:48[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=24984h (149892) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=000349ac vaddr=3ffb0000 size=03cach ( 15532) load[0m
+[0;32mI (161) esp_image: segment 2: paddr=00038660 vaddr=40080000 size=079b8h ( 31160) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=8b240h (569920) map[0m
+[0;32mI (369) esp_image: segment 4: paddr=000cb268 vaddr=400879b8 size=100a8h ( 65704) load[0m
+[0;32mI (407) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (407) boot: Disabling RNG early entropy source...[0m
+[0;32mI (419) cpu_start: Multicore app[0m
+[0;32mI (428) cpu_start: Pro cpu start user code[0m
+[0;32mI (428) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (428) cpu_start: Application information:[0m
+[0;32mI (431) cpu_start: Project name:     final[0m
+[0;32mI (435) cpu_start: App version:      1[0m
+[0;32mI (440) cpu_start: Compile time:     Mar 20 2024 13:13:00[0m
+[0;32mI (446) cpu_start: ELF file SHA256:  0b5f6a432...[0m
+[0;32mI (451) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (456) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (461) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (466) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (471) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (478) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (484) heap_init: At 3FFB83A0 len 00027C60 (159 KiB): DRAM[0m
+[0;32mI (490) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (496) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (503) heap_init: At 40097A60 len 000085A0 (33 KiB): IRAM[0m
+[0;32mI (511) spi_flash: detected chip: generic[0m
+[0;32mI (514) spi_flash: flash io: dio[0m
+[0;33mW (518) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (531) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (542) main_task: Started on CPU0[0m
+[0;32mI (552) main_task: Calling app_main()[0m
+[0;32mI (1272) ultra: Distance: 1204.9258 cm
+[0m
+[0;32mI (1282) mpu: Pitch: 0.000000 Roll: 0.000000[0m
+[0;32mI (1302) example_connect: Start example_connect.[0m
+I (1322) wifi:wifi driver task: 3ffc3f60, prio:23, stack:6656, core=0
+I (1332) wifi:wifi firmware version: a9f5b59
+I (1332) wifi:wifi certification version: v7.0
+I (1332) wifi:config NVS flash: enabled
+I (1332) wifi:config nano formating: disabled
+I (1342) wifi:Init data frame dynamic rx buffer num: 32
+I (1342) wifi:Init static rx mgmt buffer num: 5
+I (1352) wifi:Init management short buffer num: 32
+I (1352) wifi:Init dynamic tx buffer num: 32
+I (1362) wifi:Init static rx buffer size: 1600
+I (1362) wifi:Init static rx buffer num: 10
+I (1362) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1372) wifi_init: rx ba win: 6[0m
+[0;32mI (1372) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1382) wifi_init: udp mbox: 6[0m
+[0;32mI (1382) wifi_init: tcp mbox: 6[0m
+[0;32mI (1382) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1392) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1392) wifi_init: tcp mss: 1440[0m
+[0;32mI (1402) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1402) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1412) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (1502) wifi:mode : sta (b0:a7:32:2a:c3:a0)
+I (1502) wifi:enable tsf
+[0;32mI (1502) example_connect: Connecting to IKP-1stFloor...[0m
+[0;32mI (1512) example_connect: Waiting for IP(s)[0m
+I (3992) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (4242) wifi:state: init -> auth (b0)
+[0;32mI (4342) mpu: Pitch: -15.935589 Roll: -1.862122[0m
+[0;32mI (4862) ultra: Distance: 1098.7255 cm
+[0m
+I (5252) wifi:state: auth -> init (200)
+I (5252) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (5252) wifi:new:<1,0>, old:<6,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (5252) wifi:state: init -> auth (b0)
+I (5272) wifi:state: auth -> init (8a0)
+I (5272) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (5272) wifi:new:<6,1>, old:<1,0>, ap:<255,255>, sta:<6,1>, prof:1
+I (5282) wifi:state: init -> auth (b0)
+I (5292) wifi:state: auth -> assoc (0)
+I (5302) wifi:state: assoc -> run (10)
+I (5352) wifi:connected with IKP-1stFloor, aid = 3, channel 6, 40U, bssid = 9c:c9:eb:a5:17:c1
+I (5352) wifi:security: WPA2-PSK, phy: bgn, rssi: -46
+I (5362) wifi:pm start, type: 1
+
+I (5362) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (5422) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (5422) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+I (5872) wifi:<ba-add>idx:0 (ifx:0, 9c:c9:eb:a5:17:c1), tid:6, ssn:2, winSize:64
+[0;32mI (6872) esp_netif_handlers: example_netif_sta ip: 192.168.5.150, mask: 255.255.192.0, gw: 192.168.2.1[0m
+[0;32mI (6872) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.5.150[0m
+[0;32mI (7302) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:b2a7:32ff:fe2a:c3a0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (7302) example_common: Connected to example_netif_sta[0m
+[0;32mI (7312) example_common: - IPv4 address: 192.168.5.150,[0m
+[0;32mI (7312) example_common: - IPv6 address: fe80:0000:0000:0000:b2a7:32ff:fe2a:c3a0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (7332) SNTP time: Initializing SNTP[0m
+[0;32mI (7342) mpu: Pitch: -15.586802 Roll: -1.247182[0m
+[0;32mI (7902) ultra: Distance: 139.8898 cm
+[0m
+I (9722) wifi:<ba-add>idx:1 (ifx:0, 9c:c9:eb:a5:17:c1), tid:0, ssn:0, winSize:64
+[0;32mI (10342) mpu: Pitch: -15.614060 Roll: -1.257460[0m
+[0;32mI (10952) ultra: Distance: 57.8200 cm
+[0m
+[0;32mI (13342) mpu: Pitch: -15.618420 Roll: -1.239431[0m
+[0;32mI (14072) ultra: Distance: 184.7199 cm
+[0m
+[0;32mI (16342) mpu: Pitch: -15.608483 Roll: -1.237708[0m
+[0;32mI (17272) ultra: Distance: 318.6272 cm
+[0m
+[0;31mE (17332) init sntp err: Failed to update system time within 10s timeout[0m
+I (17332) wifi:state: run -> init (0)
+I (17332) wifi:pm stop, total sleep time: 5832888 us / 11970591 us
+
+I (17332) wifi:<ba-del>idx:1, tid:0
+I (17332) wifi:<ba-del>idx:0, tid:6
+I (17342) wifi:new:<6,0>, old:<6,1>, ap:<255,255>, sta:<6,1>, prof:1
+E (17352) wifi:NAN WiFi stop
+I (17422) wifi:flush txq
+I (17422) wifi:stop sw txq
+I (17422) wifi:lmac stop hw txq
+I (17422) wifi:Deinit lldesc rx mblock:10
+[0;32mI (17432) SNTP time: time before setting on the ds: 20-02-2024  13:37:31[0m
+
+assert failed: xQueueSemaphoreTake queue.c:1709 (( pxQueue ))
+
+
+Backtrace: 0x400818e2:0x3ffbd7b0 0x4008a321:0x3ffbd7d0 0x40091db5:0x3ffbd7f0 0x4008ac46:0x3ffbd910 0x400d718b:0x3ffbd950 0x400d72a3:0x3ffbd990 0x400d6d9e:0x3ffbd9c0 0x400d64eb:0x3ffbd9f0 0x4008ae6d:0x3ffbda90
+
+
+
+
+ELF file SHA256: 0b5f6a432
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 20 2024 13:10:48[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=24984h (149892) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=000349ac vaddr=3ffb0000 size=03cach ( 15532) load[0m
+[0;32mI (161) esp_image: segment 2: paddr=00038660 vaddr=40080000 size=079b8h ( 31160) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=8b240h (569920) map[0m
+[0;32mI (369) esp_image: segment 4: paddr=000cb268 vaddr=400879b8 size=100a8h ( 65704) load[0m
+[0;32mI (407) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (407) boot: Disabling RNG early entropy source...[0m
+[0;32mI (419) cpu_start: Multicore app[0m
+[0;32mI (428) cpu_start: Pro cpu start user code[0m
+[0;32mI (428) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (428) cpu_start: Application information:[0m
+[0;32mI (431) cpu_start: Project name:     final[0m
+[0;32mI (435) cpu_start: App version:      1[0m
+[0;32mI (440) cpu_start: Compile time:     Mar 20 2024 13:13:00[0m
+[0;32mI (446) cpu_start: ELF file SHA256:  0b5f6a432...[0m
+[0;32mI (451) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (456) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (461) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (466) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (471) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (478) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (484) heap_init: At 3FFB83A0 len 00027C60 (159 KiB): DRAM[0m
+[0;32mI (490) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (496) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (503) heap_init: At 40097A60 len 000085A0 (33 KiB): IRAM[0m
+[0;32mI (511) spi_flash: detected chip: generic[0m
+[0;32mI (514) spi_flash: flash io: dio[0m
+[0;33mW (518) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (531) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (542) main_task: Started on CPU0[0m
+[0;32mI (552) main_task: Calling app_main()[0m
+[0;32mI (1202) ultra: Distance: 1090.2465 cm
+[0m
+[0;32mI (1222) mpu: Pitch: 0.000000 Roll: 0.000000[0m
+[0;32mI (1242) example_connect: Start example_connect.[0m
+I (1252) wifi:wifi driver task: 3ffc3f4c, prio:23, stack:6656, core=0
+I (1262) wifi:wifi firmware version: a9f5b59
+I (1262) wifi:wifi certification version: v7.0
+I (1262) wifi:config NVS flash: enabled
+I (1262) wifi:config nano formating: disabled
+I (1272) wifi:Init data frame dynamic rx buffer num: 32
+I (1272) wifi:Init static rx mgmt buffer num: 5
+I (1282) wifi:Init management short buffer num: 32
+I (1282) wifi:Init dynamic tx buffer num: 32
+I (1292) wifi:Init static rx buffer size: 1600
+I (1292) wifi:Init static rx buffer num: 10
+I (1292) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1302) wifi_init: rx ba win: 6[0m
+[0;32mI (1302) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1312) wifi_init: udp mbox: 6[0m
+[0;32mI (1312) wifi_init: tcp mbox: 6[0m
+[0;32mI (1312) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1322) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1322) wifi_init: tcp mss: 1440[0m
+[0;32mI (1332) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1332) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1342) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (1432) wifi:mode : sta (b0:a7:32:2a:c3:a0)
+I (1432) wifi:enable tsf
+[0;32mI (1442) example_connect: Connecting to IKP-1stFloor...[0m
+[0;32mI (1442) example_connect: Waiting for IP(s)[0m
+I (3912) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (4162) wifi:state: init -> auth (b0)
+[0;32mI (4222) mpu: Pitch: -15.889050 Roll: -1.832471[0m
+[0;32mI (4262) ultra: Distance: 179.0126 cm
+[0m
+I (5172) wifi:state: auth -> init (200)
+I (5172) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (5172) wifi:new:<11,0>, old:<6,0>, ap:<255,255>, sta:<11,0>, prof:1
+I (5182) wifi:state: init -> auth (b0)
+I (6462) wifi:state: auth -> assoc (0)
+I (6482) wifi:state: assoc -> run (10)
+[0;32mI (7222) mpu: Pitch: -15.693791 Roll: -1.466750[0m
+[0;32mI (7302) ultra: Distance: 50.6599 cm
+[0m
+[0;32mI (10222) mpu: Pitch: -15.605244 Roll: -1.209313[0m
+[0;32mI (10422) ultra: Distance: 186.8264 cm
+[0m
+[0;32mI (13222) mpu: Pitch: -15.613707 Roll: -1.192239[0m
+[0;32mI (13492) ultra: Distance: 86.4550 cm
+[0m
+[0;32mI (16222) mpu: Pitch: -15.402252 Roll: -1.198605[0m
+I (16482) wifi:state: run -> init (cc00)
+I (16492) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1
+I (16492) wifi:new:<6,1>, old:<11,0>, ap:<255,255>, sta:<6,1>, prof:1
+I (16492) wifi:state: init -> auth (b0)
+[0;32mI (16562) ultra: Distance: 76.4852 cm
+[0m
+I (16582) wifi:state: auth -> assoc (0)
+I (16592) wifi:state: assoc -> run (10)
+I (16612) wifi:connected with IKP-1stFloor, aid = 3, channel 6, 40U, bssid = 9c:c9:eb:a5:17:c1
+I (16612) wifi:security: WPA2-PSK, phy: bgn, rssi: -44
+I (16612) wifi:pm start, type: 1
+
+I (16612) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+W (16622) wifi:Next TBTT incorrect! last beacon:31169, offset:384, next beacon:10475969, beacon interval:102400, dtim period:0, dtim count:0, listen interval:3, now:15195484
+I (16642) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (16652) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+I (17162) wifi:<ba-add>idx:0 (ifx:0, 9c:c9:eb:a5:17:c1), tid:6, ssn:2, winSize:64
+[0;32mI (18162) esp_netif_handlers: example_netif_sta ip: 192.168.5.150, mask: 255.255.192.0, gw: 192.168.2.1[0m
+[0;32mI (18162) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.5.150[0m
+[0;32mI (18242) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:b2a7:32ff:fe2a:c3a0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (18242) example_common: Connected to example_netif_sta[0m
+[0;32mI (18252) example_common: - IPv4 address: 192.168.5.150,[0m
+[0;32mI (18252) example_common: - IPv6 address: fe80:0000:0000:0000:b2a7:32ff:fe2a:c3a0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (18262) SNTP time: Initializing SNTP[0m
+[0;32mI (19222) mpu: Pitch: -15.312607 Roll: -1.214281[0m
+I (19432) wifi:<ba-add>idx:1 (ifx:0, 9c:c9:eb:a5:17:c1), tid:0, ssn:0, winSize:64
+[0;32mI (19592) ultra: Distance: 32.9140 cm
+[0m
+I (19692) wifi:state: run -> init (0)
+I (19692) wifi:pm stop, total sleep time: 1139138 us / 3079045 us
+
+I (19692) wifi:<ba-del>idx:1, tid:0
+I (19692) wifi:<ba-del>idx:0, tid:6
+I (19702) wifi:new:<6,0>, old:<6,1>, ap:<255,255>, sta:<6,1>, prof:1
+E (19712) wifi:NAN WiFi stop
+I (19832) wifi:flush txq
+I (19832) wifi:stop sw txq
+I (19832) wifi:lmac stop hw txq
+I (19832) wifi:Deinit lldesc rx mblock:10
+[0;32mI (19842) SNTP time: time before setting on the ds: 20-02-2024  13:37:51[0m
+
+assert failed: xQueueSemaphoreTake queue.c:1709 (( pxQueue ))
+
+
+Backtrace: 0x400818e2:0x3ffbd7b0 0x4008a321:0x3ffbd7d0 0x40091db5:0x3ffbd7f0 0x4008ac46:0x3ffbd910 0x400d718b:0x3ffbd950 0x400d72a3:0x3ffbd990 0x400d6d9e:0x3ffbd9c0 0x400d64eb:0x3ffbd9f0 0x4008ae6d:0x3ffbda90
+
+
+
+
+ELF file SHA256: 0b5f6a432
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 20 2024 13:10:48[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=24984h (149892) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=000349ac vaddr=3ffb0000 size=03cach ( 15532) load[0m
+[0;32mI (161) esp_image: segment 2: paddr=00038660 vaddr=40080000 size=079b8h ( 31160) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=8b240h (569920) map[0m
+[0;32mI (369) esp_image: segment 4: paddr=000cb268 vaddr=400879b8 size=100a8h ( 65704) load[0m
+[0;32mI (407) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (407) boot: Disabling RNG early entropy source...[0m
+[0;32mI (419) cpu_start: Multicore app[0m
+[0;32mI (428) cpu_start: Pro cpu start user code[0m
+[0;32mI (428) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (428) cpu_start: Application information:[0m
+[0;32mI (431) cpu_start: Project name:     final[0m
+[0;32mI (435) cpu_start: App version:      1[0m
+[0;32mI (440) cpu_start: Compile time:     Mar 20 2024 13:13:00[0m
+[0;32mI (446) cpu_start: ELF file SHA256:  0b5f6a432...[0m
+[0;32mI (451) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (456) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (461) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (466) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (471) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (478) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (484) heap_init: At 3FFB83A0 len 00027C60 (159 KiB): DRAM[0m
+[0;32mI (490) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (496) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (503) heap_init: At 40097A60 len 000085A0 (33 KiB): IRAM[0m
+[0;32mI (511) spi_flash: detected chip: generic[0m
+[0;32mI (514) spi_flash: flash io: dio[0m
+[0;33mW (518) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (531) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (542) main_task: Started on CPU0[0m
+[0;32mI (552) main_task: Calling app_main()[0m
+[0;32mI (582) ultra: Distance: 25.4759 cm
+[0m
+[0;32mI (602) mpu: Pitch: 0.000000 Roll: 0.000000[0m
+[0;32mI (622) example_connect: Start example_connect.[0m
+I (632) wifi:wifi driver task: 3ffc3f54, prio:23, stack:6656, core=0
+I (642) wifi:wifi firmware version: a9f5b59
+I (642) wifi:wifi certification version: v7.0
+I (642) wifi:config NVS flash: enabled
+I (642) wifi:config nano formating: disabled
+I (652) wifi:Init data frame dynamic rx buffer num: 32
+I (652) wifi:Init static rx mgmt buffer num: 5
+I (662) wifi:Init management short buffer num: 32
+I (662) wifi:Init dynamic tx buffer num: 32
+I (672) wifi:Init static rx buffer size: 1600
+I (672) wifi:Init static rx buffer num: 10
+I (672) wifi:Init dynamic rx buffer num: 32
+[0;32mI (682) wifi_init: rx ba win: 6[0m
+[0;32mI (682) wifi_init: tcpip mbox: 32[0m
+[0;32mI (692) wifi_init: udp mbox: 6[0m
+[0;32mI (692) wifi_init: tcp mbox: 6[0m
+[0;32mI (692) wifi_init: tcp tx win: 5760[0m
+[0;32mI (702) wifi_init: tcp rx win: 5760[0m
+[0;32mI (702) wifi_init: tcp mss: 1440[0m
+[0;32mI (712) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (712) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (722) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (822) wifi:mode : sta (b0:a7:32:2a:c3:a0)
+I (822) wifi:enable tsf
+[0;32mI (822) example_connect: Connecting to IKP-1stFloor...[0m
+[0;32mI (832) example_connect: Waiting for IP(s)[0m
+I (3312) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (3562) wifi:state: init -> auth (b0)
+[0;32mI (3602) mpu: Pitch: -15.642834 Roll: -1.819898[0m
+[0;32mI (3612) ultra: Distance: 22.3114 cm
+[0m
+I (4572) wifi:state: auth -> init (200)
+I (4572) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (4582) wifi:new:<6,1>, old:<6,0>, ap:<255,255>, sta:<6,1>, prof:1
+I (4582) wifi:state: init -> auth (b0)
+I (4592) wifi:state: auth -> assoc (0)
+I (4602) wifi:state: assoc -> run (10)
+I (4652) wifi:connected with IKP-1stFloor, aid = 3, channel 6, 40U, bssid = 9c:c9:eb:a5:17:c1
+I (4652) wifi:security: WPA2-PSK, phy: bgn, rssi: -38
+I (4652) wifi:pm start, type: 1
+
+I (4652) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (4722) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (4722) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+I (5162) wifi:<ba-add>idx:0 (ifx:0, 9c:c9:eb:a5:17:c1), tid:6, ssn:2, winSize:64
+[0;32mI (6602) mpu: Pitch: -15.304034 Roll: -1.208577[0m
+[0;32mI (6622) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:b2a7:32ff:fe2a:c3a0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (6662) ultra: Distance: 34.0708 cm
+[0m
+[0;32mI (6662) esp_netif_handlers: example_netif_sta ip: 192.168.5.150, mask: 255.255.192.0, gw: 192.168.2.1[0m
+[0;32mI (6662) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.5.150[0m
+[0;32mI (6672) example_common: Connected to example_netif_sta[0m
+[0;32mI (6682) example_common: - IPv4 address: 192.168.5.150,[0m
+[0;32mI (6682) example_common: - IPv6 address: fe80:0000:0000:0000:b2a7:32ff:fe2a:c3a0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (6692) SNTP time: Initializing SNTP[0m
+I (7432) wifi:<ba-add>idx:1 (ifx:0, 9c:c9:eb:a5:17:c1), tid:0, ssn:0, winSize:64
+I (7442) wifi:state: run -> init (0)
+I (7442) wifi:pm stop, total sleep time: 1283434 us / 2792982 us
+
+I (7452) wifi:<ba-del>idx:1, tid:0
+I (7452) wifi:<ba-del>idx:0, tid:6
+I (7452) wifi:new:<6,0>, old:<6,1>, ap:<255,255>, sta:<6,1>, prof:1
+E (7462) wifi:NAN WiFi stop
+I (7592) wifi:flush txq
+I (7592) wifi:stop sw txq
+I (7592) wifi:lmac stop hw txq
+I (7592) wifi:Deinit lldesc rx mblock:10
+[0;32mI (7602) SNTP time: time before setting on the ds: 20-02-2024  13:37:59[0m
+
+assert failed: xQueueSemaphoreTake queue.c:1709 (( pxQueue ))
+
+
+Backtrace: 0x400818e2:0x3ffbd7b0 0x4008a321:0x3ffbd7d0 0x40091db5:0x3ffbd7f0 0x4008ac46:0x3ffbd910 0x400d718b:0x3ffbd950 0x400d72a3:0x3ffbd990 0x400d6d9e:0x3ffbd9c0 0x400d64eb:0x3ffbd9f0 0x4008ae6d:0x3ffbda90
+
+
+
+
+ELF file SHA256: 0b5f6a432
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 20 2024 13:10:48[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=24984h (149892) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=000349ac vaddr=3ffb0000 size=03cach ( 15532) load[0m
+[0;32mI (161) esp_image: segment 2: paddr=00038660 vaddr=40080000 size=079b8h ( 31160) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=8b240h (569920) map[0m
+[0;32mI (369) esp_image: segment 4: paddr=000cb268 vaddr=400879b8 size=100a8h ( 65704) load[0m
+[0;32mI (407) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (407) boot: Disabling RNG early entropy source...[0m
+[0;32mI (419) cpu_start: Multicore app[0m
+[0;32mI (428) cpu_start: Pro cpu start user code[0m
+[0;32mI (428) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (428) cpu_start: Application information:[0m
+[0;32mI (431) cpu_start: Project name:     final[0m
+[0;32mI (435) cpu_start: App version:      1[0m
+[0;32mI (440) cpu_start: Compile time:     Mar 20 2024 13:13:00[0m
+[0;32mI (446) cpu_start: ELF file SHA256:  0b5f6a432...[0m
+[0;32mI (451) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (456) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (461) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (466) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (471) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (478) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (484) heap_init: At 3FFB83A0 len 00027C60 (159 KiB): DRAM[0m
+[0;32mI (490) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (496) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (503) heap_init: At 40097A60 len 000085A0 (33 KiB): IRAM[0m
+[0;32mI (511) spi_flash: detected chip: generic[0m
+[0;32mI (514) spi_flash: flash io: dio[0m
+[0;33mW (518) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (531) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (542) main_task: Started on CPU0[0m
+[0;32mI (552) main_task: Calling app_main()[0m
+[0;32mI (612) ultra: Distance: 67.2276 cm
+[0m
+[0;32mI (622) mpu: Pitch: 0.000000 Roll: 0.000000[0m
+[0;32mI (642) example_connect: Start example_connect.[0m
+I (662) wifi:wifi driver task: 3ffc3f50, prio:23, stack:6656, core=0
+I (672) wifi:wifi firmware version: a9f5b59
+I (672) wifi:wifi certification version: v7.0
+I (672) wifi:config NVS flash: enabled
+I (672) wifi:config nano formating: disabled
+I (682) wifi:Init data frame dynamic rx buffer num: 32
+I (682) wifi:Init static rx mgmt buffer num: 5
+I (692) wifi:Init management short buffer num: 32
+I (692) wifi:Init dynamic tx buffer num: 32
+I (702) wifi:Init static rx buffer size: 1600
+I (702) wifi:Init static rx buffer num: 10
+I (702) wifi:Init dynamic rx buffer num: 32
+[0;32mI (712) wifi_init: rx ba win: 6[0m
+[0;32mI (712) wifi_init: tcpip mbox: 32[0m
+[0;32mI (722) wifi_init: udp mbox: 6[0m
+[0;32mI (722) wifi_init: tcp mbox: 6[0m
+[0;32mI (722) wifi_init: tcp tx win: 5760[0m
+[0;32mI (732) wifi_init: tcp rx win: 5760[0m
+[0;32mI (732) wifi_init: tcp mss: 1440[0m
+[0;32mI (742) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (742) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (752) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (842) wifi:mode : sta (b0:a7:32:2a:c3:a0)
+I (842) wifi:enable tsf
+[0;32mI (842) example_connect: Connecting to IKP-1stFloor...[0m
+[0;32mI (852) example_connect: Waiting for IP(s)[0m
+I (3332) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (3582) wifi:state: init -> auth (b0)
+[0;32mI (3622) mpu: Pitch: -15.611489 Roll: -1.897340[0m
+[0;32mI (3672) ultra: Distance: 74.4297 cm
+[0m
+I (4592) wifi:state: auth -> init (200)
+I (4592) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (4592) wifi:new:<6,1>, old:<6,0>, ap:<255,255>, sta:<6,1>, prof:1
+I (4592) wifi:state: init -> auth (b0)
+I (4612) wifi:state: auth -> assoc (0)
+I (4622) wifi:state: assoc -> run (10)
+I (4682) wifi:connected with IKP-1stFloor, aid = 3, channel 6, 40U, bssid = 9c:c9:eb:a5:17:c1
+I (4682) wifi:security: WPA2-PSK, phy: bgn, rssi: -45
+I (4682) wifi:pm start, type: 1
+
+I (4692) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (4762) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (4762) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+I (5222) wifi:<ba-add>idx:0 (ifx:0, 9c:c9:eb:a5:17:c1), tid:6, ssn:2, winSize:64
+[0;32mI (6202) esp_netif_handlers: example_netif_sta ip: 192.168.5.150, mask: 255.255.192.0, gw: 192.168.2.1[0m
+[0;32mI (6202) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.5.150[0m
+[0;32mI (6622) mpu: Pitch: -15.301115 Roll: -1.216467[0m
+[0;32mI (6642) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:b2a7:32ff:fe2a:c3a0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (6642) example_common: Connected to example_netif_sta[0m
+[0;32mI (6652) example_common: - IPv4 address: 192.168.5.150,[0m
+[0;32mI (6652) example_common: - IPv6 address: fe80:0000:0000:0000:b2a7:32ff:fe2a:c3a0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (6662) SNTP time: Initializing SNTP[0m
+[0;32mI (6872) ultra: Distance: 303.8154 cm
+[0m
+I (9172) wifi:<ba-add>idx:1 (ifx:0, 9c:c9:eb:a5:17:c1), tid:0, ssn:0, winSize:64
+I (9192) wifi:state: run -> init (0)
+I (9192) wifi:pm stop, total sleep time: 1711129 us / 4502541 us
+
+I (9192) wifi:<ba-del>idx:1, tid:0
+I (9192) wifi:<ba-del>idx:0, tid:6
+I (9192) wifi:new:<6,0>, old:<6,1>, ap:<255,255>, sta:<6,1>, prof:1
+E (9202) wifi:NAN WiFi stop
+I (9252) wifi:flush txq
+I (9252) wifi:stop sw txq
+I (9252) wifi:lmac stop hw txq
+I (9252) wifi:Deinit lldesc rx mblock:10
+[0;32mI (9262) SNTP time: time before setting on the ds: 20-02-2024  13:38:08[0m
+
+assert failed: xQueueSemaphoreTake queue.c:1709 (( pxQueue ))
+
+
+Backtrace: 0x400818e2:0x3ffbd7b0 0x4008a321:0x3ffbd7d0 0x40091db5:0x3ffbd7f0 0x4008ac46:0x3ffbd910 0x400d718b:0x3ffbd950 0x400d72a3:0x3ffbd990 0x400d6d9e:0x3ffbd9c0 0x400d64eb:0x3ffbd9f0 0x4008ae6d:0x3ffbda90
+
+
+
+
+ELF file SHA256: 0b5f6a432
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 20 2024 13:10:48[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=24984h (149892) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=000349ac vaddr=3ffb0000 size=03cach ( 15532) load[0m
+[0;32mI (161) esp_image: segment 2: paddr=00038660 vaddr=40080000 size=079b8h ( 31160) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=8b240h (569920) map[0m
+[0;32mI (369) esp_image: segment 4: paddr=000cb268 vaddr=400879b8 size=100a8h ( 65704) load[0m
+[0;32mI (407) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (407) boot: Disabling RNG early entropy source...[0m
+[0;32mI (419) cpu_start: Multicore app[0m
+[0;32mI (428) cpu_start: Pro cpu start user code[0m
+[0;32mI (428) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (428) cpu_start: Application information:[0m
+[0;32mI (431) cpu_start: Project name:     final[0m
+[0;32mI (435) cpu_start: App version:      1[0m
+[0;32mI (440) cpu_start: Compile time:     Mar 20 2024 13:13:00[0m
+[0;32mI (446) cpu_start: ELF file SHA256:  0b5f6a432...[0m
+[0;32mI (451) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (456) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (461) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (466) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (471) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (478) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (484) heap_init: At 3FFB83A0 len 00027C60 (159 KiB): DRAM[0m
+[0;32mI (490) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (496) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (503) heap_init: At 40097A60 len 000085A0 (33 KiB): IRAM[0m
+[0;32mI (511) spi_flash: detected chip: generic[0m
+[0;32mI (514) spi_flash: flash io: dio[0m
+[0;33mW (518) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (531) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (542) main_task: Started on CPU0[0m
+[0;32mI (552) main_task: Calling app_main()[0m
+[0;32mI (592) ultra: Distance: 28.1517 cm
+[0m
+[0;32mI (602) mpu: Pitch: 0.000000 Roll: 0.000000[0m
+[0;32mI (622) example_connect: Start example_connect.[0m
+I (632) wifi:wifi driver task: 3ffc3f54, prio:23, stack:6656, core=0
+I (642) wifi:wifi firmware version: a9f5b59
+I (642) wifi:wifi certification version: v7.0
+I (642) wifi:config NVS flash: enabled
+I (652) wifi:config nano formating: disabled
+I (652) wifi:Init data frame dynamic rx buffer num: 32
+I (652) wifi:Init static rx mgmt buffer num: 5
+I (662) wifi:Init management short buffer num: 32
+I (662) wifi:Init dynamic tx buffer num: 32
+I (672) wifi:Init static rx buffer size: 1600
+I (672) wifi:Init static rx buffer num: 10
+I (672) wifi:Init dynamic rx buffer num: 32
+[0;32mI (682) wifi_init: rx ba win: 6[0m
+[0;32mI (682) wifi_init: tcpip mbox: 32[0m
+[0;32mI (692) wifi_init: udp mbox: 6[0m
+[0;32mI (692) wifi_init: tcp mbox: 6[0m
+[0;32mI (692) wifi_init: tcp tx win: 5760[0m
+[0;32mI (702) wifi_init: tcp rx win: 5760[0m
+[0;32mI (702) wifi_init: tcp mss: 1440[0m
+[0;32mI (712) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (712) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (722) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (812) wifi:mode : sta (b0:a7:32:2a:c3:a0)
+I (812) wifi:enable tsf
+[0;32mI (812) example_connect: Connecting to IKP-1stFloor...[0m
+[0;32mI (822) example_connect: Waiting for IP(s)[0m
+I (3302) wifi:new:<6,1>, old:<1,0>, ap:<255,255>, sta:<6,1>, prof:1
+I (3562) wifi:state: init -> auth (b0)
+I (3572) wifi:state: auth -> assoc (0)
+I (3582) wifi:state: assoc -> run (10)
+I (3602) wifi:connected with IKP-1stFloor, aid = 3, channel 6, 40U, bssid = 9c:c9:eb:a5:17:c1[0;32mI (3602) mpu: Pitch: -15.623784 Roll: -1.873525[0m
+
+I (3602) wifi:security: WPA2-PSK, phy: bgn, rssi: -47
+I (3602) wifi:pm start, type: 1
+
+I (3612) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (3652) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (3652) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (3672) ultra: Distance: 70.3583 cm
+[0m
+I (4132) wifi:<ba-add>idx:0 (ifx:0, 9c:c9:eb:a5:17:c1), tid:6, ssn:2, winSize:64
+[0;32mI (5622) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:b2a7:32ff:fe2a:c3a0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (6602) mpu: Pitch: -15.303143 Roll: -1.222983[0m
+[0;32mI (6622) esp_netif_handlers: example_netif_sta ip: 192.168.5.150, mask: 255.255.192.0, gw: 192.168.2.1[0m
+[0;32mI (6622) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.5.150[0m
+[0;32mI (6632) example_common: Connected to example_netif_sta[0m
+[0;32mI (6632) example_common: - IPv4 address: 192.168.5.150,[0m
+[0;32mI (6642) example_common: - IPv6 address: fe80:0000:0000:0000:b2a7:32ff:fe2a:c3a0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (6652) SNTP time: Initializing SNTP[0m
+[0;32mI (6742) ultra: Distance: 75.7962 cm
+[0m
+[0;32mI (9602) mpu: Pitch: -15.327818 Roll: -1.205137[0m
+[0;32mI (9802) ultra: Distance: 77.0469 cm
+[0m
+I (11212) wifi:<ba-add>idx:1 (ifx:0, 9c:c9:eb:a5:17:c1), tid:0, ssn:0, winSize:64
+I (11542) wifi:state: run -> init (0)
+I (11542) wifi:pm stop, total sleep time: 3437082 us / 7937674 us
+
+I (11552) wifi:<ba-del>idx:1, tid:0
+I (11552) wifi:<ba-del>idx:0, tid:6
+I (11552) wifi:new:<6,0>, old:<6,1>, ap:<255,255>, sta:<6,1>, prof:1
+E (11562) wifi:NAN WiFi stop
+I (11732) wifi:flush txq
+I (11732) wifi:stop sw txq
+I (11732) wifi:lmac stop hw txq
+I (11732) wifi:Deinit lldesc rx mblock:10
+[0;32mI (11742) SNTP time: time before setting on the ds: 20-02-2024  13:38:20[0m
+
+assert failed: xQueueSemaphoreTake queue.c:1709 (( pxQueue ))
+
+
+Backtrace: 0x400818e2:0x3ffbd7b0 0x4008a321:0x3ffbd7d0 0x40091db5:0x3ffbd7f0 0x4008ac46:0x3ffbd910 0x400d718b:0x3ffbd950 0x400d72a3:0x3ffbd990 0x400d6d9e:0x3ffbd9c0 0x400d64eb:0x3ffbd9f0 0x4008ae6d:0x3ffbda90
+
+
+
+
+ELF file SHA256: 0b5f6a432
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 20 2024 13:10:48[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=24984h (149892) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=000349ac vaddr=3ffb0000 size=03cach ( 15532) load[0m
+[0;32mI (161) esp_image: segment 2: paddr=00038660 vaddr=40080000 size=079b8h ( 31160) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=8b240h (569920) map[0m
+[0;32mI (369) esp_image: segment 4: paddr=000cb268 vaddr=400879b8 size=100a8h ( 65704) load[0m
+[0;32mI (407) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (407) boot: Disabling RNG early entropy source...[0m
+[0;32mI (419) cpu_start: Multicore app[0m
+[0;32mI (428) cpu_start: Pro cpu start user code[0m
+[0;32mI (428) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (428) cpu_start: Application information:[0m
+[0;32mI (431) cpu_start: Project name:     final[0m
+[0;32mI (435) cpu_start: App version:      1[0m
+[0;32mI (440) cpu_start: Compile time:     Mar 20 2024 13:13:00[0m
+[0;32mI (446) cpu_start: ELF file SHA256:  0b5f6a432...[0m
+[0;32mI (451) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (456) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (461) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (466) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (471) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (478) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (484) heap_init: At 3FFB83A0 len 00027C60 (159 KiB): DRAM[0m
+[0;32mI (490) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (496) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (503) heap_init: At 40097A60 len 000085A0 (33 KiB): IRAM[0m
+[0;32mI (511) spi_flash: detected chip: generic[0m
+[0;32mI (514) spi_flash: flash io: dio[0m
+[0;33mW (518) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (531) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (542) main_task: Started on CPU0[0m
+[0;32mI (552) main_task: Calling app_main()[0m
+[0;32mI (612) ultra: Distance: 69.0207 cm
+[0m
+[0;32mI (622) mpu: Pitch: 0.000000 Roll: 0.000000[0m
+[0;32mI (652) example_connect: Start example_connect.[0m
+I (662) wifi:wifi driver task: 3ffc3f44, prio:23, stack:6656, core=0
+I (672) wifi:wifi firmware version: a9f5b59
+I (672) wifi:wifi certification version: v7.0
+I (672) wifi:config NVS flash: enabled
+I (672) wifi:config nano formating: disabled
+I (682) wifi:Init data frame dynamic rx buffer num: 32
+I (682) wifi:Init static rx mgmt buffer num: 5
+I (692) wifi:Init management short buffer num: 32
+I (692) wifi:Init dynamic tx buffer num: 32
+I (702) wifi:Init static rx buffer size: 1600
+I (702) wifi:Init static rx buffer num: 10
+I (702) wifi:Init dynamic rx buffer num: 32
+[0;32mI (712) wifi_init: rx ba win: 6[0m
+[0;32mI (712) wifi_init: tcpip mbox: 32[0m
+[0;32mI (712) wifi_init: udp mbox: 6[0m
+[0;32mI (722) wifi_init: tcp mbox: 6[0m
+[0;32mI (722) wifi_init: tcp tx win: 5760[0m
+[0;32mI (732) wifi_init: tcp rx win: 5760[0m
+[0;32mI (732) wifi_init: tcp mss: 1440[0m
+[0;32mI (732) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (742) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (752) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (842) wifi:mode : sta (b0:a7:32:2a:c3:a0)
+I (842) wifi:enable tsf
+[0;32mI (842) example_connect: Connecting to IKP-1stFloor...[0m
+[0;32mI (842) example_connect: Waiting for IP(s)[0m
+I (3332) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (3582) wifi:state: init -> auth (b0)
+[0;32mI (3692) mpu: Pitch: -15.647723 Roll: -1.822774[0m
+[0;32mI (3742) ultra: Distance: 189.6728 cm
+[0m
+I (4592) wifi:state: auth -> init (200)
+I (4592) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (4592) wifi:new:<6,1>, old:<6,0>, ap:<255,255>, sta:<6,1>, prof:1
+I (4602) wifi:state: init -> auth (b0)
+I (4602) wifi:state: auth -> assoc (0)
+I (4622) wifi:state: assoc -> run (10)
+I (4642) wifi:connected with IKP-1stFloor, aid = 3, channel 6, 40U, bssid = 9c:c9:eb:a5:17:c1
+I (4642) wifi:security: WPA2-PSK, phy: bgn, rssi: -38
+I (4652) wifi:pm start, type: 1
+
+I (4652) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (4662) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (4662) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+I (5172) wifi:<ba-add>idx:0 (ifx:0, 9c:c9:eb:a5:17:c1), tid:6, ssn:2, winSize:64
+[0;32mI (6162) esp_netif_handlers: example_netif_sta ip: 192.168.5.150, mask: 255.255.192.0, gw: 192.168.2.1[0m
+[0;32mI (6162) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.5.150[0m
+[0;32mI (6642) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:b2a7:32ff:fe2a:c3a0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (6642) example_common: Connected to example_netif_sta[0m
+[0;32mI (6652) example_common: - IPv4 address: 192.168.5.150,[0m
+[0;32mI (6652) example_common: - IPv6 address: fe80:0000:0000:0000:b2a7:32ff:fe2a:c3a0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (6672) SNTP time: Initializing SNTP[0m
+[0;32mI (6692) mpu: Pitch: -15.322229 Roll: -1.229208[0m
+[0;32mI (7202) ultra: Distance: 769.5466 cm
+[0m
+I (8642) wifi:<ba-add>idx:1 (ifx:0, 9c:c9:eb:a5:17:c1), tid:0, ssn:0, winSize:64
+[0;32mI (9692) mpu: Pitch: -15.295085 Roll: -1.220018[0m
+[0;32mI (10262) ultra: Distance: 146.1753 cm
+[0m
+[0;32mI (12692) mpu: Pitch: -15.269927 Roll: -1.189293[0m
+[0;32mI (13582) ultra: Distance: 533.4089 cm
+[0m
+[0;32mI (15692) mpu: Pitch: -15.299896 Roll: -1.218053[0m
+[0;32mI (16642) ultra: Distance: 120.6185 cm
+[0m
+[0;31mE (16672) init sntp err: Failed to update system time within 10s timeout[0m
+I (16672) wifi:state: run -> init (0)
+I (16672) wifi:pm stop, total sleep time: 5923693 us / 12019065 us
+
+I (16672) wifi:<ba-del>idx:1, tid:0
+I (16672) wifi:<ba-del>idx:0, tid:6
+I (16682) wifi:new:<6,0>, old:<6,1>, ap:<255,255>, sta:<6,1>, prof:1
+E (16692) wifi:NAN WiFi stop
+I (16762) wifi:flush txq
+I (16762) wifi:stop sw txq
+I (16762) wifi:lmac stop hw txq
+I (16762) wifi:Deinit lldesc rx mblock:10
+[0;32mI (16772) SNTP time: time before setting on the ds: 20-02-2024  13:38:36[0m
+
+assert failed: xQueueSemaphoreTake queue.c:1709 (( pxQueue ))
+
+
+Backtrace: 0x400818e2:0x3ffbd7b0 0x4008a321:0x3ffbd7d0 0x40091db5:0x3ffbd7f0 0x4008ac46:0x3ffbd910 0x400d718b:0x3ffbd950 0x400d72a3:0x3ffbd990 0x400d6d9e:0x3ffbd9c0 0x400d64eb:0x3ffbd9f0 0x4008ae6d:0x3ffbda90
+
+
+
+
+ELF file SHA256: 0b5f6a432
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 20 2024 13:10:48[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=24984h (149892) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=000349ac vaddr=3ffb0000 size=03cach ( 15532) load[0m
+[0;32mI (161) esp_image: segment 2: paddr=00038660 vaddr=40080000 size=079b8h ( 31160) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=8b240h (569920) map[0m
+[0;32mI (369) esp_image: segment 4: paddr=000cb268 vaddr=400879b8 size=100a8h ( 65704) load[0m
+[0;32mI (407) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (407) boot: Disabling RNG early entropy source...[0m
+[0;32mI (419) cpu_start: Multicore app[0m
+[0;32mI (427) cpu_start: Pro cpu start user code[0m
+[0;32mI (428) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (428) cpu_start: Application information:[0m
+[0;32mI (431) cpu_start: Project name:     final[0m
+[0;32mI (435) cpu_start: App version:      1[0m
+[0;32mI (440) cpu_start: Compile time:     Mar 20 2024 13:13:00[0m
+[0;32mI (446) cpu_start: ELF file SHA256:  0b5f6a432...[0m
+[0;32mI (451) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (456) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (461) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (466) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (471) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (478) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (484) heap_init: At 3FFB83A0 len 00027C60 (159 KiB): DRAM[0m
+[0;32mI (490) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (496) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (503) heap_init: At 40097A60 len 000085A0 (33 KiB): IRAM[0m
+[0;32mI (510) spi_flash: detected chip: generic[0m
+[0;32mI (513) spi_flash: flash io: dio[0m
+[0;33mW (517) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (531) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (542) main_task: Started on CPU0[0m
+[0;32mI (552) main_task: Calling app_main()[0m
+[0;32mI (682) ultra: Distance: 182.6810 cm
+[0m
+[0;32mI (692) mpu: Pitch: 0.000000 Roll: 0.000000[0m
+[0;32mI (712) example_connect: Start example_connect.[0m
+I (722) wifi:wifi driver task: 3ffc3f5c, prio:23, stack:6656, core=0
+I (732) wifi:wifi firmware version: a9f5b59
+I (732) wifi:wifi certification version: v7.0
+I (732) wifi:config NVS flash: enabled
+I (732) wifi:config nano formating: disabled
+I (742) wifi:Init data frame dynamic rx buffer num: 32
+I (742) wifi:Init static rx mgmt buffer num: 5
+I (752) wifi:Init management short buffer num: 32
+I (752) wifi:Init dynamic tx buffer num: 32
+I (762) wifi:Init static rx buffer size: 1600
+I (762) wifi:Init static rx buffer num: 10
+I (762) wifi:Init dynamic rx buffer num: 32
+[0;32mI (772) wifi_init: rx ba win: 6[0m
+[0;32mI (772) wifi_init: tcpip mbox: 32[0m
+[0;32mI (782) wifi_init: udp mbox: 6[0m
+[0;32mI (782) wifi_init: tcp mbox: 6[0m
+[0;32mI (782) wifi_init: tcp tx win: 5760[0m
+[0;32mI (792) wifi_init: tcp rx win: 5760[0m
+[0;32mI (792) wifi_init: tcp mss: 1440[0m
+[0;32mI (802) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (802) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (812) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (902) wifi:mode : sta (b0:a7:32:2a:c3:a0)
+I (902) wifi:enable tsf
+[0;32mI (912) example_connect: Connecting to IKP-1stFloor...[0m
+[0;32mI (912) example_connect: Waiting for IP(s)[0m
+I (3392) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (3642) wifi:state: init -> auth (b0)
+[0;32mI (3692) mpu: Pitch: -15.663760 Roll: -1.810013[0m
+[0;32mI (3742) ultra: Distance: 86.9181 cm
+[0m
+I (4652) wifi:state: auth -> init (200)
+I (4652) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (4652) wifi:new:<6,1>, old:<6,0>, ap:<255,255>, sta:<6,1>, prof:1
+I (4652) wifi:state: init -> auth (b0)
+I (4662) wifi:state: auth -> assoc (0)
+I (4672) wifi:state: assoc -> run (10)
+I (4692) wifi:connected with IKP-1stFloor, aid = 3, channel 6, 40U, bssid = 9c:c9:eb:a5:17:c1
+I (4692) wifi:security: WPA2-PSK, phy: bgn, rssi: -46
+I (4692) wifi:pm start, type: 1
+
+I (4692) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (4752) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (4752) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+I (5202) wifi:<ba-add>idx:0 (ifx:0, 9c:c9:eb:a5:17:c1), tid:6, ssn:2, winSize:64
+[0;32mI (5712) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:b2a7:32ff:fe2a:c3a0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (6202) esp_netif_handlers: example_netif_sta ip: 192.168.5.150, mask: 255.255.192.0, gw: 192.168.2.1[0m
+[0;32mI (6202) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 192.168.5.150[0m
+[0;32mI (6212) example_common: Connected to example_netif_sta[0m
+[0;32mI (6212) example_common: - IPv4 address: 192.168.5.150,[0m
+[0;32mI (6222) example_common: - IPv6 address: fe80:0000:0000:0000:b2a7:32ff:fe2a:c3a0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (6232) SNTP time: Initializing SNTP[0m
+I (6672) wifi:<ba-add>idx:1 (ifx:0, 9c:c9:eb:a5:17:c1), tid:0, ssn:0, winSize:64
+[0;32mI (6692) mpu: Pitch: -15.294187 Roll: -1.203891[0m
+I (6892) wifi:state: run -> init (0)
+I (6892) wifi:pm stop, total sleep time: 794378 us / 2197311 us
+
+I (6892) wifi:<ba-del>idx:1, tid:0
+I (6892) wifi:<ba-del>idx:0, tid:6
+I (6892) wifi:new:<6,0>, old:<6,1>, ap:<255,255>, sta:<6,1>, prof:1
+E (6902) wifi:NAN WiFi stop
+[0;32mI (6952) ultra: Distance: 304.0401 cm
+[0m
+I (7002) wifi:flush txq
+I (7002) wifi:stop sw txq
+I (7002) wifi:lmac stop hw txq
+I (7002) wifi:Deinit lldesc rx mblock:10
+[0;32mI (7012) SNTP time: time before setting on the ds: 20-02-2024  13:38:44[0m
+
+assert failed: xQueueSemaphoreTake queue.c:1709 (( pxQueue ))
+
+
+Backtrace: 0x400818e2:0x3ffbd7b0 0x4008a321:0x3ffbd7d0 0x40091db5:0x3ffbd7f0 0x4008ac46:0x3ffbd910 0x400d718b:0x3ffbd950 0x400d72a3:0x3ffbd990 0x400d6d9e:0x3ffbd9c0 0x400d64eb:0x3ffbd9f0 0x4008ae6d:0x3ffbda90
+
+
+
+
+ELF file SHA256: 0b5f6a432
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 20 2024 13:10:48[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=24984h (149892) map[0m
+[0;32mI (155) esp_image: segment 1: paddr=000349ac vaddr=3ffb0000 size=03cach ( 15532) load[0m
+[0;32mI (161) esp_image: segment 2: paddr=00038660 vaddr=40080000 size=079b8h ( 31160) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=8b240h (569920) map[0m
+[0;32mI (369) esp_image: segment 4: paddr=000cb268 vaddr=400879b8 size=100a8h ( 65704) load[0m
+[0;32mI (407) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (407) boot: Disabling RNG early entropy source...[0m
+[0;32mI (419) cpu_start: Multicore app[0m
+[0;32mI (428) cpu_start: Pro cpu start user code[0m
+[0;32mI (428) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (428) cpu_start: Application information:[0m
+[0;32mI (431) cpu_start: Project name:     final[0m
+[0;32mI (435) cpu_start: App version:      1[0m
+[0;32mI (440) cpu_start: Compile time:     Mar 20 2024 13:13:00[0m
+[0;32mI (446) cpu_start: ELF file SHA256:  0b5f6a432...[0m
+[0;32mI (451) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (456) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (461) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (466) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (471) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (478) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (484) heap_init: At 3FFB83A0 len 00027C60 (159 KiB): DRAM[0m
+[0;32mI (490) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (496) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (503) heap_init: At 40097A60 len 000085A0 (33 KiB): IRAM[0m
+[0;32mI (511) spi_flash: detected chip: generic[0m
+[0;32mI (514) spi_flash: flash io: dio[0m
+[0;33mW (518) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (531) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (542) main_task: Started on CPU0[0m
+[0;32mI (552) main_task: Calling app_main()[0m
+[0;32mI (652) ultra: Distance: 143.0310 cm
+[0m
+[0;32mI (662) mpu: Pitch: 0.000000 Roll: 0.000000[0m
+[0;32mI (702) example_connect: Start example_connect.[0m
+I (712) wifi:wifi driver task: 3ffc3f68, prio:23, stack:6656, core=0
+I (722) wifi:wifi firmware version: a9f5b59
+I (722) wifi:wifi certification version: v7.0
+I (722) wifi:config NVS flash: enabled
+I (722) wifi:config nano formating: disabled
+I (732) wifi:Init data frame dynamic rx buffer num: 32
+I (732) wifi:Init static rx mgmt buffer num: 5
+I (742) wifi:Init management short buffer num: 32
+I (742) wifi:Init dynamic tx buffer num: 32
+I (752) wifi:Init static rx buffer size: 1600
+I (752) wifi:Init static rx buffer num: 10
+I (752) wifi:Init dynamic rx buffer num: 32
+[0;32mI (762) wifi_init: rx ba win: 6[0m
+[0;32mI (762) wifi_init: tcpip mbox: 32[0m
+[0;32mI (772) wifi_init: udp mbox: 6[0m
+[0;32mI (772) wifi_init: tcp mbox: 6[0m
+[0;32mI (772) wifi_init: tcp tx win: 5760[0m
+[0;32mI (782) wifi_init: tcp rx win: 5760[0m
+[0;32mI (782) wifi_init: tcp mss: 1440[0m
+[0;32mI (782) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (792) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (802) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (892) wifi:mode : sta (b0:a7:32:2a:c3:a0)
+I (892) wifi:enable tsf
+[0;32mI (892) example_connect: Connecting to IKP-1stFloor...[0m
+[0;32mI (902) example_connect: Waiting for IP(s)[0m
+I (3382) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (3642) wifi:state: init -> auth (b0)
+I (3652) wifi:state: auth -> assoc (0)
+[0;32mI (3662) mpu: Pitch: -15.691804 Roll: -1.898600[0m
+I (3672) wifi:state: assoc -> run (10)
+[0;32mI (3722) ultra: Distance: 82.7979 cm
+[0m
+I (3732) wifi:connected with IKP-1stFloor, aid = 1, channel 1, BW20, bssid = 80:cc:9c:d4:8c:01
+I (3742) wifi:security: WPA2-PSK, phy: bgn, rssi: -58
+I (3742) wifi:pm start, type: 1
+
+I (3742) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (3822) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (3832) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (5702) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:b2a7:32ff:fe2a:c3a0, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (6672) mpu: Pitch: -15.304223 Roll: -1.209115[0m
+[0;32mI (6752) ultra: Distance: 34.9729 cm
+[0m
+[0;32mI (9672) mpu: Pitch: -15.290094 Roll: -1.186122[0m
+[0;32mI (9802) ultra: Distance: 30.7835 cm
+[0m
+[0;32mI (12672) mpu: Pitch: -15.307901 Roll: -1.198035[0m
+[0;32mI (12832) ultra: Distance: 30.5508 cm
+[0m
+[0;32mI (15672) mpu: Pitch: -15.277617 Roll: -1.218040[0m
+[0;32mI (15972) ultra: Distance: 195.6258 cm
+[0m
+[0;32mI (18672) mpu: Pitch: -15.277465 Roll: -1.211725[0m
+[0;32mI (19082) ultra: Distance: 181.2695 cm
+[0m
+[0;32mI (21672) mpu: Pitch: -15.285839 Roll: -1.196484[0m
+[0;32mI (22142) ultra: Distance: 98.1925 cm
+[0m
+[0;32mI (24672) mpu: Pitch: -15.293494 Roll: -1.183791[0m
+[0;32mI (25222) ultra: Distance: 90.1796 cm
+[0m
+[0;32mI (27672) mpu: Pitch: -15.291486 Roll: -1.213298[0m
+[0;32mI (28742) ultra: Distance: 876.7989 cm
+[0m
+[0;32mI (30672) mpu: Pitch: -15.276202 Roll: -1.195042[0m
+[0;32mI (31822) ultra: Distance: 168.2851 cm
+[0m
+[0;32mI (33672) mpu: Pitch: -15.279540 Roll: -1.179850[0m
+[0;32mI (35552) ultra: Distance: 1221.8837 cm
+[0m
+[0;32mI (36672) mpu: Pitch: -15.332926 Roll: -1.258708[0m
+[0;32mI (38932) ultra: Distance: 738.0780 cm
+[0m
+[0;32mI (39672) mpu: Pitch: -15.354885 Roll: -1.289618[0m
+[0;32mI (41962) ultra: Distance: 91.7388 cm
+[0m
+[0;32mI (42672) mpu: Pitch: -15.277480 Roll: -1.194355[0m
+[0;32mI (44992) ultra: Distance: 27.2480 cm
+[0m
+[0;32mI (45672) mpu: Pitch: -15.296535 Roll: -1.211509[0m
+[0;32mI (48192) ultra: Distance: 323.8386 cm
+[0m
+[0;32mI (48672) mpu: Pitch: -15.366479 Roll: -1.328041[0m
+[0;32mI (51282) ultra: Distance: 132.8356 cm
+[0m
+[0;32mI (51672) mpu: Pitch: -15.327046 Roll: -1.242862[0m
+[0;32mI (54712) mpu: Pitch: -15.270537 Roll: -1.197477[0m
+[0;32mI (55002) ultra: Distance: 1218.4285 cm
+[0m
+[0;32mI (57712) mpu: Pitch: -15.290699 Roll: -1.183888[0m
+[0;32mI (58722) ultra: Distance: 1327.0205 cm
+[0m
+[0;32mI (60712) mpu: Pitch: -15.292193 Roll: -1.185256[0m
+[0;32mI (61822) ultra: Distance: 274.8503 cm
+[0m
+[0;32mI (63712) mpu: Pitch: -15.291853 Roll: -1.196251[0m
+[0;32mI (65542) ultra: Distance: 1232.4696 cm
+[0m
+[0;32mI (66712) mpu: Pitch: -15.321272 Roll: -1.257810[0m
+[0;32mI (68572) ultra: Distance: 143.3987 cm
+[0m
+[0;32mI (69712) mpu: Pitch: -15.300485 Roll: -1.199839[0m

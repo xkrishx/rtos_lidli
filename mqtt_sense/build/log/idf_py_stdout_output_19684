@@ -1,0 +1,398 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 22 2024 12:07:41[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=311d8h (201176) map[0m
+[0;32mI (173) esp_image: segment 1: paddr=00041200 vaddr=3ffbdb60 size=058f0h ( 22768) load[0m
+[0;32mI (182) esp_image: segment 2: paddr=00046af8 vaddr=40080000 size=09520h ( 38176) load[0m
+[0;32mI (197) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=c5d70h (810352) map[0m
+[0;32mI (475) esp_image: segment 4: paddr=00115d98 vaddr=40089520 size=15c30h ( 89136) load[0m
+[0;32mI (526) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (526) boot: Disabling RNG early entropy source...[0m
+[0;32mI (537) cpu_start: Multicore app[0m
+[0;32mI (546) cpu_start: Pro cpu start user code[0m
+[0;32mI (546) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (546) cpu_start: Application information:[0m
+[0;32mI (549) cpu_start: Project name:     mqtt_sense[0m
+[0;32mI (554) cpu_start: App version:      1[0m
+[0;32mI (559) cpu_start: Compile time:     Mar 22 2024 12:07:56[0m
+[0;32mI (565) cpu_start: ELF file SHA256:  b59531553...[0m
+[0;32mI (570) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (575) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (580) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (585) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (589) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (597) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (603) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (609) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (615) heap_init: At 3FFCA2B0 len 00015D50 (87 KiB): DRAM[0m
+[0;32mI (621) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (627) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (634) heap_init: At 4009F150 len 00000EB0 (3 KiB): IRAM[0m
+[0;32mI (641) spi_flash: detected chip: generic[0m
+[0;32mI (644) spi_flash: flash io: dio[0m
+[0;33mW (649) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (660) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (665) main_task: Started on CPU0[0m
+[0;32mI (675) main_task: Calling app_main()[0m
+I (705) wifi:wifi driver task: 3ffce230, prio:23, stack:6656, core=0
+I (715) wifi:wifi firmware version: a9f5b59
+I (715) wifi:wifi certification version: v7.0
+I (715) wifi:config NVS flash: enabled
+I (715) wifi:config nano formating: disabled
+I (715) wifi:Init data frame dynamic rx buffer num: 32
+I (725) wifi:Init static rx mgmt buffer num: 5
+I (725) wifi:Init management short buffer num: 32
+I (735) wifi:Init dynamic tx buffer num: 32
+I (735) wifi:Init static rx buffer size: 1600
+I (745) wifi:Init static rx buffer num: 10
+I (745) wifi:Init dynamic rx buffer num: 32
+[0;32mI (745) wifi_init: rx ba win: 6[0m
+[0;32mI (755) wifi_init: tcpip mbox: 32[0m
+[0;32mI (755) wifi_init: udp mbox: 6[0m
+[0;32mI (755) wifi_init: tcp mbox: 6[0m
+[0;32mI (765) wifi_init: tcp tx win: 5760[0m
+[0;32mI (765) wifi_init: tcp rx win: 5760[0m
+[0;32mI (775) wifi_init: tcp mss: 1440[0m
+[0;32mI (775) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (775) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (785) wifi_prov_scheme_ble: BT memory released[0m
+[0;32mI (795) init_wifi: Already provisioned, starting Wi-Fi STA[0m
+[0;32mI (795) wifi_prov_scheme_ble: BTDM memory released[0m
+[0;32mI (805) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (885) wifi:mode : sta (b0:a7:32:2a:c3:a0)
+I (885) wifi:enable tsf
+I (3305) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (3305) wifi:state: init -> auth (b0)
+I (3325) wifi:state: auth -> assoc (0)
+I (3335) wifi:state: assoc -> run (10)
+I (3355) wifi:connected with IKP-1stFloor, aid = 3, channel 6, BW20, bssid = 9c:c9:eb:a5:17:c1
+I (3355) wifi:security: WPA2-PSK, phy: bgn, rssi: -43
+I (3365) wifi:pm start, type: 1
+
+I (3365) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (3365) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (3375) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+I (3935) wifi:<ba-add>idx:0 (ifx:0, 9c:c9:eb:a5:17:c1), tid:6, ssn:2, winSize:64
+[0;32mI (5885) event_handler: Connected with IP Address:192.168.5.150[0m
+[0;32mI (5885) esp_netif_handlers: sta ip: 192.168.5.150, mask: 255.255.192.0, gw: 192.168.2.1[0m
+[0;32mI (5885) MQTT: Waiting for system time to be set... (1/10)[0m
+[0;32mI (7895) MQTT: Waiting for system time to be set... (2/10)[0m
+I (9575) wifi:<ba-add>idx:1 (ifx:0, 9c:c9:eb:a5:17:c1), tid:0, ssn:0, winSize:64
+[0;32mI (9895) MQTT: The current date/time is: Fri Mar 22 07:28:41 2024[0m
+[0;32mI (9895) MQTT: Initialising MQTT from Main.[0m
+[0;32mI (9905) MQTT: Initialization completed.[0m
+[0;32mI (10015) ultra: Distance: 1.5754 m
+[0m
+[0;32mI (10545) ultra: Distance: 0.2883 m
+[0m
+[0;32mI (10745) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (10745) MQTT: published successfully.[0m
+[0;32mI (10745) MQTT: sent subscribe successful[0m
+[0;32mI (11085) ultra: Distance: 0.2817 m
+[0m
+[0;32mI (11155) MQTT: MQTT_EVENT_SUBSCRIBED[0m
+[0;32mI (11625) ultra: Distance: 0.2986 m
+[0m
+[0;32mI (12155) ultra: Distance: 0.2801 m
+[0m
+[0;32mI (12685) ultra: Distance: 0.2797 m
+[0m
+[0;32mI (13225) ultra: Distance: 0.4196 m
+[0m
+[0;32mI (13765) ultra: Distance: 0.4153 m
+[0m
+[0;32mI (14305) ultra: Distance: 0.4172 m
+[0m
+[0;32mI (14845) ultra: Distance: 0.4004 m
+[0m
+[0;32mI (15385) ultra: Distance: 0.3827 m
+[0m
+[0;32mI (16045) ultra: Distance: 2.5340 m
+[0m
+[0;32mI (16595) ultra: Distance: 0.4320 m
+[0m
+[0;32mI (17135) ultra: Distance: 0.4294 m
+[0m
+[0;32mI (17675) ultra: Distance: 0.3863 m
+[0m
+[0;32mI (18215) ultra: Distance: 0.3908 m
+[0m
+[0;32mI (18755) ultra: Distance: 0.3835 m
+[0m
+[0;32mI (19295) ultra: Distance: 0.3885 m
+[0m
+[0;32mI (19835) ultra: Distance: 0.3752 m
+[0m
+[0;32mI (20375) ultra: Distance: 0.3871 m
+[0m
+[0;32mI (20915) ultra: Distance: 0.4398 m
+[0m
+[0;32mI (21455) ultra: Distance: 0.4592 m
+[0m
+[0;32mI (22085) ultra: Distance: 1.6991 m
+[0m
+[0;32mI (22625) ultra: Distance: 0.4547 m
+[0m
+[0;32mI (23455) ultra: Distance: 5.1440 m
+[0m
+[0;32mI (24135) ultra: Distance: 2.7762 m
+[0m
+[0;32mI (24745) ultra: Distance: 1.6353 m
+[0m
+[0;32mI (25295) ultra: Distance: 0.4815 m
+[0m
+[0;32mI (26105) ultra: Distance: 5.0790 m
+[0m
+[0;32mI (26645) ultra: Distance: 0.4134 m
+[0m
+[0;32mI (27185) ultra: Distance: 0.4199 m
+[0m
+[0;32mI (27725) ultra: Distance: 0.4129 m
+[0m
+[0;32mI (28275) ultra: Distance: 0.4704 m
+[0m
+[0;32mI (28815) ultra: Distance: 0.4130 m
+[0m
+[0;32mI (29355) ultra: Distance: 0.4290 m
+[0m
+[0;32mI (29895) ultra: Distance: 0.4224 m
+[0m
+[0;32mI (30435) ultra: Distance: 0.3985 m
+[0m
+[0;32mI (30975) ultra: Distance: 0.3978 m
+[0m
+[0;32mI (31585) ultra: Distance: 1.5593 m
+[0m
+[0;32mI (32125) ultra: Distance: 0.4089 m
+[0m
+[0;32mI (32665) ultra: Distance: 0.3924 m
+[0m
+[0;32mI (33205) ultra: Distance: 0.4244 m
+[0m
+[0;32mI (33745) ultra: Distance: 0.4183 m
+[0m
+[0;32mI (34285) ultra: Distance: 0.4558 m
+[0m
+[0;32mI (34835) ultra: Distance: 0.4084 m
+[0m
+[0;32mI (35375) ultra: Distance: 0.3913 m
+[0m
+[0;32mI (35915) ultra: Distance: 0.4151 m
+[0m
+[0;32mI (36455) ultra: Distance: 0.3990 m
+[0m
+[0;32mI (36995) ultra: Distance: 0.4622 m
+[0m
+[0;32mI (37545) ultra: Distance: 0.4098 m
+[0m
+[0;32mI (38085) ultra: Distance: 0.4268 m
+[0m
+[0;32mI (38625) ultra: Distance: 0.4454 m
+[0m
+[0;32mI (39165) ultra: Distance: 0.4371 m
+[0m
+[0;32mI (39705) ultra: Distance: 0.4454 m
+[0m
+[0;32mI (40245) ultra: Distance: 0.4487 m
+[0m
+[0;32mI (40785) ultra: Distance: 0.4529 m
+[0m
+[0;32mI (41335) ultra: Distance: 0.4515 m
+[0m
+[0;32mI (41875) ultra: Distance: 0.4030 m
+[0m
+[0;32mI (42415) ultra: Distance: 0.4224 m
+[0m
+[0;32mI (42955) ultra: Distance: 0.4308 m
+[0m
+[0;32mI (43495) ultra: Distance: 0.4389 m
+[0m
+[0;32mI (44035) ultra: Distance: 0.4331 m
+[0m
+[0;32mI (44575) ultra: Distance: 0.4235 m
+[0m
+[0;32mI (45115) ultra: Distance: 0.4143 m
+[0m
+[0;32mI (45655) ultra: Distance: 0.3938 m
+[0m
+[0;32mI (46205) ultra: Distance: 0.4723 m
+[0m
+[0;32mI (46745) ultra: Distance: 0.4310 m
+[0m
+[0;32mI (47285) ultra: Distance: 0.4362 m
+[0m
+[0;32mI (47825) ultra: Distance: 0.4400 m
+[0m
+[0;32mI (48435) ultra: Distance: 1.6130 m
+[0m
+[0;32mI (48985) ultra: Distance: 0.5562 m
+[0m
+[0;32mI (49525) ultra: Distance: 0.4106 m
+[0m
+[0;32mI (50065) ultra: Distance: 0.4076 m
+[0m
+[0;32mI (50615) ultra: Distance: 0.5186 m
+[0m
+[0;32mI (51155) ultra: Distance: 0.3956 m
+[0m
+[0;32mI (51695) ultra: Distance: 0.3944 m
+[0m
+[0;32mI (52235) ultra: Distance: 0.3828 m
+[0m
+[0;32mI (52775) ultra: Distance: 0.3993 m
+[0m
+[0;32mI (53385) ultra: Distance: 1.6119 m
+[0m
+[0;32mI (53925) ultra: Distance: 0.4512 m
+[0m
+[0;32mI (54465) ultra: Distance: 0.4564 m
+[0m
+[0;32mI (55015) ultra: Distance: 0.4383 m
+[0m
+[0;32mI (55555) ultra: Distance: 0.4123 m
+[0m
+[0;32mI (56105) ultra: Distance: 0.4889 m
+[0m
+[0;32mI (56645) ultra: Distance: 0.4386 m
+[0m
+[0;32mI (57195) ultra: Distance: 0.5592 m
+[0m
+[0;32mI (57735) ultra: Distance: 0.4323 m
+[0m
+[0;32mI (58275) ultra: Distance: 0.4210 m
+[0m
+[0;32mI (58815) ultra: Distance: 0.4312 m
+[0m
+[0;32mI (59355) ultra: Distance: 0.4459 m
+[0m
+[0;32mI (59895) ultra: Distance: 0.4142 m
+[0m
+[0;32mI (60435) ultra: Distance: 0.4054 m
+[0m
+[0;32mI (60985) ultra: Distance: 0.5052 m
+[0m
+[0;32mI (61535) ultra: Distance: 0.5326 m
+[0m
+[0;32mI (62085) ultra: Distance: 0.5182 m
+[0m
+[0;32mI (62625) ultra: Distance: 0.4645 m
+[0m
+[0;32mI (63185) ultra: Distance: 0.4721 m
+[0m
+[0;32mI (63735) ultra: Distance: 0.5421 m
+[0m
+[0;32mI (64285) ultra: Distance: 0.5269 m
+[0m
+[0;32mI (64835) ultra: Distance: 0.5156 m
+[0m
+[0;32mI (65385) ultra: Distance: 0.5072 m
+[0m
+[0;32mI (65935) ultra: Distance: 0.4845 m
+[0m
+[0;32mI (66485) ultra: Distance: 0.5168 m
+[0m
+[0;32mI (67035) ultra: Distance: 0.4980 m
+[0m
+[0;32mI (67575) ultra: Distance: 0.4162 m
+[0m
+[0;32mI (68125) ultra: Distance: 0.4887 m
+[0m
+[0;32mI (68675) ultra: Distance: 0.4772 m
+[0m
+[0;32mI (69225) ultra: Distance: 0.4848 m
+[0m
+[0;32mI (69775) ultra: Distance: 0.5183 m
+[0m
+[0;32mI (70325) ultra: Distance: 0.5435 m
+[0m
+[0;32mI (70875) ultra: Distance: 0.4931 m
+[0m
+[0;32mI (71425) ultra: Distance: 0.4929 m
+[0m
+[0;32mI (71975) ultra: Distance: 0.5362 m
+[0m
+[0;32mI (72655) ultra: Distance: 2.8232 m
+[0m
+[0;32mI (73205) ultra: Distance: 0.5044 m
+[0m
+[0;32mI (73755) ultra: Distance: 0.4873 m
+[0m
+[0;32mI (74305) ultra: Distance: 0.4779 m
+[0m
+[0;32mI (74845) ultra: Distance: 0.4574 m
+[0m
+[0;32mI (75405) ultra: Distance: 0.5151 m
+[0m
+[0;32mI (75955) ultra: Distance: 0.5125 m
+[0m
+[0;32mI (76505) ultra: Distance: 0.5262 m
+[0m
+[0;32mI (77055) ultra: Distance: 0.4955 m
+[0m
+[0;32mI (77595) ultra: Distance: 0.4624 m
+[0m
+[0;32mI (78145) ultra: Distance: 0.4414 m
+[0m
+[0;32mI (78685) ultra: Distance: 0.4243 m
+[0m
+[0;32mI (79235) ultra: Distance: 0.4846 m
+[0m
+[0;32mI (79785) ultra: Distance: 0.4739 m
+[0m
+[0;32mI (80395) ultra: Distance: 1.6389 m
+[0m
+[0;32mI (80935) ultra: Distance: 0.4463 m
+[0m
+[0;32mI (81475) ultra: Distance: 0.4353 m
+[0m
+[0;32mI (82025) ultra: Distance: 0.5562 m
+[0m
+[0;32mI (82565) ultra: Distance: 0.4376 m
+[0m
+[0;32mI (83105) ultra: Distance: 0.3916 m
+[0m
+[0;32mI (83785) ultra: Distance: 2.8469 m
+[0m
+[0;32mI (84335) ultra: Distance: 0.5421 m
+[0m
+[0;32mI (84885) ultra: Distance: 0.5410 m
+[0m
+[0;32mI (85435) ultra: Distance: 0.6076 m
+[0m
+[0;32mI (86035) ultra: Distance: 1.3333 m
+[0m
+[0;32mI (86575) ultra: Distance: 0.3590 m
+[0m
+[0;32mI (87115) ultra: Distance: 0.4544 m
+[0m
+[0;32mI (87665) ultra: Distance: 0.3782 m
+[0m
+[0;32mI (88185) ultra: Distance: 0.1201 m
+[0m
+[0;32mI (88735) ultra: Distance: 0.4423 m
+[0m
+[0;32mI (89275) ultra: Distance: 0.4549 m
+[0m

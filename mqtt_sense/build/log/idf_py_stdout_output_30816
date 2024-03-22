@@ -1,0 +1,102 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\KPC\PC_embedded\rtos\mqtt_sense\build\bootloader\esp-idf\esptool_py && C:\Users\KPC\.espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Users/KPC/esp/v5.2.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/KPC/PC_embedded/rtos/mqtt_sense/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+D:/KPC/PC_embedded/rtos/mqtt_sense/main/main.c: In function 'mqtt_event_handler':
+D:/KPC/PC_embedded/rtos/mqtt_sense/main/main.c:207:30: warning: unused variable 'client' [-Wunused-variable]
+  207 |     esp_mqtt_client_handle_t client = event->client; // making obj client of struct esp_mqtt_client_handle_t and assigning it the receieved event client
+      |                              ^~~~~~
+D:/KPC/PC_embedded/rtos/mqtt_sense/main/main.c:205:9: warning: unused variable 'msg_id' [-Wunused-variable]
+  205 |     int msg_id;
+      |         ^~~~~~
+[3/8] Linking C static library esp-idf\main\libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable mqtt_sense.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/KPC/PC_embedded/rtos/mqtt_sense/build/mqtt_sense.bin
+[7/8] cmd.exe /C "cd /D D:\KPC\PC_embedded\rtos\mqtt_sense\build\esp-idf\esptool_py && C:\Users\KPC\.espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Users/KPC/esp/v5.2.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/KPC/PC_embedded/rtos/mqtt_sense/build/partition_table/partition-table.bin D:/KPC/PC_embedded/rtos/mqtt_sense/build/mqtt_sense.bin"
+mqtt_sense.bin binary size 0x12ff70 bytes. Smallest app partition is 0x177000 bytes. 0x47090 bytes (19%) free.
+[7/8] cmd.exe /C "cd /D C:\Users\KPC\esp\v5.2.1\esp-idf\components\esptool_py && C:\Users\KPC\.espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Users/KPC/esp/v5.2.1/esp-idf -D SERIAL_TOOL=C:/Users/KPC/.espressif/python_env/idf5.2_py3.11_env/Scripts/python.exe;;C:/Users/KPC/esp/v5.2.1/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_resptool.py --chip esp32 -p COM8 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 mqtt_sense.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port COM8
+Connecting.......
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: b0:a7:32:2a:c3:a0
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x0013ffff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26720 bytes to 16358...
+Writing at 0x00001000... (100 %)
+Wrote 26720 bytes (16358 compressed) at 0x00001000 in 0.6 seconds (effective 357.2 kbit/s)...
+Hash of data verified.
+Compressed 1245040 bytes to 771610...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001e67a... (4 %)
+Writing at 0x0002bbd9... (6 %)
+Writing at 0x0003250f... (8 %)
+Writing at 0x000375d7... (10 %)
+Writing at 0x00043365... (12 %)
+Writing at 0x0004cb4f... (14 %)
+Writing at 0x00052cf1... (16 %)
+Writing at 0x000585bf... (18 %)
+Writing at 0x0005de15... (20 %)
+Writing at 0x00063f14... (22 %)
+Writing at 0x0006a4f4... (25 %)
+Writing at 0x000702d7... (27 %)
+Writing at 0x00076144... (29 %)
+Writing at 0x0007c2ce... (31 %)
+Writing at 0x00081b8c... (33 %)
+Writing at 0x00087a83... (35 %)
+Writing at 0x0008d81f... (37 %)
+Writing at 0x00093374... (39 %)
+Writing at 0x000993ec... (41 %)
+Writing at 0x0009eefd... (43 %)
+Writing at 0x000a4f2a... (45 %)
+Writing at 0x000ab4b5... (47 %)
+Writing at 0x000b121c... (50 %)
+Writing at 0x000b6d46... (52 %)
+Writing at 0x000bc125... (54 %)
+Writing at 0x000c14de... (56 %)
+Writing at 0x000c6a3e... (58 %)
+Writing at 0x000cbe34... (60 %)
+Writing at 0x000d1432... (62 %)
+Writing at 0x000d6c1b... (64 %)
+Writing at 0x000dc827... (66 %)
+Writing at 0x000e1fd9... (68 %)
+Writing at 0x000e7c23... (70 %)
+Writing at 0x000ed889... (72 %)
+Writing at 0x000f33c0... (75 %)
+Writing at 0x000f9345... (77 %)
+Writing at 0x000ff28e... (79 %)
+Writing at 0x001051bf... (81 %)
+Writing at 0x0010aaa0... (83 %)
+Writing at 0x0011256b... (85 %)
+Writing at 0x0011c2f1... (87 %)
+Writing at 0x001229a1... (89 %)
+Writing at 0x00128773... (91 %)
+Writing at 0x0012dc81... (93 %)
+Writing at 0x00133df6... (95 %)
+Writing at 0x00139e32... (97 %)
+Writing at 0x0013f41b... (100 %)
+Wrote 1245040 bytes (771610 compressed) at 0x00010000 in 19.2 seconds (effective 517.6 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 105...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (105 compressed) at 0x00008000 in 0.0 seconds (effective 983.1 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+eset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/KPC/PC_embedded/rtos/mqtt_sense/build -P C:/Users/KPC/esp/v5.2.1/esp-idf/components/esptool_py/run_serial_tool.cmake"

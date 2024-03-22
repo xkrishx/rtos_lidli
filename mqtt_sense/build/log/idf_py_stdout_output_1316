@@ -1,0 +1,250 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 22 2024 12:07:41[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=310e8h (200936) map[0m
+[0;32mI (173) esp_image: segment 1: paddr=00041110 vaddr=3ffbdb60 size=058f0h ( 22768) load[0m
+[0;32mI (182) esp_image: segment 2: paddr=00046a08 vaddr=40080000 size=09610h ( 38416) load[0m
+[0;32mI (197) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=c5e14h (810516) map[0m
+[0;32mI (475) esp_image: segment 4: paddr=00115e3c vaddr=40089610 size=15b40h ( 88896) load[0m
+[0;32mI (526) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (526) boot: Disabling RNG early entropy source...[0m
+[0;32mI (537) cpu_start: Multicore app[0m
+[0;32mI (546) cpu_start: Pro cpu start user code[0m
+[0;32mI (546) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (546) cpu_start: Application information:[0m
+[0;32mI (549) cpu_start: Project name:     mqtt_sense[0m
+[0;32mI (554) cpu_start: App version:      1[0m
+[0;32mI (559) cpu_start: Compile time:     Mar 22 2024 12:07:56[0m
+[0;32mI (565) cpu_start: ELF file SHA256:  9f0702b2c...[0m
+[0;32mI (570) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (575) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (580) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (585) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (589) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (597) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (603) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (609) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (615) heap_init: At 3FFCA2B8 len 00015D48 (87 KiB): DRAM[0m
+[0;32mI (621) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (627) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (634) heap_init: At 4009F150 len 00000EB0 (3 KiB): IRAM[0m
+[0;32mI (641) spi_flash: detected chip: generic[0m
+[0;32mI (644) spi_flash: flash io: dio[0m
+[0;33mW (649) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (660) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (665) main_task: Started on CPU0[0m
+[0;32mI (675) main_task: Calling app_main()[0m
+I (705) wifi:wifi driver task: 3ffce238, prio:23, stack:6656, core=0
+I (715) wifi:wifi firmware version: a9f5b59
+I (715) wifi:wifi certification version: v7.0
+I (715) wifi:config NVS flash: enabled
+I (715) wifi:config nano formating: disabled
+I (715) wifi:Init data frame dynamic rx buffer num: 32
+I (725) wifi:Init static rx mgmt buffer num: 5
+I (725) wifi:Init management short buffer num: 32
+I (735) wifi:Init dynamic tx buffer num: 32
+I (735) wifi:Init static rx buffer size: 1600
+I (745) wifi:Init static rx buffer num: 10
+I (745) wifi:Init dynamic rx buffer num: 32
+[0;32mI (745) wifi_init: rx ba win: 6[0m
+[0;32mI (755) wifi_init: tcpip mbox: 32[0m
+[0;32mI (755) wifi_init: udp mbox: 6[0m
+[0;32mI (755) wifi_init: tcp mbox: 6[0m
+[0;32mI (765) wifi_init: tcp tx win: 5760[0m
+[0;32mI (765) wifi_init: tcp rx win: 5760[0m
+[0;32mI (775) wifi_init: tcp mss: 1440[0m
+[0;32mI (775) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (785) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (785) wifi_prov_scheme_ble: BT memory released[0m
+[0;32mI (795) init_wifi: Already provisioned, starting Wi-Fi STA[0m
+[0;32mI (795) wifi_prov_scheme_ble: BTDM memory released[0m
+[0;32mI (805) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (885) wifi:mode : sta (b0:a7:32:2a:c3:a0)
+I (885) wifi:enable tsf
+[0;32mI (895) MQTT: Waiting for system time to be set... (1/10)[0m
+[0;32mI (2895) MQTT: Waiting for system time to be set... (2/10)[0m
+I (3305) wifi:new:<6,1>, old:<1,0>, ap:<255,255>, sta:<6,1>, prof:1
+I (3305) wifi:state: init -> auth (b0)
+I (3315) wifi:state: auth -> assoc (0)
+I (3325) wifi:state: assoc -> run (10)
+I (3345) wifi:connected with IKP-1stFloor, aid = 3, channel 6, 40U, bssid = 9c:c9:eb:a5:17:c1
+I (3345) wifi:security: WPA2-PSK, phy: bgn, rssi: -38
+I (3345) wifi:pm start, type: 1
+
+I (3355) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (3375) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (3375) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+I (3865) wifi:<ba-add>idx:0 (ifx:0, 9c:c9:eb:a5:17:c1), tid:6, ssn:2, winSize:64
+I (4875) wifi:<ba-add>idx:1 (ifx:0, 9c:c9:eb:a5:17:c1), tid:0, ssn:0, winSize:64
+[0;32mI (4895) MQTT: Waiting for system time to be set... (3/10)[0m
+[0;32mI (5355) event_handler: Connected with IP Address:192.168.5.150[0m
+[0;32mI (5355) esp_netif_handlers: sta ip: 192.168.5.150, mask: 255.255.192.0, gw: 192.168.2.1[0m
+[0;32mI (6895) MQTT: The current date/time is: Fri Mar 22 06:48:39 2024[0m
+[0;32mI (6895) MQTT: Initialising MQTT from Main.[0m
+[0;32mI (6955) mpu: Pitch: 0.000000 Roll: 0.000000[0m
+[0;32mI (7775) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (7775) MQTT: published successfully.[0m
+[0;32mI (7775) MQTT: sent subscribe successful[0m
+[0;32mI (7955) mpu: Pitch: -17.690268 Roll: -0.508701[0m
+[0;32mI (8955) mpu: Pitch: -17.713821 Roll: -0.603771[0m
+[0;32mI (9955) mpu: Pitch: -17.727039 Roll: -0.623090[0m
+[0;32mI (10955) mpu: Pitch: -17.732809 Roll: -0.595008[0m
+[0;32mI (11955) mpu: Pitch: -17.743389 Roll: -0.636106[0m
+[0;32mI (12955) mpu: Pitch: -17.782154 Roll: -0.684413[0m
+[0;32mI (13955) mpu: Pitch: -17.697746 Roll: -0.568082[0m
+[0;32mI (14955) mpu: Pitch: -17.729097 Roll: -0.594516[0m
+[0;32mI (15955) mpu: Pitch: -17.723848 Roll: -0.596309[0m
+[0;32mI (16955) mpu: Pitch: -17.731745 Roll: -0.565764[0m
+[0;32mI (17955) mpu: Pitch: -17.735806 Roll: -0.636347[0m
+[0;32mI (18955) mpu: Pitch: -17.733141 Roll: -0.636789[0m
+[0;32mI (19955) mpu: Pitch: -17.689329 Roll: -0.571902[0m
+[0;32mI (20955) mpu: Pitch: -17.694166 Roll: -0.586191[0m
+[0;32mI (21955) mpu: Pitch: -17.642908 Roll: -0.547982[0m
+[0;32mI (22955) mpu: Pitch: -17.544701 Roll: -0.589804[0m
+[0;32mI (23955) mpu: Pitch: -18.439711 Roll: 3.461080[0m
+[0;32mI (24955) mpu: Pitch: 3.905982 Roll: -7.672480[0m
+[0;32mI (25955) mpu: Pitch: 14.794824 Roll: -5.043870[0m
+[0;32mI (26955) mpu: Pitch: -3.312583 Roll: -3.089161[0m
+[0;32mI (27955) mpu: Pitch: -11.394269 Roll: -1.642328[0m
+[0;32mI (28955) mpu: Pitch: -10.772250 Roll: -0.740448[0m
+[0;32mI (29955) mpu: Pitch: -10.368463 Roll: -0.373084[0m
+[0;32mI (30955) mpu: Pitch: -11.490320 Roll: -0.847817[0m
+[0;32mI (31955) mpu: Pitch: -12.380569 Roll: -0.663278[0m
+[0;32mI (32955) mpu: Pitch: -13.324911 Roll: -0.601241[0m
+[0;32mI (33965) mpu: Pitch: -16.840155 Roll: -0.602482[0m
+[0;32mI (34965) mpu: Pitch: -17.357357 Roll: -0.595443[0m
+[0;32mI (35965) mpu: Pitch: -17.402430 Roll: -0.613861[0m
+[0;32mI (36965) mpu: Pitch: -17.405235 Roll: -0.620309[0m
+[0;32mI (37965) mpu: Pitch: -17.420780 Roll: -0.645951[0m
+[0;32mI (38965) mpu: Pitch: -17.426426 Roll: -0.630420[0m
+[0;32mI (39965) mpu: Pitch: -17.452322 Roll: -0.695060[0m
+[0;32mI (40965) mpu: Pitch: -17.379837 Roll: -0.605317[0m
+[0;32mI (41975) mpu: Pitch: -17.422598 Roll: -0.591775[0m
+[0;32mI (42975) mpu: Pitch: -17.426392 Roll: -0.632412[0m
+[0;32mI (43975) mpu: Pitch: -17.400526 Roll: -0.621525[0m
+[0;32mI (44975) mpu: Pitch: -17.428503 Roll: -0.699426[0m
+[0;32mI (45975) mpu: Pitch: -17.411900 Roll: -0.650045[0m
+[0;32mI (46975) mpu: Pitch: -17.470301 Roll: -0.753566[0m
+[0;32mI (47975) mpu: Pitch: -17.452356 Roll: -0.657427[0m
+[0;32mI (48975) mpu: Pitch: -17.411192 Roll: -0.611173[0m
+[0;32mI (49975) mpu: Pitch: -17.435682 Roll: -0.587390[0m
+[0;32mI (50975) mpu: Pitch: -17.430590 Roll: -0.626120[0m
+[0;32mI (51975) mpu: Pitch: -17.489529 Roll: -0.672204[0m
+[0;32mI (52975) mpu: Pitch: -17.424788 Roll: -0.610170[0m
+[0;32mI (53975) mpu: Pitch: -17.445641 Roll: -0.593162[0m
+[0;32mI (54975) mpu: Pitch: -17.463549 Roll: -0.658401[0m
+[0;32mI (55975) mpu: Pitch: -17.591972 Roll: -0.853448[0m
+[0;32mI (56975) mpu: Pitch: -17.483288 Roll: -0.669103[0m
+[0;32mI (57975) mpu: Pitch: -17.525270 Roll: -0.754338[0m
+[0;32mI (58975) mpu: Pitch: -17.450783 Roll: -0.653719[0m
+[0;32mI (59975) mpu: Pitch: -17.471180 Roll: -0.669834[0m
+[0;32mI (60975) mpu: Pitch: -17.545048 Roll: -0.834904[0m
+[0;32mI (61975) mpu: Pitch: -17.469988 Roll: -0.643284[0m
+[0;32mI (62975) mpu: Pitch: -17.520927 Roll: -0.695073[0m
+[0;32mI (63975) mpu: Pitch: -17.618654 Roll: -0.929283[0m
+[0;32mI (64975) mpu: Pitch: -17.456964 Roll: -0.571711[0m
+[0;32mI (65985) mpu: Pitch: -17.481049 Roll: -0.664065[0m
+[0;32mI (66985) mpu: Pitch: -17.522980 Roll: -0.782039[0m
+[0;32mI (67995) mpu: Pitch: -17.513744 Roll: -0.687153[0m
+[0;32mI (68995) mpu: Pitch: -17.513235 Roll: -0.684547[0m
+[0;32mI (69995) mpu: Pitch: -17.602364 Roll: -0.871520[0m
+[0;32mI (70995) mpu: Pitch: -17.476828 Roll: -0.648554[0m
+[0;32mI (71995) mpu: Pitch: -17.513815 Roll: -0.709126[0m
+[0;32mI (72995) mpu: Pitch: -17.466585 Roll: -0.641316[0m
+[0;32mI (73995) mpu: Pitch: -17.543427 Roll: -0.739458[0m
+[0;32mI (74995) mpu: Pitch: -17.506796 Roll: -0.667245[0m
+[0;32mI (75995) mpu: Pitch: -17.466940 Roll: -0.597187[0m
+[0;32mI (76995) mpu: Pitch: -17.464323 Roll: -0.598171[0m
+[0;32mI (77995) mpu: Pitch: -17.460974 Roll: -0.627355[0m
+[0;32mI (78995) mpu: Pitch: -17.454201 Roll: -0.645196[0m
+[0;32mI (79995) mpu: Pitch: -17.475487 Roll: -0.657797[0m
+[0;32mI (80995) mpu: Pitch: -17.449997 Roll: -0.578414[0m
+[0;32mI (81995) mpu: Pitch: -17.453520 Roll: -0.602202[0m
+[0;32mI (82995) mpu: Pitch: -17.493641 Roll: -0.595555[0m
+[0;32mI (83995) mpu: Pitch: -17.473804 Roll: -0.590461[0m
+[0;32mI (84995) mpu: Pitch: -17.458254 Roll: -0.608412[0m
+[0;32mI (85995) mpu: Pitch: -17.468908 Roll: -0.620846[0m
+[0;32mI (86995) mpu: Pitch: -17.475214 Roll: -0.645314[0m
+[0;32mI (87995) mpu: Pitch: -17.540470 Roll: -0.726177[0m
+[0;32mI (88995) mpu: Pitch: -17.469587 Roll: -0.651879[0m
+[0;32mI (89995) mpu: Pitch: -17.429230 Roll: -0.560739[0m
+[0;32mI (90995) mpu: Pitch: -17.439999 Roll: -0.601427[0m
+[0;32mI (91995) mpu: Pitch: -17.473719 Roll: -0.608209[0m
+[0;32mI (92995) mpu: Pitch: -17.453419 Roll: -0.627516[0m
+[0;32mI (93995) mpu: Pitch: -17.487974 Roll: -0.624414[0m
+[0;32mI (94995) mpu: Pitch: -17.461313 Roll: -0.661908[0m
+[0;32mI (95995) mpu: Pitch: -17.551960 Roll: -0.742318[0m
+[0;32mI (96995) mpu: Pitch: -17.460907 Roll: -0.606501[0m
+[0;32mI (97995) mpu: Pitch: -17.459848 Roll: -0.592483[0m
+[0;32mI (98995) mpu: Pitch: -17.462412 Roll: -0.638128[0m
+[0;32mI (99995) mpu: Pitch: -17.502453 Roll: -0.701211[0m
+[0;32mI (100995) mpu: Pitch: -17.544970 Roll: -0.723290[0m
+[0;32mI (101995) mpu: Pitch: -17.480829 Roll: -0.646646[0m
+[0;32mI (102995) mpu: Pitch: -17.450798 Roll: -0.598273[0m
+[0;32mI (103995) mpu: Pitch: -17.459097 Roll: -0.627583[0m
+[0;32mI (104995) mpu: Pitch: -17.476645 Roll: -0.666340[0m
+[0;32mI (105995) mpu: Pitch: -17.483347 Roll: -0.644884[0m
+[0;32mI (106995) mpu: Pitch: -17.485008 Roll: -0.655618[0m
+[0;32mI (107995) mpu: Pitch: -17.526014 Roll: -0.801480[0m
+[0;32mI (108995) mpu: Pitch: -17.438379 Roll: -0.586946[0m
+[0;32mI (109995) mpu: Pitch: -17.448433 Roll: -0.582454[0m
+[0;32mI (110995) mpu: Pitch: -17.462816 Roll: -0.586841[0m
+[0;32mI (111995) mpu: Pitch: -17.472099 Roll: -0.616887[0m
+[0;32mI (112995) mpu: Pitch: -17.487453 Roll: -0.644030[0m
+[0;32mI (113995) mpu: Pitch: -17.497461 Roll: -0.685601[0m
+[0;32mI (114995) mpu: Pitch: -17.531197 Roll: -0.699399[0m
+[0;32mI (115995) mpu: Pitch: -17.492384 Roll: -0.624585[0m
+[0;32mI (116995) mpu: Pitch: -17.448677 Roll: -0.589774[0m
+[0;32mI (117995) mpu: Pitch: -17.479719 Roll: -0.598553[0m
+[0;32mI (118995) mpu: Pitch: -17.486277 Roll: -0.613060[0m
+[0;32mI (119995) mpu: Pitch: -17.547455 Roll: -0.745499[0m
+[0;32mI (120995) mpu: Pitch: -17.502295 Roll: -0.659747[0m
+[0;32mI (121995) mpu: Pitch: -17.524979 Roll: -0.667710[0m
+[0;32mI (122995) mpu: Pitch: -17.464989 Roll: -0.594056[0m
+[0;32mI (123995) mpu: Pitch: -17.468098 Roll: -0.609566[0m
+[0;32mI (124995) mpu: Pitch: -17.445789 Roll: -0.605916[0m
+[0;32mI (125995) mpu: Pitch: -17.486530 Roll: -0.635040[0m
+[0;32mI (126995) mpu: Pitch: -17.496681 Roll: -0.651979[0m
+[0;32mI (127995) mpu: Pitch: -17.514677 Roll: -0.628888[0m
+[0;32mI (128995) mpu: Pitch: -17.603458 Roll: -0.886821[0m
+[0;32mI (129995) mpu: Pitch: -17.516649 Roll: -0.577878[0m
+[0;32mI (130995) mpu: Pitch: -17.467981 Roll: -0.591720[0m
+[0;32mI (131995) mpu: Pitch: -17.492842 Roll: -0.625563[0m
+[0;32mI (132995) mpu: Pitch: -17.503658 Roll: -0.584335[0m
+[0;32mI (133995) mpu: Pitch: -17.513674 Roll: -0.655964[0m
+[0;32mI (134995) mpu: Pitch: -17.523628 Roll: -0.694225[0m
+[0;32mI (135995) mpu: Pitch: -17.467772 Roll: -0.601096[0m
+[0;32mI (137005) mpu: Pitch: -17.499466 Roll: -0.638898[0m
+[0;32mI (138005) mpu: Pitch: -17.502754 Roll: -0.639083[0m
+[0;32mI (139005) mpu: Pitch: -17.471430 Roll: -0.606604[0m
+[0;32mI (140005) mpu: Pitch: -17.496809 Roll: -0.632325[0m
+[0;32mI (141005) mpu: Pitch: -17.524475 Roll: -0.742166[0m
+[0;32mI (142005) mpu: Pitch: -17.480152 Roll: -0.597071[0m
+[0;32mI (143005) mpu: Pitch: -17.502460 Roll: -0.609531[0m
+[0;32mI (144005) mpu: Pitch: -17.516697 Roll: -0.646151[0m
+[0;32mI (145005) mpu: Pitch: -17.569248 Roll: -0.649784[0m
+[0;32mI (146005) mpu: Pitch: -17.515553 Roll: -0.709114[0m
+[0;32mI (147005) mpu: Pitch: -17.483398 Roll: -0.666714[0m

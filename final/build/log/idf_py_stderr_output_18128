@@ -1,0 +1,67 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM8 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM8 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400818e2: panic_abort at C:/Users/KPC/esp/v5.2.1/esp-idf/components/esp_system/panic.c:472
+0x4008a321: esp_system_abort at C:/Users/KPC/esp/v5.2.1/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40091db5: __assert_func at C:/Users/KPC/esp/v5.2.1/esp-idf/components/newlib/assert.c:81
+0x4008ac46: xQueueSemaphoreTake at C:/Users/KPC/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1709 (discriminator 1)
+0x400d717f: i2c_dev_write at C:/Users/KPC/Documents/PC_embedded/rtos/final/components/i2cdev/i2cdev.c:310
+0x400d7297: i2c_dev_write_reg at C:/Users/KPC/Documents/PC_embedded/rtos/final/components/i2cdev/i2cdev.c:339
+0x400d6d92: ds3231_set_time at C:/Users/KPC/Documents/PC_embedded/rtos/final/main/ds3231.c:152
+0x400d64df: ds3231 at C:/Users/KPC/Documents/PC_embedded/rtos/final/main/main.c:154
+0x4008ae6d: vPortTaskWrapper at C:/Users/KPC/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400818e2: panic_abort at C:/Users/KPC/esp/v5.2.1/esp-idf/components/esp_system/panic.c:472
+0x4008a321: esp_system_abort at C:/Users/KPC/esp/v5.2.1/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40091db5: __assert_func at C:/Users/KPC/esp/v5.2.1/esp-idf/components/newlib/assert.c:81
+0x4008ac46: xQueueSemaphoreTake at C:/Users/KPC/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1709 (discriminator 1)
+0x400d717f: i2c_dev_write at C:/Users/KPC/Documents/PC_embedded/rtos/final/components/i2cdev/i2cdev.c:310
+0x400d7297: i2c_dev_write_reg at C:/Users/KPC/Documents/PC_embedded/rtos/final/components/i2cdev/i2cdev.c:339
+0x400d6d92: ds3231_set_time at C:/Users/KPC/Documents/PC_embedded/rtos/final/main/ds3231.c:152
+0x400d64df: ds3231 at C:/Users/KPC/Documents/PC_embedded/rtos/final/main/main.c:154
+0x4008ae6d: vPortTaskWrapper at C:/Users/KPC/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400818e2: panic_abort at C:/Users/KPC/esp/v5.2.1/esp-idf/components/esp_system/panic.c:472
+0x4008a321: esp_system_abort at C:/Users/KPC/esp/v5.2.1/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40091db5: __assert_func at C:/Users/KPC/esp/v5.2.1/esp-idf/components/newlib/assert.c:81
+0x4008ac46: xQueueSemaphoreTake at C:/Users/KPC/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1709 (discriminator 1)
+0x400d717f: i2c_dev_write at C:/Users/KPC/Documents/PC_embedded/rtos/final/components/i2cdev/i2cdev.c:310
+0x400d7297: i2c_dev_write_reg at C:/Users/KPC/Documents/PC_embedded/rtos/final/components/i2cdev/i2cdev.c:339
+0x400d6d92: ds3231_set_time at C:/Users/KPC/Documents/PC_embedded/rtos/final/main/ds3231.c:152
+0x400d64df: ds3231 at C:/Users/KPC/Documents/PC_embedded/rtos/final/main/main.c:154
+0x4008ae6d: vPortTaskWrapper at C:/Users/KPC/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400818e2: panic_abort at C:/Users/KPC/esp/v5.2.1/esp-idf/components/esp_system/panic.c:472
+0x4008a321: esp_system_abort at C:/Users/KPC/esp/v5.2.1/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40091db5: __assert_func at C:/Users/KPC/esp/v5.2.1/esp-idf/components/newlib/assert.c:81
+0x4008ac46: xQueueSemaphoreTake at C:/Users/KPC/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1709 (discriminator 1)
+0x400d717f: i2c_dev_write at C:/Users/KPC/Documents/PC_embedded/rtos/final/components/i2cdev/i2cdev.c:310
+0x400d7297: i2c_dev_write_reg at C:/Users/KPC/Documents/PC_embedded/rtos/final/components/i2cdev/i2cdev.c:339
+0x400d6d92: ds3231_set_time at C:/Users/KPC/Documents/PC_embedded/rtos/final/main/ds3231.c:152
+0x400d64df: ds3231 at C:/Users/KPC/Documents/PC_embedded/rtos/final/main/main.c:154
+0x4008ae6d: vPortTaskWrapper at C:/Users/KPC/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400818e2: panic_abort at C:/Users/KPC/esp/v5.2.1/esp-idf/components/esp_system/panic.c:472
+0x4008a321: esp_system_abort at C:/Users/KPC/esp/v5.2.1/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40091db5: __assert_func at C:/Users/KPC/esp/v5.2.1/esp-idf/components/newlib/assert.c:81
+0x4008ac46: xQueueSemaphoreTake at C:/Users/KPC/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1709 (discriminator 1)
+0x400d717f: i2c_dev_write at C:/Users/KPC/Documents/PC_embedded/rtos/final/components/i2cdev/i2cdev.c:310
+0x400d7297: i2c_dev_write_reg at C:/Users/KPC/Documents/PC_embedded/rtos/final/components/i2cdev/i2cdev.c:339
+0x400d6d92: ds3231_set_time at C:/Users/KPC/Documents/PC_embedded/rtos/final/main/ds3231.c:152
+0x400d64df: ds3231 at C:/Users/KPC/Documents/PC_embedded/rtos/final/main/main.c:154
+0x4008ae6d: vPortTaskWrapper at C:/Users/KPC/esp/v5.2.1/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m

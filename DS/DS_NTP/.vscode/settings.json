@@ -1,0 +1,15 @@
+{
+  "C_Cpp.intelliSenseEngine": "default",
+  "idf.portWin": "COM8",
+  "idf.adapterTargetName": "esp32",
+  "idf.openOcdConfigs": [
+    "board/esp32-bridge.cfg"
+  ],
+  "files.associations": {
+    "string.h": "c",
+    "esp_netif_sntp.h": "c",
+    "chrono": "c"
+  },
+  "idf.flashType": "UART",
+  "cmake.configureOnOpen": true
+}

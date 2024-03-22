@@ -1,0 +1,1785 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 22 2024 12:07:41[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.1[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=31118h (200984) map[0m
+[0;32mI (173) esp_image: segment 1: paddr=00041140 vaddr=3ffbdb60 size=058f0h ( 22768) load[0m
+[0;32mI (182) esp_image: segment 2: paddr=00046a38 vaddr=40080000 size=095e0h ( 38368) load[0m
+[0;32mI (197) esp_image: segment 3: paddr=00050020 vaddr=400d0020 size=c5e24h (810532) map[0m
+[0;32mI (475) esp_image: segment 4: paddr=00115e4c vaddr=400895e0 size=15b70h ( 88944) load[0m
+[0;32mI (526) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (526) boot: Disabling RNG early entropy source...[0m
+[0;32mI (537) cpu_start: Multicore app[0m
+[0;32mI (546) cpu_start: Pro cpu start user code[0m
+[0;32mI (546) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (546) cpu_start: Application information:[0m
+[0;32mI (549) cpu_start: Project name:     mqtt_sense[0m
+[0;32mI (554) cpu_start: App version:      1[0m
+[0;32mI (559) cpu_start: Compile time:     Mar 22 2024 12:07:56[0m
+[0;32mI (565) cpu_start: ELF file SHA256:  ee3b2e215...[0m
+[0;32mI (570) cpu_start: ESP-IDF:          v5.2.1[0m
+[0;32mI (575) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (580) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (585) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (589) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (597) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (602) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (609) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (615) heap_init: At 3FFCA2B8 len 00015D48 (87 KiB): DRAM[0m
+[0;32mI (621) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (627) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (634) heap_init: At 4009F150 len 00000EB0 (3 KiB): IRAM[0m
+[0;32mI (641) spi_flash: detected chip: generic[0m
+[0;32mI (644) spi_flash: flash io: dio[0m
+[0;33mW (649) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (660) coexist: coex firmware version: 77cd7f8[0m
+[0;32mI (665) main_task: Started on CPU0[0m
+[0;32mI (675) main_task: Calling app_main()[0m
+I (705) wifi:wifi driver task: 3ffce238, prio:23, stack:6656, core=0
+I (715) wifi:wifi firmware version: a9f5b59
+I (715) wifi:wifi certification version: v7.0
+I (715) wifi:config NVS flash: enabled
+I (715) wifi:config nano formating: disabled
+I (725) wifi:Init data frame dynamic rx buffer num: 32
+I (725) wifi:Init static rx mgmt buffer num: 5
+I (725) wifi:Init management short buffer num: 32
+I (735) wifi:Init dynamic tx buffer num: 32
+I (735) wifi:Init static rx buffer size: 1600
+I (745) wifi:Init static rx buffer num: 10
+I (745) wifi:Init dynamic rx buffer num: 32
+[0;32mI (745) wifi_init: rx ba win: 6[0m
+[0;32mI (755) wifi_init: tcpip mbox: 32[0m
+[0;32mI (755) wifi_init: udp mbox: 6[0m
+[0;32mI (765) wifi_init: tcp mbox: 6[0m
+[0;32mI (765) wifi_init: tcp tx win: 5760[0m
+[0;32mI (765) wifi_init: tcp rx win: 5760[0m
+[0;32mI (775) wifi_init: tcp mss: 1440[0m
+[0;32mI (775) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (785) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (785) wifi_prov_scheme_ble: BT memory released[0m
+[0;32mI (795) init_wifi: Already provisioned, starting Wi-Fi STA[0m
+[0;32mI (795) wifi_prov_scheme_ble: BTDM memory released[0m
+[0;32mI (805) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (905) wifi:mode : sta (b0:a7:32:2a:c3:a0)
+I (905) wifi:enable tsf
+[0;32mI (905) MQTT: Waiting for system time to be set... (1/10)[0m
+[0;32mI (2905) MQTT: Waiting for system time to be set... (2/10)[0m
+I (3315) wifi:new:<1,1>, old:<1,0>, ap:<255,255>, sta:<1,1>, prof:1
+I (3315) wifi:state: init -> auth (b0)
+I (3325) wifi:state: auth -> init (8a0)
+I (3325) wifi:new:<1,0>, old:<1,1>, ap:<255,255>, sta:<1,1>, prof:1
+I (3325) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (3335) wifi:state: init -> auth (b0)
+I (4335) wifi:state: auth -> init (200)
+I (4335) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (4335) wifi:new:<6,1>, old:<6,0>, ap:<255,255>, sta:<6,1>, prof:1
+I (4345) wifi:state: init -> auth (b0)
+I (4415) wifi:state: auth -> assoc (0)
+I (4425) wifi:state: assoc -> run (10)
+I (4465) wifi:connected with IKP-1stFloor, aid = 3, channel 6, 40U, bssid = 9c:c9:eb:a5:17:c1
+I (4465) wifi:security: WPA2-PSK, phy: bgn, rssi: -57
+I (4485) wifi:pm start, type: 1
+
+I (4485) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (4555) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (4555) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (4905) MQTT: Waiting for system time to be set... (3/10)[0m
+I (5035) wifi:<ba-add>idx:0 (ifx:0, 9c:c9:eb:a5:17:c1), tid:6, ssn:2, winSize:64
+[0;32mI (6905) MQTT: Waiting for system time to be set... (4/10)[0m
+[0;32mI (8905) MQTT: Waiting for system time to be set... (5/10)[0m
+[0;32mI (10905) MQTT: Waiting for system time to be set... (6/10)[0m
+[0;32mI (12905) MQTT: Waiting for system time to be set... (7/10)[0m
+[0;32mI (14905) MQTT: Waiting for system time to be set... (8/10)[0m
+[0;32mI (16905) MQTT: Waiting for system time to be set... (9/10)[0m
+[0;32mI (18905) MQTT: The current date/time is: Thu Jan  1 00:00:18 1970[0m
+I (20595) wifi:<ba-add>idx:1 (ifx:0, 9c:c9:eb:a5:17:c1), tid:0, ssn:0, winSize:64
+[0;32mI (25985) event_handler: Connected with IP Address:192.168.5.150[0m
+[0;32mI (25985) esp_netif_handlers: sta ip: 192.168.5.150, mask: 255.255.192.0, gw: 192.168.2.1[0m
+[0;32mI (25985) MQTT: Initialising MQTT from Main.[0m
+[0;32mI (26035) ultra: Distance: 30.6862 cm
+[0m
+[0;32mI (26045) mpu: Pitch: 0.000000 Roll: 0.000000[0m
+[0;32mI (26735) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (26735) MQTT: published successfully.[0m
+[0;32mI (26735) MQTT: sent subscribe successful[0m
+[0;32mI (27045) mpu: Pitch: -18.343328 Roll: -0.667962[0m
+[0;32mI (27075) ultra: Distance: 33.5462 cm
+[0m
+[0;32mI (28055) mpu: Pitch: -18.336102 Roll: -0.683440[0m
+[0;32mI (28115) ultra: Distance: 34.2201 cm
+[0m
+[0;32mI (29055) mpu: Pitch: -18.360500 Roll: -0.664024[0m
+[0;32mI (29155) ultra: Distance: 33.6600 cm
+[0m
+[0;32mI (30055) mpu: Pitch: -18.344797 Roll: -0.692083[0m
+[0;32mI (30195) ultra: Distance: 33.9539 cm
+[0m
+[0;32mI (31055) mpu: Pitch: -1437229440.000000 Roll: -2929037056.000000[0m
+[0;32mI (31235) ultra: Distance: 34.0523 cm
+[0m
+[0;32mI (32055) mpu: Pitch: -64387668.000000 Roll: -131220336.000000[0m
+[0;32mI (32275) ultra: Distance: 33.9776 cm
+[0m
+[0;32mI (33055) mpu: Pitch: -2827171.750000 Roll: -5761664.500000[0m
+[0;32mI (33315) ultra: Distance: 33.7598 cm
+[0m
+[0;32mI (34055) mpu: Pitch: -125407.375000 Roll: -255540.250000[0m
+[0;32mI (34355) ultra: Distance: 35.0105 cm
+[0m
+[0;32mI (35055) mpu: Pitch: -5635.751953 Roll: -11448.868164[0m
+[0;32mI (35395) ultra: Distance: 33.7769 cm
+[0m
+[0;32mI (36055) mpu: Pitch: -267.477997 Roll: -508.446228[0m
+[0;32mI (36435) ultra: Distance: 33.8656 cm
+[0m
+[0;32mI (37055) mpu: Pitch: -29.515079 Roll: -23.463171[0m
+[0;32mI (37475) ultra: Distance: 34.3745 cm
+[0m
+[0;32mI (38055) mpu: Pitch: -18.851665 Roll: -1.705253[0m
+[0;32mI (38515) ultra: Distance: 33.9237 cm
+[0m
+[0;32mI (39055) mpu: Pitch: -18.358519 Roll: -0.771386[0m
+[0;32mI (39555) ultra: Distance: 34.0458 cm
+[0m
+[0;32mI (40055) mpu: Pitch: -18.359184 Roll: -0.679901[0m
+[0;32mI (40595) ultra: Distance: 33.8460 cm
+[0m
+[0;32mI (41055) mpu: Pitch: -18.362730 Roll: -0.711921[0m
+[0;32mI (41635) ultra: Distance: 33.7467 cm
+[0m
+[0;32mI (42055) mpu: Pitch: -18.359743 Roll: -0.726607[0m
+[0;32mI (42675) ultra: Distance: 34.2781 cm
+[0m
+[0;32mI (43055) mpu: Pitch: -18.369429 Roll: -0.738348[0m
+[0;32mI (43715) ultra: Distance: 33.9382 cm
+[0m
+[0;32mI (44055) mpu: Pitch: -18.337940 Roll: -0.729665[0m
+[0;32mI (44755) ultra: Distance: 33.9059 cm
+[0m
+[0;32mI (45055) mpu: Pitch: -18.344467 Roll: -0.728036[0m
+[0;32mI (45795) ultra: Distance: 34.0802 cm
+[0m
+[0;32mI (46055) mpu: Pitch: -18.369810 Roll: -0.734397[0m
+[0;32mI (46835) ultra: Distance: 34.4011 cm
+[0m
+[0;32mI (47055) mpu: Pitch: -18.380087 Roll: -0.743652[0m
+[0;32mI (47875) ultra: Distance: 34.3108 cm
+[0m
+[0;32mI (48055) mpu: Pitch: -18.373339 Roll: -0.728077[0m
+[0;32mI (48915) ultra: Distance: 34.0845 cm
+[0m
+[0;32mI (49055) mpu: Pitch: -18.384653 Roll: -0.774243[0m
+[0;32mI (49955) ultra: Distance: 33.9774 cm
+[0m
+[0;32mI (50055) mpu: Pitch: -18.368748 Roll: -0.752841[0m
+[0;32mI (50995) ultra: Distance: 34.1753 cm
+[0m
+[0;32mI (51055) mpu: Pitch: -18.388172 Roll: -0.779176[0m
+[0;32mI (52035) ultra: Distance: 33.8934 cm
+[0m
+[0;32mI (52055) mpu: Pitch: -18.380360 Roll: -0.789704[0m
+[0;32mI (53055) mpu: Pitch: -18.337057 Roll: -0.695730[0m
+[0;32mI (53075) ultra: Distance: 34.0049 cm
+[0m
+[0;32mI (54055) mpu: Pitch: -18.330936 Roll: -0.691073[0m
+[0;32mI (54115) ultra: Distance: 34.1608 cm
+[0m
+[0;32mI (55055) mpu: Pitch: -18.325397 Roll: -0.680708[0m
+[0;32mI (55155) ultra: Distance: 34.4213 cm
+[0m
+[0;32mI (56055) mpu: Pitch: -18.343010 Roll: -0.683316[0m
+[0;32mI (56195) ultra: Distance: 35.1439 cm
+[0m
+[0;32mI (57055) mpu: Pitch: -18.102188 Roll: -0.739811[0m
+[0;32mI (57235) ultra: Distance: 34.9161 cm
+[0m
+[0;32mI (58055) mpu: Pitch: -18.215801 Roll: -0.877624[0m
+[0;32mI (58275) ultra: Distance: 33.6744 cm
+[0m
+[0;32mI (59055) mpu: Pitch: -3.976848 Roll: -0.840183[0m
+[0;32mI (59315) ultra: Distance: 33.4088 cm
+[0m
+[0;32mI (60055) mpu: Pitch: -2.675985 Roll: -0.804713[0m
+[0;32mI (60355) ultra: Distance: 34.8150 cm
+[0m
+[0;32mI (61055) mpu: Pitch: -1.426115 Roll: -0.794292[0m
+[0;32mI (61405) ultra: Distance: 51.2918 cm
+[0m
+[0;32mI (62055) mpu: Pitch: -0.657307 Roll: -0.787388[0m
+[0;32mI (62445) ultra: Distance: 42.7740 cm
+[0m
+[0;32mI (63055) mpu: Pitch: -1.612305 Roll: -0.767297[0m
+[0;32mI (63555) ultra: Distance: 155.2550 cm
+[0m
+[0;32mI (64055) mpu: Pitch: 0.376185 Roll: 0.582531[0m
+[0;32mI (64585) ultra: Distance: 44.2031 cm
+[0m
+[0;32mI (65055) mpu: Pitch: -6.574588 Roll: 3.752554[0m
+[0;32mI (65635) ultra: Distance: 34.0427 cm
+[0m
+[0;32mI (66055) mpu: Pitch: -3.765381 Roll: -14.657940[0m
+[0;32mI (66665) ultra: Distance: 30.4612 cm
+[0m
+[0;32mI (67055) mpu: Pitch: -5.687891 Roll: -21.752312[0m
+[0;32mI (67715) ultra: Distance: 31.2944 cm
+[0m
+[0;32mI (68055) mpu: Pitch: -5.645546 Roll: -23.559372[0m
+[0;32mI (68745) ultra: Distance: 31.9381 cm
+[0m
+[0;32mI (69055) mpu: Pitch: -7.614116 Roll: -6.234150[0m
+[0;32mI (69795) ultra: Distance: 30.1248 cm
+[0m
+[0;32mI (70055) mpu: Pitch: -5.052698 Roll: 11.993003[0m
+[0;32mI (70825) ultra: Distance: 29.0056 cm
+[0m
+[0;32mI (71055) mpu: Pitch: -4.097442 Roll: 13.115842[0m
+[0;32mI (71865) ultra: Distance: 29.7626 cm
+[0m
+[0;32mI (72055) mpu: Pitch: -4.562564 Roll: 12.084870[0m
+[0;32mI (72905) ultra: Distance: 30.2383 cm
+[0m
+[0;32mI (73055) mpu: Pitch: -4.627296 Roll: 11.475240[0m
+[0;32mI (73945) ultra: Distance: 30.9049 cm
+[0m
+[0;32mI (74055) mpu: Pitch: -5.208300 Roll: 10.104802[0m
+[0;32mI (74985) ultra: Distance: 30.4905 cm
+[0m
+[0;32mI (75055) mpu: Pitch: -6.499478 Roll: 9.794879[0m
+[0;32mI (76035) ultra: Distance: 31.0387 cm
+[0m
+[0;32mI (76055) mpu: Pitch: -6.751554 Roll: 10.410565[0m
+[0;32mI (77055) mpu: Pitch: -6.695044 Roll: 11.153153[0m
+[0;32mI (77075) ultra: Distance: 30.6763 cm
+[0m
+[0;32mI (78055) mpu: Pitch: -7.461998 Roll: 11.617986[0m
+[0;32mI (78115) ultra: Distance: 30.2831 cm
+[0m
+[0;32mI (79055) mpu: Pitch: -6.518607 Roll: 10.875019[0m
+[0;32mI (79145) ultra: Distance: 29.7094 cm
+[0m
+[0;32mI (80055) mpu: Pitch: -6.979266 Roll: 12.011000[0m
+[0;32mI (80185) ultra: Distance: 29.3916 cm
+[0m
+[0;32mI (81055) mpu: Pitch: -7.568939 Roll: 11.254980[0m
+[0;32mI (81225) ultra: Distance: 29.4202 cm
+[0m
+[0;32mI (82055) mpu: Pitch: -7.647918 Roll: 7.863431[0m
+[0;32mI (82255) ultra: Distance: 30.3075 cm
+[0m
+[0;32mI (83055) mpu: Pitch: -9.194707 Roll: 11.132712[0m
+[0;32mI (83305) ultra: Distance: 30.7308 cm
+[0m
+[0;32mI (84055) mpu: Pitch: -10.135300 Roll: 10.907888[0m
+[0;32mI (84345) ultra: Distance: 30.4093 cm
+[0m
+[0;32mI (85055) mpu: Pitch: -9.680228 Roll: 10.097291[0m
+[0;32mI (85385) ultra: Distance: 30.0478 cm
+[0m
+[0;32mI (86055) mpu: Pitch: -9.489552 Roll: 10.386897[0m
+[0;32mI (86415) ultra: Distance: 30.5375 cm
+[0m
+[0;32mI (87055) mpu: Pitch: -9.836209 Roll: 9.980320[0m
+[0;32mI (87455) ultra: Distance: 29.9727 cm
+[0m
+[0;32mI (88055) mpu: Pitch: -9.299778 Roll: 4.600679[0m
+[0;32mI (88495) ultra: Distance: 31.9352 cm
+[0m
+[0;32mI (89055) mpu: Pitch: -9.867336 Roll: -5.274779[0m
+[0;32mI (89535) ultra: Distance: 31.3159 cm
+[0m
+[0;32mI (90055) mpu: Pitch: -12.481410 Roll: -13.961014[0m
+[0;32mI (90585) ultra: Distance: 30.6850 cm
+[0m
+[0;32mI (91055) mpu: Pitch: -12.258434 Roll: -18.790112[0m
+[0;32mI (91615) ultra: Distance: 30.8323 cm
+[0m
+[0;32mI (92055) mpu: Pitch: -13.219207 Roll: -20.175987[0m
+[0;32mI (92665) ultra: Distance: 30.5350 cm
+[0m
+[0;32mI (93055) mpu: Pitch: -13.636563 Roll: -21.181364[0m
+[0;32mI (93705) ultra: Distance: 30.7225 cm
+[0m
+[0;32mI (94055) mpu: Pitch: -13.614615 Roll: -21.546465[0m
+[0;32mI (94745) ultra: Distance: 33.2395 cm
+[0m
+[0;32mI (95055) mpu: Pitch: -14.912653 Roll: -18.021288[0m
+[0;32mI (95785) ultra: Distance: 40.6067 cm
+[0m
+[0;32mI (96055) mpu: Pitch: 5.129285 Roll: -7.036988[0m
+[0;32mI (96825) ultra: Distance: 34.5107 cm
+[0m
+[0;32mI (97055) mpu: Pitch: 11.476528 Roll: -6.335219[0m
+[0;32mI (97935) ultra: Distance: 151.5821 cm
+[0m
+[0;32mI (98055) mpu: Pitch: 12.220565 Roll: -6.786733[0m
+[0;32mI (98965) ultra: Distance: 44.3289 cm
+[0m
+[0;32mI (99055) mpu: Pitch: 12.694919 Roll: -6.771016[0m
+[0;32mI (100015) ultra: Distance: 35.1070 cm
+[0m
+[0;32mI (100055) mpu: Pitch: 15.075194 Roll: -3.769080[0m
+[0;32mI (101055) mpu: Pitch: 17.122984 Roll: -2.760422[0m
+[0;32mI (101055) ultra: Distance: 34.1693 cm
+[0m
+[0;32mI (102055) mpu: Pitch: 15.333007 Roll: -1.976129[0m
+[0;32mI (102095) ultra: Distance: 37.9204 cm
+[0m
+[0;32mI (103055) mpu: Pitch: 15.900074 Roll: -1.084241[0m
+[0;32mI (103145) ultra: Distance: 49.3989 cm
+[0m
+[0;32mI (104055) mpu: Pitch: -1.095155 Roll: -2.562254[0m
+[0;32mI (104185) ultra: Distance: 32.9640 cm
+[0m
+[0;32mI (105055) mpu: Pitch: -17.313921 Roll: 0.529019[0m
+[0;32mI (105225) ultra: Distance: 35.3326 cm
+[0m
+[0;32mI (106055) mpu: Pitch: -24.751490 Roll: 0.824202[0m
+[0;32mI (106265) ultra: Distance: 33.5626 cm
+[0m
+[0;32mI (107055) mpu: Pitch: -27.833988 Roll: 0.537175[0m
+[0;32mI (107305) ultra: Distance: 34.7269 cm
+[0m
+[0;32mI (108055) mpu: Pitch: -29.605551 Roll: -0.468940[0m
+[0;32mI (108345) ultra: Distance: 34.5210 cm
+[0m
+[0;32mI (109055) mpu: Pitch: -27.294823 Roll: -0.930156[0m
+[0;32mI (109375) ultra: Distance: 32.7521 cm
+[0m
+[0;32mI (110055) mpu: Pitch: -8.463878 Roll: -1.440526[0m
+[0;32mI (110425) ultra: Distance: 33.8235 cm
+[0m
+[0;32mI (111055) mpu: Pitch: 1.702754 Roll: -2.323041[0m
+[0;32mI (111545) ultra: Distance: 165.1720 cm
+[0m
+[0;32mI (112055) mpu: Pitch: 10.996031 Roll: 2.496559[0m
+[0;32mI (112585) ultra: Distance: 52.9051 cm
+[0m
+[0;32mI (113055) mpu: Pitch: 16.214146 Roll: 1.992056[0m
+[0;32mI (113625) ultra: Distance: 39.3733 cm
+[0m
+[0;32mI (114055) mpu: Pitch: 18.844200 Roll: -0.505499[0m
+[0;32mI (114665) ultra: Distance: 43.6253 cm
+[0m
+[0;32mI (115055) mpu: Pitch: -3.527044 Roll: 0.230857[0m
+[0;32mI (115705) ultra: Distance: 39.4160 cm
+[0m
+[0;32mI (116055) mpu: Pitch: 3.159719 Roll: 2.985240[0m
+[0;32mI (116815) ultra: Distance: 154.3088 cm
+[0m
+[0;32mI (117055) mpu: Pitch: 9.126080 Roll: -8.312499[0m
+[0;32mI (117865) ultra: Distance: 62.8723 cm
+[0m
+[0;32mI (118055) mpu: Pitch: 10.028478 Roll: -0.848035[0m
+[0;32mI (118905) ultra: Distance: 40.8252 cm
+[0m
+[0;32mI (119055) mpu: Pitch: 11.927910 Roll: 0.458347[0m
+[0;32mI (119945) ultra: Distance: 40.7515 cm
+[0m
+[0;32mI (120055) mpu: Pitch: 12.111104 Roll: 1.295971[0m
+[0;32mI (120985) ultra: Distance: 39.2493 cm
+[0m
+[0;32mI (121055) mpu: Pitch: 11.939051 Roll: 1.703066[0m
+[0;32mI (122025) ultra: Distance: 37.6973 cm
+[0m
+[0;32mI (122055) mpu: Pitch: 11.543135 Roll: 1.784548[0m
+[0;32mI (123055) mpu: Pitch: 10.934727 Roll: 2.396354[0m
+[0;32mI (123065) ultra: Distance: 40.3749 cm
+[0m
+[0;32mI (124065) mpu: Pitch: 11.129241 Roll: 2.055138[0m
+[0;32mI (124105) ultra: Distance: 35.1375 cm
+[0m
+[0;32mI (125065) mpu: Pitch: 9.555033 Roll: -0.966064[0m
+[0;32mI (125135) ultra: Distance: 25.1103 cm
+[0m
+[0;32mI (126065) mpu: Pitch: 9.736887 Roll: -0.743522[0m
+[0;32mI (126165) ultra: Distance: 26.6300 cm
+[0m
+[0;32mI (127065) mpu: Pitch: 9.085408 Roll: 0.382600[0m
+[0;32mI (127205) ultra: Distance: 38.4785 cm
+[0m
+[0;32mI (128065) mpu: Pitch: 7.199977 Roll: -2.362888[0m
+[0;32mI (128245) ultra: Distance: 43.3358 cm
+[0m
+[0;32mI (129065) mpu: Pitch: 6.192029 Roll: -2.251187[0m
+[0;32mI (129295) ultra: Distance: 38.7353 cm
+[0m
+[0;32mI (130065) mpu: Pitch: 15.482401 Roll: 1.434137[0m
+[0;32mI (130335) ultra: Distance: 41.1666 cm
+[0m
+[0;32mI (131065) mpu: Pitch: 18.955591 Roll: -0.129049[0m
+[0;32mI (131375) ultra: Distance: 34.7115 cm
+[0m
+[0;32mI (132065) mpu: Pitch: 25.377813 Roll: -2.827621[0m
+[0;32mI (132485) ultra: Distance: 153.6694 cm
+[0m
+[0;32mI (133065) mpu: Pitch: 21.267281 Roll: -1.499422[0m
+[0;32mI (133595) ultra: Distance: 180.4635 cm
+[0m
+[0;32mI (134065) mpu: Pitch: 24.548496 Roll: 2.760949[0m
+[0;32mI (134655) ultra: Distance: 62.6774 cm
+[0m
+[0;32mI (135065) mpu: Pitch: 27.761692 Roll: 7.380900[0m
+[0;32mI (135695) ultra: Distance: 34.0557 cm
+[0m
+[0;32mI (136065) mpu: Pitch: 3.237588 Roll: 10.403314[0m
+[0;32mI (136735) ultra: Distance: 32.3056 cm
+[0m
+[0;32mI (137065) mpu: Pitch: -11.701798 Roll: 8.611664[0m
+[0;32mI (137765) ultra: Distance: 31.7099 cm
+[0m
+[0;32mI (138065) mpu: Pitch: -16.424026 Roll: 6.395913[0m
+[0;32mI (138805) ultra: Distance: 29.2486 cm
+[0m
+[0;32mI (139065) mpu: Pitch: -6.339185 Roll: -5.228497[0m
+[0;32mI (139845) ultra: Distance: 29.0490 cm
+[0m
+[0;32mI (140065) mpu: Pitch: -0.043750 Roll: -5.163840[0m
+[0;32mI (140885) ultra: Distance: 29.9463 cm
+[0m
+[0;32mI (141065) mpu: Pitch: -8.075989 Roll: -19.594889[0m
+[0;32mI (141925) ultra: Distance: 30.2170 cm
+[0m
+[0;32mI (142065) mpu: Pitch: -10.207722 Roll: -20.762285[0m
+[0;32mI (142965) ultra: Distance: 30.4079 cm
+[0m
+[0;32mI (143065) mpu: Pitch: -10.827843 Roll: -20.601048[0m
+[0;32mI (144005) ultra: Distance: 31.4615 cm
+[0m
+[0;32mI (144065) mpu: Pitch: -11.653398 Roll: -12.513599[0m
+[0;32mI (145085) mpu: Pitch: -11.296928 Roll: 3.999109[0m
+[0;32mI (145185) ultra: Distance: 271.2651 cm
+[0m
+[0;32mI (146095) mpu: Pitch: -10.941415 Roll: 8.662897[0m
+[0;32mI (146235) ultra: Distance: 57.7438 cm
+[0m
+[0;32mI (147095) mpu: Pitch: -11.136906 Roll: 8.232963[0m
+[0;32mI (147265) ultra: Distance: 34.5899 cm
+[0m
+[0;32mI (148095) mpu: Pitch: -11.199629 Roll: 7.782825[0m
+[0;32mI (148305) ultra: Distance: 32.1090 cm
+[0m
+[0;32mI (149095) mpu: Pitch: -11.363679 Roll: 8.658251[0m
+[0;32mI (149355) ultra: Distance: 32.1747 cm
+[0m
+[0;32mI (150095) mpu: Pitch: -11.639947 Roll: 8.376607[0m
+[0;32mI (150395) ultra: Distance: 31.8657 cm
+[0m
+[0;32mI (151095) mpu: Pitch: -11.803853 Roll: 7.980959[0m
+[0;32mI (151435) ultra: Distance: 31.7883 cm
+[0m
+[0;32mI (152095) mpu: Pitch: -9.022450 Roll: 12.770506[0m
+[0;32mI (152475) ultra: Distance: 36.4099 cm
+[0m
+[0;32mI (153095) mpu: Pitch: 2.517681 Roll: 12.569508[0m
+[0;32mI (153515) ultra: Distance: 33.9496 cm
+[0m
+[0;32mI (154095) mpu: Pitch: 5.393415 Roll: 13.204580[0m
+[0;32mI (154555) ultra: Distance: 33.0743 cm
+[0m
+[0;32mI (155095) mpu: Pitch: 6.420115 Roll: 13.153775[0m
+[0;32mI (155595) ultra: Distance: 34.2057 cm
+[0m
+[0;32mI (156095) mpu: Pitch: 12.464183 Roll: 1.817444[0m
+[0;32mI (156635) ultra: Distance: 39.7154 cm
+[0m
+[0;32mI (157095) mpu: Pitch: 17.754335 Roll: 2.293147[0m
+[0;32mI (157675) ultra: Distance: 36.0750 cm
+[0m
+[0;32mI (158095) mpu: Pitch: 18.092024 Roll: 1.435441[0m
+[0;32mI (158715) ultra: Distance: 34.0230 cm
+[0m
+[0;32mI (159095) mpu: Pitch: 18.698746 Roll: 2.025764[0m
+[0;32mI (159755) ultra: Distance: 33.8109 cm
+[0m
+[0;32mI (160095) mpu: Pitch: 18.008278 Roll: 2.713465[0m
+[0;32mI (160795) ultra: Distance: 36.1587 cm
+[0m
+[0;32mI (161095) mpu: Pitch: 18.185806 Roll: 1.960880[0m
+[0;32mI (161835) ultra: Distance: 37.8762 cm
+[0m
+[0;32mI (162095) mpu: Pitch: 19.026213 Roll: 1.776958[0m
+[0;32mI (162875) ultra: Distance: 34.8342 cm
+[0m
+[0;32mI (163095) mpu: Pitch: 19.253078 Roll: 1.714267[0m
+[0;32mI (163915) ultra: Distance: 35.1351 cm
+[0m
+[0;32mI (164095) mpu: Pitch: 19.126852 Roll: 1.290659[0m
+[0;32mI (164955) ultra: Distance: 33.5911 cm
+[0m
+[0;32mI (165095) mpu: Pitch: 19.609049 Roll: 1.113662[0m
+[0;32mI (165995) ultra: Distance: 35.4281 cm
+[0m
+[0;32mI (166095) mpu: Pitch: 19.652506 Roll: 0.980264[0m
+[0;32mI (167035) ultra: Distance: 35.4704 cm
+[0m
+[0;32mI (167095) mpu: Pitch: 19.615231 Roll: 0.444055[0m
+[0;32mI (168075) ultra: Distance: 33.9126 cm
+[0m
+[0;32mI (168095) mpu: Pitch: 19.783779 Roll: 0.180721[0m
+[0;32mI (169095) mpu: Pitch: 19.096355 Roll: -0.180523[0m
+[0;32mI (169115) ultra: Distance: 36.8602 cm
+[0m
+[0;32mI (170105) mpu: Pitch: 20.029011 Roll: -0.074707[0m
+[0;32mI (170165) ultra: Distance: 47.7240 cm
+[0m
+[0;32mI (171105) mpu: Pitch: 17.701571 Roll: -0.074444[0m
+[0;32mI (171205) ultra: Distance: 37.5241 cm
+[0m
+[0;32mI (172105) mpu: Pitch: 9.251002 Roll: -3.088691[0m
+[0;32mI (172245) ultra: Distance: 34.0731 cm
+[0m
+[0;32mI (173105) mpu: Pitch: 3.393366 Roll: -3.711553[0m
+[0;32mI (173285) ultra: Distance: 35.7470 cm
+[0m
+[0;32mI (174105) mpu: Pitch: -9.515552 Roll: -3.299957[0m
+[0;32mI (174325) ultra: Distance: 35.4816 cm
+[0m
+[0;32mI (175105) mpu: Pitch: -19.905132 Roll: -2.778922[0m
+[0;32mI (175365) ultra: Distance: 34.4757 cm
+[0m
+[0;32mI (176105) mpu: Pitch: -27.876293 Roll: -2.456914[0m
+[0;32mI (176405) ultra: Distance: 35.2441 cm
+[0m
+[0;32mI (177105) mpu: Pitch: -27.219584 Roll: 0.035981[0m
+[0;32mI (177445) ultra: Distance: 34.2554 cm
+[0m
+[0;32mI (178105) mpu: Pitch: -9.698583 Roll: 0.086139[0m
+[0;32mI (178555) ultra: Distance: 153.6548 cm
+[0m
+[0;32mI (179105) mpu: Pitch: 5.312444 Roll: 0.681884[0m
+[0;32mI (179595) ultra: Distance: 44.9258 cm
+[0m
+[0;32mI (180105) mpu: Pitch: 5.959988 Roll: 0.938463[0m
+[0;32mI (180635) ultra: Distance: 34.7598 cm
+[0m
+[0;32mI (181105) mpu: Pitch: 3.529009 Roll: -2.710791[0m
+[0;32mI (181675) ultra: Distance: 39.3777 cm
+[0m
+[0;32mI (182105) mpu: Pitch: 2.924109 Roll: -2.872025[0m
+[0;32mI (182715) ultra: Distance: 39.8050 cm
+[0m
+[0;32mI (183105) mpu: Pitch: 0.948046 Roll: 6.764723[0m
+[0;32mI (183755) ultra: Distance: 43.8322 cm
+[0m
+[0;32mI (184105) mpu: Pitch: -3.877466 Roll: 3.240868[0m
+[0;32mI (184795) ultra: Distance: 42.5556 cm
+[0m
+[0;32mI (185105) mpu: Pitch: -9.587575 Roll: 2.126553[0m
+[0;32mI (185835) ultra: Distance: 38.2935 cm
+[0m
+[0;32mI (186105) mpu: Pitch: -9.512959 Roll: 2.033047[0m
+[0;32mI (186875) ultra: Distance: 38.0259 cm
+[0m
+[0;32mI (187105) mpu: Pitch: -9.478460 Roll: 2.022103[0m
+[0;32mI (187915) ultra: Distance: 48.4853 cm
+[0m
+[0;32mI (188105) mpu: Pitch: -9.404487 Roll: 1.980240[0m
+[0;32mI (188965) ultra: Distance: 46.5089 cm
+[0m
+[0;32mI (189105) mpu: Pitch: -9.383183 Roll: 1.961499[0m
+[0;32mI (190005) ultra: Distance: 42.3354 cm
+[0m
+[0;32mI (190105) mpu: Pitch: -9.379707 Roll: 1.949466[0m
+[0;32mI (191045) ultra: Distance: 40.1594 cm
+[0m
+[0;32mI (191105) mpu: Pitch: -9.376069 Roll: 1.939103[0m
+[0;32mI (192085) ultra: Distance: 44.3677 cm
+[0m
+[0;32mI (192105) mpu: Pitch: -9.401069 Roll: 1.941561[0m
+[0;32mI (193105) mpu: Pitch: -9.334082 Roll: 2.022166[0m
+[0;32mI (193125) ultra: Distance: 42.5954 cm
+[0m
+[0;32mI (194105) mpu: Pitch: -9.312915 Roll: 2.027997[0m
+[0;32mI (194165) ultra: Distance: 40.0492 cm
+[0m
+[0;32mI (195105) mpu: Pitch: -9.296047 Roll: 2.034320[0m
+[0;32mI (195205) ultra: Distance: 38.6515 cm
+[0m
+[0;32mI (196105) mpu: Pitch: -9.243280 Roll: 2.037607[0m
+[0;32mI (196245) ultra: Distance: 37.9324 cm
+[0m
+[0;32mI (197105) mpu: Pitch: -9.260764 Roll: 2.042795[0m
+[0;32mI (197285) ultra: Distance: 38.0053 cm
+[0m
+[0;32mI (198105) mpu: Pitch: -9.276160 Roll: 2.053000[0m
+[0;32mI (198325) ultra: Distance: 38.8298 cm
+[0m
+[0;32mI (199105) mpu: Pitch: -9.223232 Roll: 2.017131[0m
+[0;32mI (199365) ultra: Distance: 40.5588 cm
+[0m
+[0;32mI (200105) mpu: Pitch: -9.231382 Roll: 2.022434[0m
+[0;32mI (200405) ultra: Distance: 45.1714 cm
+[0m
+[0;32mI (201105) mpu: Pitch: -9.243715 Roll: 2.007303[0m
+[0;32mI (201445) ultra: Distance: 41.1964 cm
+[0m
+[0;32mI (202105) mpu: Pitch: -9.199433 Roll: 1.980847[0m
+[0;32mI (202485) ultra: Distance: 40.6455 cm
+[0m
+[0;32mI (203105) mpu: Pitch: -9.208609 Roll: 2.018244[0m
+[0;32mI (203525) ultra: Distance: 38.4077 cm
+[0m
+[0;32mI (204105) mpu: Pitch: -9.249623 Roll: 1.996721[0m
+[0;32mI (204575) ultra: Distance: 38.3632 cm
+[0m
+[0;32mI (205105) mpu: Pitch: -9.223457 Roll: 1.989011[0m
+[0;32mI (205615) ultra: Distance: 38.3536 cm
+[0m
+[0;32mI (206105) mpu: Pitch: -9.233121 Roll: 1.982513[0m
+[0;32mI (206655) ultra: Distance: 39.8354 cm
+[0m
+[0;32mI (207105) mpu: Pitch: -9.217301 Roll: 1.986902[0m
+[0;32mI (207695) ultra: Distance: 42.4818 cm
+[0m
+[0;32mI (208105) mpu: Pitch: -9.245600 Roll: 1.970441[0m
+[0;32mI (208735) ultra: Distance: 38.8844 cm
+[0m
+[0;32mI (209105) mpu: Pitch: -9.210746 Roll: 1.977495[0m
+[0;32mI (209775) ultra: Distance: 37.8022 cm
+[0m
+[0;32mI (210105) mpu: Pitch: -9.200363 Roll: 1.996890[0m
+[0;32mI (210815) ultra: Distance: 37.8406 cm
+[0m
+[0;32mI (211105) mpu: Pitch: -9.168094 Roll: 1.944689[0m
+[0;32mI (211855) ultra: Distance: 38.0185 cm
+[0m
+[0;32mI (212105) mpu: Pitch: -9.204720 Roll: 1.934390[0m
+[0;32mI (212895) ultra: Distance: 37.6656 cm
+[0m
+[0;32mI (213105) mpu: Pitch: -9.188811 Roll: 1.935258[0m
+[0;32mI (213935) ultra: Distance: 38.5545 cm
+[0m
+[0;32mI (214105) mpu: Pitch: -9.203326 Roll: 1.910686[0m
+[0;32mI (214975) ultra: Distance: 37.7417 cm
+[0m
+[0;32mI (215105) mpu: Pitch: -9.203384 Roll: 1.927008[0m
+[0;32mI (216015) ultra: Distance: 37.8018 cm
+[0m
+[0;32mI (216105) mpu: Pitch: -9.220468 Roll: 1.930617[0m
+[0;32mI (217055) ultra: Distance: 40.9509 cm
+[0m
+[0;32mI (217105) mpu: Pitch: -9.230438 Roll: 1.890115[0m
+[0;32mI (218095) ultra: Distance: 38.4503 cm
+[0m
+[0;32mI (218105) mpu: Pitch: -9.216630 Roll: 1.893178[0m
+[0;32mI (219105) mpu: Pitch: -9.170048 Roll: 1.998264[0m
+[0;32mI (219125) ultra: Distance: 16.2433 cm
+[0m
+[0;32mI (220105) mpu: Pitch: -9.149434 Roll: 2.011461[0m
+[0;32mI (220165) ultra: Distance: 34.8381 cm
+[0m
+[0;32mI (221105) mpu: Pitch: -9.139413 Roll: 1.996013[0m
+[0;32mI (221205) ultra: Distance: 40.3786 cm
+[0m
+[0;32mI (222105) mpu: Pitch: -9.165569 Roll: 1.973811[0m
+[0;32mI (222245) ultra: Distance: 35.2068 cm
+[0m
+[0;32mI (223105) mpu: Pitch: -9.153355 Roll: 1.994932[0m
+[0;32mI (223275) ultra: Distance: 22.3086 cm
+[0m
+[0;32mI (224105) mpu: Pitch: -9.167575 Roll: 1.966890[0m
+[0;32mI (224315) ultra: Distance: 36.1153 cm
+[0m
+[0;32mI (225105) mpu: Pitch: -9.150742 Roll: 1.970758[0m
+[0;32mI (225345) ultra: Distance: 17.3891 cm
+[0m
+[0;32mI (226105) mpu: Pitch: -9.166194 Roll: 1.992291[0m
+[0;32mI (226375) ultra: Distance: 14.4510 cm
+[0m
+[0;32mI (227105) mpu: Pitch: -9.161083 Roll: 1.972318[0m
+[0;32mI (227405) ultra: Distance: 13.2313 cm
+[0m
+[0;32mI (228105) mpu: Pitch: -9.139842 Roll: 1.973040[0m
+[0;32mI (228505) ultra: Distance: 138.4318 cm
+[0m
+[0;32mI (229105) mpu: Pitch: -9.142974 Roll: 1.951256[0m
+[0;32mI (229535) ultra: Distance: 24.7759 cm
+[0m
+[0;32mI (230105) mpu: Pitch: -9.117652 Roll: 1.992345[0m
+[0;32mI (230565) ultra: Distance: 13.8724 cm
+[0m
+[0;32mI (231105) mpu: Pitch: -9.140893 Roll: 1.965871[0m
+[0;32mI (231595) ultra: Distance: 12.4269 cm
+[0m
+[0;32mI (232105) mpu: Pitch: -9.133749 Roll: 1.990011[0m
+[0;32mI (232625) ultra: Distance: 12.1599 cm
+[0m
+[0;32mI (233105) mpu: Pitch: -9.130984 Roll: 1.998751[0m
+[0;32mI (233645) ultra: Distance: 11.5125 cm
+[0m
+[0;32mI (234105) mpu: Pitch: -9.100477 Roll: 1.957459[0m
+[0;32mI (234685) ultra: Distance: 12.7685 cm
+[0m
+[0;32mI (235105) mpu: Pitch: -9.152066 Roll: 1.969459[0m
+[0;32mI (235715) ultra: Distance: 13.7734 cm
+[0m
+[0;32mI (236105) mpu: Pitch: -9.118085 Roll: 1.949587[0m
+[0;32mI (236735) ultra: Distance: 13.1084 cm
+[0m
+[0;32mI (237105) mpu: Pitch: -9.107641 Roll: 1.977593[0m
+[0;32mI (237765) ultra: Distance: 12.8505 cm
+[0m
+[0;32mI (238105) mpu: Pitch: -9.136123 Roll: 1.969668[0m
+[0;32mI (238815) ultra: Distance: 35.3368 cm
+[0m
+[0;32mI (239105) mpu: Pitch: -9.134254 Roll: 1.944025[0m
+[0;32mI (239855) ultra: Distance: 38.3544 cm
+[0m
+[0;32mI (240105) mpu: Pitch: -9.147167 Roll: 1.938531[0m
+[0;32mI (240895) ultra: Distance: 37.9992 cm
+[0m
+[0;32mI (241105) mpu: Pitch: -9.146867 Roll: 1.890923[0m
+[0;32mI (241935) ultra: Distance: 35.2930 cm
+[0m
+[0;32mI (242105) mpu: Pitch: -9.156630 Roll: 1.884343[0m
+[0;32mI (242975) ultra: Distance: 39.6276 cm
+[0m
+[0;32mI (243105) mpu: Pitch: -9.125792 Roll: 1.917676[0m
+[0;32mI (244005) ultra: Distance: 22.0938 cm
+[0m
+[0;32mI (244105) mpu: Pitch: -9.126225 Roll: 1.937503[0m
+[0;32mI (245045) ultra: Distance: 38.9473 cm
+[0m
+[0;32mI (245105) mpu: Pitch: -9.145712 Roll: 1.867881[0m
+[0;32mI (246085) ultra: Distance: 43.2085 cm
+[0m
+[0;32mI (246105) mpu: Pitch: -9.151915 Roll: 1.848817[0m
+[0;32mI (247105) mpu: Pitch: -9.110278 Roll: 1.992810[0m
+[0;32mI (247125) ultra: Distance: 37.3191 cm
+[0m
+[0;32mI (248115) mpu: Pitch: -9.116107 Roll: 1.982123[0m
+[0;32mI (248165) ultra: Distance: 39.2043 cm
+[0m
+[0;32mI (249115) mpu: Pitch: -9.112311 Roll: 1.970876[0m
+[0;32mI (249205) ultra: Distance: 34.3049 cm
+[0m
+[0;32mI (250115) mpu: Pitch: -9.099350 Roll: 1.972861[0m
+[0;32mI (250245) ultra: Distance: 40.0408 cm
+[0m
+[0;32mI (251115) mpu: Pitch: -9.120084 Roll: 1.977227[0m
+[0;32mI (251285) ultra: Distance: 43.7506 cm
+[0m
+[0;32mI (252115) mpu: Pitch: -9.089002 Roll: 1.969277[0m
+[0;32mI (252325) ultra: Distance: 39.0113 cm
+[0m
+[0;32mI (253115) mpu: Pitch: -9.096525 Roll: 1.947548[0m
+[0;32mI (253365) ultra: Distance: 38.4908 cm
+[0m
+[0;32mI (254115) mpu: Pitch: -9.088068 Roll: 1.983233[0m
+[0;32mI (254475) ultra: Distance: 156.2818 cm
+[0m
+[0;32mI (255115) mpu: Pitch: -9.107153 Roll: 1.946632[0m
+[0;32mI (255515) ultra: Distance: 49.9282 cm
+[0m
+[0;32mI (256115) mpu: Pitch: -9.087502 Roll: 1.959030[0m
+[0;32mI (256555) ultra: Distance: 41.0394 cm
+[0m
+[0;32mI (257115) mpu: Pitch: -9.097314 Roll: 1.973409[0m
+[0;32mI (257585) ultra: Distance: 29.0677 cm
+[0m
+[0;32mI (258115) mpu: Pitch: -9.074582 Roll: 1.963105[0m
+[0;32mI (258635) ultra: Distance: 32.6033 cm
+[0m
+[0;32mI (259115) mpu: Pitch: -9.096149 Roll: 1.981135[0m
+[0;32mI (259665) ultra: Distance: 32.1724 cm
+[0m
+[0;32mI (260115) mpu: Pitch: -9.089685 Roll: 1.952909[0m
+[0;32mI (260715) ultra: Distance: 31.9190 cm
+[0m
+[0;32mI (261115) mpu: Pitch: -9.083238 Roll: 1.941900[0m
+[0;32mI (261755) ultra: Distance: 34.8988 cm
+[0m
+[0;32mI (262115) mpu: Pitch: -9.081586 Roll: 1.920387[0m
+[0;32mI (262795) ultra: Distance: 40.8640 cm
+[0m
+[0;32mI (263115) mpu: Pitch: -9.078235 Roll: 1.920590[0m
+[0;32mI (263835) ultra: Distance: 38.1364 cm
+[0m
+[0;32mI (264115) mpu: Pitch: -9.068702 Roll: 1.924892[0m
+[0;32mI (264885) ultra: Distance: 36.3550 cm
+[0m
+[0;32mI (265115) mpu: Pitch: -9.049911 Roll: 1.918127[0m
+[0;32mI (265925) ultra: Distance: 36.6752 cm
+[0m
+[0;32mI (266115) mpu: Pitch: -9.084846 Roll: 1.908507[0m
+[0;32mI (266965) ultra: Distance: 35.8934 cm
+[0m
+[0;32mI (267115) mpu: Pitch: -9.114592 Roll: 1.904147[0m
+[0;32mI (268005) ultra: Distance: 36.7014 cm
+[0m
+[0;32mI (268115) mpu: Pitch: -9.082736 Roll: 1.887403[0m
+[0;32mI (269045) ultra: Distance: 39.0891 cm
+[0m
+[0;32mI (269115) mpu: Pitch: -9.113421 Roll: 1.898578[0m
+[0;32mI (270085) ultra: Distance: 40.0020 cm
+[0m
+[0;32mI (270115) mpu: Pitch: -9.131183 Roll: 1.898743[0m
+[0;32mI (271185) mpu: Pitch: -9.008548 Roll: 1.985165[0m
+[0;32mI (271195) ultra: Distance: 157.4071 cm
+[0m
+[0;32mI (272185) mpu: Pitch: -9.038238 Roll: 1.974093[0m
+[0;32mI (272235) ultra: Distance: 51.9752 cm
+[0m
+[0;32mI (273185) mpu: Pitch: -9.010201 Roll: 2.000272[0m
+[0;32mI (273275) ultra: Distance: 40.6079 cm
+[0m
+[0;32mI (274185) mpu: Pitch: -9.029855 Roll: 2.005029[0m
+[0;32mI (274315) ultra: Distance: 37.0832 cm
+[0m
+[0;32mI (275185) mpu: Pitch: -8.997316 Roll: 1.999103[0m
+[0;32mI (275355) ultra: Distance: 36.8532 cm
+[0m
+[0;32mI (276185) mpu: Pitch: -8.988180 Roll: 1.980717[0m
+[0;32mI (276395) ultra: Distance: 36.6405 cm
+[0m
+[0;32mI (277185) mpu: Pitch: -9.006293 Roll: 1.951873[0m
+[0;32mI (277435) ultra: Distance: 38.4313 cm
+[0m
+[0;32mI (278185) mpu: Pitch: -9.000424 Roll: 1.956819[0m
+[0;32mI (278475) ultra: Distance: 37.9448 cm
+[0m
+[0;32mI (279185) mpu: Pitch: -9.009010 Roll: 1.962458[0m
+[0;32mI (279515) ultra: Distance: 38.0583 cm
+[0m
+[0;32mI (280185) mpu: Pitch: -8.995839 Roll: 1.964530[0m
+[0;32mI (280555) ultra: Distance: 40.2593 cm
+[0m
+[0;32mI (281185) mpu: Pitch: -8.984534 Roll: 1.956395[0m
+[0;32mI (281595) ultra: Distance: 38.8156 cm
+[0m
+[0;32mI (282185) mpu: Pitch: -9.040337 Roll: 1.945174[0m
+[0;32mI (282635) ultra: Distance: 38.1936 cm
+[0m
+[0;32mI (283185) mpu: Pitch: -9.024202 Roll: 1.947136[0m
+[0;32mI (283675) ultra: Distance: 38.4004 cm
+[0m
+[0;32mI (284185) mpu: Pitch: -9.018512 Roll: 1.940313[0m
+[0;32mI (284715) ultra: Distance: 39.4469 cm
+[0m
+[0;32mI (285185) mpu: Pitch: -8.526924 Roll: 1.939008[0m
+[0;32mI (285755) ultra: Distance: 40.1085 cm
+[0m
+[0;32mI (286185) mpu: Pitch: -11.233522 Roll: 0.352249[0m
+[0;32mI (286795) ultra: Distance: 37.5143 cm
+[0m
+[0;32mI (287185) mpu: Pitch: 10.929826 Roll: 1.198398[0m
+[0;32mI (287835) ultra: Distance: 39.4842 cm
+[0m
+[0;32mI (288185) mpu: Pitch: 11.963298 Roll: 1.199904[0m
+[0;32mI (288875) ultra: Distance: 39.3674 cm
+[0m
+[0;32mI (289185) mpu: Pitch: 12.025324 Roll: 1.187123[0m
+[0;32mI (289915) ultra: Distance: 40.3419 cm
+[0m
+[0;32mI (290185) mpu: Pitch: 12.022781 Roll: 1.165833[0m
+[0;32mI (290955) ultra: Distance: 38.0118 cm
+[0m
+[0;32mI (291185) mpu: Pitch: 12.018174 Roll: 1.187137[0m
+[0;32mI (291995) ultra: Distance: 37.8219 cm
+[0m
+[0;32mI (292185) mpu: Pitch: 11.996047 Roll: 1.152090[0m
+[0;32mI (293035) ultra: Distance: 37.4046 cm
+[0m
+[0;32mI (293185) mpu: Pitch: 12.001389 Roll: 1.167025[0m
+[0;32mI (294065) ultra: Distance: 25.0611 cm
+[0m
+[0;32mI (294185) mpu: Pitch: 12.023331 Roll: 1.143570[0m
+[0;32mI (295095) ultra: Distance: 23.3940 cm
+[0m
+[0;32mI (295185) mpu: Pitch: 11.969249 Roll: 1.147950[0m
+[0;32mI (296125) ultra: Distance: 23.0377 cm
+[0m
+[0;32mI (296185) mpu: Pitch: 12.003107 Roll: 1.128320[0m
+[0;32mI (297155) ultra: Distance: 23.7693 cm
+[0m
+[0;32mI (297185) mpu: Pitch: 12.015563 Roll: 1.132231[0m
+[0;32mI (298185) mpu: Pitch: 12.019951 Roll: 1.147856[0m
+[0;32mI (298195) ultra: Distance: 33.7959 cm
+[0m
+[0;32mI (299185) mpu: Pitch: 12.053732 Roll: 1.245902[0m
+[0;32mI (299235) ultra: Distance: 42.4037 cm
+[0m
+[0;32mI (300185) mpu: Pitch: 12.060183 Roll: 1.208199[0m
+[0;32mI (300275) ultra: Distance: 41.4507 cm
+[0m
+[0;32mI (301185) mpu: Pitch: 12.059311 Roll: 1.198305[0m
+[0;32mI (301315) ultra: Distance: 43.8847 cm
+[0m
+[0;32mI (302185) mpu: Pitch: 12.045410 Roll: 1.191438[0m
+[0;32mI (302355) ultra: Distance: 40.6488 cm
+[0m
+[0;32mI (303185) mpu: Pitch: 12.058573 Roll: 1.207929[0m
+[0;32mI (303395) ultra: Distance: 41.0218 cm
+[0m
+[0;32mI (304185) mpu: Pitch: 12.064462 Roll: 1.230927[0m
+[0;32mI (304435) ultra: Distance: 42.5263 cm
+[0m
+[0;32mI (305185) mpu: Pitch: 11.323007 Roll: 1.207753[0m
+[0;32mI (305475) ultra: Distance: 42.5475 cm
+[0m
+[0;32mI (306185) mpu: Pitch: 12.052003 Roll: 1.616488[0m
+[0;32mI (306515) ultra: Distance: 41.9841 cm
+[0m
+[0;32mI (307185) mpu: Pitch: 12.058307 Roll: 1.641053[0m
+[0;32mI (307555) ultra: Distance: 43.8812 cm
+[0m
+[0;32mI (308185) mpu: Pitch: 12.076735 Roll: 1.638540[0m
+[0;32mI (308605) ultra: Distance: 43.3398 cm
+[0m
+[0;32mI (309185) mpu: Pitch: 12.123503 Roll: 1.631774[0m
+[0;32mI (309635) ultra: Distance: 29.1995 cm
+[0m
+[0;32mI (310185) mpu: Pitch: 12.109535 Roll: 1.607161[0m
+[0;32mI (310675) ultra: Distance: 41.1458 cm
+[0m
+[0;32mI (311185) mpu: Pitch: 12.108522 Roll: 1.623926[0m
+[0;32mI (311705) ultra: Distance: 29.1560 cm
+[0m
+[0;32mI (312185) mpu: Pitch: 12.120891 Roll: 1.623491[0m
+[0;32mI (312735) ultra: Distance: 27.4708 cm
+[0m
+[0;32mI (313185) mpu: Pitch: 12.123399 Roll: 1.633105[0m
+[0;32mI (313775) ultra: Distance: 38.8091 cm
+[0m
+[0;32mI (314185) mpu: Pitch: 12.138680 Roll: 1.655147[0m
+[0;32mI (314815) ultra: Distance: 40.5119 cm
+[0m
+[0;32mI (315185) mpu: Pitch: 11.854045 Roll: 2.733689[0m
+[0;32mI (315865) ultra: Distance: 41.5822 cm
+[0m
+[0;32mI (316185) mpu: Pitch: 12.248219 Roll: 0.994011[0m
+[0;32mI (316905) ultra: Distance: 45.1444 cm
+[0m
+[0;32mI (317185) mpu: Pitch: 12.254725 Roll: 0.917461[0m
+[0;32mI (317955) ultra: Distance: 42.3834 cm
+[0m
+[0;32mI (318185) mpu: Pitch: 12.270740 Roll: 0.905454[0m
+[0;32mI (318995) ultra: Distance: 47.7056 cm
+[0m
+[0;32mI (319185) mpu: Pitch: 12.274470 Roll: 0.908835[0m
+[0;32mI (320045) ultra: Distance: 43.7895 cm
+[0m
+[0;32mI (320185) mpu: Pitch: 12.260149 Roll: 0.907405[0m
+[0;32mI (321095) ultra: Distance: 43.3790 cm
+[0m
+[0;32mI (321185) mpu: Pitch: 12.265183 Roll: 0.856870[0m
+[0;32mI (322125) ultra: Distance: 25.9551 cm
+[0m
+[0;32mI (322185) mpu: Pitch: 12.272730 Roll: 0.875107[0m
+[0;32mI (323165) ultra: Distance: 38.8059 cm
+[0m
+[0;32mI (323185) mpu: Pitch: 12.258085 Roll: 0.811538[0m
+[0;32mI (324185) mpu: Pitch: 12.304777 Roll: 0.972399[0m
+[0;32mI (324195) ultra: Distance: 25.6151 cm
+[0m
+[0;32mI (325185) mpu: Pitch: 12.323636 Roll: 0.977957[0m
+[0;32mI (325245) ultra: Distance: 46.8736 cm
+[0m
+[0;32mI (326185) mpu: Pitch: 12.324525 Roll: 0.950301[0m
+[0;32mI (326285) ultra: Distance: 41.0305 cm
+[0m
+[0;32mI (327185) mpu: Pitch: 12.318985 Roll: 0.934934[0m
+[0;32mI (327315) ultra: Distance: 29.6530 cm
+[0m
+[0;32mI (328185) mpu: Pitch: 12.314849 Roll: 0.928559[0m
+[0;32mI (328355) ultra: Distance: 28.3119 cm
+[0m
+[0;32mI (329185) mpu: Pitch: 12.339680 Roll: 0.941985[0m
+[0;32mI (329395) ultra: Distance: 41.2588 cm
+[0m
+[0;32mI (330185) mpu: Pitch: 12.322083 Roll: 0.962685[0m
+[0;32mI (330575) ultra: Distance: 286.2828 cm
+[0m
+[0;32mI (331185) mpu: Pitch: 12.273892 Roll: 0.854054[0m
+[0;32mI (331625) ultra: Distance: 68.7352 cm
+[0m
+[0;32mI (332185) mpu: Pitch: 12.334022 Roll: 0.957198[0m
+[0;32mI (332675) ultra: Distance: 52.3028 cm
+[0m
+[0;32mI (333185) mpu: Pitch: 12.320895 Roll: 0.891131[0m
+[0;32mI (333715) ultra: Distance: 44.0510 cm
+[0m
+[0;32mI (334185) mpu: Pitch: 12.333994 Roll: 0.910692[0m
+[0;32mI (334755) ultra: Distance: 41.5672 cm
+[0m
+[0;32mI (335185) mpu: Pitch: 12.341862 Roll: 0.911112[0m
+[0;32mI (335795) ultra: Distance: 41.9360 cm
+[0m
+[0;32mI (336185) mpu: Pitch: 12.306076 Roll: 0.899942[0m
+[0;32mI (336835) ultra: Distance: 40.7591 cm
+[0m
+[0;32mI (337185) mpu: Pitch: 12.330047 Roll: 0.916228[0m
+[0;32mI (337955) ultra: Distance: 153.7587 cm
+[0m
+[0;32mI (338185) mpu: Pitch: 12.219789 Roll: 0.763960[0m
+[0;32mI (339005) ultra: Distance: 62.6862 cm
+[0m
+[0;32mI (339185) mpu: Pitch: 12.224137 Roll: 0.912669[0m
+[0;32mI (340115) ultra: Distance: 160.5186 cm
+[0m
+[0;32mI (340185) mpu: Pitch: 12.141343 Roll: 0.711983[0m
+[0;32mI (341155) ultra: Distance: 53.1760 cm
+[0m
+[0;32mI (341185) mpu: Pitch: 12.202441 Roll: 0.831106[0m
+[0;32mI (342185) mpu: Pitch: 12.292975 Roll: 0.931385[0m
+[0;32mI (342195) ultra: Distance: 42.5331 cm
+[0m
+[0;32mI (343185) mpu: Pitch: 12.295542 Roll: 0.934591[0m
+[0;32mI (343235) ultra: Distance: 42.3085 cm
+[0m
+[0;32mI (344185) mpu: Pitch: 12.287674 Roll: 0.938862[0m
+[0;32mI (344275) ultra: Distance: 43.0429 cm
+[0m
+[0;32mI (345185) mpu: Pitch: 12.280608 Roll: 0.920257[0m
+[0;32mI (345385) ultra: Distance: 160.6681 cm
+[0m
+[0;32mI (346185) mpu: Pitch: 12.284118 Roll: 0.933424[0m
+[0;32mI (346425) ultra: Distance: 56.3375 cm
+[0m
+[0;32mI (347185) mpu: Pitch: 12.273312 Roll: 0.949368[0m
+[0;32mI (347465) ultra: Distance: 49.6993 cm
+[0m
+[0;32mI (348185) mpu: Pitch: 12.287060 Roll: 0.967920[0m
+[0;32mI (348515) ultra: Distance: 43.5492 cm
+[0m
+[0;32mI (349185) mpu: Pitch: 12.279467 Roll: 0.922356[0m
+[0;32mI (349555) ultra: Distance: 43.2894 cm
+[0m
+[0;32mI (350185) mpu: Pitch: 12.303109 Roll: 0.946813[0m
+[0;32mI (350605) ultra: Distance: 42.1462 cm
+[0m
+[0;32mI (351185) mpu: Pitch: 12.308928 Roll: 0.922815[0m
+[0;32mI (351645) ultra: Distance: 41.9612 cm
+[0m
+[0;32mI (352185) mpu: Pitch: 12.291399 Roll: 0.910280[0m
+[0;32mI (352685) ultra: Distance: 42.7927 cm
+[0m
+[0;32mI (353185) mpu: Pitch: 12.282575 Roll: 0.915904[0m
+[0;32mI (353725) ultra: Distance: 44.9120 cm
+[0m
+[0;32mI (354185) mpu: Pitch: 12.281788 Roll: 0.925307[0m
+[0;32mI (354765) ultra: Distance: 48.4774 cm
+[0m
+[0;32mI (355185) mpu: Pitch: 12.291474 Roll: 0.917898[0m
+[0;32mI (355805) ultra: Distance: 43.8115 cm
+[0m
+[0;32mI (356185) mpu: Pitch: 12.239250 Roll: 0.922531[0m
+[0;32mI (356845) ultra: Distance: 43.7622 cm
+[0m
+[0;32mI (357185) mpu: Pitch: 12.277897 Roll: 0.925740[0m
+[0;32mI (357885) ultra: Distance: 42.6693 cm
+[0m
+[0;32mI (358185) mpu: Pitch: 12.261655 Roll: 0.916109[0m
+[0;32mI (358935) ultra: Distance: 47.8083 cm
+[0m
+[0;32mI (359185) mpu: Pitch: 12.243727 Roll: 0.862158[0m
+[0;32mI (359985) ultra: Distance: 43.1550 cm
+[0m
+[0;32mI (360185) mpu: Pitch: 12.255123 Roll: 0.879255[0m
+[0;32mI (361035) ultra: Distance: 44.8896 cm
+[0m
+[0;32mI (361185) mpu: Pitch: 12.248060 Roll: 0.872673[0m
+[0;32mI (362075) ultra: Distance: 44.2786 cm
+[0m
+[0;32mI (362185) mpu: Pitch: 12.261806 Roll: 0.836463[0m
+[0;32mI (363125) ultra: Distance: 46.0675 cm
+[0m
+[0;32mI (363185) mpu: Pitch: 12.243214 Roll: 0.854431[0m
+[0;32mI (364175) ultra: Distance: 57.5499 cm
+[0m
+[0;32mI (364185) mpu: Pitch: 12.260221 Roll: 0.805223[0m
+[0;32mI (365185) mpu: Pitch: 12.305561 Roll: 0.978488[0m
+[0;32mI (365215) ultra: Distance: 43.5774 cm
+[0m
+[0;32mI (366185) mpu: Pitch: 12.299059 Roll: 0.965251[0m
+[0;32mI (366255) ultra: Distance: 42.6836 cm
+[0m
+[0;32mI (367185) mpu: Pitch: 12.321331 Roll: 0.942273[0m
+[0;32mI (367305) ultra: Distance: 46.6201 cm
+[0m
+[0;32mI (368185) mpu: Pitch: 12.319343 Roll: 0.941994[0m
+[0;32mI (368355) ultra: Distance: 42.7172 cm
+[0m
+[0;32mI (369185) mpu: Pitch: 12.297899 Roll: 0.943675[0m
+[0;32mI (369405) ultra: Distance: 49.2631 cm
+[0m
+[0;32mI (370185) mpu: Pitch: 12.334282 Roll: 0.925376[0m
+[0;32mI (370445) ultra: Distance: 46.5918 cm
+[0m
+[0;32mI (371185) mpu: Pitch: 12.321268 Roll: 0.953987[0m
+[0;32mI (371565) ultra: Distance: 166.8161 cm
+[0m
+[0;32mI (372185) mpu: Pitch: 12.279897 Roll: 0.909314[0m
+[0;32mI (372605) ultra: Distance: 55.5333 cm
+[0m
+[0;32mI (373185) mpu: Pitch: 12.300708 Roll: 0.911449[0m
+[0;32mI (373865) ultra: Distance: 394.4412 cm
+[0m
+[0;32mI (374185) mpu: Pitch: 12.160077 Roll: 0.697607[0m
+[0;32mI (374905) ultra: Distance: 77.6286 cm
+[0m
+[0;32mI (375185) mpu: Pitch: 12.262840 Roll: 0.883354[0m
+[0;32mI (375945) ultra: Distance: 46.5232 cm
+[0m
+[0;32mI (376185) mpu: Pitch: 12.236865 Roll: 0.905077[0m
+[0;32mI (376985) ultra: Distance: 44.1989 cm
+[0m
+[0;32mI (377185) mpu: Pitch: 12.299549 Roll: 0.880282[0m
+[0;32mI (378025) ultra: Distance: 44.4958 cm
+[0m
+[0;32mI (378185) mpu: Pitch: 12.262297 Roll: 0.864702[0m
+[0;32mI (379075) ultra: Distance: 43.1875 cm
+[0m
+[0;32mI (379185) mpu: Pitch: 12.305878 Roll: 0.849350[0m
+[0;32mI (380185) mpu: Pitch: 12.197335 Roll: 0.672461[0m
+[0;32mI (380195) ultra: Distance: 168.1860 cm
+[0m
+[0;32mI (381195) mpu: Pitch: 12.315994 Roll: 0.922069[0m
+[0;32mI (381235) ultra: Distance: 58.6289 cm
+[0m
+[0;32mI (382195) mpu: Pitch: 12.327609 Roll: 0.922595[0m
+[0;32mI (382295) ultra: Distance: 52.9043 cm
+[0m
+[0;32mI (383195) mpu: Pitch: 12.307346 Roll: 0.919659[0m
+[0;32mI (383335) ultra: Distance: 44.8163 cm
+[0m
+[0;32mI (384195) mpu: Pitch: 12.305153 Roll: 0.945198[0m
+[0;32mI (384375) ultra: Distance: 46.2971 cm
+[0m
+[0;32mI (385195) mpu: Pitch: 12.316760 Roll: 0.962181[0m
+[0;32mI (385425) ultra: Distance: 43.0814 cm
+[0m
+[0;32mI (386195) mpu: Pitch: 12.325871 Roll: 0.949566[0m
+[0;32mI (386465) ultra: Distance: 43.7254 cm
+[0m
+[0;32mI (387195) mpu: Pitch: 12.317058 Roll: 0.967864[0m
+[0;32mI (387505) ultra: Distance: 42.8794 cm
+[0m
+[0;32mI (388195) mpu: Pitch: 12.288923 Roll: 0.914310[0m
+[0;32mI (388545) ultra: Distance: 46.5293 cm
+[0m
+[0;32mI (389195) mpu: Pitch: 12.321174 Roll: 0.901432[0m
+[0;32mI (389585) ultra: Distance: 45.3409 cm
+[0m
+[0;32mI (390195) mpu: Pitch: 12.309595 Roll: 0.929595[0m
+[0;32mI (390635) ultra: Distance: 51.9255 cm
+[0m
+[0;32mI (391195) mpu: Pitch: 12.306031 Roll: 0.912713[0m
+[0;32mI (391675) ultra: Distance: 44.7063 cm
+[0m
+[0;32mI (392195) mpu: Pitch: 12.308908 Roll: 0.919206[0m
+[0;32mI (392855) ultra: Distance: 277.9396 cm
+[0m
+[0;32mI (393195) mpu: Pitch: 12.216483 Roll: 0.828167[0m
+[0;32mI (393905) ultra: Distance: 67.6095 cm
+[0m
+[0;32mI (394195) mpu: Pitch: 12.287141 Roll: 0.887191[0m
+[0;32mI (395195) mpu: Pitch: 12.028529 Roll: 0.326406[0m
+[0;32mI (395225) ultra: Distance: 516.2610 cm
+[0m
+[0;32mI (396195) mpu: Pitch: 12.289079 Roll: 0.941418[0m
+[0;32mI (396255) ultra: Distance: 76.5054 cm
+[0m
+[0;32mI (397195) mpu: Pitch: 12.346066 Roll: 0.939143[0m
+[0;32mI (397295) ultra: Distance: 33.6005 cm
+[0m
+[0;32mI (398195) mpu: Pitch: 12.341722 Roll: 0.941571[0m
+[0;32mI (398405) ultra: Distance: 158.5583 cm
+[0m
+[0;32mI (399195) mpu: Pitch: 12.336436 Roll: 0.943231[0m
+[0;32mI (399455) ultra: Distance: 60.6662 cm
+[0m
+[0;32mI (400195) mpu: Pitch: 12.317037 Roll: 0.925433[0m
+[0;32mI (400495) ultra: Distance: 44.1132 cm
+[0m
+[0;32mI (401195) mpu: Pitch: 12.304882 Roll: 0.932495[0m
+[0;32mI (401525) ultra: Distance: 32.2320 cm
+[0m
+[0;32mI (402195) mpu: Pitch: 12.323922 Roll: 0.950620[0m
+[0;32mI (402725) ultra: Distance: 287.8060 cm
+[0m
+[0;32mI (403195) mpu: Pitch: 12.281321 Roll: 0.842183[0m
+[0;32mI (403835) ultra: Distance: 188.6409 cm
+[0m
+[0;32mI (404195) mpu: Pitch: 12.274608 Roll: 0.861700[0m
+[0;32mI (405035) ultra: Distance: 303.4538 cm
+[0m
+[0;32mI (405195) mpu: Pitch: 12.171408 Roll: 0.629810[0m
+[0;32mI (406075) ultra: Distance: 71.7126 cm
+[0m
+[0;32mI (406195) mpu: Pitch: 12.277015 Roll: 0.833270[0m
+[0;32mI (407255) mpu: Pitch: 12.296308 Roll: 0.886957[0m
+[0;32mI (407265) ultra: Distance: 283.8816 cm
+[0m
+[0;32mI (408265) mpu: Pitch: 12.313020 Roll: 0.930951[0m
+[0;32mI (408445) ultra: Distance: 301.1813 cm
+[0m
+[0;32mI (409265) mpu: Pitch: 12.329046 Roll: 0.920009[0m
+[0;32mI (409485) ultra: Distance: 66.2440 cm
+[0m
+[0;32mI (410265) mpu: Pitch: 12.304105 Roll: 0.951049[0m
+[0;32mI (410525) ultra: Distance: 44.7744 cm
+[0m
+[0;32mI (411265) mpu: Pitch: 12.323493 Roll: 0.947173[0m
+[0;32mI (411575) ultra: Distance: 50.7567 cm
+[0m
+[0;32mI (412265) mpu: Pitch: 12.323856 Roll: 0.929133[0m
+[0;32mI (413095) ultra: Distance: 866.3619 cm
+[0m
+[0;32mI (413265) mpu: Pitch: 11.918802 Roll: 0.102050[0m
+[0;32mI (414135) ultra: Distance: 122.1310 cm
+[0m
+[0;32mI (414265) mpu: Pitch: 12.268764 Roll: 0.839030[0m
+[0;32mI (415175) ultra: Distance: 51.7631 cm
+[0m
+[0;32mI (415265) mpu: Pitch: 12.279146 Roll: 0.842218[0m
+[0;32mI (416315) mpu: Pitch: 12.176300 Roll: 0.586097[0m
+[0;32mI (416415) ultra: Distance: 396.0039 cm
+[0m
+[0;32mI (417315) mpu: Pitch: 12.318493 Roll: 0.926339[0m
+[0;32mI (417465) ultra: Distance: 68.3952 cm
+[0m
+[0;32mI (418315) mpu: Pitch: 12.295946 Roll: 0.950392[0m
+[0;32mI (418505) ultra: Distance: 40.6447 cm
+[0m
+[0;32mI (419315) mpu: Pitch: 12.343161 Roll: 0.950691[0m
+[0;32mI (419625) ultra: Distance: 175.9007 cm
+[0m
+[0;32mI (420315) mpu: Pitch: 12.292482 Roll: 0.903843[0m
+[0;32mI (420665) ultra: Distance: 57.5987 cm
+[0m
+[0;32mI (421315) mpu: Pitch: 12.337011 Roll: 0.929901[0m
+[0;32mI (421705) ultra: Distance: 43.0857 cm
+[0m
+[0;32mI (422315) mpu: Pitch: 12.317825 Roll: 0.926925[0m
+[0;32mI (422745) ultra: Distance: 44.1086 cm
+[0m
+[0;32mI (423315) mpu: Pitch: 12.308247 Roll: 0.928785[0m
+[0;32mI (423785) ultra: Distance: 41.2557 cm
+[0m
+[0;32mI (424315) mpu: Pitch: 12.316469 Roll: 0.922182[0m
+[0;32mI (424815) ultra: Distance: 31.3756 cm
+[0m
+[0;32mI (425315) mpu: Pitch: 12.331265 Roll: 0.904252[0m
+[0;32mI (425865) ultra: Distance: 43.2462 cm
+[0m
+[0;32mI (426315) mpu: Pitch: 12.281551 Roll: 0.943811[0m
+[0;32mI (426905) ultra: Distance: 36.8781 cm
+[0m
+[0;32mI (427315) mpu: Pitch: 12.283785 Roll: 0.924293[0m
+[0;32mI (427935) ultra: Distance: 18.3723 cm
+[0m
+[0;32mI (428315) mpu: Pitch: 12.306948 Roll: 0.939198[0m
+[0;32mI (428965) ultra: Distance: 15.7614 cm
+[0m
+[0;32mI (429315) mpu: Pitch: 12.303346 Roll: 0.912865[0m
+[0;32mI (429995) ultra: Distance: 17.0779 cm
+[0m
+[0;32mI (430315) mpu: Pitch: 12.309688 Roll: 0.912913[0m
+[0;32mI (431025) ultra: Distance: 29.0543 cm
+[0m
+[0;32mI (431315) mpu: Pitch: 12.314786 Roll: 0.903098[0m
+[0;32mI (432145) ultra: Distance: 161.1503 cm
+[0m
+[0;32mI (432315) mpu: Pitch: 12.254846 Roll: 0.766785[0m
+[0;32mI (433175) ultra: Distance: 41.1374 cm
+[0m
+[0;32mI (433315) mpu: Pitch: 12.315681 Roll: 0.880855[0m
+[0;32mI (434215) ultra: Distance: 43.1551 cm
+[0m
+[0;32mI (434315) mpu: Pitch: 12.286686 Roll: 0.837484[0m
+[0;32mI (435245) ultra: Distance: 25.5724 cm
+[0m
+[0;32mI (435315) mpu: Pitch: 12.286950 Roll: 0.875920[0m
+[0;32mI (436275) ultra: Distance: 23.9107 cm
+[0m
+[0;32mI (436315) mpu: Pitch: 12.298948 Roll: 0.838032[0m
+[0;32mI (437305) ultra: Distance: 24.1721 cm
+[0m
+[0;32mI (437315) mpu: Pitch: 12.295871 Roll: 0.865718[0m
+[0;32mI (438315) mpu: Pitch: 12.332484 Roll: 0.920161[0m
+[0;32mI (438335) ultra: Distance: 24.0707 cm
+[0m
+[0;32mI (439315) mpu: Pitch: 12.352828 Roll: 0.959971[0m
+[0;32mI (439365) ultra: Distance: 26.1674 cm
+[0m
+[0;32mI (440315) mpu: Pitch: 12.344725 Roll: 0.922942[0m
+[0;32mI (440395) ultra: Distance: 25.7098 cm
+[0m
+[0;32mI (441315) mpu: Pitch: 12.331479 Roll: 0.928008[0m
+[0;32mI (441425) ultra: Distance: 25.1899 cm
+[0m
+[0;32mI (442315) mpu: Pitch: 12.313448 Roll: 0.933699[0m
+[0;32mI (442465) ultra: Distance: 42.7414 cm
+[0m
+[0;32mI (443315) mpu: Pitch: 12.349809 Roll: 0.942817[0m
+[0;32mI (443495) ultra: Distance: 26.6431 cm
+[0m
+[0;32mI (444315) mpu: Pitch: 12.339947 Roll: 0.929071[0m
+[0;32mI (444525) ultra: Distance: 24.2505 cm
+[0m
+[0;32mI (445315) mpu: Pitch: 12.325335 Roll: 0.919822[0m
+[0;32mI (445555) ultra: Distance: 24.6751 cm
+[0m
+[0;32mI (446315) mpu: Pitch: 12.307187 Roll: 0.932528[0m
+[0;32mI (446585) ultra: Distance: 26.3503 cm
+[0m
+[0;32mI (447315) mpu: Pitch: 12.318549 Roll: 0.933142[0m
+[0;32mI (447615) ultra: Distance: 26.5557 cm
+[0m
+[0;32mI (448315) mpu: Pitch: 12.358379 Roll: 0.927379[0m
+[0;32mI (448645) ultra: Distance: 26.6883 cm
+[0m
+[0;32mI (449315) mpu: Pitch: 12.326476 Roll: 0.920821[0m
+[0;32mI (449685) ultra: Distance: 27.3464 cm
+[0m
+[0;32mI (450315) mpu: Pitch: 12.302862 Roll: 0.906633[0m
+[0;32mI (450725) ultra: Distance: 26.0071 cm
+[0m
+[0;32mI (451315) mpu: Pitch: 12.338357 Roll: 0.917459[0m
+[0;32mI (451755) ultra: Distance: 26.3473 cm
+[0m
+[0;32mI (452315) mpu: Pitch: 12.339560 Roll: 0.931045[0m
+[0;32mI (452785) ultra: Distance: 25.6071 cm
+[0m
+[0;32mI (453315) mpu: Pitch: 12.352767 Roll: 0.890079[0m
+[0;32mI (453815) ultra: Distance: 26.0004 cm
+[0m
+[0;32mI (454315) mpu: Pitch: 12.330265 Roll: 0.912559[0m
+[0;32mI (454845) ultra: Distance: 26.9673 cm
+[0m
+[0;32mI (455315) mpu: Pitch: 12.315643 Roll: 0.932286[0m
+[0;32mI (455875) ultra: Distance: 26.9191 cm
+[0m
+[0;32mI (456315) mpu: Pitch: 12.293301 Roll: 0.912468[0m
+[0;32mI (456905) ultra: Distance: 27.0367 cm
+[0m
+[0;32mI (457315) mpu: Pitch: 12.294023 Roll: 0.943823[0m
+[0;32mI (457935) ultra: Distance: 27.3657 cm
+[0m
+[0;32mI (458315) mpu: Pitch: 12.274985 Roll: 0.934603[0m
+[0;32mI (458965) ultra: Distance: 31.5555 cm
+[0m
+[0;32mI (459315) mpu: Pitch: 12.311767 Roll: 0.940424[0m
+[0;32mI (460005) ultra: Distance: 27.6228 cm
+[0m
+[0;32mI (460315) mpu: Pitch: 12.296660 Roll: 0.919642[0m
+[0;32mI (461035) ultra: Distance: 26.8537 cm
+[0m
+[0;32mI (461315) mpu: Pitch: 12.316885 Roll: 0.924771[0m
+[0;32mI (462065) ultra: Distance: 28.3009 cm
+[0m
+[0;32mI (462315) mpu: Pitch: 12.297399 Roll: 0.905862[0m
+[0;32mI (463125) ultra: Distance: 45.2663 cm
+[0m
+[0;32mI (463315) mpu: Pitch: 12.315957 Roll: 0.882436[0m
+[0;32mI (464155) ultra: Distance: 28.7163 cm
+[0m
+[0;32mI (464315) mpu: Pitch: 12.335163 Roll: 0.914647[0m
+[0;32mI (465195) ultra: Distance: 42.4871 cm
+[0m
+[0;32mI (465315) mpu: Pitch: 12.280841 Roll: 0.851835[0m
+[0;32mI (466225) ultra: Distance: 30.6522 cm
+[0m
+[0;32mI (466315) mpu: Pitch: 12.300025 Roll: 0.857020[0m
+[0;32mI (467265) ultra: Distance: 27.7790 cm
+[0m
+[0;32mI (467315) mpu: Pitch: 12.285514 Roll: 0.846714[0m
+[0;32mI (468295) ultra: Distance: 27.3676 cm
+[0m
+[0;32mI (468315) mpu: Pitch: 12.279298 Roll: 0.832332[0m
+[0;32mI (469315) mpu: Pitch: 12.315941 Roll: 0.935633[0m
+[0;32mI (469325) ultra: Distance: 27.6919 cm
+[0m
+[0;32mI (470325) mpu: Pitch: 12.323757 Roll: 0.971313[0m
+[0;32mI (470355) ultra: Distance: 24.5847 cm
+[0m
+[0;32mI (471325) mpu: Pitch: 12.355942 Roll: 0.931982[0m
+[0;32mI (471385) ultra: Distance: 24.8481 cm
+[0m
+[0;32mI (472325) mpu: Pitch: 12.303728 Roll: 0.944008[0m
+[0;32mI (472415) ultra: Distance: 26.1641 cm
+[0m
+[0;32mI (473325) mpu: Pitch: 12.308974 Roll: 0.906217[0m
+[0;32mI (473445) ultra: Distance: 26.9181 cm
+[0m
+[0;32mI (474325) mpu: Pitch: 12.323526 Roll: 0.957592[0m
+[0;32mI (474485) ultra: Distance: 26.2487 cm
+[0m
+[0;32mI (475325) mpu: Pitch: 12.327926 Roll: 0.966224[0m
+[0;32mI (475515) ultra: Distance: 25.9369 cm
+[0m
+[0;32mI (476325) mpu: Pitch: 12.326673 Roll: 0.978403[0m
+[0;32mI (476545) ultra: Distance: 26.6920 cm
+[0m
+[0;32mI (477325) mpu: Pitch: 12.307395 Roll: 0.935140[0m
+[0;32mI (477655) ultra: Distance: 147.3675 cm
+[0m
+[0;32mI (478325) mpu: Pitch: 12.316979 Roll: 0.915611[0m
+[0;32mI (478905) ultra: Distance: 398.2126 cm
+[0m
+[0;32mI (479325) mpu: Pitch: 12.210326 Roll: 0.792637[0m
+[0;32mI (480085) ultra: Distance: 314.5523 cm
+[0m
+[0;32mI (480325) mpu: Pitch: 12.190112 Roll: 0.747085[0m
+[0;32mI (481375) mpu: Pitch: 12.333766 Roll: 0.924466[0m
+[0;32mI (481465) ultra: Distance: 656.9052 cm
+[0m
+[0;32mI (482375) mpu: Pitch: 12.275334 Roll: 0.905582[0m
+[0;32mI (482645) ultra: Distance: 335.8078 cm
+[0m
+[0;32mI (483375) mpu: Pitch: 12.288126 Roll: 0.899014[0m
+[0;32mI (483685) ultra: Distance: 76.6170 cm
+[0m
+[0;32mI (484375) mpu: Pitch: 12.318440 Roll: 0.932808[0m
+[0;32mI (484885) ultra: Distance: 293.4134 cm
+[0m
+[0;32mI (485375) mpu: Pitch: 12.285658 Roll: 0.851209[0m
+[0;32mI (485925) ultra: Distance: 71.5086 cm
+[0m
+[0;32mI (486375) mpu: Pitch: 12.338854 Roll: 0.933917[0m
+[0;32mI (486975) ultra: Distance: 46.8284 cm
+[0m
+[0;32mI (487375) mpu: Pitch: 12.335088 Roll: 0.906809[0m
+[0;32mI (488025) ultra: Distance: 46.6415 cm
+[0m
+[0;32mI (488375) mpu: Pitch: 12.331469 Roll: 0.924023[0m
+[0;32mI (489075) ultra: Distance: 48.2504 cm
+[0m
+[0;32mI (489375) mpu: Pitch: 12.315535 Roll: 0.893677[0m
+[0;32mI (490315) ultra: Distance: 394.2647 cm
+[0m
+[0;32mI (490375) mpu: Pitch: 12.054174 Roll: 0.381147[0m
+[0;32mI (491375) mpu: Pitch: 12.328867 Roll: 0.928229[0m
+[0;32mI (491465) ultra: Distance: 238.1540 cm
+[0m
+[0;32mI (492375) mpu: Pitch: 12.308838 Roll: 0.915487[0m
+[0;32mI (493055) ultra: Distance: 998.1206 cm
+[0m
+[0;32mI (493375) mpu: Pitch: 12.015142 Roll: 0.365895[0m
+[0;32mI (494115) ultra: Distance: 168.3517 cm
+[0m
+[0;32mI (494375) mpu: Pitch: 12.317386 Roll: 0.825450[0m
+[0;32mI (495155) ultra: Distance: 57.5024 cm
+[0m
+[0;32mI (495375) mpu: Pitch: 12.317661 Roll: 0.861561[0m
+[0;32mI (496375) mpu: Pitch: 12.119528 Roll: 0.571542[0m
+[0;32mI (496755) ultra: Distance: 979.6900 cm
+[0m
+[0;32mI (497375) mpu: Pitch: 12.240456 Roll: 0.742007[0m
+[0;32mI (498285) ultra: Distance: 954.4225 cm
+[0m
+[0;32mI (498375) mpu: Pitch: 11.809628 Roll: -0.140690[0m
+[0;32mI (499325) ultra: Distance: 136.7992 cm
+[0m
+[0;32mI (499375) mpu: Pitch: 12.222651 Roll: 0.776977[0m
+[0;32mI (500365) ultra: Distance: 55.0092 cm
+[0m
+[0;32mI (500375) mpu: Pitch: 12.255157 Roll: 0.809431[0m
+[0;32mI (501375) mpu: Pitch: 12.325355 Roll: 0.916145[0m
+[0;32mI (501405) ultra: Distance: 48.6699 cm
+[0m
+[0;32mI (502375) mpu: Pitch: 12.374846 Roll: 0.948355[0m
+[0;32mI (502515) ultra: Distance: 160.9980 cm
+[0m
+[0;32mI (503375) mpu: Pitch: 12.323542 Roll: 0.904768[0m
+[0;32mI (503705) ultra: Distance: 308.1912 cm
+[0m
+[0;32mI (504375) mpu: Pitch: 12.291945 Roll: 0.864171[0m
+[0;32mI (504745) ultra: Distance: 73.9588 cm
+[0m
+[0;32mI (505375) mpu: Pitch: 12.338395 Roll: 0.921882[0m
+[0;32mI (505805) ultra: Distance: 51.0390 cm
+[0m
+[0;32mI (506375) mpu: Pitch: 12.320092 Roll: 0.944061[0m
+[0;32mI (506985) ultra: Distance: 280.7453 cm
+[0m
+[0;32mI (507375) mpu: Pitch: 12.273843 Roll: 0.794363[0m
+[0;32mI (508035) ultra: Distance: 67.1469 cm
+[0m
+[0;32mI (508375) mpu: Pitch: 12.277792 Roll: 0.837398[0m
+[0;32mI (509075) ultra: Distance: 46.2285 cm
+[0m
+[0;32mI (509375) mpu: Pitch: 12.314177 Roll: 0.883106[0m
+[0;32mI (510115) ultra: Distance: 45.5866 cm
+[0m
+[0;32mI (510375) mpu: Pitch: 12.295149 Roll: 0.839076[0m
+[0;32mI (511155) ultra: Distance: 46.8483 cm
+[0m
+[0;32mI (511375) mpu: Pitch: 12.310693 Roll: 0.854755[0m
+[0;32mI (512395) mpu: Pitch: 12.332557 Roll: 0.900708[0m
+[0;32mI (512495) ultra: Distance: 541.0228 cm
+[0m
+[0;32mI (513395) mpu: Pitch: 12.296496 Roll: 0.864429[0m
+[0;32mI (513875) ultra: Distance: 677.7868 cm
+[0m
+[0;32mI (514395) mpu: Pitch: 12.234263 Roll: 0.727970[0m
+[0;32mI (514925) ultra: Distance: 117.3925 cm
+[0m
+[0;32mI (515395) mpu: Pitch: 12.310400 Roll: 0.877609[0m
+[0;32mI (515975) ultra: Distance: 61.5668 cm
+[0m
+[0;32mI (516395) mpu: Pitch: 12.317616 Roll: 0.924992[0m
+[0;32mI (517025) ultra: Distance: 51.2188 cm
+[0m
+[0;32mI (517395) mpu: Pitch: 12.330051 Roll: 0.881958[0m
+[0;32mI (518415) mpu: Pitch: 11.989820 Roll: 0.276918[0m
+[0;32mI (518485) ultra: Distance: 748.0270 cm
+[0m
+[0;32mI (519415) mpu: Pitch: 12.313403 Roll: 0.890953[0m
+[0;32mI (519665) ultra: Distance: 351.2717 cm
+[0m
+[0;32mI (520415) mpu: Pitch: 12.305407 Roll: 0.892352[0m
+[0;32mI (520715) ultra: Distance: 75.8634 cm
+[0m
+[0;32mI (521415) mpu: Pitch: 12.332208 Roll: 0.931914[0m
+[0;32mI (521755) ultra: Distance: 48.8174 cm
+[0m
+[0;32mI (522415) mpu: Pitch: 12.325003 Roll: 0.917900[0m
+[0;32mI (522795) ultra: Distance: 45.3197 cm
+[0m
+[0;32mI (523415) mpu: Pitch: 12.319579 Roll: 0.916754[0m
+[0;32mI (523835) ultra: Distance: 43.9923 cm
+[0m
+[0;32mI (524415) mpu: Pitch: 12.319062 Roll: 0.926282[0m
+[0;32mI (524875) ultra: Distance: 43.4527 cm
+[0m
+[0;32mI (525415) mpu: Pitch: 12.298032 Roll: 0.905695[0m
+[0;32mI (525925) ultra: Distance: 53.0487 cm
+[0m
+[0;32mI (526415) mpu: Pitch: 12.330903 Roll: 0.915235[0m
+[0;32mI (526965) ultra: Distance: 46.3394 cm
+[0m
+[0;32mI (527415) mpu: Pitch: 12.325211 Roll: 0.942174[0m
+[0;32mI (528005) ultra: Distance: 46.3632 cm
+[0m
+[0;32mI (528415) mpu: Pitch: 12.348752 Roll: 0.905404[0m
+[0;32mI (529045) ultra: Distance: 45.8674 cm
+[0m
+[0;32mI (529415) mpu: Pitch: 12.318729 Roll: 0.883194[0m
+[0;32mI (530085) ultra: Distance: 44.2471 cm
+[0m
+[0;32mI (530415) mpu: Pitch: 12.305506 Roll: 0.893527[0m
+[0;32mI (531135) ultra: Distance: 48.8282 cm
+[0m
+[0;32mI (531415) mpu: Pitch: 12.293862 Roll: 0.876361[0m
+[0;32mI (532185) ultra: Distance: 54.0845 cm
+[0m
+[0;32mI (532415) mpu: Pitch: 12.290466 Roll: 0.868682[0m
+[0;32mI (533225) ultra: Distance: 48.1481 cm
+[0m
+[0;32mI (533415) mpu: Pitch: 12.300112 Roll: 0.870878[0m
+[0;32mI (534435) mpu: Pitch: 12.071275 Roll: 0.398273[0m
+[0;32mI (534435) ultra: Distance: 312.9407 cm
+[0m
+[0;32mI (535435) mpu: Pitch: 12.321975 Roll: 0.908713[0m
+[0;32mI (535625) ultra: Distance: 304.7924 cm
+[0m
+[0;32mI (536435) mpu: Pitch: 12.327096 Roll: 0.882738[0m
+[0;32mI (536665) ultra: Distance: 70.5913 cm
+[0m
+[0;32mI (537435) mpu: Pitch: 12.344320 Roll: 0.946470[0m
+[0;32mI (537705) ultra: Distance: 46.7557 cm
+[0m
+[0;32mI (538435) mpu: Pitch: 12.331231 Roll: 0.952720[0m
+[0;32mI (538745) ultra: Distance: 44.5945 cm
+[0m
+[0;32mI (539435) mpu: Pitch: 12.351171 Roll: 0.944743[0m
+[0;32mI (539785) ultra: Distance: 45.2491 cm
+[0m
+[0;32mI (540435) mpu: Pitch: 12.304966 Roll: 0.928993[0m
+[0;32mI (540835) ultra: Distance: 54.9939 cm
+[0m
+[0;32mI (541435) mpu: Pitch: 12.315271 Roll: 0.908489[0m
+[0;32mI (541875) ultra: Distance: 45.2666 cm
+[0m
+[0;32mI (542435) mpu: Pitch: 11.939196 Roll: 0.588331[0m
+[0;32mI (542915) ultra: Distance: 44.2180 cm
+[0m
+[0;32mI (543435) mpu: Pitch: 12.000591 Roll: 1.153221[0m
+[0;32mI (543955) ultra: Distance: 43.3390 cm
+[0m
+[0;32mI (544435) mpu: Pitch: 11.988595 Roll: 1.162916[0m
+[0;32mI (544995) ultra: Distance: 45.0356 cm
+[0m
+[0;32mI (545435) mpu: Pitch: 11.978470 Roll: 1.175531[0m
+[0;32mI (546035) ultra: Distance: 44.8398 cm
+[0m
+[0;32mI (546435) mpu: Pitch: 11.996995 Roll: 1.144248[0m
+[0;32mI (547075) ultra: Distance: 43.1978 cm
+[0m
+[0;32mI (547435) mpu: Pitch: 11.988381 Roll: 1.159635[0m
+[0;32mI (548115) ultra: Distance: 43.6715 cm
+[0m
+[0;32mI (548435) mpu: Pitch: 11.995420 Roll: 1.160982[0m
+[0;32mI (549155) ultra: Distance: 43.5758 cm
+[0m
+[0;32mI (549435) mpu: Pitch: 12.000686 Roll: 1.166203[0m
+[0;32mI (550445) mpu: Pitch: 11.674635 Roll: -3.827425[0m
+[0;32mI (550545) ultra: Distance: 628.2386 cm
+[0m
+[0;32mI (551445) mpu: Pitch: 10.285745 Roll: 1.016113[0m
+[0;32mI (551795) ultra: Distance: 455.7894 cm
+[0m
+[0;32mI (552445) mpu: Pitch: 11.869335 Roll: 0.630615[0m
+[0;32mI (553045) ultra: Distance: 437.4910 cm
+[0m
+[0;32mI (553445) mpu: Pitch: 11.798083 Roll: 0.860506[0m
+[0;32mI (554085) ultra: Distance: 86.6284 cm
+[0m
+[0;32mI (554445) mpu: Pitch: 12.008695 Roll: 1.056504[0m
+[0;32mI (555275) ultra: Distance: 282.4560 cm
+[0m
+[0;32mI (555445) mpu: Pitch: 11.921711 Roll: 0.872676[0m
+[0;32mI (556395) ultra: Distance: 185.2353 cm
+[0m
+[0;32mI (556445) mpu: Pitch: 11.910904 Roll: 0.845702[0m
+[0;32mI (557435) ultra: Distance: 58.1321 cm
+[0m
+[0;32mI (557445) mpu: Pitch: 11.997978 Roll: 1.083405[0m
+[0;32mI (558445) mpu: Pitch: 12.449945 Roll: 0.097184[0m
+[0;32mI (558485) ultra: Distance: 48.4132 cm
+[0m
+[0;32mI (559445) mpu: Pitch: 11.712172 Roll: 1.094086[0m
+[0;32mI (560205) ultra: Distance: 1209.9309 cm
+[0m
+[0;32mI (560445) mpu: Pitch: 11.953600 Roll: -0.822078[0m
+[0;32mI (561385) ultra: Distance: 394.2586 cm
+[0m
+[0;32mI (561445) mpu: Pitch: 11.329573 Roll: -0.090829[0m
+[0;32mI (562435) ultra: Distance: 86.9862 cm
+[0m
+[0;32mI (562445) mpu: Pitch: 11.944178 Roll: 0.956717[0m
+[0;32mI (563505) mpu: Pitch: 11.581467 Roll: -0.316891[0m
+[0;32mI (563685) ultra: Distance: 402.0849 cm
+[0m
+[0;32mI (564505) mpu: Pitch: 11.626042 Roll: 1.016223[0m
+[0;32mI (564725) ultra: Distance: 82.5257 cm
+[0m
+[0;32mI (565505) mpu: Pitch: 12.046839 Roll: 1.090095[0m
+[0;32mI (566405) ultra: Distance: 1097.5594 cm
+[0m
+[0;32mI (566505) mpu: Pitch: 11.381081 Roll: -2.234920[0m
+[0;32mI (567555) mpu: Pitch: 10.184924 Roll: -1.397768[0m
+[0;32mI (567865) ultra: Distance: 850.0887 cm
+[0m
+[0;32mI (568555) mpu: Pitch: 11.264920 Roll: 0.909246[0m
+[0;32mI (568905) ultra: Distance: 125.7554 cm
+[0m
+[0;32mI (569555) mpu: Pitch: 12.012429 Roll: 1.074961[0m
+[0;32mI (570565) mpu: Pitch: 11.313638 Roll: -0.473497[0m
+[0;32mI (570635) ultra: Distance: 1217.7377 cm
+[0m
+[0;32mI (571565) mpu: Pitch: 11.985809 Roll: 1.016867[0m
+[0;32mI (572365) ultra: Distance: 1326.9305 cm
+[0m
+[0;32mI (572565) mpu: Pitch: 11.597322 Roll: 0.070714[0m
+[0;32mI (573575) mpu: Pitch: 12.020534 Roll: 1.037684[0m
+[0;32mI (574085) ultra: Distance: 1337.7551 cm
+[0m
+[0;32mI (574575) mpu: Pitch: 11.849615 Roll: 0.734666[0m
+[0;32mI (575595) mpu: Pitch: 10.414033 Roll: 1.510585[0m
+[0;32mI (575815) ultra: Distance: 1338.8860 cm
+[0m
+[0;32mI (576595) mpu: Pitch: 11.904734 Roll: 1.073314[0m
+[0;32mI (577205) ultra: Distance: 746.0402 cm
+[0m
+[0;32mI (577595) mpu: Pitch: 11.898313 Roll: 0.844742[0m
+[0;32mI (578245) ultra: Distance: 113.3747 cm
+[0m
+[0;32mI (578595) mpu: Pitch: 12.032399 Roll: 1.064351[0m
+[0;32mI (579285) ultra: Distance: 49.5995 cm
+[0m
+[0;32mI (579595) mpu: Pitch: 12.056606 Roll: 1.102924[0m
+[0;32mI (580325) ultra: Distance: 42.0048 cm
+[0m
+[0;32mI (580595) mpu: Pitch: 12.030339 Roll: 1.073134[0m
+[0;32mI (581365) ultra: Distance: 41.3712 cm
+[0m
+[0;32mI (581595) mpu: Pitch: 12.001898 Roll: 1.059979[0m
+[0;32mI (582415) ultra: Distance: 50.0009 cm
+[0m
+[0;32mI (582595) mpu: Pitch: 12.021184 Roll: 1.058634[0m
+[0;32mI (583455) ultra: Distance: 36.8828 cm
+[0m
+[0;32mI (583595) mpu: Pitch: 12.024608 Roll: 1.050552[0m
+[0;32mI (584495) ultra: Distance: 37.8469 cm
+[0m
+[0;32mI (584595) mpu: Pitch: 12.042121 Roll: 1.069319[0m
+[0;32mI (585535) ultra: Distance: 41.3899 cm
+[0m
+[0;32mI (585595) mpu: Pitch: 11.998202 Roll: 1.044663[0m
+[0;32mI (586575) ultra: Distance: 41.0907 cm
+[0m
+[0;32mI (586595) mpu: Pitch: 12.008647 Roll: 1.004919[0m
+[0;32mI (587595) mpu: Pitch: 12.054045 Roll: 1.132620[0m
+[0;32mI (587615) ultra: Distance: 42.9091 cm
+[0m
+[0;32mI (588595) mpu: Pitch: 12.075646 Roll: 1.121156[0m
+[0;32mI (588655) ultra: Distance: 40.2409 cm
+[0m
+[0;32mI (589595) mpu: Pitch: 12.050663 Roll: 1.136198[0m
+[0;32mI (589695) ultra: Distance: 38.5258 cm
+[0m
+[0;32mI (590595) mpu: Pitch: 12.036324 Roll: 1.120616[0m
+[0;32mI (590745) ultra: Distance: 50.2853 cm
+[0m
+[0;32mI (591595) mpu: Pitch: 12.036690 Roll: 1.144644[0m
+[0;32mI (591855) ultra: Distance: 158.3578 cm
+[0m
+[0;32mI (592595) mpu: Pitch: 12.042757 Roll: 1.122352[0m
+[0;32mI (592895) ultra: Distance: 56.8582 cm
+[0m
+[0;32mI (593595) mpu: Pitch: 12.054032 Roll: 1.135734[0m
+[0;32mI (593935) ultra: Distance: 45.8065 cm
+[0m
+[0;32mI (594595) mpu: Pitch: 12.045004 Roll: 1.117144[0m
+[0;32mI (594975) ultra: Distance: 47.0479 cm
+[0m
+[0;32mI (595595) mpu: Pitch: 12.052871 Roll: 1.128961[0m
+[0;32mI (596015) ultra: Distance: 45.6376 cm
+[0m
+[0;32mI (596595) mpu: Pitch: 12.042602 Roll: 1.151097[0m
+[0;32mI (597065) ultra: Distance: 44.6069 cm
+[0m
+[0;32mI (597595) mpu: Pitch: 12.059730 Roll: 1.107791[0m
+[0;32mI (598105) ultra: Distance: 44.5779 cm
+[0m
+[0;32mI (598595) mpu: Pitch: 12.057090 Roll: 1.106446[0m
+[0;32mI (599145) ultra: Distance: 45.3681 cm
+[0m
+[0;32mI (599595) mpu: Pitch: 12.050400 Roll: 1.111155[0m
+[0;32mI (600185) ultra: Distance: 45.5765 cm
+[0m
+[0;32mI (600595) mpu: Pitch: 12.071945 Roll: 1.117790[0m
+[0;32mI (601225) ultra: Distance: 42.4301 cm
+[0m
+[0;32mI (601595) mpu: Pitch: 12.072850 Roll: 1.087940[0m
+[0;32mI (602265) ultra: Distance: 43.5292 cm
+[0m
+[0;32mI (602595) mpu: Pitch: 12.067205 Roll: 1.099233[0m
+[0;32mI (603305) ultra: Distance: 42.0012 cm
+[0m
+[0;32mI (603595) mpu: Pitch: 12.027831 Roll: 1.118055[0m
